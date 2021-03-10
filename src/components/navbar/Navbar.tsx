@@ -2,7 +2,7 @@ import * as React from 'react';
 import './Navbar.scss';
 import { sBankIcon } from "../../assets";
 
-const Navbar = () => {
+const Navbar: React.FC  = () => {
 
     return (
         <>

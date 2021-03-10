@@ -17,7 +17,7 @@ import OnboardingPage from "./pages/OnboardingPage";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 
-function App() {
+const App: React.FC = () => {
   return (
       <div className="container">
         <Navbar/>
