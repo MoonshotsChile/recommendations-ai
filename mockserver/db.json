@@ -1,1 +1,58 @@
-{"benefits": []}
+{"benefits": [
+    {
+        "nombre": "Gastronom&iacute;a y L&iacute;quidos",
+        "slug": "gastronomia-liquidos",
+        "description": "Revisa aqu&iacute; los beneficios disponibles en Gastronom&iacute;a y L&iacute;quidos",
+        "icono": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/img-category/gastronomia-liquidos.svg",
+        "color": "red"
+    },
+    {
+        "nombre": "Cuotas Sin Inter&eacute;s",
+        "slug": "cuotas-sin-interes",
+        "description": "Revisa aqu&iacute; los beneficios disponibles en Cuotas Sin Inter&eacute;s",
+        "icono": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/img-category/cuotas-sin-interes.svg",
+        "color": "purple"
+    },
+    {
+        "nombre": "Automotriz y Transporte",
+        "slug": "automotriz-transporte",
+        "description": "Revisa aqu&iacute; los beneficios disponibles en Automotriz y Transporte",
+        "icono": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/img-category/automotriz-transporte.svg",
+        "color": "orange"
+    },
+    {
+        "nombre": "Salud",
+        "slug": "salud",
+        "description": "Revisa aqu&iacute; los beneficios disponibles en Salud",
+        "icono": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/img-category/salud.svg",
+        "color": "pink"
+    },
+    {
+        "nombre": "Entretenci&oacute;n",
+        "slug": "entretencion",
+        "description": "Revisa aqu&iacute; los beneficios disponibles en Entretenci&oacute;n",
+        "icono": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/img-category/entretencion.svg",
+        "color": "sky"
+    },
+    {
+        "nombre": "Viajes",
+        "slug": "viajes",
+        "description": "Revisa aqu&iacute; los beneficios disponibles en Viajes",
+        "icono": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/img-category/viajes.svg",
+        "color": "green"
+    },
+    {
+        "nombre": "Supermercado",
+        "slug": "supermercados",
+        "description": "Revisa aqu&iacute; los beneficios disponibles en Supermercado",
+        "icono": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/img-category/supermercado.svg",
+        "color": "orange"
+    },
+    {
+        "nombre": "Educaci&oacute;n",
+        "slug": "educacion",
+        "description": "Revisa aqu&iacute; los beneficios disponibles en Educaci&oacute;n",
+        "icono": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/img-category/educacion.svg",
+        "color": "pink"
+    }
+]}
