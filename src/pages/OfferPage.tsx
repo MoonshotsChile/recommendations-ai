@@ -9,16 +9,6 @@ const OfferPage: FC = () => {
     const [ benefit, setBenefit ] = useState(benefitMock)
 
 
-    const onSwipe = (direction: string) => {
-        console.log(benefit)
-        console.log(`You swiped: ${direction}`)
-    }
-
-    const onCardLeftScreen = (myIdentifier: string) => {
-        console.log(benefit)
-        console.log(`${myIdentifier} left the screen`)
-    }
-
     useEffect(() => {
         useCase.random()
             .then((response: Response) => response.json())
@@ -29,6 +19,7 @@ const OfferPage: FC = () => {
 
 
     const onLike = () => {
+        setBenefitCard(nextBenefitCard)
 
     }
 
@@ -37,13 +28,21 @@ const OfferPage: FC = () => {
     }
 
     const onLater = () => {
-
     }
+
+    const nextBenefitCard = () => {
+        return (
+            <OfferCard benefit={benefit} onLater={onLater} onLike={onLike} onNotLike={onNotLike}/>
+        )
+    }
+
+    const [ benefitCard, setBenefitCard] = useState(nextBenefitCard())
+
 
     return (
         <div className="section">
-            <TinderCard  onSwipe={onSwipe} onCardLeftScreen={() => onCardLeftScreen('fooBar')}>
-                <OfferCard benefit={benefit} onLater={onLater} onLike={onLike} onNotLike={onNotLike}/>
+            <TinderCard onSwipe={onLike} onCardLeftScreen={onNotLike}>
+                {nextBenefitCard()}
             </TinderCard>
         </div>
     );
