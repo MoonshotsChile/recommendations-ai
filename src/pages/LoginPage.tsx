@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useCallback, useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { format, validate } from "rut.js";
 import { useHistory } from "react-router-dom";
 import { ContextApi } from "../context-api/ContextApi";
@@ -37,7 +37,7 @@ const LoginPage: React.FC = () => {
     const goToNext = () => {
         isAuthenticated = true
         saveContext({ isAuthenticated })
-        history.push('/benefits')
+        history.push('/offer')
     }
 
     return (

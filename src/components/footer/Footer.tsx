@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React, { FC } from 'react';
 import './Footer.scss';
 import { moonshotsLogoIcon } from "../../assets";
 
-const Footer: React.FC = () => {
+const Footer: FC = () => {
     return (
         <>
             <footer className="footer">

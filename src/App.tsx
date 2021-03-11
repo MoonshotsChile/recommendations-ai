@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { FC, useContext } from 'react'
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import './App.scss';
 import LandingPage from "./pages/LandingPage"
@@ -14,7 +14,7 @@ import Footer from "./components/footer/Footer"
 import Navbar from "./components/navbar/Navbar"
 import { ContextApi, ContextApiProvider } from './context-api/ContextApi'
 
-const App: React.FC = () => {
+const App: FC = () => {
     const { isAuthenticated } = useContext(ContextApi);
 
     return (
