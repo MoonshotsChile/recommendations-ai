@@ -24,7 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "mockserver": "json-server --watch mockserver/db.json",
+    "start:mocks": "yarn run mockserver & yarn start",
+    "mockserver": "json-server --watch mockserver/db.json --routes mockserver/routes.json --port 2999",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <ContextApiProvider>
             <div className="container">
                 <Navbar/>
-                <Router>
+                <Router basename="">
                     <Switch>
                         <Route exact path="/login">
                             <LoginPage/>
