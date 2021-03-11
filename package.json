@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:mocks": "yarn run mockserver & yarn start",
+    "start:mocks": "export REACT_APP_API_URL=http://localhost:2999; yarn run mockserver & yarn start",
     "mockserver": "json-server --watch mockserver/db.json --routes mockserver/routes.json --port 2999",
     "build": "react-scripts build",
     "test": "react-scripts test",
