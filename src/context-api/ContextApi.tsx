@@ -1,4 +1,4 @@
-import React, { createContext, FC, ReactNode, useState } from 'react'
+import React, { createContext, FC, useState } from 'react'
 import PropTypes from 'prop-types'
 
 export type ContextProps = {
@@ -13,7 +13,7 @@ const initialState: ContextProps = {
 
 const ContextApi = createContext<ContextProps> (initialState);
 
-const ContextApiProvider: FC<ReactNode> = ({ children }) => {
+const ContextApiProvider: FC = ({ children }) => {
     const [context, setContext] = useState<ContextProps>(initialState);
 
     const saveContext = (newState: ContextProps) => {
