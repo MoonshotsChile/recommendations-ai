@@ -7,7 +7,7 @@ export type ContextProps = {
 };
 
 const initialState: ContextProps = {
-    isAuthenticated: false,
+    isAuthenticated: true,
     saveContext: () => {}
 }
 
