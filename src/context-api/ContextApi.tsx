@@ -1,22 +1,20 @@
-import React from 'react';
-import PropTypes from "prop-types";
+import React, { createContext, FC, ReactNode, useState } from 'react'
+import PropTypes from 'prop-types'
 
 export type ContextProps = {
-    loggedIn?: boolean,
+    isAuthenticated?: boolean,
     saveContext: (props: any) => void
 };
 
 const initialState: ContextProps = {
-    loggedIn: false,
+    isAuthenticated: false,
     saveContext: () => {}
 }
 
+const ContextApi = createContext<ContextProps> (initialState);
 
-const ContextApi = React.createContext<ContextProps> (initialState);
-
-
-const ContextApiProvider: React.FC<React.ReactNode> = ({ children }) => {
-    const [context, setContext] = React.useState<ContextProps>(initialState);
+const ContextApiProvider: FC<ReactNode> = ({ children }) => {
+    const [context, setContext] = useState<ContextProps>(initialState);
 
     const saveContext = (newState: ContextProps) => {
         setContext(prevState => ({...prevState, ...newState}));
@@ -24,7 +22,7 @@ const ContextApiProvider: React.FC<React.ReactNode> = ({ children }) => {
 
     return (
         <ContextApi.Provider value={{
-            loggedIn: context.loggedIn,
+            isAuthenticated: context.isAuthenticated,
             saveContext
         }}>
             {children}
@@ -36,4 +34,4 @@ ContextApiProvider.propTypes = {
     children: PropTypes.node.isRequired
 }
 
-export { ContextApi, ContextApiProvider };
+export { ContextApi, ContextApiProvider }

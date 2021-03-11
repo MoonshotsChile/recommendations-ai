@@ -1,9 +1,12 @@
 import * as React from 'react';
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { format, validate } from "rut.js";
 import { useHistory } from "react-router-dom";
+import { ContextApi } from "../context-api/ContextApi";
 
 const LoginPage: React.FC = () => {
+    const { saveContext } = useContext(ContextApi)
+
     const history = useHistory();
 
     const [userdata, setUserdata] = useState({
@@ -31,6 +34,7 @@ const LoginPage: React.FC = () => {
     }
 
     const goToNext = () => {
+        saveContext({isAuthenticated: true})
         history.push('/benefits')
     }
 
