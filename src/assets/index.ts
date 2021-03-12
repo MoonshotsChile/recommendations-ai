@@ -8,5 +8,5 @@ export { default as tinderButtonLikeIcon } from './icons/tinder-button-like.svg'
 export { default as tinderButtonNoIcon } from './icons/tinder-button-no.svg';
 export { default as tinderButtonNoDisabledIcon } from './icons/tinder-button-no-disabled.svg';
 export { default as tinderButtonFireIcon } from './icons/tinder-fire.svg';
-
+export { default as clock } from './icons/clock-o.svg';
 
