@@ -10,6 +10,7 @@ const OfferPage: FC = () => {
     const lastCardRef = React.useRef(null)
 
     useEffect(() => {
+        console.log('useEffect')
         getInitialBenefits()
     }, [])
 
@@ -39,7 +40,7 @@ const OfferPage: FC = () => {
     const onLike = () => {
         getNextBenefits()
         // @ts-ignore
-        lastCardRef.current?.swipe('left')
+        //lastCardRef.current?.swipe('left')
 
     }
 
