@@ -21,6 +21,7 @@ module.exports = {
         "@typescript-eslint"
     ],
     "rules": {
-        "@typescript-eslint/no-empty-function": 0
+        "@typescript-eslint/no-empty-function": 0,
+        "@typescript-eslint/ban-ts-comment": 0
     }
 };
