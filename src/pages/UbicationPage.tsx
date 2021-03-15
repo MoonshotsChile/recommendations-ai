@@ -4,9 +4,11 @@ import Navbar from "../components/navbar/Navbar";
 
 const UbicationPage: React.FC = () => {
   return (
-    <div className="section">
+    <div>
       <Navbar selected={NAVBAR_ACTIONS.locations} />
-      <div className="container">UbicationPage</div>
+      <div className="section">
+        <div className="container">Ubications</div>
+      </div>
     </div>
   );
 };

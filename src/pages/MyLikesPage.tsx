@@ -39,7 +39,7 @@ const MyLikesPage: React.FC = () => {
       <Navbar selected={NAVBAR_ACTIONS.likes} />
       <div className="section">
         <div>
-          <div className="columns is-mobile">
+          <div className="columns is-desktop">
             <div className="column">
               <span className="icon-text">
                 <span className="icon">
