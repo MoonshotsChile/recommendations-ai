@@ -1,42 +1,66 @@
-import * as React from 'react';
-import { useEffect } from 'react';
-import { bell, heartLike, marker, tinder } from "../../assets";
+import * as React from "react";
+import { useHistory } from "react-router-dom";
+import { useEffect } from "react";
+import {
+  bell,
+  bellSelected,
+  like,
+  likeSelected,
+  marker,
+  markerSelected,
+  tinder,
+  tinderSelected,
+} from "../../assets";
 import { NAVBAR_ACTIONS } from "../../context-api/ContextApi";
-import './Navbar.scss';
+import "./Navbar.scss";
 
 interface NavbarProps {
-    selected: NAVBAR_ACTIONS
+  selected: NAVBAR_ACTIONS;
 }
-
 
 const Navbar = (props: NavbarProps): JSX.Element => {
-    let selected: NAVBAR_ACTIONS = NAVBAR_ACTIONS.matchs
+  let selected: NAVBAR_ACTIONS = props.selected;
+  const history = useHistory();
+  useEffect(() => {
+    selected = props.selected;
+  }, []);
+  const go = (route: string) => {
+    history.push(route);
+  };
 
-    useEffect(() => {
-        selected = props.selected
-    }, []);
-
-    return (
-        <>
-            <nav className="navbar-flex">
-                <div className="navbar-flex--inner">
-                    <span className="icon">
-                        <img src={selected === NAVBAR_ACTIONS.matchs ? tinder: tinder}/>
-                    </span>
-                    <span className="icon">
-                        <img src={marker}/>
-                    </span>
-                    <span className="icon">
-                        <img src={heartLike}/>
-                    </span>
-                    <span className="icon">
-                        <img src={bell}/>
-                    </span>
-                </div>
-            </nav>
-            <div className="navbar-divider"/>
-        </>
-    );
-}
+  return (
+    <>
+      <nav className="navbar-flex">
+        <div className="navbar-flex--inner">
+          <span className="icon" onClick={() => go("/offer")}>
+            <img
+              src={selected === NAVBAR_ACTIONS.matchs ? tinderSelected : tinder}
+            />
+          </span>
+          <span className="icon" onClick={() => go("/ubication")}>
+            <img
+              src={
+                selected === NAVBAR_ACTIONS.locations ? markerSelected : marker
+              }
+            />
+          </span>
+          <span className="icon" onClick={() => go("/my-likes")}>
+            <img
+              src={selected === NAVBAR_ACTIONS.likes ? likeSelected : like}
+            />
+          </span>
+          <span className="icon" onClick={() => go("/benefits")}>
+            <img
+              src={
+                selected === NAVBAR_ACTIONS.notifications ? bellSelected : bell
+              }
+            />
+          </span>
+        </div>
+      </nav>
+      <div className="navbar-divider" />
+    </>
+  );
+};
 
 export default Navbar;

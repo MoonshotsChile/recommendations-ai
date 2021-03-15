@@ -1,10 +1,10 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import LikeCard from "../components/my-likes/Card";
-import ButtonMenu from "../components/header/ButtonMenu";
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import { Benefit, benefitMock } from "../domain/entity/Benefit";
-import { clockLike, heartLike } from "../assets";
-
+import { clockLike, likeSelected } from "../assets";
+import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
+import Navbar from "../components/navbar/Navbar";
 import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
@@ -16,6 +16,7 @@ const MyLikesPage: React.FC = () => {
   const useCase = new BenefitsUseCase();
   const [likes, setLikes] = useState([benefitMock]);
   const [later, setLater] = useState(benefitMock);
+
   useEffect(() => {
     useCase
       .random()
@@ -35,14 +36,14 @@ const MyLikesPage: React.FC = () => {
   }, []);
   return (
     <div>
-      <ButtonMenu />
+      <Navbar selected={NAVBAR_ACTIONS.likes} />
       <div className="section">
         <div>
           <div className="columns is-mobile">
             <div className="column">
               <span className="icon-text">
                 <span className="icon">
-                  <img src={heartLike} />
+                  <img src={likeSelected} />
                 </span>
                 <span>Mis likes</span>
               </span>

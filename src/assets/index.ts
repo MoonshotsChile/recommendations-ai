@@ -11,10 +11,13 @@ export { default as tinderButtonFireIcon } from './icons/tinder-fire.svg';
 export { default as clock } from './icons/clock-o.svg';
 export { default as clockLike } from './icons/color/clock-o.svg';
 export { default as clockSilver } from './icons/color/clock-silver.svg';
-export { default as heart } from './icons/heart-o.svg';
-export { default as heartLike } from './icons/color/heart-o.svg';
-export { default as heartWhite } from './icons/white/heart-o.svg';
+
+export { default as like } from './icons/color/heart-o.svg';
+export { default as likeSelected } from './icons/color/heart-selected.svg';
 export { default as bell } from './icons/color/bell.svg';
+export { default as bellSelected } from './icons/color/bell-selected.svg';
 export { default as marker } from './icons/color/map-marker.svg';
+export { default as markerSelected } from './icons/color/map-marker-selected.svg';
 export { default as tinder } from './icons/color/tinder-fire.svg';
+export { default as tinderSelected } from './icons/tinder-fire.svg';
 export { default as user } from './icons/user.svg';
