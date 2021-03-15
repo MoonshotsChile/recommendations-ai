@@ -5,12 +5,12 @@ import { Benefit, benefitMock } from "../domain/entity/Benefit";
 import { clockLike, likeSelected } from "../assets";
 import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
-import "swiper/components/pagination/pagination.scss";
+import "swiper/components/navigation/navigation.scss";
 
-//SwiperCore.use([Pagination]);//descomentar para habilitar
+SwiperCore.use([Navigation]); //descomentar para habilitar
 
 const MyLikesPage: React.FC = () => {
   const useCase = new BenefitsUseCase();
@@ -55,7 +55,7 @@ const MyLikesPage: React.FC = () => {
                 <Swiper
                   spaceBetween={10}
                   slidesPerView={2}
-                  pagination={{ clickable: true }}
+                  navigation
                   onSlideChange={() => console.log("slide change")}
                   onSwiper={(swiper) => console.log(swiper)}
                 >
@@ -116,7 +116,7 @@ const MyLikesPage: React.FC = () => {
                 <Swiper
                   spaceBetween={10}
                   slidesPerView={2}
-                  pagination={{ clickable: true }}
+                  navigation
                   onSlideChange={() => console.log("slide change")}
                   onSwiper={(swiper) => console.log(swiper)}
                 >
