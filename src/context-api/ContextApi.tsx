@@ -1,13 +1,13 @@
 import React, { createContext, FC, useState } from 'react'
 import PropTypes from 'prop-types'
 
-export enum NAVBAR_SELECTED {
+export enum NAVBAR_ACTIONS {
     likes='LIKES', notifications='NOTIFICATIONS', matchs='MATCHS', locations='LOCATIONS'
 }
 
 export type ContextProps = {
     isAuthenticated?: boolean,
-    navbarSelected?: NAVBAR_SELECTED,
+    navbarSelected?: NAVBAR_ACTIONS,
     saveContext: (props: any) => void
 };
 

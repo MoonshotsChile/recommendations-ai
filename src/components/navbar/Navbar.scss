@@ -1,4 +1,15 @@
-.navbar-brand {
-  background: #fff;
-  min-height: 5rem;
+
+.navbar-flex {
+  width: 100%;
+  background: white;
+  &--inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    .icon {
+      cursor: pointer;
+    }
+  }
 }
+

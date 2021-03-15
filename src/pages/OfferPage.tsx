@@ -1,16 +1,19 @@
-import React, { FC, useEffect, useMemo, useState } from 'react';
+import React, { FC, useContext, useEffect, useState } from 'react';
 import OfferCard from "../components/offer-card/OfferCard";
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import TinderCard from "react-tinder-card";
-import { Benefit, benefitMock } from "../domain/entity/Benefit";
+import { Benefit } from "../domain/entity/Benefit";
+import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
+import Navbar from "../components/navbar/Navbar";
 
 const OfferPage: FC = () => {
     const useCase = new BenefitsUseCase()
+    const { saveContext } = useContext(ContextApi)
     const [ benefits, setBenefits ] = useState([] as Benefit[])
     const lastCardRef = React.useRef(null)
 
     useEffect(() => {
-        console.log('useEffect')
+        saveContext({navbarSelected: NAVBAR_ACTIONS.likes})
         getInitialBenefits()
     }, [])
 
@@ -30,7 +33,7 @@ const OfferPage: FC = () => {
                     console.log(prevBenefits, data)
                     return [
                         data[0],
-                        prevBenefits[0],
+                        prevBenefits[0]
                     ];
                 })
             })
@@ -48,19 +51,23 @@ const OfferPage: FC = () => {
         getNextBenefits()
     }
 
-    const onLater = () => {
+    const onLater = (elem?: any) => {
+        console.log(elem)
         getNextBenefits()
     }
 
 
     return (
-        <div className="section">
-            {benefits.map((benefit: Benefit, i: number) => (
-                <TinderCard ref={i===benefits.length -1 ? lastCardRef : undefined} flickOnSwipe={false} key={`benefit-card${i}`} onSwipe={onLike} onCardLeftScreen={onNotLike}>
-                    <OfferCard benefit={benefit} zIndex={i===benefits.length -1  ? 1 : undefined} onLater={onLater} onLike={onLike} onNotLike={onNotLike}/>
-                </TinderCard>
-            ))}
-        </div>
+        <>
+            <Navbar selected={NAVBAR_ACTIONS.likes}/>
+            <div className="section">
+                {benefits.map((benefit: Benefit, i: number) => (
+                    <TinderCard ref={i===benefits.length -1 ? lastCardRef : undefined} flickOnSwipe={false} key={`benefit-card${i}`} onSwipe={onLike} onCardLeftScreen={onNotLike}>
+                        <OfferCard benefit={benefit} zIndex={i===benefits.length -1  ? 1 : undefined} onLater={() => onLater(this)} onLike={onLike} onNotLike={onNotLike}/>
+                    </TinderCard>
+                ))}
+            </div>
+        </>
     );
 }
 
