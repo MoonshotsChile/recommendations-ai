@@ -24,6 +24,23 @@ export interface Benefit {
     longitude?: string
 }
 
+export const benefitsDecorator = (benefits: Benefit[]): Benefit[] =>{
+    console.log(benefits)
+    return benefits.map(item => {
+        console.log(item)
+        if (!item.covers.length) {
+            item.covers = [
+                'https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp',
+                'https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp',
+                'https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp'
+            ]
+        }
+        item.covers.sort(() => Math.random() - 0.5)
+        return item
+    })
+}
+
+
 export const benefitMock: Benefit = {
     category: "",
     conditions: "",

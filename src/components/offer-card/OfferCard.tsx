@@ -17,6 +17,15 @@ const OfferCard = (props: PropsOfferCard): JSX.Element => {
     return (
         <div className="stacked-card card" style={{zIndex: props.zIndex}}>
             <div className="card-content">
+                <div className="card-image">
+                    <figure className="image">
+                        <img
+                            className=""
+                            src={benefit.covers[0]}
+                            alt="Placeholder image"
+                        />
+                    </figure>
+                </div>
                 <p className="title">
                     {benefit.title}
                 </p>

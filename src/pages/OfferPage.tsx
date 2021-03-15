@@ -2,7 +2,7 @@ import React, { FC, useContext, useEffect, useState } from 'react';
 import OfferCard from "../components/offer-card/OfferCard";
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import TinderCard from "react-tinder-card";
-import { Benefit } from "../domain/entity/Benefit";
+import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
 import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
 
@@ -21,7 +21,9 @@ const OfferPage: FC = () => {
         useCase.randomStack(2)
             .then((response: Response) => response.json())
             .then((data: Benefit[]) => {
-                setBenefits(data)
+                setBenefits(
+                    benefitsDecorator(data)
+                )
             })
     }
 
@@ -30,7 +32,7 @@ const OfferPage: FC = () => {
             .then((response: Response) => response.json())
             .then((data: Benefit[]) => {
                 setBenefits(prevBenefits => {
-                    console.log(prevBenefits, data)
+                    data = benefitsDecorator(data)
                     return [
                         data[0],
                         prevBenefits[0]

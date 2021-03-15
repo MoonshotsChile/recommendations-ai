@@ -5,19 +5,24 @@ export enum NAVBAR_ACTIONS {
     likes='LIKES', notifications='NOTIFICATIONS', matchs='MATCHS', locations='LOCATIONS'
 }
 
-export type ContextProps = {
+export interface ContextProps {
     isAuthenticated?: boolean,
-    navbarSelected?: NAVBAR_ACTIONS,
-    saveContext: (props: any) => void
-};
+    navbarSelected?: NAVBAR_ACTIONS
+}
 
-const initialState: ContextProps = {
+export interface ContextPropsExtended {
+    isAuthenticated?: boolean,
+    navbarSelected?: NAVBAR_ACTIONS
+    saveContext: (props: ContextProps) => void
+}
+
+const initialState: ContextPropsExtended = {
     isAuthenticated: true,
     navbarSelected: undefined,
     saveContext: () => {}
 }
 
-const ContextApi = createContext<ContextProps> (initialState);
+const ContextApi = createContext<ContextPropsExtended> (initialState);
 
 const ContextApiProvider: FC = ({ children }) => {
     const [context, setContext] = useState<ContextProps>(initialState);
