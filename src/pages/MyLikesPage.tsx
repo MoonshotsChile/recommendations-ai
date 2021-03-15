@@ -1,11 +1,16 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import LikeCard from "../components/my-likes/Card";
+import ButtonMenu from "../components/header/ButtonMenu";
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import { Benefit, benefitMock } from "../domain/entity/Benefit";
-import { clock, tinderButtonLikeIcon } from "../assets";
+import { clockLike, heartLike } from "../assets";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import SwiperCore, { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.scss";
+import "swiper/components/pagination/pagination.scss";
+
+//SwiperCore.use([Pagination]);//descomentar para habilitar
 
 const MyLikesPage: React.FC = () => {
   const useCase = new BenefitsUseCase();
@@ -29,59 +34,123 @@ const MyLikesPage: React.FC = () => {
       });
   }, []);
   return (
-    <section className="section">
-      <div className="container">
-        
+    <div>
+      <ButtonMenu />
+      <div className="section">
+        <div>
           <div className="columns is-mobile">
             <div className="column">
               <span className="icon-text">
                 <span className="icon">
-                  <img src={tinderButtonLikeIcon} />
+                  <img src={heartLike} />
                 </span>
                 <span>Mis likes</span>
               </span>
             </div>
           </div>
           <div className="columns is-mobile">
-            <Carousel>
-              <div className="column is-6">
-                <LikeCard benefit={likes[0]} />
+            <div className="swiper-container">
+              <div className="swiper-wrapper">
+                <Swiper
+                  spaceBetween={10}
+                  slidesPerView={3}
+                  pagination={{ clickable: true }}
+                  onSlideChange={() => console.log("slide change")}
+                  onSwiper={(swiper) => console.log(swiper)}
+                >
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={likes[0]} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={likes[0]} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={likes[0]} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={likes[0]} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={likes[0]} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={likes[0]} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={likes[0]} />
+                    </SwiperSlide>
+                  </div>
+                </Swiper>
               </div>
-              <div className="column is-6">
-                <LikeCard benefit={likes[0]} />
-              </div>
-              <div className="column is-6">
-                <LikeCard benefit={likes[0]} />
-              </div>
-            </Carousel> 
+            </div>
           </div>
-       
-      </div>
-      <div className="container">
-        
+        </div>
+        <div>
           <div className="columns is-mobile">
-          <div className="column is-12">
-            <span className="icon-text">
-              <span className="icon">
-                <img src={clock} />
+            <div className="column">
+              <span className="icon-text icon-text-pad">
+                <span className="icon">
+                  <img src={clockLike} />
+                </span>
+                <span>En otro momento</span>
               </span>
-              <span>En otro momento</span>
-            </span>
+            </div>
+          </div>
+          <div className="columns is-mobile">
+            <div className="swiper-container">
+              <div className="swiper-wrapper">
+                <Swiper
+                  spaceBetween={10}
+                  slidesPerView={3}
+                  pagination={{ clickable: true }}
+                  onSlideChange={() => console.log("slide change")}
+                  onSwiper={(swiper) => console.log(swiper)}
+                >
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={later} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={later} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={later} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={later} />
+                    </SwiperSlide>
+                  </div>
+                  <div className="column is-6">
+                    <SwiperSlide>
+                      <LikeCard benefit={later} />
+                    </SwiperSlide>
+                  </div>
+                </Swiper>
+              </div>
+            </div>
           </div>
         </div>
-          <div className="columns is-mobile">
-            <Carousel>
-              <div className="column is-6">
-                <LikeCard benefit={later} />
-              </div>
-              <div className="column">
-                <LikeCard benefit={later} />
-              </div>
-            </Carousel>
-        </div>
-        
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -9,4 +9,12 @@ export { default as tinderButtonNoIcon } from './icons/tinder-button-no.svg';
 export { default as tinderButtonNoDisabledIcon } from './icons/tinder-button-no-disabled.svg';
 export { default as tinderButtonFireIcon } from './icons/tinder-fire.svg';
 export { default as clock } from './icons/clock-o.svg';
-
+export { default as clockLike } from './icons/color/clock-o.svg';
+export { default as clockSilver } from './icons/color/clock-silver.svg';
+export { default as heart } from './icons/heart-o.svg';
+export { default as heartLike } from './icons/color/heart-o.svg';
+export { default as heartWhite } from './icons/white/heart-o.svg';
+export { default as bell } from './icons/color/bell.svg';
+export { default as marker } from './icons/color/map-marker.svg';
+export { default as tinder } from './icons/color/tinder-fire.svg';
+export { default as user } from './icons/user.svg';
