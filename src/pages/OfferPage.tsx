@@ -77,7 +77,7 @@ const OfferPage: FC = () => {
                     <TinderCard
                         key={benefit.id}
                         preventSwipe={['up', 'down']}
-                        onSwipe={(dir) => swiped(dir, benefit.id)}
+                        // onSwipe={(dir) => swiped(dir, benefit.id)}
                         onCardLeftScreen={() => outOfFrame(benefit.id)}
                     >
                         <div
