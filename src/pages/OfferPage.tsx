@@ -1,15 +1,15 @@
 import React, { FC, useContext, useEffect, useState } from 'react';
-import OfferCard from "../components/offer-card/OfferCard";
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import TinderCard from "react-tinder-card";
 import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
 import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
+import { tinderButtonLaterIcon, tinderButtonLikeIcon, tinderButtonNoIcon } from "../assets";
 
 const OfferPage: FC = () => {
     const useCase = new BenefitsUseCase()
-    const { saveContext } = useContext(ContextApi)
-    const [ benefits, setBenefits ] = useState([] as Benefit[])
+    const {saveContext} = useContext(ContextApi)
+    const [benefits, setBenefits] = useState([] as Benefit[])
 
     useEffect(() => {
         saveContext({navbarSelected: NAVBAR_ACTIONS.likes})
@@ -71,36 +71,49 @@ const OfferPage: FC = () => {
     return (
         <>
             <Navbar selected={NAVBAR_ACTIONS.likes}/>
-            <div className='tinderCards'>
-                <div className='tinderCards__cardContainer'>
-                {benefits.map((benefit: Benefit, i: number) => (
-                    <TinderCard
-                        key={benefit.id}
-                        preventSwipe={['up', 'down']}
-                        // onSwipe={(dir) => swiped(dir, benefit.id)}
-                        onCardLeftScreen={() => outOfFrame(benefit.id)}
-                    >
-                        <div
-                            className='tinderCards__card'
-                            style={{zIndex: i===benefits.length -1  ? 1 : undefined}}
-                        >
-                            <div className="card-content">
-                                <div className="card-image">
-                                    <figure className="image">
-                                        <img
-                                            className=""
-                                            src={benefit.covers[0]}
-                                            alt="Placeholder image"
-                                        />
-                                    </figure>
+            <div className='hero is-fullheight-with-footer'>
+                <div className='hero-head'>
+                    <div className='tinderCards__cardContainer'>
+                        {benefits.map((benefit: Benefit, i: number) => (
+                            <TinderCard
+                                key={benefit.id}
+                                preventSwipe={['up', 'down']}
+                                // onSwipe={(dir) => swiped(dir, benefit.id)}
+                                onCardLeftScreen={() => outOfFrame(benefit.id)}
+                            >
+                                <div
+                                    className='tinderCards__card'
+                                    style={{zIndex: i === benefits.length - 1 ? 1 : undefined}}
+                                >
+                                    <div className="card-content">
+                                        <div className="card-image">
+                                            <figure className="image">
+                                                <img
+                                                    className=""
+                                                    src={benefit.covers[0]}
+                                                    alt="Placeholder image"
+                                                />
+                                            </figure>
+                                        </div>
+                                        <p className="title">
+                                            {benefit.title}
+                                        </p>
+                                    </div>
                                 </div>
-                                <p className="title">
-                                    {benefit.title}
-                                </p>
-                            </div>
-                        </div>
-                    </TinderCard>
-                ))}
+                            </TinderCard>
+                        ))}
+                    </div>
+                </div>
+                <div className='card-footer hero-foot'>
+                    <p className="card-footer-item">
+                        <img src={tinderButtonNoIcon} alt="not like"/>
+                    </p>
+                    <p className="card-footer-item">
+                        <img src={tinderButtonLaterIcon} alt="like"/>
+                    </p>
+                    <p className="card-footer-item">
+                        <img src={tinderButtonLikeIcon} alt="later"/>
+                    </p>
                 </div>
             </div>
         </>

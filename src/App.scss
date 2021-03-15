@@ -32,7 +32,7 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: white;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
@@ -114,16 +114,10 @@ body {
   }
 
   &__cardContainer {
+    background: $grey;
     display: flex;
     justify-content: center;
     margin-top: 7vh;
-
-      max-width: 4em;
-
-
-    from($desktop) {
-      max-width: 260px;
-    }
   }
 
   &__card > h3 {
@@ -132,12 +126,17 @@ body {
     margin: 10px;
     color: #fff;
   }
-
   &__swipe {
     position: absolute;
   }
-
   .title {
     text-align: center;
   }
+}
+.is-fullheight-with-footer {
+  min-height: 88vh;
+}
+
+html {
+  background-color: $grey-light;
 }
