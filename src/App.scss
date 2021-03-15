@@ -14,8 +14,8 @@
 // Set your brand colors
 $purple: #4759dd;
 $pink: #fa7c91;
-$beige-light: #cccccc; /// #d0d1cd;
-$beige-lighter: #cccccc; // #eff0eb;
+$beige-light: #e5e5e5; /// #d0d1cd;
+$beige-lighter: #e5e5e5; // #eff0eb;
 
 // Update Bulma's global variables
 $family-sans-serif: "Montserrat", sans-serif;
@@ -38,7 +38,6 @@ $input-border-color: transparent;
 $input-shadow: none;
 
 body {
-  background-color: #cccccc !important;
   font-family: $family-secondary;
   color: $purple;
   h1,
