@@ -54,7 +54,7 @@ const MyLikesPage: React.FC = () => {
               <div className="swiper-wrapper">
                 <Swiper
                   spaceBetween={10}
-                  slidesPerView={3}
+                  slidesPerView={2}
                   pagination={{ clickable: true }}
                   onSlideChange={() => console.log("slide change")}
                   onSwiper={(swiper) => console.log(swiper)}
@@ -115,7 +115,7 @@ const MyLikesPage: React.FC = () => {
               <div className="swiper-wrapper">
                 <Swiper
                   spaceBetween={10}
-                  slidesPerView={3}
+                  slidesPerView={2}
                   pagination={{ clickable: true }}
                   onSlideChange={() => console.log("slide change")}
                   onSwiper={(swiper) => console.log(swiper)}
