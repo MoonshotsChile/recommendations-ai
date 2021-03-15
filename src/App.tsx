@@ -56,7 +56,6 @@ const App: FC = () => {
             </Route>
           </Switch>
         </Router>
-        <Footer />
       </div>
     </ContextApiProvider>
   );

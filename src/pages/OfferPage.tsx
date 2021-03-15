@@ -10,7 +10,6 @@ const OfferPage: FC = () => {
     const useCase = new BenefitsUseCase()
     const { saveContext } = useContext(ContextApi)
     const [ benefits, setBenefits ] = useState([] as Benefit[])
-    const lastCardRef = React.useRef(null)
 
     useEffect(() => {
         saveContext({navbarSelected: NAVBAR_ACTIONS.likes})
@@ -59,15 +58,50 @@ const OfferPage: FC = () => {
     }
 
 
+    const swiped = (direction: string, nameToDelete: number) => {
+        console.log('removing:' + nameToDelete)
+        getNextBenefits()
+    }
+
+    const outOfFrame = (name: number) => {
+        console.log(name + ' left the screen!')
+        getNextBenefits()
+    }
+
     return (
         <>
             <Navbar selected={NAVBAR_ACTIONS.likes}/>
-            <div className="section">
+            <div className='tinderCards'>
+                <div className='tinderCards__cardContainer'>
                 {benefits.map((benefit: Benefit, i: number) => (
-                    <TinderCard ref={i===benefits.length -1 ? lastCardRef : undefined} flickOnSwipe={false} key={`benefit-card${i}`} onSwipe={onLike} onCardLeftScreen={onNotLike}>
-                        <OfferCard benefit={benefit} zIndex={i===benefits.length -1  ? 1 : undefined} onLater={() => onLater(this)} onLike={onLike} onNotLike={onNotLike}/>
+                    <TinderCard
+                        key={benefit.id}
+                        preventSwipe={['up', 'down']}
+                        onSwipe={(dir) => swiped(dir, benefit.id)}
+                        onCardLeftScreen={() => outOfFrame(benefit.id)}
+                    >
+                        <div
+                            className='tinderCards__card'
+                            style={{zIndex: i===benefits.length -1  ? 1 : undefined}}
+                        >
+                            <div className="card-content">
+                                <div className="card-image">
+                                    <figure className="image">
+                                        <img
+                                            className=""
+                                            src={benefit.covers[0]}
+                                            alt="Placeholder image"
+                                        />
+                                    </figure>
+                                </div>
+                                <p className="title">
+                                    {benefit.title}
+                                </p>
+                            </div>
+                        </div>
                     </TinderCard>
                 ))}
+                </div>
             </div>
         </>
     );

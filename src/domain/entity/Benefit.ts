@@ -25,9 +25,7 @@ export interface Benefit {
 }
 
 export const benefitsDecorator = (benefits: Benefit[]): Benefit[] =>{
-    console.log(benefits)
     return benefits.map(item => {
-        console.log(item)
         if (!item.covers.length) {
             item.covers = [
                 'https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp',
