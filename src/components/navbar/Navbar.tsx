@@ -1,8 +1,20 @@
 import * as React from 'react';
+import { useEffect } from 'react';
+import { bell, heartLike, marker, tinder } from "../../assets";
+import { NAVBAR_SELECTED } from "../../context-api/ContextApi";
 import './Navbar.scss';
-import { sBankIcon } from "../../assets";
 
-const Navbar: React.FC  = () => {
+interface NavbarProps {
+    selected: NAVBAR_SELECTED
+}
+
+
+const Navbar = (props: NavbarProps): JSX.Element => {
+    let selected: NAVBAR_SELECTED = NAVBAR_SELECTED.matchs
+
+    useEffect(() => {
+        selected = props.selected
+    }, []);
 
     return (
         <>
@@ -10,12 +22,28 @@ const Navbar: React.FC  = () => {
                 <div className="container">
                     <div className="navbar-brand">
                         <a className="navbar-item" href="#">
-                            <img src={sBankIcon} alt="SBank"/>
-                        </a>
-                        <a className="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-                            <span aria-hidden="true"/>
-                            <span aria-hidden="true"/>
-                            <span aria-hidden="true"/>
+                            <div className="columns is-mobile">
+                                <div className="column">
+                                    <span className="icon">
+                                        <img src={selected === NAVBAR_SELECTED.matchs ? tinder: tinder}/>
+                                    </span>
+                                </div>
+                                <div className="column">
+                                    <span className="icon">
+                                        <img src={marker}/>
+                                    </span>
+                                </div>
+                                <div className="column">
+                                    <span className="icon">
+                                        <img src={heartLike}/>
+                                    </span>
+                                </div>
+                                <div className="column">
+                                  <span className="icon">
+                                        <img src={bell}/>
+                                  </span>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>

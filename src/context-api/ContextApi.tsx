@@ -1,13 +1,19 @@
 import React, { createContext, FC, useState } from 'react'
 import PropTypes from 'prop-types'
 
+export enum NAVBAR_SELECTED {
+    likes='LIKES', notifications='NOTIFICATIONS', matchs='MATCHS', locations='LOCATIONS'
+}
+
 export type ContextProps = {
     isAuthenticated?: boolean,
+    navbarSelected?: NAVBAR_SELECTED,
     saveContext: (props: any) => void
 };
 
 const initialState: ContextProps = {
     isAuthenticated: true,
+    navbarSelected: undefined,
     saveContext: () => {}
 }
 
@@ -23,6 +29,7 @@ const ContextApiProvider: FC = ({ children }) => {
     return (
         <ContextApi.Provider value={{
             isAuthenticated: context.isAuthenticated,
+            navbarSelected: context.navbarSelected,
             saveContext
         }}>
             {children}
