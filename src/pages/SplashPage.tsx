@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { sbenefits, splash } from "../assets";
+import { useHistory } from "react-router-dom";
 
 const SplashPage = (): JSX.Element => {
+
+    const history = useHistory();
+
+
+    useEffect(() => {
+        setTimeout(() => {
+            history.push('/login')
+        }, 5000)
+    })
+
+
     return (
         <section className="hero splash is-fullheight is-fullwidth">
             <div className="hero-head">
