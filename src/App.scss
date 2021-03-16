@@ -148,6 +148,10 @@ body {
     position: absolute;
   }
 }
+.is-fullheight-with-footer {
+  min-height: 88vh;
+}
+
 html {
   background-color: $grey-light;
 }
