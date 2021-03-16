@@ -10,6 +10,7 @@ const OfferPage: FC = () => {
     const useCase = new BenefitsUseCase()
     const {saveContext} = useContext(ContextApi)
     const [benefits, setBenefits] = useState([] as Benefit[])
+    const lastCardRef = React.useRef(null)
 
     useEffect(() => {
         saveContext({navbarSelected: NAVBAR_ACTIONS.likes})
@@ -42,19 +43,19 @@ const OfferPage: FC = () => {
 
 
     const onLike = () => {
-        getNextBenefits()
         // @ts-ignore
-        //lastCardRef.current?.swipe('left')
+        lastCardRef.current?.swipe('right')
 
     }
 
     const onNotLike = () => {
-        getNextBenefits()
+        // @ts-ignore
+        lastCardRef.current?.swipe('left')
     }
 
     const onLater = (elem?: any) => {
-        console.log(elem)
-        getNextBenefits()
+        // @ts-ignore
+        lastCardRef.current?.swipe('up')
     }
 
 
@@ -70,7 +71,7 @@ const OfferPage: FC = () => {
 
     return (
         <>
-            <Navbar selected={NAVBAR_ACTIONS.likes}/>
+            <Navbar selected={NAVBAR_ACTIONS.matchs}/>
             <div className='hero is-fullheight-with-footer'>
                 <div className='hero-head'>
                     <div className='tinderCards__cardContainer'>
@@ -78,6 +79,7 @@ const OfferPage: FC = () => {
                             <TinderCard
                                 key={benefit.id}
                                 preventSwipe={['up']}
+                                ref={lastCardRef}
                                 // onSwipe={(dir) => swiped(dir, benefit.id)}
                                 onCardLeftScreen={() => outOfFrame(benefit.id)}
                             >
@@ -87,22 +89,19 @@ const OfferPage: FC = () => {
                                 >
                                     <div className="tinderCards__card__content">
                                         <div className="tinderCards__card__image">
-                                            <figure className="image">
-                                                <img
-                                                    className=""
-                                                    src={benefit.covers[0]}
-                                                    alt="Placeholder image"
-                                                />
-                                            </figure>
+                                            <img
+                                                src={benefit.covers[0]}
+                                                alt="Placeholder image"
+                                            />
                                         </div>
                                         <div className="tinderCards__card__footer columns">
                                             <div className="column is-fullwidth category">
-                                                <p className="are-small">
+                                                <p>
                                                     {benefit.category}
                                                 </p>
                                             </div>
-                                            <div className="column is-fullwidth">
-                                                <p className="title">
+                                            <div className="column is-fullwidth title">
+                                                <p>
                                                     {benefit.title}
                                                 </p>
                                             </div>
@@ -115,13 +114,13 @@ const OfferPage: FC = () => {
                 </div>
                 <div className='card-footer hero-foot'>
                     <p className="card-footer-item">
-                        <img src={tinderButtonNoIcon} alt="not like"/>
+                        <img src={tinderButtonNoIcon} onClick={onNotLike} alt="not like"/>
                     </p>
                     <p className="card-footer-item">
-                        <img src={tinderButtonLaterIcon} alt="like"/>
+                        <img src={tinderButtonLaterIcon} onClick={onLater} alt="later"/>
                     </p>
                     <p className="card-footer-item">
-                        <img src={tinderButtonLikeIcon} alt="later"/>
+                        <img src={tinderButtonLikeIcon} onClick={onLike} alt="like"/>
                     </p>
                 </div>
             </div>

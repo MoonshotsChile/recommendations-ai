@@ -33,7 +33,7 @@ export const benefitsDecorator = (benefits: Benefit[]): Benefit[] =>{
                 'https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp'
             ]
         }
-        item.category = item.category.replaceAll("-", " ").replaceAll("/", " ")
+        item.category = item.category?.replaceAll("-", " ").replaceAll("/", " ")
         item.covers.sort(() => Math.random() - 0.5)
         return item
     })
