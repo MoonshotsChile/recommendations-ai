@@ -58,7 +58,6 @@ const Navbar = (props: NavbarProps): JSX.Element => {
           </span>
         </div>
       </nav>
-      <div className="navbar-divider" />
     </>
   );
 };
