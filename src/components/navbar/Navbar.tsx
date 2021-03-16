@@ -10,6 +10,8 @@ import {
   markerSelected,
   tinder,
   tinderSelected,
+  mision,
+  misionSelected,
 } from "../../assets";
 import { NAVBAR_ACTIONS } from "../../context-api/ContextApi";
 import "./Navbar.scss";
@@ -35,6 +37,13 @@ const Navbar = (props: NavbarProps): JSX.Element => {
           <span className="icon" onClick={() => go("/offer")}>
             <img
               src={selected === NAVBAR_ACTIONS.matchs ? tinderSelected : tinder}
+            />
+          </span>
+          <span className="icon" onClick={() => go("/mision")}>
+            <img
+              src={
+                selected === NAVBAR_ACTIONS.misions ? misionSelected : mision
+              }
             />
           </span>
           <span className="icon" onClick={() => go("/ubication")}>

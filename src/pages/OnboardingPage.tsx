@@ -9,7 +9,7 @@ import "swiper/components/pagination/pagination.scss";
 
 SwiperCore.use([Navigation, Pagination]); //descomentar para habilitar
 
-import { onboarding1, onboarding2, onboarding3, onboarding4 } from "../assets";
+import { onboarding1, onboarding2, onboarding3, onboarding5 } from "../assets";
 
 const OnboardingPage: React.FC = () => {
   return (
@@ -33,7 +33,7 @@ const OnboardingPage: React.FC = () => {
       </SwiperSlide>
 
       <SwiperSlide>
-        <OnboardingCard onboarding={onboarding4} />
+        <OnboardingCard onboarding={onboarding5} />
       </SwiperSlide>
     </Swiper>
   );

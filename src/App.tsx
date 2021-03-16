@@ -15,6 +15,7 @@ import OfferPage from "./pages/OfferPage";
 import TutorialPage from "./pages/TutorialPage";
 import UbicationPage from "./pages/UbicationPage";
 import OnboardingPage from "./pages/OnboardingPage";
+import MisionPage from "./pages/MisionPage";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import { ContextApi, ContextApiProvider } from "./context-api/ContextApi";
@@ -53,6 +54,9 @@ const App: FC = () => {
             </Route>
             <Route exact path="/onboarding">
               {isAuthenticated ? <OnboardingPage /> : <Redirect to="/login" />}
+            </Route>
+            <Route exact path="/mision">
+              {isAuthenticated ? <MisionPage /> : <Redirect to="/login" />}
             </Route>
           </Switch>
         </Router>

@@ -10,10 +10,3 @@ const OnboardingCard = (props: PropsCard): JSX.Element => {
 };
 
 export default OnboardingCard;
-// <div className="card">
-//   <div className="card-image">
-//     <figure className="image">
-//       <img className="" src={onboarding} alt="Placeholder image" />
-//     </figure>
-//   </div>
-// </div>
