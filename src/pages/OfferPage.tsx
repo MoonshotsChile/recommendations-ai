@@ -95,9 +95,18 @@ const OfferPage: FC = () => {
                                                 />
                                             </figure>
                                         </div>
-                                        <p className="title">
-                                            {benefit.title}
-                                        </p>
+                                        <div className="tinderCards__card__footer columns">
+                                            <div className="column is-fullwidth category">
+                                                <p className="are-small">
+                                                    {benefit.category}
+                                                </p>
+                                            </div>
+                                            <div className="column is-fullwidth">
+                                                <p className="title">
+                                                    {benefit.title}
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </TinderCard>

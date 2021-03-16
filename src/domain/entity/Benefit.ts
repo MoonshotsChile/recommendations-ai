@@ -26,13 +26,14 @@ export interface Benefit {
 
 export const benefitsDecorator = (benefits: Benefit[]): Benefit[] =>{
     return benefits.map(item => {
-        if (!item.covers.length) {
+        if (!item.covers?.length) {
             item.covers = [
                 'https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp',
                 'https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp',
                 'https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp'
             ]
         }
+        item.category = item.category.replaceAll("-", " ").replaceAll("/", " ")
         item.covers.sort(() => Math.random() - 0.5)
         return item
     })
