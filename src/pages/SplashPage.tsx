@@ -15,7 +15,7 @@ const SplashPage = (): JSX.Element => {
 
 
     return (
-        <section className="hero splash is-fullheight is-fullwidth">
+        <section className="hero splash is-fullheight is-fullwidth" onClick={()=>history.push('/login')}>
             <div className="hero-head">
                 <caption className="image" style={{position: "absolute"}}>
                     <img src={splash} />

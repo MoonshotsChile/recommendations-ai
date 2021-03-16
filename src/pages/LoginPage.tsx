@@ -43,7 +43,7 @@ const LoginPage: React.FC = () => {
 
     return (
         <div className="section login hero is-fullheight">
-            <div className="card is-borderless is-fullheight">
+            <div className="hero is-borderless is-fullheight">
                 <section className="card-header is-borderless">
                     <div className="container has-text-centered">
                         <p className="title">
@@ -57,7 +57,7 @@ const LoginPage: React.FC = () => {
                         </p>
                     </div>
                 </section>
-                <section className="card-content  is-borderless">
+                <section className="card-content is-borderless">
                     <form autoComplete="none">
                         <div className="field">
                             <div className="control">
@@ -73,13 +73,17 @@ const LoginPage: React.FC = () => {
                         </div>
                     </form>
                 </section>
-                <section className="modal-card-body box has-text-centered is-borderless">
-                    <button id="btn-fetch-data" className={`button is-fullwidth is-success ${isLoading ? 'is-loading' : ''}`}
-                            disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
-                    </button>
-                    <button id="btn-fetch-data" className={`button is-fullwidth`}
-                            disabled={isLoading || !isValidForm()} onClick={goToNext}>Invitado
-                    </button>
+                <section className="hero-foot has-text-centered">
+                    <div className="column is-three-quarter">
+                        <button id="btn-fetch-data" className="button is-primary is-fullwidth is-inline has-text-centered"
+                                disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
+                        </button>
+                    </div>
+                    <div className="column is-three-quarter">
+                        <button id="btn-fetch-data" className="button is-fullwidth is-inline has-text-centered"
+                                disabled={isLoading || !isValidForm()} onClick={goToNext}>Invitado
+                        </button>
+                    </div>
                 </section>
             </div>
         </div>
