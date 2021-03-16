@@ -5,12 +5,16 @@ import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
 import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
 import { tinderButtonLaterIcon, tinderButtonLikeIcon, tinderButtonNoIcon } from "../assets";
+import OfferCard from "../components/offer-card/OfferCard";
+import { authValidation } from "../components/hooks/authValidation";
 
 const OfferPage: FC = () => {
     const useCase = new BenefitsUseCase()
-    const {saveContext} = useContext(ContextApi)
+    const { saveContext } = useContext(ContextApi)
     const [benefits, setBenefits] = useState([] as Benefit[])
     const lastCardRef = React.useRef(null)
+
+    authValidation()
 
     useEffect(() => {
         saveContext({navbarSelected: NAVBAR_ACTIONS.likes})
@@ -84,43 +88,22 @@ const OfferPage: FC = () => {
                                 // onSwipe={(dir) => swiped(dir, benefit.id)}
                                 onCardLeftScreen={() => outOfFrame(benefit.id)}
                             >
-                                <div
-                                    className='tinderCards__card'
-                                    style={{zIndex: i === benefits.length - 1 ? 1 : undefined}}
-                                >
-                                    <div className="tinderCards__card__content">
-                                        <div className="tinderCards__card__image">
-                                            <img
-                                                src={benefit.covers[0]}
-                                                alt="Placeholder image"
-                                            />
-                                        </div>
-                                        <div className="tinderCards__card__footer columns">
-                                            <div className="column is-fullwidth category">
-                                                <p>
-                                                    {benefit.category}
-                                                </p>
-                                            </div>
-                                            <div className="column is-fullwidth title">
-                                                <p>
-                                                    {benefit.title}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <OfferCard
+                                    benefit={benefit}
+                                    zIndex={i === benefits.length - 1 ? 1 : 0}
+                                />
                             </TinderCard>
                         ))}
                     </div>
                 </div>
-                <div className='card-footer hero-foot is-marginless'>
-                    <p className="card-footer-item cursor-pointer is-marginless">
+                <div className='card-footer hero-foot is-borderless'>
+                    <p className="card-footer-item cursor-pointer is-borderless">
                         <img src={tinderButtonNoIcon} onClick={onNotLike} alt="not like"/>
                     </p>
-                    <p className="card-footer-item cursor-pointer is-marginless">
+                    <p className="card-footer-item cursor-pointer is-borderless">
                         <img src={tinderButtonLaterIcon} onClick={onLater} alt="later"/>
                     </p>
-                    <p className="card-footer-item cursor-pointer is-marginless">
+                    <p className="card-footer-item cursor-pointer is-borderless">
                         <img src={tinderButtonLikeIcon} onClick={onLike} alt="like"/>
                     </p>
                 </div>

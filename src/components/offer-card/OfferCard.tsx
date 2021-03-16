@@ -5,29 +5,36 @@ import './OfferCard.scss'
 interface PropsOfferCard {
     benefit: Benefit,
     zIndex?: number,
-    onNotLike?: ()=>void,
-    onLater?: ()=>void,
-    onLike?: ()=>void
 }
 
 const OfferCard = (props: PropsOfferCard): JSX.Element => {
     const benefit = props.benefit
+    const zIndex = props.zIndex
 
     return (
-        <div className="stacked-card card" style={{zIndex: props.zIndex}}>
-            <div className="card-content">
-                <div className="card-image">
-                    <figure className="image">
-                        <img
-                            className=""
-                            src={benefit.covers[0]}
-                            alt="Placeholder image"
-                        />
-                    </figure>
+        <div
+            className='tinderCards__card'
+            style={{zIndex}}
+        >
+            <div className="tinderCards__card__content">
+                <div className="tinderCards__card__image">
+                    <img
+                        src={benefit.covers[0]}
+                        alt="Placeholder image"
+                    />
                 </div>
-                <p className="title">
-                    {benefit.title}
-                </p>
+                <div className="tinderCards__card__footer columns">
+                    <div className="column is-fullwidth category">
+                        <p>
+                            {benefit.category}
+                        </p>
+                    </div>
+                    <div className="column is-fullwidth title">
+                        <p>
+                            {benefit.title}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     )

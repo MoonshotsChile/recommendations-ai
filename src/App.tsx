@@ -2,11 +2,9 @@ import React, { FC, useContext } from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Switch,
-  Redirect,
+  Switch
 } from "react-router-dom";
 import "./App.scss";
-import LandingPage from "./pages/LandingPage";
 import BenefitsMapPage from "./pages/BenefitsMap";
 import InterestsPage from "./pages/InterestsPage";
 import LoginPage from "./pages/LoginPage";
@@ -16,13 +14,10 @@ import TutorialPage from "./pages/TutorialPage";
 import UbicationPage from "./pages/UbicationPage";
 import OnboardingPage from "./pages/OnboardingPage";
 import MisionPage from "./pages/MisionPage";
-import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
-import { ContextApi, ContextApiProvider } from "./context-api/ContextApi";
+import { ContextApiProvider } from "./context-api/ContextApi";
+import SplashPage from "./pages/SplashPage";
 
 const App: FC = () => {
-  const { isAuthenticated } = useContext(ContextApi);
-
   return (
     <ContextApiProvider>
       <div className="container">
@@ -32,31 +27,31 @@ const App: FC = () => {
               <LoginPage />
             </Route>
             <Route exact path="/">
-              {isAuthenticated ? <LandingPage /> : <Redirect to="/login" />}
+              <SplashPage />
             </Route>
             <Route exact path="/benefits">
-              {isAuthenticated ? <BenefitsMapPage /> : <Redirect to="/login" />}
+              <BenefitsMapPage />
             </Route>
             <Route exact path="/interests">
-              {isAuthenticated ? <InterestsPage /> : <Redirect to="/login" />}
+              <InterestsPage />
             </Route>
             <Route exact path="/my-likes">
-              {isAuthenticated ? <MyLikesPage /> : <Redirect to="/login" />}
+              <MyLikesPage />
             </Route>
             <Route exact path="/offer">
-              {isAuthenticated ? <OfferPage /> : <Redirect to="/login" />}
+              <OfferPage />
             </Route>
             <Route exact path="/tutorial">
-              {isAuthenticated ? <TutorialPage /> : <Redirect to="/login" />}
+              <TutorialPage />
             </Route>
             <Route exact path="/ubication">
-              {isAuthenticated ? <UbicationPage /> : <Redirect to="/login" />}
+              <UbicationPage />
             </Route>
             <Route exact path="/onboarding">
-              {isAuthenticated ? <OnboardingPage /> : <Redirect to="/login" />}
+              <OnboardingPage />
             </Route>
             <Route exact path="/mision">
-              {isAuthenticated ? <MisionPage /> : <Redirect to="/login" />}
+              <MisionPage />
             </Route>
           </Switch>
         </Router>

@@ -21,7 +21,7 @@ export interface ContextPropsExtended {
 }
 
 const initialState: ContextPropsExtended = {
-  isAuthenticated: true,
+  isAuthenticated: false,
   navbarSelected: undefined,
   saveContext: () => {},
 };
