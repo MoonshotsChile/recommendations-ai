@@ -54,8 +54,9 @@ const OfferPage: FC = () => {
     }
 
     const onLater = (elem?: any) => {
+        console.log(lastCardRef)
         // @ts-ignore
-        lastCardRef.current?.swipe('up')
+        lastCardRef.current?.swipe('down')
     }
 
 
@@ -113,13 +114,13 @@ const OfferPage: FC = () => {
                     </div>
                 </div>
                 <div className='card-footer hero-foot'>
-                    <p className="card-footer-item">
+                    <p className="card-footer-item cursor-pointer">
                         <img src={tinderButtonNoIcon} onClick={onNotLike} alt="not like"/>
                     </p>
-                    <p className="card-footer-item">
+                    <p className="card-footer-item cursor-pointer">
                         <img src={tinderButtonLaterIcon} onClick={onLater} alt="later"/>
                     </p>
-                    <p className="card-footer-item">
+                    <p className="card-footer-item cursor-pointer">
                         <img src={tinderButtonLikeIcon} onClick={onLike} alt="like"/>
                     </p>
                 </div>
