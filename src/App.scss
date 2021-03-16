@@ -209,3 +209,34 @@ body {
   border-radius: 30px;
   text-align: center;
 }
+
+.login {
+  .title {
+
+    font-family: Hind;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333333;
+
+
+  }
+
+  .subtitle {
+    font-family: Hind;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+
+    color: #6F6F6F;
+
+
+  }
+
+  .is-borderless {
+    box-shadow: none;
+  }
+}

@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { format, validate } from "rut.js";
 import { useHistory } from "react-router-dom";
 import { ContextApi } from "../context-api/ContextApi";
+import { sbenefits } from "../assets";
 
 const LoginPage: React.FC = () => {
     const { saveContext } = useContext(ContextApi)
@@ -41,9 +42,22 @@ const LoginPage: React.FC = () => {
     }
 
     return (
-        <div className="section">
-            <div className="card">
-                <section className="card-content">
+        <div className="section login hero is-fullheight">
+            <div className="card is-borderless is-fullheight">
+                <section className="card-header is-borderless">
+                    <div className="container has-text-centered">
+                        <p className="title">
+                            <img src={sbenefits} alt="SBenefits"/>
+                        </p>
+                        <h6 className="title">
+                            Bienvenido a SBenefits
+                        </h6>
+                        <p className="subtitle">
+                            Ingresa con los datos de tu cuenta Sbank
+                        </p>
+                    </div>
+                </section>
+                <section className="card-content  is-borderless">
                     <form autoComplete="none">
                         <div className="field">
                             <div className="control">
@@ -59,9 +73,12 @@ const LoginPage: React.FC = () => {
                         </div>
                     </form>
                 </section>
-                <section className="modal-card-body box has-text-centered">
+                <section className="modal-card-body box has-text-centered is-borderless">
                     <button id="btn-fetch-data" className={`button is-fullwidth is-success ${isLoading ? 'is-loading' : ''}`}
                             disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
+                    </button>
+                    <button id="btn-fetch-data" className={`button is-fullwidth`}
+                            disabled={isLoading || !isValidForm()} onClick={goToNext}>Invitado
                     </button>
                 </section>
             </div>
