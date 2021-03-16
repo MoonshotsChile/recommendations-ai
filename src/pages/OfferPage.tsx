@@ -113,14 +113,14 @@ const OfferPage: FC = () => {
                         ))}
                     </div>
                 </div>
-                <div className='card-footer hero-foot'>
-                    <p className="card-footer-item cursor-pointer">
+                <div className='card-footer hero-foot is-marginless'>
+                    <p className="card-footer-item cursor-pointer is-marginless">
                         <img src={tinderButtonNoIcon} onClick={onNotLike} alt="not like"/>
                     </p>
-                    <p className="card-footer-item cursor-pointer">
+                    <p className="card-footer-item cursor-pointer is-marginless">
                         <img src={tinderButtonLaterIcon} onClick={onLater} alt="later"/>
                     </p>
-                    <p className="card-footer-item cursor-pointer">
+                    <p className="card-footer-item cursor-pointer is-marginless">
                         <img src={tinderButtonLikeIcon} onClick={onLike} alt="like"/>
                     </p>
                 </div>
