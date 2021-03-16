@@ -77,7 +77,7 @@ const OfferPage: FC = () => {
                         {benefits.map((benefit: Benefit, i: number) => (
                             <TinderCard
                                 key={benefit.id}
-                                preventSwipe={['up', 'down']}
+                                preventSwipe={['up']}
                                 // onSwipe={(dir) => swiped(dir, benefit.id)}
                                 onCardLeftScreen={() => outOfFrame(benefit.id)}
                             >
@@ -85,8 +85,8 @@ const OfferPage: FC = () => {
                                     className='tinderCards__card'
                                     style={{zIndex: i === benefits.length - 1 ? 1 : undefined}}
                                 >
-                                    <div className="card-content">
-                                        <div className="card-image">
+                                    <div className="tinderCards__card__content">
+                                        <div className="tinderCards__card__image">
                                             <figure className="image">
                                                 <img
                                                     className=""
