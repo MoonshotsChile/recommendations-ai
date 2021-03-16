@@ -37,13 +37,13 @@ const LoginPage: React.FC = () => {
     const goToNext = () => {
         isAuthenticated = true
         saveContext({ isAuthenticated })
-        history.push('/offer')
+        history.push('/onboarding')
     }
 
     return (
         <div className="section">
-            <div className="modal-card">
-                <section className="modal-card-body">
+            <div className="card">
+                <section className="card-content">
                     <form autoComplete="none">
                         <div className="field">
                             <div className="control">
@@ -59,7 +59,7 @@ const LoginPage: React.FC = () => {
                         </div>
                     </form>
                 </section>
-                <section className="modal-card-body">
+                <section className="modal-card-body box has-text-centered">
                     <button id="btn-fetch-data" className={`button is-fullwidth is-success ${isLoading ? 'is-loading' : ''}`}
                             disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
                     </button>

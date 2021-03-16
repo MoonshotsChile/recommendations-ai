@@ -11,6 +11,8 @@ export { default as tinderButtonFireIcon } from './icons/tinder-fire.svg';
 export { default as clock } from './icons/clock-o.svg';
 export { default as clockLike } from './icons/color/clock-o.svg';
 export { default as clockSilver } from './icons/color/clock-silver.svg';
+export { default as userIcon } from './icons/user-icon.svg';
+export { default as lockIcon } from './icons/lock-icon.svg';
 
 export { default as like } from './icons/color/heart-o.svg';
 export { default as likeSelected } from './icons/color/heart-selected.svg';
@@ -24,7 +26,8 @@ export { default as user } from './icons/user.svg';
 export { default as mision } from './icons/color/mision.svg';
 export { default as misionSelected } from './icons/color/mision-selected.svg';
 export { default as splash } from './icons/splash.svg';
-export { default as sbenefits } from './icons/white/sbenefits.svg';
+export { default as sbenefitsWhite } from './icons/white/sbenefits.svg';
+export { default as sbenefits } from './icons/color/sbenefits.svg';
 export { default as onboarding1 } from './icons/onboarding/onboarding1.svg';
 export { default as onboarding2 } from './icons/onboarding/onboarding2.svg';
 export { default as onboarding3 } from './icons/onboarding/onboarding3.svg';

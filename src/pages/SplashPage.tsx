@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { sbenefits, splash } from "../assets";
+import { sbenefitsWhite, splash } from "../assets";
 import { useHistory } from "react-router-dom";
 
 const SplashPage = (): JSX.Element => {
@@ -25,7 +25,7 @@ const SplashPage = (): JSX.Element => {
             <div className="hero-body">
                 <div className="container has-text-centered">
                     <p className="title">
-                        <img src={sbenefits} alt="SBenefits"/>
+                        <img src={sbenefitsWhite} alt="SBenefits"/>
                     </p>
                     <p className="subtitle">
                         By SBank
