@@ -11,7 +11,7 @@ import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 
 SwiperCore.use([Navigation]); //descomentar para habilitar
-
+import "../components/my-likes/Card.scss";
 const MyLikesPage: React.FC = () => {
   const useCase = new BenefitsUseCase();
   const [likes, setLikes] = useState([benefitMock]);
@@ -25,8 +25,6 @@ const MyLikesPage: React.FC = () => {
         setLikes(data);
       });
 
-    console.log("likes", JSON.stringify(likes));
-
     useCase
       .random()
       .then((response: Response) => response.json())
@@ -34,6 +32,19 @@ const MyLikesPage: React.FC = () => {
         setLater(data[0]);
       });
   }, []);
+
+  const breakpoints = {
+    // when window width is >= 640px
+    640: {
+      width: 640,
+      slidesPerView: 2,
+    },
+    // when window width is >= 768px
+    768: {
+      width: 768,
+      slidesPerView: 4,
+    },
+  };
   return (
     <div>
       <Navbar selected={NAVBAR_ACTIONS.likes} />
@@ -50,53 +61,40 @@ const MyLikesPage: React.FC = () => {
             </div>
           </div>
           <div className="columns is-mobile">
-            <div className="swiper-container">
-              <div className="swiper-wrapper">
-                <Swiper
-                  spaceBetween={10}
-                  slidesPerView={2}
-                  navigation
-                  onSlideChange={() => console.log("slide change")}
-                  onSwiper={(swiper) => console.log(swiper)}
-                >
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={likes[0]} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={likes[0]} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={likes[0]} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={likes[0]} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={likes[0]} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={likes[0]} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={likes[0]} />
-                    </SwiperSlide>
-                  </div>
-                </Swiper>
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={2}
+              navigation
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              breakpoints={breakpoints}
+            >
+              <div className="column is-6">
+                <SwiperSlide>
+                  <LikeCard benefit={likes[0]} />
+                </SwiperSlide>
               </div>
-            </div>
+              <div className="column is-6">
+                <SwiperSlide>
+                  <LikeCard benefit={likes[0]} />
+                </SwiperSlide>
+              </div>
+              <div className="column is-6">
+                <SwiperSlide>
+                  <LikeCard benefit={likes[0]} />
+                </SwiperSlide>
+              </div>
+              <div className="column is-6">
+                <SwiperSlide>
+                  <LikeCard benefit={likes[0]} />
+                </SwiperSlide>
+              </div>
+              <div className="column is-6">
+                <SwiperSlide>
+                  <LikeCard benefit={likes[0]} />
+                </SwiperSlide>
+              </div>
+            </Swiper>
           </div>
         </div>
         <div>
@@ -119,22 +117,8 @@ const MyLikesPage: React.FC = () => {
                   navigation
                   onSlideChange={() => console.log("slide change")}
                   onSwiper={(swiper) => console.log(swiper)}
+                  breakpoints={breakpoints}
                 >
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={later} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={later} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={later} />
-                    </SwiperSlide>
-                  </div>
                   <div className="column is-6">
                     <SwiperSlide>
                       <LikeCard benefit={later} />

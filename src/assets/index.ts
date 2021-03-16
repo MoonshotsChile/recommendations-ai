@@ -21,3 +21,8 @@ export { default as markerSelected } from './icons/color/map-marker-selected.svg
 export { default as tinder } from './icons/color/tinder-fire.svg';
 export { default as tinderSelected } from './icons/tinder-fire.svg';
 export { default as user } from './icons/user.svg';
+
+export { default as onboarding1 } from './icons/onboarding/onboarding1.svg';
+export { default as onboarding2 } from './icons/onboarding/onboarding2.svg';
+export { default as onboarding3 } from './icons/onboarding/onboarding3.svg';
+export { default as onboarding4 } from './icons/onboarding/onboarding4.svg';
