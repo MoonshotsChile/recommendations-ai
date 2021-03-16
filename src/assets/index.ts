@@ -23,6 +23,8 @@ export { default as tinderSelected } from './icons/tinder-fire.svg';
 export { default as user } from './icons/user.svg';
 export { default as mision } from './icons/color/mision.svg';
 export { default as misionSelected } from './icons/color/mision-selected.svg';
+export { default as splash } from './icons/splash.svg';
+export { default as sbenefits } from './icons/white/sbenefits.svg';
 export { default as onboarding1 } from './icons/onboarding/onboarding1.svg';
 export { default as onboarding2 } from './icons/onboarding/onboarding2.svg';
 export { default as onboarding3 } from './icons/onboarding/onboarding3.svg';
