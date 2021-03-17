@@ -81,7 +81,7 @@ const LoginPage: React.FC = () => {
                     </div>
                     <div className="column is-three-quarter">
                         <button id="btn-fetch-data" className="button is-fullwidth is-inline has-text-centered"
-                                disabled={isLoading || !isValidForm()} onClick={goToNext}>Invitado
+                                disabled={isLoading} onClick={goToNext}>Invitado
                         </button>
                     </div>
                 </section>

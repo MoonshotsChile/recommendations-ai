@@ -8,7 +8,7 @@ import { tinderButtonLaterIcon, tinderButtonLikeIcon, tinderButtonNoIcon } from 
 import OfferCard from "../components/offer-card/OfferCard";
 import { authValidation } from "../components/hooks/authValidation";
 
-const OfferPage: FC = () => {
+const OfferPage = (): JSX.Element => {
     const useCase = new BenefitsUseCase()
     const { saveContext } = useContext(ContextApi)
     const [benefits, setBenefits] = useState([] as Benefit[])
