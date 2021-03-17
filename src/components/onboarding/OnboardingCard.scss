@@ -5,7 +5,8 @@
   }
 
   .swiper-slide {
-    align-items: center;
+    align-self: center;
+    text-align-last: center;
   }
 
   .swiper-button-prev:after,
