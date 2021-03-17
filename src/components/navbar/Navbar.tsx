@@ -46,7 +46,7 @@ const Navbar = (props: NavbarProps): JSX.Element => {
               }
             />
           </span>
-          <span className="icon" onClick={() => go("/ubication")}>
+          <span className="icon" onClick={() => go("/locations")}>
             <img
               src={
                 selected === NAVBAR_ACTIONS.locations ? markerSelected : marker

@@ -8,67 +8,71 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import { onboarding1, onboarding2, onboarding3, onboarding5 } from "../assets";
 import { useHistory } from "react-router-dom";
+import { useContext, useEffect, useRef, useState } from "react";
+import { ContextApi, coord } from "../context-api/ContextApi";
 
 SwiperCore.use([Navigation, Pagination]); //descomentar para habilitar
 
 const OnboardingPage: React.FC = () => {
-  const history = useHistory();
+    const history = useHistory();
+    const { saveContext } = useContext(ContextApi)
+    const [reachEnd, setReachEnd] = useState(false);
 
-  const goNext = () => {
-    history.push("/offer");
-  };
+    const goNext = () => {
+        history.push("/offer");
+    };
 
-  return (
-    <section className="onboarding hero is-fullheight">
-      <section className="hero-body is-full">
-        <Swiper
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: false }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-          <SwiperSlide>
-            <OnboardingCard onboarding={onboarding1} />
-          </SwiperSlide>
+    const onSlideChange = () => {
+      console.log("change")
+    }
 
-          <SwiperSlide>
-            <OnboardingCard onboarding={onboarding2} />
-          </SwiperSlide>
+    useEffect(()=>{
+      function success(coord: any) {
+        saveContext({location: coord})
+      }
+      if (reachEnd) {
+        navigator.geolocation.getCurrentPosition(success);
+      }
+    }, [reachEnd])
 
-          <SwiperSlide>
-            <OnboardingCard onboarding={onboarding3} />
-          </SwiperSlide>
+    return (
+        <section className="onboarding hero is-fullheight">
+            <section className="hero-body is-full">
+                <Swiper
+                    slidesPerView={1}
+                    navigation
+                    pagination={{clickable: false}}
+                    onSlideChange={onSlideChange}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onReachEnd={() => setReachEnd(true)}
+                >
+                    <SwiperSlide>
+                        <OnboardingCard onboarding={onboarding1}/>
+                    </SwiperSlide>
 
-          <SwiperSlide>
-            <OnboardingCard onboarding={onboarding5} />
-          </SwiperSlide>
-        </Swiper>
-      </section>
-      <section className="hero-foot has-text-centered">
-        <div className="columns is-mobile">
-          <div className="column is-half">
-            <button
-              id="btn-fetch-data"
-              className="button is-fullwidth is-inline has-text-centered"
-              onClick={goNext}
-            >
-              Omitir
-            </button>
-          </div>
-          <div className="column is-half">
-            <button
-              id="btn-fetch-data"
-              className="button is-primary is-fullwidth is-inline has-text-centered"
-              //onClick={goNext}
-            >
-              Continuar
-            </button>
-          </div>
-        </div>
-      </section>
-    </section>
-  );
+                    <SwiperSlide>
+                        <OnboardingCard onboarding={onboarding2}/>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <OnboardingCard onboarding={onboarding3}/>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <OnboardingCard onboarding={onboarding5}/>
+                    </SwiperSlide>
+                </Swiper>
+            </section>
+            <section className="hero-foot has-text-centered">
+                <div className="column is-three-quarter">
+                    <button id="btn-fetch-data" className="button is-primary is-fullwidth is-inline has-text-centered"
+                            onClick={goNext}>
+                        Continuar
+                    </button>
+                </div>
+            </section>
+        </section>
+    );
 };
 
 export default OnboardingPage;

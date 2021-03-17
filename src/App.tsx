@@ -11,7 +11,7 @@ import LoginPage from "./pages/LoginPage";
 import MyLikesPage from "./pages/MyLikesPage";
 import OfferPage from "./pages/OfferPage";
 import TutorialPage from "./pages/TutorialPage";
-import UbicationPage from "./pages/UbicationPage";
+import LocationsPage from "./pages/LocationsPage";
 import OnboardingPage from "./pages/OnboardingPage";
 import MisionPage from "./pages/MisionPage";
 import { ContextApiProvider } from "./context-api/ContextApi";
@@ -44,8 +44,8 @@ const App: FC = () => {
             <Route exact path="/tutorial">
               <TutorialPage />
             </Route>
-            <Route exact path="/ubication">
-              <UbicationPage />
+            <Route exact path="/locations">
+              <LocationsPage />
             </Route>
             <Route exact path="/onboarding">
               <OnboardingPage />
