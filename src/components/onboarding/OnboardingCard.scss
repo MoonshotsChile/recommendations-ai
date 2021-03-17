@@ -8,18 +8,24 @@
     align-self: center;
     text-align-last: center;
   }
-
+  .swiper-button-prev {
+    visibility: hidden;
+  }
   .swiper-button-prev:after,
   .swiper-container-rtl .swiper-button-next:after {
-    color: #8230df;
+    color: #4759dd;
   }
   .swiper-button-next:after,
   .swiper-container-rtl .swiper-button-prev:after {
-    color: #8230df;
+    color: #4759dd;
   }
   .swiper-container-horizontal
     > .swiper-pagination-bullets
     .swiper-pagination-bullet {
-    background: #8230df;
+    background: #4759dd;
+  }
+
+  .button {
+    margin-top: -40px;
   }
 }

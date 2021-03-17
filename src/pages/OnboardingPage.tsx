@@ -12,48 +12,63 @@ import { useHistory } from "react-router-dom";
 SwiperCore.use([Navigation, Pagination]); //descomentar para habilitar
 
 const OnboardingPage: React.FC = () => {
-    const history = useHistory()
+  const history = useHistory();
 
-    const goNext = () => {
-        history.push('/offer')
-    }
+  const goNext = () => {
+    history.push("/offer");
+  };
 
-    return (
-        <section className="onboarding hero is-fullheight">
-            <section className="hero-body is-full">
-                <Swiper
-                    slidesPerView={1}
-                    navigation
-                    pagination={{clickable: true}}
-                    onSlideChange={() => console.log("slide change")}
-                    onSwiper={(swiper) => console.log(swiper)}
-                >
-                    <SwiperSlide>
-                        <OnboardingCard onboarding={onboarding1}/>
-                    </SwiperSlide>
+  return (
+    <section className="onboarding hero is-fullheight">
+      <section className="hero-body is-full">
+        <Swiper
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: false }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <OnboardingCard onboarding={onboarding1} />
+          </SwiperSlide>
 
-                    <SwiperSlide>
-                        <OnboardingCard onboarding={onboarding2}/>
-                    </SwiperSlide>
+          <SwiperSlide>
+            <OnboardingCard onboarding={onboarding2} />
+          </SwiperSlide>
 
-                    <SwiperSlide>
-                        <OnboardingCard onboarding={onboarding3}/>
-                    </SwiperSlide>
+          <SwiperSlide>
+            <OnboardingCard onboarding={onboarding3} />
+          </SwiperSlide>
 
-                    <SwiperSlide>
-                        <OnboardingCard onboarding={onboarding5}/>
-                    </SwiperSlide>
-                </Swiper>
-            </section>
-            <section className="hero-foot has-text-centered">
-                <div className="column is-three-quarter">
-                    <button id="btn-fetch-data" className="button is-primary is-fullwidth is-inline has-text-centered" onClick={goNext}>
-                        Continuar
-                    </button>
-                </div>
-            </section>
-        </section>
-    );
+          <SwiperSlide>
+            <OnboardingCard onboarding={onboarding5} />
+          </SwiperSlide>
+        </Swiper>
+      </section>
+      <section className="hero-foot has-text-centered">
+        <div className="columns is-mobile">
+          <div className="column is-half">
+            <button
+              id="btn-fetch-data"
+              className="button is-fullwidth is-inline has-text-centered"
+              onClick={goNext}
+            >
+              Omitir
+            </button>
+          </div>
+          <div className="column is-half">
+            <button
+              id="btn-fetch-data"
+              className="button is-primary is-fullwidth is-inline has-text-centered"
+              //onClick={goNext}
+            >
+              Continuar
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+  );
 };
 
 export default OnboardingPage;
