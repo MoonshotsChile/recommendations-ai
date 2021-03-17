@@ -48,9 +48,9 @@ const MyLikesPage: React.FC = () => {
   return (
     <div>
       <Navbar selected={NAVBAR_ACTIONS.likes} />
-      <div className="section">
+      <div className="my-likes section">
         <div>
-          <div className="columns is-desktop">
+          <div className="columns is-mobile">
             <div className="column">
               <span className="icon-text">
                 <span className="icon">
@@ -109,29 +109,25 @@ const MyLikesPage: React.FC = () => {
             </div>
           </div>
           <div className="columns is-mobile">
-            <div className="swiper-container">
-              <div className="swiper-wrapper">
-                <Swiper
-                  spaceBetween={10}
-                  slidesPerView={2}
-                  navigation
-                  onSlideChange={() => console.log("slide change")}
-                  onSwiper={(swiper) => console.log(swiper)}
-                  breakpoints={breakpoints}
-                >
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={later} />
-                    </SwiperSlide>
-                  </div>
-                  <div className="column is-6">
-                    <SwiperSlide>
-                      <LikeCard benefit={later} />
-                    </SwiperSlide>
-                  </div>
-                </Swiper>
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={2}
+              navigation
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              breakpoints={breakpoints}
+            >
+              <div className="column is-6">
+                <SwiperSlide>
+                  <LikeCard benefit={later} />
+                </SwiperSlide>
               </div>
-            </div>
+              <div className="column is-6">
+                <SwiperSlide>
+                  <LikeCard benefit={later} />
+                </SwiperSlide>
+              </div>
+            </Swiper>
           </div>
         </div>
       </div>

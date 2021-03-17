@@ -8,7 +8,7 @@ interface PropsCard {
 const LikeCard = (props: PropsCard): JSX.Element => {
   const benefit = props.benefit;
   return (
-    <div className="card">
+    <div className="my-likes card">
       <div className="card-image">
         <figure className="image">
           <img
