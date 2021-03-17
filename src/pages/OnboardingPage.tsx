@@ -19,7 +19,7 @@ const OnboardingPage: React.FC = () => {
     }
 
     return (
-        <section className="hero is-fullheight">
+        <section className="onboarding hero is-fullheight">
             <section className="hero-body is-full">
                 <Swiper
                     slidesPerView={1}

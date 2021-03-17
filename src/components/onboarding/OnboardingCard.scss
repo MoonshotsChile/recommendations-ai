@@ -1,21 +1,24 @@
-.swiper-container {
-  background-color: #fff;
-}
+.onboarding {
+  .swiper-container {
+    background-color: #fff;
+    height: 80vh;
+  }
 
-.swiper-slide {
-  align-items: center;
-}
+  .swiper-slide {
+    align-items: center;
+  }
 
-.swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-next:after {
-  color: #8230df;
-}
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after {
-  color: #8230df;
-}
-.swiper-container-horizontal
-  > .swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background: #8230df;
+  .swiper-button-prev:after,
+  .swiper-container-rtl .swiper-button-next:after {
+    color: #8230df;
+  }
+  .swiper-button-next:after,
+  .swiper-container-rtl .swiper-button-prev:after {
+    color: #8230df;
+  }
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    background: #8230df;
+  }
 }
