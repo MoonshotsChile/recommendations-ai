@@ -8,7 +8,7 @@ interface PropsCard {
 const EnCursoCard = (props: PropsCard): JSX.Element => {
   const benefit = props.benefit;
   return (
-    <div className="mision card is-horizontal columns">
+    <div className="mision card is-horizontal">
       <div className="card-content">
         <div className="media">
           <div className="media-left">

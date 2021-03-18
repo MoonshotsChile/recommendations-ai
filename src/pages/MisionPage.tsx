@@ -16,7 +16,7 @@ import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 
 const MisionPage: React.FC = () => {
   const [likes, setLikes] = useState([benefitMock]);
-  const [later, setLater] = useState([benefitMock]);
+  const [laters, setLater] = useState([benefitMock]);
   const [tabDisponibleClassName, setTabDisponibleClassName] = useState(
     "is-active"
   );
@@ -31,13 +31,13 @@ const MisionPage: React.FC = () => {
 
   useEffect(() => {
     useCase
-      .random()
+      .randomStack(10)
       .then((response: Response) => response.json())
       .then((data: Benefit[]) => {
         setLikes(benefitsDecorator(data));
       });
     useCase
-      .random()
+      .randomStack(5)
       .then((response: Response) => response.json())
       .then((data: Benefit[]) => {
         setLater(benefitsDecorator(data));
@@ -89,38 +89,22 @@ const MisionPage: React.FC = () => {
         </div>
       </div>
       <div className={displayDisponibleClassName}>
-        <div className="columns is-mobile">
-          <div className="column is-12">
-            <DisponiblesCard benefit={likes[0]} />
+        {likes.map((like: Benefit, i: number) => (
+          <div className="columns is-mobile" key={`likes${i}`}>
+            <div className="column is-12">
+              <DisponiblesCard benefit={like} />
+            </div>{" "}
           </div>
-        </div>
-        <div className="columns is-mobile">
-          <div className="column is-12">
-            <DisponiblesCard benefit={likes[0]} />
-          </div>
-        </div>
-        <div className="columns is-mobile">
-          <div className="column is-12">
-            <DisponiblesCard benefit={likes[0]} />
-          </div>
-        </div>
+        ))}
       </div>
       <div className={displayEnCursoClassName}>
-        <div className="columns is-mobile">
-          <div className="column is-12">
-            <EnCursoCard benefit={later[0]} />
+        {laters.map((later: Benefit, i: number) => (
+          <div className="columns is-mobile" key={`laters${i}`}>
+            <div className="column is-12">
+              <EnCursoCard benefit={later} />
+            </div>
           </div>
-        </div>
-        <div className="columns is-mobile">
-          <div className="column is-12">
-            <EnCursoCard benefit={later[0]} />
-          </div>
-        </div>
-        <div className="columns is-mobile">
-          <div className="column is-12">
-            <EnCursoCard benefit={later[0]} />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

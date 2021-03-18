@@ -23,14 +23,14 @@ const MyLikesPage: React.FC = () => {
 
   useEffect(() => {
     useCase
-      .randomStack(10)
+      .randomStack(25)
       .then((response: Response) => response.json())
       .then((data: Benefit[]) => {
         setLikes(benefitsDecorator(data));
       });
 
     useCase
-      .randomStack(10)
+      .randomStack(15)
       .then((response: Response) => response.json())
       .then((data: Benefit[]) => {
         setLaters(benefitsDecorator(data));
