@@ -1,4 +1,4 @@
-import React, { FC, useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import TinderCard from "react-tinder-card";
 import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";

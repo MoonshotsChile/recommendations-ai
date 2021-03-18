@@ -31,11 +31,16 @@ const OnboardingPage: React.FC = () => {
   };
 
   useEffect(() => {
-    function success(coord: any) {
+    function onSuccess(coord: any) {
       saveContext({ location: coord });
     }
+
+    function onError(error: any) {
+      console.error(error)
+    }
+
     if (reachEnd) {
-      navigator.geolocation.getCurrentPosition(success);
+      navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
   }, [reachEnd]);
 

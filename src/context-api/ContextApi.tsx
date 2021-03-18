@@ -27,6 +27,7 @@ export interface coord {
 
 const initialState: ContextPropsExtended = {
   isAuthenticated: false,
+  location: {latitude: -33.430508, longitude: -70.6464339},
   saveContext: () => {}
 };
 
