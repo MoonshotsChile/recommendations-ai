@@ -1,6 +1,6 @@
 import React, { createContext, FC, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { setLocalStorage } from "./localstorage";
+import { setLocalStorage } from "./helpers/localstorage";
 
 export enum NAVBAR_ACTIONS {
   likes = "LIKES",
@@ -13,21 +13,21 @@ export enum NAVBAR_ACTIONS {
 export interface ContextProps {
   isAuthenticated?: boolean;
   navbarSelected?: NAVBAR_ACTIONS;
-  location?: coord
+  location?: Coord
 }
 
 export interface ContextPropsExtended extends ContextProps{
   saveContext: (props: ContextProps) => void;
 }
 
-export interface coord {
+export interface Coord {
   latitude: number,
   longitude: number
 }
 
 const initialState: ContextPropsExtended = {
   isAuthenticated: false,
-  location: {latitude: -33.430508, longitude: -70.6464339},
+  location: {latitude: 0, longitude: 0},
   saveContext: () => {}
 };
 

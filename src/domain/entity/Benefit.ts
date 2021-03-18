@@ -20,8 +20,8 @@ export interface Benefit {
     end_date: string,
     discount?: string,
     location_street?: string,
-    latitude?: string,
-    longitude?: string
+    latitude: string,
+    longitude: string
 }
 
 export const benefitsDecorator = (benefits: Benefit[]): Benefit[] =>{
@@ -55,5 +55,7 @@ export const benefitMock: Benefit = {
     title: "",
     updated_at: "",
     url: "",
-    uuid: ""
+    uuid: "",
+    latitude: "0",
+    longitude: "0"
 }

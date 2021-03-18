@@ -13,6 +13,7 @@ export { default as clockLike } from './icons/color/clock-o.svg';
 export { default as clockSilver } from './icons/color/clock-silver.svg';
 export { default as userIcon } from './icons/user-icon.svg';
 export { default as lockIcon } from './icons/lock-icon.svg';
+export { default as mapMarkerGoogle } from './icons/color/map-marker-google.svg';
 
 export { default as like } from './icons/color/heart-o.svg';
 export { default as likeSelected } from './icons/color/heart-selected.svg';
