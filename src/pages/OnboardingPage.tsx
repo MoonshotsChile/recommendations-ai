@@ -14,65 +14,88 @@ import { ContextApi, coord } from "../context-api/ContextApi";
 SwiperCore.use([Navigation, Pagination]); //descomentar para habilitar
 
 const OnboardingPage: React.FC = () => {
-    const history = useHistory();
-    const { saveContext } = useContext(ContextApi)
-    const [reachEnd, setReachEnd] = useState(false);
+  const history = useHistory();
+  const { saveContext } = useContext(ContextApi);
+  const [reachEnd, setReachEnd] = useState(false);
+  const [mySwiper, setMySwiper] = useState(Object);
 
-    const goNext = () => {
-        history.push("/offer");
-    };
-
-    const onSlideChange = () => {
-      console.log("change")
+  const omitir = () => {
+    history.push("/offer");
+  };
+  const goNext = () => {
+    if (reachEnd) history.push("/offer");
+    else {
+      mySwiper.click();
     }
+  };
 
-    useEffect(()=>{
-      function success(coord: any) {
-        saveContext({location: coord})
-      }
-      if (reachEnd) {
-        navigator.geolocation.getCurrentPosition(success);
-      }
-    }, [reachEnd])
+  const onSlideChange = () => {
+    console.log("change");
+  };
 
-    return (
-        <section className="onboarding hero is-fullheight">
-            <section className="hero-body is-full">
-                <Swiper
-                    slidesPerView={1}
-                    navigation
-                    pagination={{clickable: false}}
-                    onSlideChange={onSlideChange}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onReachEnd={() => setReachEnd(true)}
-                >
-                    <SwiperSlide>
-                        <OnboardingCard onboarding={onboarding1}/>
-                    </SwiperSlide>
+  useEffect(() => {
+    function success(coord: any) {
+      saveContext({ location: coord });
+    }
+    if (reachEnd) {
+      navigator.geolocation.getCurrentPosition(success);
+    }
+  }, [reachEnd]);
 
-                    <SwiperSlide>
-                        <OnboardingCard onboarding={onboarding2}/>
-                    </SwiperSlide>
+  return (
+    <section className="onboarding hero is-fullheight">
+      <section className="hero-body is-full">
+        <Swiper
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: false }}
+          onSlideChange={onSlideChange}
+          onSwiper={(swiper) => {
+            setMySwiper(swiper.navigation.nextEl);
+          }}
+          onReachEnd={() => setReachEnd(true)}
+        >
+          <SwiperSlide>
+            <OnboardingCard onboarding={onboarding1} />
+          </SwiperSlide>
 
-                    <SwiperSlide>
-                        <OnboardingCard onboarding={onboarding3}/>
-                    </SwiperSlide>
+          <SwiperSlide>
+            <OnboardingCard onboarding={onboarding2} />
+          </SwiperSlide>
 
-                    <SwiperSlide>
-                        <OnboardingCard onboarding={onboarding5}/>
-                    </SwiperSlide>
-                </Swiper>
-            </section>
-            <section className="hero-foot has-text-centered">
-                <div className="column is-three-quarter">
-                    <button id="btn-fetch-data" className="button is-primary is-fullwidth is-inline has-text-centered"
-                            onClick={goNext}>
-                        Continuar
-                    </button>
-                </div>
-            </section>
-        </section>
-    );
+          <SwiperSlide>
+            <OnboardingCard onboarding={onboarding3} />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <OnboardingCard onboarding={onboarding5} />
+          </SwiperSlide>
+        </Swiper>
+      </section>
+      <section className="hero-foot has-text-centered">
+        <div className="columns is-mobile">
+          <div className="column is-half">
+            <button
+              id="btn-fetch-data"
+              className="button is-fullwidth is-inline has-text-centered"
+              onClick={omitir}
+            >
+              Omitir
+            </button>
+          </div>
+          <div className="column is-half">
+            <button
+              id="btn-fetch-data"
+              className="button is-primary is-fullwidth is-inline has-text-centered"
+              onClick={goNext}
+            >
+              Continuar
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+  );
 };
 
 export default OnboardingPage;
