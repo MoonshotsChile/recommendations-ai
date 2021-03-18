@@ -20,7 +20,7 @@ const DisponiblesCard = (props: PropsCard): JSX.Element => {
             </figure>
           </div>
           <div className="media-content">
-            <p className="title is-4">{benefit.title}</p>
+            <p className="title is-6">{benefit.title}</p>
             <p className="subtitle is-6">{benefit.category}</p>
           </div>
         </div>

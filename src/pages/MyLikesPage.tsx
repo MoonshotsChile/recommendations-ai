@@ -66,20 +66,30 @@ const MyLikesPage: React.FC = () => {
           </div>
           <div className="columns is-mobile">
             <Swiper
+              id="Swiper1"
               spaceBetween={10}
               slidesPerView={2}
+              loop={false}
               navigation
               onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
+              onSwiper={(swiper) => {
+                console.log(swiper);
+              }}
               breakpoints={breakpoints}
             >
-              {likes.map((like: Benefit, i: number) => (
-                <div className="column is-6" key={`likes${i}`}>
-                  <SwiperSlide>
-                    <LikeCard benefit={like} />
-                  </SwiperSlide>
-                </div>
-              ))}
+              {likes.length > 0 ? (
+                likes.map((like: Benefit, i: number) => {
+                  return (
+                    <div className="column is-6" key={`likes-${i}`}>
+                      <SwiperSlide>
+                        <LikeCard benefit={like} />
+                      </SwiperSlide>
+                    </div>
+                  );
+                })
+              ) : (
+                <div className="column is-6"></div>
+              )}
             </Swiper>
           </div>
         </div>
@@ -96,6 +106,7 @@ const MyLikesPage: React.FC = () => {
           </div>
           <div className="columns is-mobile">
             <Swiper
+              id="Swiper"
               spaceBetween={10}
               slidesPerView={2}
               navigation
@@ -103,13 +114,15 @@ const MyLikesPage: React.FC = () => {
               onSwiper={(swiper) => console.log(swiper)}
               breakpoints={breakpoints}
             >
-              {laters.map((later: Benefit, i: number) => (
-                <div className="column is-6" key={`laters${i}`}>
-                  <SwiperSlide>
-                    <LikeCard benefit={later} />
-                  </SwiperSlide>
-                </div>
-              ))}
+              {laters.map((later: Benefit, i: number) => {
+                return (
+                  <div className="column is-6" key={`laters-${i}`}>
+                    <SwiperSlide>
+                      <LikeCard benefit={later} />
+                    </SwiperSlide>
+                  </div>
+                );
+              })}
             </Swiper>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import * as React from "react";
 import OnboardingCard from "../components/onboarding/OnboardingCard";
+import OnboardingInteresesCard from "../components/onboarding/OnboardingInteresesCard";
 import "../components/onboarding/OnboardingCard.scss";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -36,7 +37,7 @@ const OnboardingPage: React.FC = () => {
     }
 
     function onError(error: any) {
-      console.error(error)
+      console.error(error);
     }
 
     if (reachEnd) {
@@ -67,6 +68,10 @@ const OnboardingPage: React.FC = () => {
 
           <SwiperSlide>
             <OnboardingCard onboarding={onboarding3} />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <OnboardingInteresesCard />
           </SwiperSlide>
 
           <SwiperSlide>
