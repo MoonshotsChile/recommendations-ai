@@ -19,9 +19,6 @@ const OnboardingPage: React.FC = () => {
   const [reachEnd, setReachEnd] = useState(false);
   const [mySwiper, setMySwiper] = useState(Object);
 
-  const omitir = () => {
-    history.push("/offer");
-  };
   const goNext = () => {
     if (reachEnd) history.push("/offer");
     else {
@@ -74,16 +71,7 @@ const OnboardingPage: React.FC = () => {
       </section>
       <section className="hero-foot has-text-centered">
         <div className="columns is-mobile">
-          <div className="column is-half">
-            <button
-              id="btn-fetch-data"
-              className="button is-fullwidth is-inline has-text-centered"
-              onClick={omitir}
-            >
-              Omitir
-            </button>
-          </div>
-          <div className="column is-half">
+          <div className="column is-12">
             <button
               id="btn-fetch-data"
               className="button is-primary is-fullwidth is-inline has-text-centered"
