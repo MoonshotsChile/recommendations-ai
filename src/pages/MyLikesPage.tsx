@@ -1,7 +1,11 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import LikeCard from "../components/my-likes/Card";
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
-import { Benefit, benefitMock } from "../domain/entity/Benefit";
+import {
+  Benefit,
+  benefitMock,
+  benefitsDecorator,
+} from "../domain/entity/Benefit";
 import { clockLike, likeSelected } from "../assets";
 import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
@@ -15,21 +19,21 @@ import "../components/my-likes/Card.scss";
 const MyLikesPage: React.FC = () => {
   const useCase = new BenefitsUseCase();
   const [likes, setLikes] = useState([benefitMock]);
-  const [later, setLater] = useState(benefitMock);
+  const [laters, setLaters] = useState([benefitMock]);
 
   useEffect(() => {
     useCase
-      .random()
+      .randomStack(10)
       .then((response: Response) => response.json())
       .then((data: Benefit[]) => {
-        setLikes(data);
+        setLikes(benefitsDecorator(data));
       });
 
     useCase
-      .random()
+      .randomStack(10)
       .then((response: Response) => response.json())
       .then((data: Benefit[]) => {
-        setLater(data[0]);
+        setLaters(benefitsDecorator(data));
       });
   }, []);
 
@@ -69,31 +73,13 @@ const MyLikesPage: React.FC = () => {
               onSwiper={(swiper) => console.log(swiper)}
               breakpoints={breakpoints}
             >
-              <div className="column is-6">
-                <SwiperSlide>
-                  <LikeCard benefit={likes[0]} />
-                </SwiperSlide>
-              </div>
-              <div className="column is-6">
-                <SwiperSlide>
-                  <LikeCard benefit={likes[0]} />
-                </SwiperSlide>
-              </div>
-              <div className="column is-6">
-                <SwiperSlide>
-                  <LikeCard benefit={likes[0]} />
-                </SwiperSlide>
-              </div>
-              <div className="column is-6">
-                <SwiperSlide>
-                  <LikeCard benefit={likes[0]} />
-                </SwiperSlide>
-              </div>
-              <div className="column is-6">
-                <SwiperSlide>
-                  <LikeCard benefit={likes[0]} />
-                </SwiperSlide>
-              </div>
+              {likes.map((like: Benefit, i: number) => (
+                <div className="column is-6" key={`likes${i}`}>
+                  <SwiperSlide>
+                    <LikeCard benefit={like} />
+                  </SwiperSlide>
+                </div>
+              ))}
             </Swiper>
           </div>
         </div>
@@ -117,16 +103,13 @@ const MyLikesPage: React.FC = () => {
               onSwiper={(swiper) => console.log(swiper)}
               breakpoints={breakpoints}
             >
-              <div className="column is-6">
-                <SwiperSlide>
-                  <LikeCard benefit={later} />
-                </SwiperSlide>
-              </div>
-              <div className="column is-6">
-                <SwiperSlide>
-                  <LikeCard benefit={later} />
-                </SwiperSlide>
-              </div>
+              {laters.map((later: Benefit, i: number) => (
+                <div className="column is-6" key={`laters${i}`}>
+                  <SwiperSlide>
+                    <LikeCard benefit={later} />
+                  </SwiperSlide>
+                </div>
+              ))}
             </Swiper>
           </div>
         </div>

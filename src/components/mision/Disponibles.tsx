@@ -14,7 +14,6 @@ const DisponiblesCard = (props: PropsCard): JSX.Element => {
           <div className="media-left">
             <figure className="image is-48x48">
               <img
-                //src="https://versions.bulma.io/0.6.1/images/placeholders/96x96.png"
                 src={benefit.covers[0] !== undefined ? benefit.covers[0] : ""}
                 alt="Placeholder image"
               />

@@ -1,10 +1,18 @@
 .mision {
     .tabs.is-toggle li.is-active a {
-      background-color: #8230df !important;
-      border-color: #8230df;
+      background-color: #4759DD !important;
+      border-color: #4759DD;
       color: #fff;
       z-index: 1;
     }
-
+    .title {
+        color: #4449F0;
+    }
+    .card-content{
+        margin-left: 1.5rem;
+    }
+    .tab-hide{
+        display: none !important;
+    }
   }
   
