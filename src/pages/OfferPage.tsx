@@ -14,10 +14,9 @@ const OfferPage = (): JSX.Element => {
     const [benefits, setBenefits] = useState([] as Benefit[])
     const lastCardRef = React.useRef(null)
 
-    authValidation()
+    // authValidation()
 
     useEffect(() => {
-        saveContext({navbarSelected: NAVBAR_ACTIONS.likes})
         getInitialBenefits()
     }, [])
 

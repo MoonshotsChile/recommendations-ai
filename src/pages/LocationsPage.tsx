@@ -24,13 +24,11 @@ const LocationsPage = (): JSX.Element => {
 
     const containerStyle = {
         width: '100%',
-        height: '70vh'
+        height: '90vh'
     };
 
 
     useEffect(() => {
-        let allLocations: Benefit[]
-
         useCase.list('?latitude_ne=null')
             .then(response => response.json())
             .then((benefits: Benefit[]) => {
@@ -56,7 +54,7 @@ const LocationsPage = (): JSX.Element => {
 
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
-    }, [])
+    }, [center])
 
     const onLoad = React.useCallback(function callback(map) {
         // @ts-ignore
@@ -71,17 +69,18 @@ const LocationsPage = (): JSX.Element => {
 
     const showBenefitCard = (benefit: Benefit) => {
         // @ts-ignore
+        console.log(benefit)
         setBenefit(benefit)
     }
 
     return (
         <>
             <Navbar selected={NAVBAR_ACTIONS.locations}/>
-            <section>
+            <section className="locations">
                 {isLoaded && <GoogleMap
                   mapContainerStyle={containerStyle}
                   center={center}
-                  zoom={14}
+                  zoom={15}
                   onLoad={onLoad}
                   onUnmount={onUnmount}
                 >
@@ -97,22 +96,21 @@ const LocationsPage = (): JSX.Element => {
                 </GoogleMap>}
                 {benefit && (
                     <div className="modal-card">
-                        <div className="modal-card-body">
+                        <div className="card-content">
                             <div className="media">
                                 <div className="media-left">
                                     <figure className="image is-48x48">
-                                        <img src={benefit.covers[0]}
-                                             alt="Placeholder image"/>
+                                        <img
+                                            src={benefit.covers[0]}
+                                            alt="Placeholder image"
+                                        />
                                     </figure>
                                 </div>
                                 <div className="media-content">
-                                    <p className="title is-4">{benefit.title}</p>
+                                    <p className="title is-6">{benefit.title}</p>
                                     <p className="subtitle is-6">{benefit.category}</p>
                                 </div>
                             </div>
-
-                            <div className="content" dangerouslySetInnerHTML={{__html: benefit.description}} />
-                            <div className="content" dangerouslySetInnerHTML={{__html: benefit.conditions}} />
                         </div>
                     </div>)}
             </section>
