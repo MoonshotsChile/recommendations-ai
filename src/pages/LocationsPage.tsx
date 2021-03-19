@@ -68,8 +68,6 @@ const LocationsPage = (): JSX.Element => {
     }, [])
 
     const showBenefitCard = (benefit: Benefit) => {
-        // @ts-ignore
-        console.log(benefit)
         setBenefit(benefit)
     }
 
