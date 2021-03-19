@@ -25,86 +25,72 @@ const OnboardingInteresesCard = (): JSX.Element => {
     console.log("e", e.target.className.includes("is-primary"));
   };
   return (
-    <div className="intereses">
-      <div className="columns is-mobile is-centered">
-        <div className="column is-11">
-          <h1 className="title">Selecciona tus intereses</h1>
-          <h2 className="subtitle">
-            Te mostraremos ofertas y descuentos según tus intereses
-          </h2>
-        </div>
-      </div>
-      <div className="columns is-mobile  is-centered">
-        <div className="column">
-          <button
-            id="btn-fetch-data"
-            className="button is-one-fifth is-inline has-text-centered"
-            onClick={selectedButtonState}
-          >
-            Comida
-          </button>
-        </div>
-        <div className="column">
-          <button
-            id="btn-fetch-data"
-            className="button is-one-fifth is-inline has-text-centered"
-            onClick={selectedButtonState}
-          >
-            Fitness
-          </button>
-        </div>
-        <div className="column">
-          <button
-            id="btn-fetch-data"
-            className="button is-one-fifth is-inline has-text-centered"
-            onClick={selectedButtonState}
-          >
-            Educación
-          </button>
-        </div>
-      </div>
-      <div className="columns is-mobile  is-centered">
-        <div className="column">
-          <button
-            id="btn-fetch-data"
-            className="button is-one-fifth is-inline has-text-centered"
-            onClick={selectedButtonState}
-          >
-            Salud y Bienestar
-          </button>
-        </div>
-        <div className="column">
-          <button
-            id="btn-fetch-data"
-            className="button is-one-fifth is-inline has-text-centered"
-            onClick={selectedButtonState}
-          >
-            Asados
-          </button>
-        </div>
-        <div className="column">
-          <button
-            id="btn-fetch-data"
-            className="button is-one-fifth is-inline has-text-centered"
-            onClick={selectedButtonState}
-          >
-            Viajes
-          </button>
-        </div>
-      </div>
-      <div className="columns is-mobile  is-centered">
-        <div className="column">
-          <div className="column">
-            <button
-              id="btn-fetch-data"
-              className="button is-one-fifth is-inline has-text-centered"
-              onClick={selectedButtonState}
-            >
-              Pleasure
-            </button>
+    <div className="intereses container">
+      <section className="section">
+        <div className="columns is-mobile">
+          <div className="column is-11">
+            <h1 className="title">Selecciona tus intereses</h1>
+            <h2 className="subtitle">
+              Te mostraremos ofertas y descuentos según tus intereses
+            </h2>
           </div>
         </div>
-      </div>
+        <div className="columns">
+          <div className="column">
+            <div className="buttons">
+              <button
+                id="btn-fetch-data"
+                className="button is-one-fifth is-inline has-text-centered"
+                onClick={selectedButtonState}
+              >
+                Comida
+              </button>
+              <button
+                id="btn-fetch-data"
+                className="button is-one-fifth is-inline has-text-centered"
+                onClick={selectedButtonState}
+              >
+                Fitness
+              </button>
+              <button
+                id="btn-fetch-data"
+                className="button is-one-fifth is-inline has-text-centered"
+                onClick={selectedButtonState}
+              >
+                Educación
+              </button>
+              <button
+                id="btn-fetch-data"
+                className="button is-one-fifth is-inline has-text-centered"
+                onClick={selectedButtonState}
+              >
+                Salud y Bienestar
+              </button>{" "}
+              <button
+                id="btn-fetch-data"
+                className="button is-one-fifth is-inline has-text-centered"
+                onClick={selectedButtonState}
+              >
+                Asados
+              </button>
+              <button
+                id="btn-fetch-data"
+                className="button is-one-fifth is-inline has-text-centered"
+                onClick={selectedButtonState}
+              >
+                Viajes
+              </button>
+              <button
+                id="btn-fetch-data"
+                className="button is-one-fifth is-inline has-text-centered"
+                onClick={selectedButtonState}
+              >
+                Pleasure
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

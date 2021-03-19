@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { EnCurso } from "../../domain/entity/Mision";
 import "./Mision.scss";
 import "swiper/swiper.scss";
-import { default as rappi } from "./dbTemp/img/rappi.svg";
+
 import {
   CircularProgressbarWithChildren,
   buildStyles,
@@ -14,7 +14,6 @@ interface PropsCard {
 }
 const EnCursoCard = (props: PropsCard): JSX.Element => {
   const mision = props.mision;
-  console.log("rappi", rappi);
 
   return (
     <div className="mision card is-horizontal">
@@ -41,10 +40,11 @@ const EnCursoCard = (props: PropsCard): JSX.Element => {
                 pathColor: mision.colorCircle,
                 trailColor: "#DFE8EE",
               })}
+              className="circulo"
             >
               <div
                 style={{
-                  fontSize: 12,
+                  fontSize: 10,
                   marginTop: -5,
                   textAlign: "center",
                 }}

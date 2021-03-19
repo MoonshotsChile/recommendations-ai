@@ -10,7 +10,7 @@ import "swiper/components/pagination/pagination.scss";
 import { onboarding1, onboarding2, onboarding3, onboarding5 } from "../assets";
 import { useHistory } from "react-router-dom";
 import { useContext, useEffect, useRef, useState } from "react";
-import { ContextApi, Coord } from "../context-api/ContextApi";
+import { ContextApi } from "../context-api/ContextApi";
 
 SwiperCore.use([Navigation, Pagination]); //descomentar para habilitar
 
@@ -46,43 +46,45 @@ const OnboardingPage: React.FC = () => {
   }, [reachEnd]);
 
   return (
-    <section className="onboarding hero is-fullheight">
-      <section className="hero-body is-full">
-        <Swiper
-          slidesPerView={1}
-          navigation
-          onSlideChange={onSlideChange}
-          onSwiper={(swiper) => {
-            setMySwiper(swiper.navigation.nextEl);
-          }}
-          onReachEnd={() => setReachEnd(true)}
-        >
-          <SwiperSlide>
-            <OnboardingCard onboarding={onboarding1} />
-          </SwiperSlide>
+    <div className="onboarding container">
+      <section className="section">
+        <div className="columns is-mobile">
+          <div className="column is-12">
+            <Swiper
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              onSlideChange={onSlideChange}
+              onSwiper={(swiper) => {
+                setMySwiper(swiper.navigation.nextEl);
+              }}
+              onReachEnd={() => setReachEnd(true)}
+            >
+              <SwiperSlide>
+                <OnboardingCard onboarding={onboarding1} />
+              </SwiperSlide>
 
-          <SwiperSlide>
-            <OnboardingCard onboarding={onboarding2} />
-          </SwiperSlide>
+              <SwiperSlide>
+                <OnboardingCard onboarding={onboarding2} />
+              </SwiperSlide>
 
-          <SwiperSlide>
-            <OnboardingCard onboarding={onboarding3} />
-          </SwiperSlide>
+              <SwiperSlide>
+                <OnboardingCard onboarding={onboarding3} />
+              </SwiperSlide>
 
-          <SwiperSlide>
-            <OnboardingInteresesCard />
-          </SwiperSlide>
+              <SwiperSlide>
+                <OnboardingInteresesCard />
+              </SwiperSlide>
 
-          <SwiperSlide>
-            <OnboardingCard onboarding={onboarding5} />
-          </SwiperSlide>
-        </Swiper>
-      </section>
-      <section className="hero-foot has-text-centered">
+              <SwiperSlide>
+                <OnboardingCard onboarding={onboarding5} />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
         <div className="columns is-mobile">
           <div className="column is-12">
             <button
-              id="btn-fetch-data"
               className="button is-primary is-fullwidth is-inline has-text-centered"
               onClick={goNext}
             >
@@ -91,7 +93,7 @@ const OnboardingPage: React.FC = () => {
           </div>
         </div>
       </section>
-    </section>
+    </div>
   );
 };
 

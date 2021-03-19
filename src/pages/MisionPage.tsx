@@ -5,16 +5,18 @@ import EnCursoCard from "../components/mision/EnCurso";
 import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
 import "../components/mision/Mision.scss";
-import { misionSelected } from "../assets";
+import { mision, misionSelected } from "../assets";
+import { MisionsUseCase } from "../domain/MisionsUseCase";
 import {
   Mision,
   misionMock,
   EnCurso,
   Disponible,
 } from "../domain/entity/Mision";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const MisionPage: React.FC = () => {
+  const useCase = new MisionsUseCase();
   const [misions, setMisions] = useState(misionMock);
 
   const [tabDisponibleClassName, setTabDisponibleClassName] = useState(
@@ -27,7 +29,17 @@ const MisionPage: React.FC = () => {
   const [displayEnCursoClassName, setDisplayEnCursoClassName] = useState(
     "is-hidden"
   );
-  console.log("misions", misions);
+
+  useEffect(() => {
+    useCase
+      .list()
+      .then((response: Response) => response.json())
+      .then((data: Mision) => {
+        console.log("data", data);
+        setMisions(data);
+      });
+    console.log("misions dispo", misions);
+  }, []);
 
   const disponible = () => {
     setTabDisponibleClassName("is-active");
@@ -76,7 +88,7 @@ const MisionPage: React.FC = () => {
       </div>
       <div className={displayDisponibleClassName}>
         {misions.disponibles.map((disponible: Disponible, i: number) => (
-          <div className="columns is-mobile" key={`likes${i}`}>
+          <div className="columns is-mobile" key={`disponibles-${i}`}>
             <div className="column is-12">
               <DisponiblesCard mision={disponible} />
             </div>
@@ -85,7 +97,7 @@ const MisionPage: React.FC = () => {
       </div>
       <div className={displayEnCursoClassName}>
         {misions.enCurso.map((enCurso: EnCurso, i: number) => (
-          <div className="columns is-mobile" key={`laters${i}`}>
+          <div className="columns is-mobile" key={`enCurso-${i}`}>
             <div className="column is-12">
               <EnCursoCard mision={enCurso} />
             </div>

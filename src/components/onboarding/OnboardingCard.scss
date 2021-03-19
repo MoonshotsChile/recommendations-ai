@@ -18,6 +18,7 @@
   .swiper-button-next:after,
   .swiper-container-rtl .swiper-button-prev:after {
     color: #4759dd;
+    visibility: hidden;
   }
   .swiper-container-horizontal
     > .swiper-pagination-bullets
@@ -26,10 +27,9 @@
   }
 
   .button {
-    margin-top: -40px;
-
+    margin-top: 00px;
   }
-  .button.is-fullwidth{
+  .button.is-fullwidth {
     width: 99%;
   }
 }
