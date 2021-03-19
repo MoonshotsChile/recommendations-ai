@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
+import { NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
 const BenefitsMap: React.FC = () => {
   return (

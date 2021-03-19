@@ -1,20 +1,19 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import TinderCard from "react-tinder-card";
 import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
-import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
+import { NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
-import { tinderButtonLaterIcon, tinderButtonLikeIcon, tinderButtonNoIcon } from "../assets";
+import { tinderButtonLater, tinderButtonLike, tinderButtonNotLike } from "../assets";
 import OfferCard from "../components/offer-card/OfferCard";
-import { authValidation } from "../components/hooks/authValidation";
+import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
+import TinderButtonLater from "../components/buttons/TinderButtonLater";
+import TinderButtonLike from "../components/buttons/TinderButtonLike";
 
 const OfferPage = (): JSX.Element => {
     const useCase = new BenefitsUseCase()
-    const { saveContext } = useContext(ContextApi)
     const [benefits, setBenefits] = useState([] as Benefit[])
     const lastCardRef = React.useRef(null)
-
-    // authValidation()
 
     useEffect(() => {
         getInitialBenefits()
@@ -97,13 +96,13 @@ const OfferPage = (): JSX.Element => {
                 </div>
                 <div className='card-footer hero-foot is-borderless'>
                     <p className="card-footer-item cursor-pointer is-borderless">
-                        <img src={tinderButtonNoIcon} onClick={onNotLike} alt="not like"/>
+                        <TinderButtonNotLike onClick={onNotLike}/>
                     </p>
                     <p className="card-footer-item cursor-pointer is-borderless">
-                        <img src={tinderButtonLaterIcon} onClick={onLater} alt="later"/>
+                        <TinderButtonLater onClick={onLater}/>
                     </p>
                     <p className="card-footer-item cursor-pointer is-borderless">
-                        <img src={tinderButtonLikeIcon} onClick={onLike} alt="like"/>
+                        <TinderButtonLike onClick={onLike}/>
                     </p>
                 </div>
             </div>
