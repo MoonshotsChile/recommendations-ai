@@ -7,16 +7,16 @@ import Navbar from "../components/navbar/Navbar";
 import "../components/mision/Mision.scss";
 import { misionSelected } from "../assets";
 import {
-  Benefit,
-  benefitMock,
-  benefitsDecorator,
-} from "../domain/entity/Benefit";
-import { useContext, useEffect, useRef, useState } from "react";
-import { BenefitsUseCase } from "../domain/BenefitsUseCase";
+  Mision,
+  misionMock,
+  EnCurso,
+  Disponible,
+} from "../domain/entity/Mision";
+import { useState } from "react";
 
 const MisionPage: React.FC = () => {
-  const [likes, setLikes] = useState([benefitMock]);
-  const [laters, setLater] = useState([benefitMock]);
+  const [misions, setMisions] = useState(misionMock);
+
   const [tabDisponibleClassName, setTabDisponibleClassName] = useState(
     "is-active"
   );
@@ -27,22 +27,8 @@ const MisionPage: React.FC = () => {
   const [displayEnCursoClassName, setDisplayEnCursoClassName] = useState(
     "is-hidden"
   );
-  const useCase = new BenefitsUseCase();
+  console.log("misions", misions);
 
-  useEffect(() => {
-    useCase
-      .randomStack(10)
-      .then((response: Response) => response.json())
-      .then((data: Benefit[]) => {
-        setLikes(benefitsDecorator(data));
-      });
-    useCase
-      .randomStack(5)
-      .then((response: Response) => response.json())
-      .then((data: Benefit[]) => {
-        setLater(benefitsDecorator(data));
-      });
-  }, []);
   const disponible = () => {
     setTabDisponibleClassName("is-active");
     setTabEnCursoClassName("");
@@ -89,19 +75,19 @@ const MisionPage: React.FC = () => {
         </div>
       </div>
       <div className={displayDisponibleClassName}>
-        {likes.map((like: Benefit, i: number) => (
+        {misions.disponibles.map((disponible: Disponible, i: number) => (
           <div className="columns is-mobile" key={`likes${i}`}>
             <div className="column is-12">
-              <DisponiblesCard benefit={like} />
-            </div>{" "}
+              <DisponiblesCard mision={disponible} />
+            </div>
           </div>
         ))}
       </div>
       <div className={displayEnCursoClassName}>
-        {laters.map((later: Benefit, i: number) => (
+        {misions.enCurso.map((enCurso: EnCurso, i: number) => (
           <div className="columns is-mobile" key={`laters${i}`}>
             <div className="column is-12">
-              <EnCursoCard benefit={later} />
+              <EnCursoCard mision={enCurso} />
             </div>
           </div>
         ))}

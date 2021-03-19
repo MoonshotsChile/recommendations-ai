@@ -1,27 +1,24 @@
 import React, { FC } from "react";
-import { Benefit } from "../../domain/entity/Benefit";
+import { Disponible } from "../../domain/entity/Mision";
 import "./Mision.scss";
 import "swiper/swiper.scss";
 interface PropsCard {
-  benefit: Benefit;
+  mision: Disponible;
 }
 const DisponiblesCard = (props: PropsCard): JSX.Element => {
-  const benefit = props.benefit;
+  const mision = props.mision;
   return (
     <div className="mision card is-horizontal">
       <div className="card-content">
         <div className="media">
           <div className="media-left">
             <figure className="image is-48x48">
-              <img
-                src={benefit.covers[0] !== undefined ? benefit.covers[0] : ""}
-                alt="Placeholder image"
-              />
+              <img src={mision.img} alt="Placeholder image" />
             </figure>
           </div>
           <div className="media-content">
-            <p className="title is-6">{benefit.title}</p>
-            <p className="subtitle is-6">{benefit.category}</p>
+            <p className="title is-6">{mision.title}</p>
+            <p className="subtitle is-6">{mision.subTitle}</p>
           </div>
         </div>
       </div>

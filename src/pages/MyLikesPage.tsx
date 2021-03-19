@@ -53,78 +53,73 @@ const MyLikesPage: React.FC = () => {
     <div>
       <Navbar selected={NAVBAR_ACTIONS.likes} />
       <div className="my-likes section">
-        <div>
-          <div className="columns is-mobile">
-            <div className="column">
-              <span className="icon-text">
-                <span className="icon">
-                  <img src={likeSelected} />
-                </span>
-                <span>Mis likes</span>
+        <div className="columns">
+          <div className="column">
+            <span className="icon-text">
+              <span className="icon">
+                <img src={likeSelected} />
               </span>
-            </div>
-          </div>
-          <div className="columns is-mobile">
-            <Swiper
-              id="Swiper1"
-              spaceBetween={10}
-              slidesPerView={2}
-              loop={false}
-              navigation
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => {
-                console.log(swiper);
-              }}
-              breakpoints={breakpoints}
-            >
-              {likes.length > 0 ? (
-                likes.map((like: Benefit, i: number) => {
-                  return (
-                    <div className="column is-6" key={`likes-${i}`}>
-                      <SwiperSlide>
-                        <LikeCard benefit={like} />
-                      </SwiperSlide>
-                    </div>
-                  );
-                })
-              ) : (
-                <div className="column is-6"></div>
-              )}
-            </Swiper>
+              <span>Mis likes</span>
+            </span>
           </div>
         </div>
-        <div>
-          <div className="columns is-mobile">
-            <div className="column">
-              <span className="icon-text icon-text-pad">
-                <span className="icon">
-                  <img src={clockLike} />
-                </span>
-                <span>En otro momento</span>
-              </span>
-            </div>
-          </div>
-          <div className="columns is-mobile">
-            <Swiper
-              id="Swiper"
-              spaceBetween={10}
-              slidesPerView={2}
-              navigation
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
-              breakpoints={breakpoints}
-            >
-              {laters.map((later: Benefit, i: number) => {
+        <div className="columns">
+          <Swiper
+            id="Swiper1"
+            spaceBetween={10}
+            slidesPerView={2}
+            navigation
+            breakpoints={breakpoints}
+          >
+            {likes.length > 0 ? (
+              likes.map((like: Benefit, i: number) => {
                 return (
-                  <div className="column is-6" key={`laters-${i}`}>
+                  <div
+                    id="LikesCard"
+                    className="column is-6"
+                    key={`LikesCards-000${i.toString()}${Math.random().toString()}`}
+                  >
                     <SwiperSlide>
-                      <LikeCard benefit={later} />
+                      <LikeCard benefit={like} />
                     </SwiperSlide>
                   </div>
                 );
-              })}
-            </Swiper>
+              })
+            ) : (
+              <div className="column is-6"></div>
+            )}
+          </Swiper>
+        </div>
+        <div className="columns">
+          <div className="column">
+            <span className="icon-text icon-text-pad">
+              <span className="icon">
+                <img src={clockLike} />
+              </span>
+              <span>En otro momento</span>
+            </span>
           </div>
+        </div>
+        <div className="columns">
+          <Swiper
+            id="Swiper"
+            spaceBetween={10}
+            slidesPerView={2}
+            navigation
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={breakpoints}
+          >
+            {laters.map((later: Benefit, i: number) => {
+              return (
+                <div className="column is-6" key={`laters-${i}`}>
+                  <SwiperSlide>
+                    <LikeCard benefit={later} />
+                  </SwiperSlide>
+                </div>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
     </div>
