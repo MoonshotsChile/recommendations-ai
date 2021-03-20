@@ -5,8 +5,8 @@ import { tinderButtonLater, tinderButtonLaterDisabled } from "../../assets";
 const TinderButtonLater = ({disabled = false, onClick}: ButtonProps) => {
     return (
         !disabled ?
-            (<img src={tinderButtonLater} alt="later"/>) :
-            (<img src={tinderButtonLaterDisabled} onClick={onClick} alt="later"/>)
+            (<img src={tinderButtonLater} onClick={onClick} alt="later"/>) :
+            (<img src={tinderButtonLaterDisabled} alt="later"/>)
     )
 }
 

@@ -13,17 +13,17 @@ const OfferCard = (props: PropsOfferCard): JSX.Element => {
 
     return (
         <div
-            className='tinderCards__card'
+            className='tinder-cards__card'
             style={{zIndex}}
         >
-            <div className="tinderCards__card__content">
-                <div className="tinderCards__card__image">
+            <div className="tinder-cards__card__content">
+                <div className="tinder-cards__card__image">
                     <img
                         src={benefit.covers[0]}
                         alt="Placeholder image"
                     />
                 </div>
-                <div className="tinderCards__card__footer columns">
+                <div className="tinder-cards__card__footer columns">
                     <div className="column is-fullwidth category">
                         <p>
                             {benefit.category}

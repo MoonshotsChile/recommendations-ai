@@ -99,69 +99,69 @@ body {
 }
 
 
-.tinderCards {
+.offers {
+  .tinder-cards {
+    &__card {
+      box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+      background: white center;
+
+      .title {
+        font-style: normal;
+        font-weight: bold;
+        padding-top: 0;
+        p {
+          color: #e96d41;
+          font-size: 1.8rem;
+        }
+      }
+
+      .category {
+        padding-bottom: 0;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+
+      img {
+        width: initial;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      &__content {
+        padding: 0;
+        margin: 0;
+      }
+
+      &__image {
+        height: 38vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__footer {
+        height: 13vh;
+      }
+    }
+  }
+}
+
+.tinder-cards {
+  background: $grey;
+  margin-top: 7vh;
+
   &__card {
-    font-family: Montserrat;
     position: absolute;
     width: 600px;
     padding: 20px;
     max-width: 85vw;
-    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     background-size: cover;
-    background: white center;
     left: 0;
     right: 0;
     margin: 0 auto;
     height: 60vh;
-
-    .title {
-      font-style: normal;
-      font-weight: bold;
-      padding-top: 0;
-      p {
-        color: #e96d41;
-        font-size: 1.8rem;
-      }
-    }
-
-    .category {
-      padding-bottom: 0;
-      text-transform: capitalize;
-      font-weight: bold;
-      font-size: 0.8rem;
-    }
-
-    img {
-      width: initial;
-      margin: 0 auto;
-      max-width: 600px;
-    }
-
-    &__content {
-      padding: 0;
-      margin: 0;
-    }
-
-    &__image {
-      height: 38vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &__footer {
-      height: 13vh;
-    }
-  }
-
-  &__cardContainer {
-    background: $grey;
-    margin-top: 7vh;
-  }
-
-  &__swipe {
-    position: absolute;
   }
 }
 
@@ -219,15 +219,12 @@ body {
 
 .login {
   .title {
-
     font-family: Hind;
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
     text-align: center;
-    color: #333333;
-
-
+    color: #333333
   }
 
   .subtitle {
@@ -237,10 +234,7 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
-
     color: #6F6F6F;
-
-
   }
 
   .is-borderless {

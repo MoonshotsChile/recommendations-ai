@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import TinderCard from "react-tinder-card";
 import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
 import { NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
-import { tinderButtonLater, tinderButtonLike, tinderButtonNotLike } from "../assets";
 import OfferCard from "../components/offer-card/OfferCard";
 import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
 import TinderButtonLater from "../components/buttons/TinderButtonLater";
@@ -13,7 +12,7 @@ import TinderButtonLike from "../components/buttons/TinderButtonLike";
 const OfferPage = (): JSX.Element => {
     const useCase = new BenefitsUseCase()
     const [benefits, setBenefits] = useState([] as Benefit[])
-    const lastCardRef = React.useRef(null)
+    const lastCardRef = useRef(null)
 
     useEffect(() => {
         getInitialBenefits()
@@ -61,12 +60,6 @@ const OfferPage = (): JSX.Element => {
         lastCardRef.current?.swipe('down')
     }
 
-
-    const swiped = (direction: string, nameToDelete: number) => {
-        console.log('removing:' + nameToDelete)
-        getNextBenefits()
-    }
-
     const outOfFrame = (name: number) => {
         console.log(name + ' left the screen!')
         getNextBenefits()
@@ -75,15 +68,14 @@ const OfferPage = (): JSX.Element => {
     return (
         <>
             <Navbar selected={NAVBAR_ACTIONS.matchs}/>
-            <div className='hero is-fullheight-with-footer'>
+            <div className='offers hero is-fullheight-with-footer'>
                 <div className='hero-head'>
-                    <div className='tinderCards__cardContainer'>
+                    <div className='tinder-cards'>
                         {benefits.map((benefit: Benefit, i: number) => (
                             <TinderCard
                                 key={benefit.id}
                                 preventSwipe={['up']}
                                 ref={lastCardRef}
-                                // onSwipe={(dir) => swiped(dir, benefit.id)}
                                 onCardLeftScreen={() => outOfFrame(benefit.id)}
                             >
                                 <OfferCard

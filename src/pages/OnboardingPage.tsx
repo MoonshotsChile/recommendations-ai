@@ -21,7 +21,7 @@ const OnboardingPage: React.FC = () => {
   const [mySwiper, setMySwiper] = useState(Object);
 
   const goNext = () => {
-    if (reachEnd) history.push("/offer");
+    if (reachEnd) history.push("/tutorial");
     else {
       mySwiper.click();
     }
@@ -46,7 +46,7 @@ const OnboardingPage: React.FC = () => {
   }, [reachEnd]);
 
   return (
-    <div className="onboarding container">
+    <div className="on-boarding container">
       <section className="section">
         <div className="columns is-mobile">
           <div className="column is-12">

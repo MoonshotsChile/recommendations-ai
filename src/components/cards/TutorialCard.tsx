@@ -11,6 +11,7 @@ interface TutorialCardProps {
     title?: string,
     subtitle?: string,
     action?: CardAction,
+    zIndex?: number,
     children?:
         | JSX.Element
         | JSX.Element[]
@@ -19,9 +20,10 @@ interface TutorialCardProps {
 }
 
 const TutorialCard = (props: TutorialCardProps): JSX.Element => {
+    const zIndex=props.zIndex
     return (
-        <section className="tutorial">
-            <div className="card">
+        <div className="tinder-cards" style={{zIndex}}>
+            <div className="tinder-cards__card">
                 <div className="card-header">
                     {props.icon && (
                         <caption className="image">
@@ -47,7 +49,7 @@ const TutorialCard = (props: TutorialCardProps): JSX.Element => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 
