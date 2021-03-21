@@ -57,7 +57,9 @@ const TutorialPage = (): JSX.Element => {
                             <TutorialCard
                                 title="¡Aun hay más!"
                                 action={{
-                                    onClick: () => {history.push('/offer')},
+                                    onClick: () => {
+                                        history.push('/offer')
+                                    },
                                     title: '!Vamos!'
                                 }}
                             >
@@ -69,7 +71,8 @@ const TutorialPage = (): JSX.Element => {
                                     <ListItem icon={bellRed} text="Te avisamos cuando necesites un descuento"/>
                                 </ul>
                             </TutorialCard>
-                            <TinderCard preventSwipe={['left', 'right', 'up']} ref={laterCardRef}  onSwipe={() => setStep(5)}>
+                            <TinderCard preventSwipe={['left', 'right', 'up']} ref={laterCardRef}
+                                        onSwipe={() => setStep(5)}>
                                 <TutorialCard
                                     icon={handSlideDown}
                                     title="Desliza hacia abajo para postergar"
@@ -77,7 +80,8 @@ const TutorialPage = (): JSX.Element => {
                                     zIndex={3}
                                 />
                             </TinderCard>
-                            <TinderCard preventSwipe={['left', 'up', 'down']} ref={likeCardRef} onSwipe={() => setStep(4)}>
+                            <TinderCard preventSwipe={['left', 'up', 'down']} ref={likeCardRef}
+                                        onSwipe={() => setStep(4)}>
                                 <TutorialCard
                                     icon={handSlideRight}
                                     title="Desliza hacia la derecha para dar like"
@@ -85,7 +89,8 @@ const TutorialPage = (): JSX.Element => {
                                     zIndex={2}
                                 />
                             </TinderCard>
-                            <TinderCard preventSwipe={['right', 'up', 'down']} ref={notLikeCardRef} onSwipe={() => setStep(3)}>
+                            <TinderCard preventSwipe={['right', 'up', 'down']} ref={notLikeCardRef}
+                                        onSwipe={() => setStep(3)}>
                                 <TutorialCard
                                     icon={handSlideLeft}
                                     title="Desliza hacia la izquierda para pasar"

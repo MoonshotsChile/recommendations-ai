@@ -20,7 +20,7 @@ import SplashPage from "./pages/SplashPage";
 const App: FC = () => {
   return (
     <ContextApiProvider>
-      <div className="container">
+      <div className="container is-fullwidth">
         <Router basename="">
           <Switch>
             <Route exact path="/login">

@@ -7,13 +7,8 @@ interface ListItemProps {
 
 const ListItem = (props: ListItemProps) => {
     return (
-        <li>
-            <span className="icon">
-                <i className="fa">
-                    <img src={props.icon} />
-                </i>
-            </span>
-            <span className="is-small">{props.text}</span>
+        <li style={{listStyleImage: `url(${props.icon})`}}>
+            <span className="icon-text">{props.text}</span>
         </li>
     )
 }

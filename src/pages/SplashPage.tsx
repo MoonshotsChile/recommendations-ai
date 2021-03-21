@@ -7,13 +7,6 @@ const SplashPage = (): JSX.Element => {
     const history = useHistory();
 
 
-    useEffect(() => {
-        setTimeout(() => {
-            history.push('/login')
-        }, 5000)
-    })
-
-
     return (
         <section className="hero splash is-fullheight is-fullwidth" onClick={()=>history.push('/login')}>
             <div className="hero-head">

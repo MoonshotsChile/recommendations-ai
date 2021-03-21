@@ -37,10 +37,10 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/components/_all.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/grid/all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
 @import "../node_modules/bulma/sass/layout/_all.sass";
-@import "../node_modules/bulma/sass/utilities/_all.sass";
 
 body {
   font-family: $family-secondary;
@@ -149,34 +149,22 @@ body {
 
 .tinder-cards {
   background: $grey;
-  margin-top: 7vh;
 
   &__card {
     position: absolute;
-    width: 600px;
     padding: 20px;
-    max-width: 85vw;
     border-radius: 4px;
     background-size: cover;
     left: 0;
     right: 0;
-    margin: 0 auto;
-    height: 60vh;
+    margin: 1em;
+    height: 70vh;
   }
 }
 
 .splash {
-  position: absolute;
-  width: 395px;
-  height: 678px;
-  left: -12px;
-  top: -6px;
-
-  /* Gradiente 2 */
-
   background: linear-gradient(349.77deg, #20E2AC 1.61%, #1884F3 51.53%, #542FD7 97.46%);
   box-shadow: 0px 1px 10px rgba(226, 232, 238, 0.8);
-  border-radius: 10px;
 
   .background.image {
     padding: 2em;

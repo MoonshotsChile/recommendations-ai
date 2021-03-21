@@ -26,9 +26,7 @@ const TutorialCard = (props: TutorialCardProps): JSX.Element => {
             <div className="tinder-cards__card">
                 <div className="card-header">
                     {props.icon && (
-                        <caption className="image">
-                            <img src={props.icon}/>
-                        </caption>
+                        <img src={props.icon}/>
                     )}
                     {!props.icon && (
                         <p className="title">{props.title}</p>
