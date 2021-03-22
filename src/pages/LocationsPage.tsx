@@ -29,32 +29,33 @@ const LocationsPage = (): JSX.Element => {
 
 
     useEffect(() => {
+        if (center.lng === 0 && center.lat === 0) {
+            const onSuccess = (geolocation: { coords: GeolocationCoordinates, timestamp: number }) => {
+                const location: Coord = {
+                    latitude: geolocation.coords.latitude,
+                    longitude: geolocation.coords.longitude
+                }
+                saveContext({location})
+                setCenter({
+                    lat: location?.latitude,
+                    lng: location?.longitude
+                });
+            }
+            const onError = (error: any) => {
+                console.error(error)
+            }
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        }
+    }, [])
+
+    useEffect(() => {
         useCase.list('?latitude_ne=null')
             .then(response => response.json())
             .then((benefits: Benefit[]) => {
                 // @ts-ignore
                 setNearestPlaces(benefitsDecorator(benefits))
             })
-
-        const onSuccess = (geolocation: { coords: GeolocationCoordinates, timestamp: number }) => {
-            const location: Coord = {
-                latitude: geolocation.coords.latitude,
-                longitude: geolocation.coords.longitude
-            }
-            saveContext({location});
-            setCenter({
-                lat: location?.latitude,
-                lng: location?.longitude
-            });
-        }
-
-        const onError = (error: any) => {
-            console.error(error)
-        }
-
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
-
-    }, [center])
+    }, [])
 
     const onLoad = React.useCallback(function callback(map) {
         // @ts-ignore
