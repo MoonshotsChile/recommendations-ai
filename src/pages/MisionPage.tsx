@@ -55,7 +55,7 @@ const MisionPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <Navbar selected={NAVBAR_ACTIONS.misions} />
 
       <div className="mision section">

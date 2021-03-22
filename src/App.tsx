@@ -1,9 +1,5 @@
 import React, { FC } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import BenefitsMapPage from "./pages/BenefitsMap";
 import InterestsPage from "./pages/InterestsPage";
@@ -14,6 +10,7 @@ import TutorialPage from "./pages/TutorialPage";
 import LocationsPage from "./pages/LocationsPage";
 import OnboardingPage from "./pages/OnboardingPage";
 import MisionPage from "./pages/MisionPage";
+import NotificationPage from "./pages/NotificationPage";
 import { ContextApiProvider } from "./context-api/ContextApi";
 import SplashPage from "./pages/SplashPage";
 
@@ -52,6 +49,9 @@ const App: FC = () => {
             </Route>
             <Route exact path="/mision">
               <MisionPage />
+            </Route>
+            <Route exact path="/notifications">
+              <NotificationPage />
             </Route>
           </Switch>
         </Router>
