@@ -20,7 +20,21 @@ const MyLikesPage: React.FC = () => {
   const useCase = new BenefitsUseCase();
   const [likes, setLikes] = useState([benefitMock]);
   const [laters, setLaters] = useState([benefitMock]);
-
+  //const [breakpoints, setBreakpoints] = useState({});
+  const breakpoints = {
+    // when window width is >= 640px
+    640: {
+      width: 640,
+      spaceBetween: 2,
+      slidesPerView: 2,
+    },
+    // when window width is >= 768px
+    768: {
+      width: 768,
+      spaceBetween: 2,
+      slidesPerView: 4,
+    },
+  };
   useEffect(() => {
     useCase
       .randomStack(25)
@@ -37,18 +51,6 @@ const MyLikesPage: React.FC = () => {
       });
   }, []);
 
-  const breakpoints = {
-    // when window width is >= 640px
-    640: {
-      width: 640,
-      slidesPerView: 2,
-    },
-    // when window width is >= 768px
-    768: {
-      width: 768,
-      slidesPerView: 4,
-    },
-  };
   return (
     <div>
       <Navbar selected={NAVBAR_ACTIONS.likes} />
@@ -64,30 +66,20 @@ const MyLikesPage: React.FC = () => {
           </div>
         </div>
         <div className="columns">
-          <Swiper
-            id="Swiper1"
-            spaceBetween={10}
-            slidesPerView={2}
-            navigation
-            breakpoints={breakpoints}
-          >
-            {likes.length > 0 ? (
-              likes.map((like: Benefit, i: number) => {
-                return (
-                  <div
-                    id="LikesCard"
-                    className="column is-6"
-                    key={`LikesCards-000${i.toString()}${Math.random().toString()}`}
-                  >
-                    <SwiperSlide>
-                      <LikeCard benefit={like} />
-                    </SwiperSlide>
-                  </div>
-                );
-              })
-            ) : (
-              <div className="column is-6"></div>
-            )}
+          <Swiper id="Swiper1" breakpoints={breakpoints}>
+            {likes.map((like: Benefit, i: number) => {
+              return (
+                <div
+                  id="LikesCard"
+                  className="column is-6"
+                  key={`LikesCards-000${i.toString()}${Math.random().toString()}`}
+                >
+                  <SwiperSlide>
+                    <LikeCard benefit={like} />
+                  </SwiperSlide>
+                </div>
+              );
+            })}
           </Swiper>
         </div>
         <div className="columns">
@@ -102,17 +94,14 @@ const MyLikesPage: React.FC = () => {
         </div>
         <div className="columns">
           <Swiper
-            id="Swiper"
-            spaceBetween={10}
-            slidesPerView={2}
-            navigation
+            id="Swiper2"
+            breakpoints={breakpoints}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-            breakpoints={breakpoints}
           >
             {laters.map((later: Benefit, i: number) => {
               return (
-                <div className="column is-6" key={`laters-${i}`}>
+                <div className="column" key={`laters-${i}`}>
                   <SwiperSlide>
                     <LikeCard benefit={later} />
                   </SwiperSlide>

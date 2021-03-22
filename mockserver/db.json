@@ -1,4 +1,36 @@
 {
+  "notifications": [
+    {
+      "id": 1,
+      "img": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/marketing-card/backtoschool-card.png",
+      "title": "En la vuelta a clases con Scotiabank, todos los Dctos. son útiles",
+      "content": "Paga con tus Tarjetas Scotiabank y obtén grandes beneficios en diferentes comercios."
+    },
+    {
+      "id": 2,
+      "img": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/marketing-card/dcto-automotriz_card.png",
+      "title": "Regalonea a tu mejor amigo y dale el cuidado que merece",
+      "content": "Pagando con tus Tarjetas Scotiabank obtén grandes Beneficios en diferentes comercios del rubro Automotriz."
+    },
+    {
+      "id": 3,
+      "img": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/marketing-card/descuento-cavas.png",
+      "title": "Hasta 50% de Dcto. en Cavasonline.cl",
+      "content": "Para la compra de vinos, espumantes y cervezas a través de Cavasonline.cl, pagando con tus Tarjetas Scotiabank hasta el 21 de marzo."
+    },
+    {
+      "id": 4,
+      "img": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/marketing-card/descuento-nuevos-usuarios.png",
+      "title": "Pedidos sin costo de envío en Uber Eats",
+      "content": "En la categoría Restaurantes de la App Uber Eats, todos los lunes de marzo, pagando con tu Tarjeta de Crédito. Como nuevo usuario obtén $5.000 descuento en tus primeros 2 pedidos."
+    },
+    {
+      "id": 5,
+      "img": "https://scotiabankfiles.azureedge.net/scotiabank-chile/img/mundo-beneficios/marketing-card/eattouch-card.jpg",
+      "title": "Hasta 30% de Dcto. en la App EatTouch",
+      "content": "Paga con tus Tarjetas Scotiabank y obtén descuentos en tus compras con delivery en comercios seleccionados de la App EatTouch hasta el 31 de marzo."
+    }
+  ],
   "misions": {
     "disponibles": [
       {

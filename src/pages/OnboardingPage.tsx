@@ -53,7 +53,7 @@ const OnboardingPage: React.FC = () => {
             <Swiper
               slidesPerView={1}
               navigation
-              pagination={{ clickable: true }}
+              pagination={{ clickable: false }}
               onSlideChange={onSlideChange}
               onSwiper={(swiper) => {
                 setMySwiper(swiper.navigation.nextEl);

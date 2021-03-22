@@ -58,7 +58,7 @@ const Navbar = (props: NavbarProps): JSX.Element => {
               src={selected === NAVBAR_ACTIONS.likes ? likeSelected : like}
             />
           </span>
-          <span className="icon" onClick={() => go("/benefits")}>
+          <span className="icon" onClick={() => go("/notifications")}>
             <img
               src={
                 selected === NAVBAR_ACTIONS.notifications ? bellSelected : bell
