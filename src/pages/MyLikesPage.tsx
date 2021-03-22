@@ -66,7 +66,7 @@ const MyLikesPage: React.FC = () => {
           </div>
         </div>
         <div className="columns">
-          <Swiper id="Swiper1" breakpoints={breakpoints}>
+          <Swiper id="Swiper1" navigation breakpoints={breakpoints}>
             {likes.map((like: Benefit, i: number) => {
               return (
                 <div
@@ -95,6 +95,7 @@ const MyLikesPage: React.FC = () => {
         <div className="columns">
           <Swiper
             id="Swiper2"
+            navigation
             breakpoints={breakpoints}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
