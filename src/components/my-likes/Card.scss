@@ -1,9 +1,7 @@
 .my-likes {
-  // .swiper-container {
-  //   width: 100%;
-  //   height: 100%;
-  //   padding-bottom: 10px;
-  // }
+  .swiper-container {
+    padding-bottom: 10px;
+  }
 
   .swiper-pagination-bullet-active {
     background: #8230df;
@@ -33,8 +31,8 @@
     padding-top: 10px;
   }
   .card {
-    max-width: 170px;
-    min-height: 300px;
+    width: 170px;
+    height: 270px;
     vertical-align: middle;
   }
 
