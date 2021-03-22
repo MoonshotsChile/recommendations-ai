@@ -171,6 +171,14 @@ body {
     padding: 2em;
   }
 
+  .hero-head {
+    .image {
+      background-repeat: repeat-x;
+      height: 20vh;
+      width: 100%;
+    }
+  }
+
   .subtitle {
     font-family: Sen;
     font-style: normal;
