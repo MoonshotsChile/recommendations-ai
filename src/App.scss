@@ -33,6 +33,7 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/components/_all.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
@@ -41,6 +42,11 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/grid/all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
 @import "../node_modules/bulma/sass/layout/_all.sass";
+
+
+@import '../node_modules/@material/textfield/dist/mdc.textfield.css';
+@import '../node_modules/@material/floating-label/dist/mdc.floating-label.css';
+
 
 body {
   font-family: $family-secondary;

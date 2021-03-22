@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material/textfield": "^10.0.0",
     "@react-google-maps/api": "^2.1.1",
+    "@rmwc/textfield": "^6.1.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -14,9 +14,7 @@
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.7",
     "bulma": "^0.9.2",
-    "bulma-material-form": "^0.1.0",
     "json-server": "^0.16.3",
-    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-circular-progressbar": "^2.0.3",
     "react-dom": "^17.0.1",
@@ -25,6 +23,7 @@
     "react-scripts": "4.0.3",
     "react-tinder-card": "^1.3.1",
     "rut.js": "^2.0.0",
+    "sass": "^1.32.8",
     "swiper": "^6.5.0",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"

@@ -4,6 +4,7 @@ import { format, validate } from "rut.js";
 import { useHistory } from "react-router-dom";
 import { ContextApi } from "../context-api/ContextApi";
 import { sbenefits } from "../assets";
+import { TextField } from "@rmwc/textfield";
 
 const LoginPage: React.FC = () => {
     const {saveContext} = useContext(ContextApi)
@@ -62,15 +63,15 @@ const LoginPage: React.FC = () => {
                         <form autoComplete="none">
                             <div className="field">
                                 <div className="control">
-                                    <input className="input" onChange={handleChangeRut} type="text" id="username"
-                                           value={userdata.username} placeholder="RUT Usuario" autoFocus={true}
+                                    <TextField icon="user" className="input" onChange={handleChangeRut} type="text" id="username"
+                                           value={userdata.username} placeholder="Ingresa tu RUT" autoFocus={true}
                                            autoComplete="none"/>
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="control">
-                                    <input className="input" onChange={handleChange} type="password" id="password"
-                                           value={userdata.password} placeholder="Clave" autoComplete="none"/>
+                                    <TextField icon="lock"  className="input" onChange={handleChange} type="password" id="password"
+                                           value={userdata.password} placeholder="Ingresa tu " autoComplete="none"/>
                                 </div>
                             </div>
                         </form>
