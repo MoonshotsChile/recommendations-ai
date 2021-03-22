@@ -52,7 +52,7 @@ const MyLikesPage: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <Navbar selected={NAVBAR_ACTIONS.likes} />
       <div className="my-likes section">
         <div className="columns">

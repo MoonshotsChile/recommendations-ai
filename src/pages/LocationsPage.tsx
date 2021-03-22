@@ -72,7 +72,7 @@ const LocationsPage = (): JSX.Element => {
     }
 
     return (
-        <>
+        <div className="container">
             <Navbar selected={NAVBAR_ACTIONS.locations}/>
             <section className="locations">
                 {isLoaded && <GoogleMap
@@ -112,7 +112,7 @@ const LocationsPage = (): JSX.Element => {
                         </div>
                     </div>)}
             </section>
-        </>
+        </div>
     )
 };
 

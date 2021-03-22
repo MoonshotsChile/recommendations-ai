@@ -37,7 +37,7 @@ const TutorialPage = (): JSX.Element => {
 
 
     return (
-        <>
+        <div className="container">
             <Navbar selected={NAVBAR_ACTIONS.matchs}/>
             <div className='tutorial hero is-fullheight-with-footer'>
                 <div className='hero-head'>
@@ -113,7 +113,7 @@ const TutorialPage = (): JSX.Element => {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

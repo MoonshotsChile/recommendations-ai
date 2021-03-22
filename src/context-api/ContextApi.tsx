@@ -13,6 +13,7 @@ export enum NAVBAR_ACTIONS {
 export interface ContextProps {
   isAuthenticated?: boolean;
   navbarSelected?: NAVBAR_ACTIONS;
+  isFullScreen?: boolean;
   location?: Coord
 }
 
@@ -28,6 +29,7 @@ export interface Coord {
 const initialState: ContextPropsExtended = {
   isAuthenticated: false,
   location: {latitude: 0, longitude: 0},
+  isFullScreen: false,
   saveContext: () => {}
 };
 
@@ -56,6 +58,7 @@ const ContextApiProvider: FC = ({ children }) => {
         isAuthenticated: context.isAuthenticated,
         navbarSelected: context.navbarSelected,
         location: context.location,
+        isFullScreen: context.isFullScreen,
         saveContext,
       }}
     >

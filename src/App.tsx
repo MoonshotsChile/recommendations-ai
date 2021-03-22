@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
-import BenefitsMapPage from "./pages/BenefitsMap";
 import InterestsPage from "./pages/InterestsPage";
 import LoginPage from "./pages/LoginPage";
 import MyLikesPage from "./pages/MyLikesPage";
@@ -17,7 +16,6 @@ import SplashPage from "./pages/SplashPage";
 const App: FC = () => {
   return (
     <ContextApiProvider>
-      <div className="container is-fullwidth">
         <Router basename="">
           <Switch>
             <Route exact path="/login">
@@ -25,9 +23,6 @@ const App: FC = () => {
             </Route>
             <Route exact path="/">
               <SplashPage />
-            </Route>
-            <Route exact path="/benefits">
-              <BenefitsMapPage />
             </Route>
             <Route exact path="/interests">
               <InterestsPage />
@@ -55,7 +50,6 @@ const App: FC = () => {
             </Route>
           </Switch>
         </Router>
-      </div>
     </ContextApiProvider>
   );
 };

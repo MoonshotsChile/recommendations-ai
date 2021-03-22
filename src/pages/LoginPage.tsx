@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { useContext, useState } from "react";
+import { useContext, useState } from 'react';
 import { format, validate } from "rut.js";
 import { useHistory } from "react-router-dom";
 import { ContextApi } from "../context-api/ContextApi";
 import { sbenefits } from "../assets";
 
 const LoginPage: React.FC = () => {
-    const { saveContext } = useContext(ContextApi)
-    let { isAuthenticated } = useContext(ContextApi)
+    const {saveContext} = useContext(ContextApi)
+    let {isAuthenticated} = useContext(ContextApi)
 
     const history = useHistory();
 
@@ -37,54 +37,58 @@ const LoginPage: React.FC = () => {
 
     const goToNext = () => {
         isAuthenticated = true
-        saveContext({ isAuthenticated })
+        saveContext({isAuthenticated})
         history.push('/onboarding')
     }
 
     return (
-        <div className="section login hero is-fullheight">
-            <div className="hero is-borderless is-fullheight">
-                <section className="card-header is-borderless">
-                    <div className="container has-text-centered">
-                        <p className="title">
-                            <img src={sbenefits} alt="SBenefits"/>
-                        </p>
-                        <h6 className="title">
-                            Bienvenido a SBenefits
-                        </h6>
-                        <p className="subtitle">
-                            Ingresa con los datos de tu cuenta Sbank
-                        </p>
-                    </div>
-                </section>
-                <section className="card-content is-borderless">
-                    <form autoComplete="none">
-                        <div className="field">
-                            <div className="control">
-                                <input className="input" onChange={handleChangeRut} type="text" id="username"
-                                       value={userdata.username} placeholder="RUT Usuario" autoFocus={true} autoComplete="none"/>
-                            </div>
+        <div className="container">
+            <div className="section login hero is-fullheight">
+                <div className="hero is-borderless is-fullheight">
+                    <section className="card-header is-borderless">
+                        <div className="container has-text-centered">
+                            <p className="title">
+                                <img src={sbenefits} alt="SBenefits"/>
+                            </p>
+                            <h6 className="title">
+                                Bienvenido a SBenefits
+                            </h6>
+                            <p className="subtitle">
+                                Ingresa con los datos de tu cuenta Sbank
+                            </p>
                         </div>
-                        <div className="field">
-                            <div className="control">
-                                <input className="input" onChange={handleChange} type="password" id="password"
-                                       value={userdata.password} placeholder="Clave" autoComplete="none"/>
+                    </section>
+                    <section className="card-content is-borderless">
+                        <form autoComplete="none">
+                            <div className="field">
+                                <div className="control">
+                                    <input className="input" onChange={handleChangeRut} type="text" id="username"
+                                           value={userdata.username} placeholder="RUT Usuario" autoFocus={true}
+                                           autoComplete="none"/>
+                                </div>
                             </div>
+                            <div className="field">
+                                <div className="control">
+                                    <input className="input" onChange={handleChange} type="password" id="password"
+                                           value={userdata.password} placeholder="Clave" autoComplete="none"/>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                    <section className="hero-foot has-text-centered">
+                        <div className="column is-three-quarter">
+                            <button id="btn-fetch-data"
+                                    className="button is-primary is-fullwidth is-inline has-text-centered"
+                                    disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
+                            </button>
                         </div>
-                    </form>
-                </section>
-                <section className="hero-foot has-text-centered">
-                    <div className="column is-three-quarter">
-                        <button id="btn-fetch-data" className="button is-primary is-fullwidth is-inline has-text-centered"
-                                disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
-                        </button>
-                    </div>
-                    <div className="column is-three-quarter">
-                        <button id="btn-fetch-data" className="button is-fullwidth is-inline has-text-centered"
-                                disabled={isLoading} onClick={goToNext}>Invitado
-                        </button>
-                    </div>
-                </section>
+                        <div className="column is-three-quarter">
+                            <button id="btn-fetch-data" className="button is-fullwidth is-inline has-text-centered"
+                                    disabled={isLoading} onClick={goToNext}>Invitado
+                            </button>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
     );

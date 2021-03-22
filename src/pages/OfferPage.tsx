@@ -66,7 +66,7 @@ const OfferPage = (): JSX.Element => {
     }
 
     return (
-        <>
+        <div className="container">
             <Navbar selected={NAVBAR_ACTIONS.matchs}/>
             <div className='offers hero is-fullheight-with-footer'>
                 <div className='hero-head'>
@@ -98,7 +98,7 @@ const OfferPage = (): JSX.Element => {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

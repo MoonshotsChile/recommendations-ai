@@ -1,11 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { sbenefitsWhite, splash } from "../assets";
 import { useHistory } from "react-router-dom";
+import { ContextApi } from "../context-api/ContextApi";
 
 const SplashPage = (): JSX.Element => {
 
     const history = useHistory();
+    const { saveContext } = useContext(ContextApi)
 
+    useEffect(()=>{
+        saveContext({isFullScreen: true})
+    }, [])
 
     return (
         <section className="hero splash is-fullheight is-fullwidth" onClick={()=>history.push('/login')}>
