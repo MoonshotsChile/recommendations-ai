@@ -52,9 +52,9 @@ const MyLikesPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="my-likes container">
       <Navbar selected={NAVBAR_ACTIONS.likes} />
-      <div className="my-likes section">
+      <div className="section">
         <div className="columns">
           <div className="column">
             <span className="icon-text">
@@ -66,12 +66,17 @@ const MyLikesPage: React.FC = () => {
           </div>
         </div>
         <div className="columns">
-          <Swiper id="Swiper1" breakpoints={breakpoints}>
+          <Swiper
+            id="Swiper1"
+            slidesPerView={2}
+            navigation
+            breakpoints={breakpoints}
+          >
             {likes.map((like: Benefit, i: number) => {
               return (
                 <div
                   id="LikesCard"
-                  className="column is-6"
+                  className="column"
                   key={`LikesCards-000${i.toString()}${Math.random().toString()}`}
                 >
                   <SwiperSlide>
@@ -95,6 +100,8 @@ const MyLikesPage: React.FC = () => {
         <div className="columns">
           <Swiper
             id="Swiper2"
+            navigation
+            slidesPerView={2}
             breakpoints={breakpoints}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
