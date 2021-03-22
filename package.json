@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material/textfield": "^10.0.0",
     "@react-google-maps/api": "^2.1.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -30,7 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:mocks": "export REACT_APP_API_URL=http://localhost:2999; yarn run mockserver & yarn start",
+    "start:mocks": "export REACT_APP_API_URL=http://localhost:2999/benefits; yarn run mockserver & yarn start",
     "mockserver": "json-server --watch mockserver/db.json --routes mockserver/routes.json --port 2999",
     "mockserver:prod": "pm2 kill; pm2 start yarn --interpreter bash --name api-benefits -- mockserver",
     "build": "react-scripts build",
