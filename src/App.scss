@@ -36,16 +36,12 @@ $input-shadow: none;
 
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/components/_all.sass";
-@import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/elements/_all.sass";
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/grid/all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
 @import "../node_modules/bulma/sass/layout/_all.sass";
 
-
-@import '../node_modules/@material/textfield/dist/mdc.textfield.css';
-@import '../node_modules/@material/floating-label/dist/mdc.floating-label.css';
 
 
 body {
@@ -263,16 +259,20 @@ body {
 .control {
   input, textarea {
     display: block;
-    background: none;
     padding: 0.125rem 0.125rem 0.0625rem;
     font-size: 1rem;
     border-width: 0;
     border-color: transparent;
     line-height: 1.9;
     width: 100%;
-    color: transparent;
+    color: black;
     transition: all 0.38s ease;
     box-shadow: none;
+  }
+  .MuiInput-root {
+    position: relative;
+    width: 100%;
+    padding: 1em;
   }
 }
 

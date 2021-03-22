@@ -3,8 +3,8 @@ import { useContext, useState } from 'react';
 import { format, validate } from "rut.js";
 import { useHistory } from "react-router-dom";
 import { ContextApi } from "../context-api/ContextApi";
-import { sbenefits } from "../assets";
-import { TextField } from "@rmwc/textfield";
+import { lockIcon, sbenefits, userIcon } from "../assets";
+import { Input, InputAdornment } from '@material-ui/core';
 
 const LoginPage: React.FC = () => {
     const {saveContext} = useContext(ContextApi)
@@ -60,18 +60,41 @@ const LoginPage: React.FC = () => {
                         </div>
                     </section>
                     <section className="card-content is-borderless">
-                        <form autoComplete="none">
+                        <form autoComplete="off">
+                            <div style={{display: 'none'}}>
+                                <input type="text" id="PreventChromeAutocomplete"
+                                       name="PreventChromeAutocomplete" autoComplete="address-level4"/>
+                            </div>
                             <div className="field">
                                 <div className="control">
-                                    <TextField icon="user" className="input" onChange={handleChangeRut} type="text" id="username"
-                                           value={userdata.username} placeholder="Ingresa tu RUT" autoFocus={true}
-                                           autoComplete="none"/>
+                                    <Input
+                                        id="username"
+                                        placeholder="Ingresa tu RUT"
+                                        value={userdata.username}
+                                        onChange={handleChangeRut}
+                                        autoComplete='off'
+                                        startAdornment={
+                                            <InputAdornment position="start">
+                                                <img src={userIcon}/>
+                                            </InputAdornment>
+                                        }
+                                    />
                                 </div>
                             </div>
                             <div className="field">
                                 <div className="control">
-                                    <TextField icon="lock"  className="input" onChange={handleChange} type="password" id="password"
-                                           value={userdata.password} placeholder="Ingresa tu " autoComplete="none"/>
+                                    <Input
+                                        id="password"
+                                        type="password"
+                                        value={userdata.password}
+                                        placeholder="Ingresa tu clave de internet"
+                                        onChange={handleChange}
+                                        startAdornment={
+                                            <InputAdornment position="start">
+                                                <img src={lockIcon}/>
+                                            </InputAdornment>
+                                        }
+                                    />
                                 </div>
                             </div>
                         </form>
