@@ -33,19 +33,13 @@
     padding-top: 10px;
   }
   .card {
-    width: 190px;
+    max-width: 170px;
     min-height: 300px;
     vertical-align: middle;
   }
-  .card-content {
-    background-color: transparent;
-    padding: 1rem;
-  }
+
   .image img {
-    width: 190px;
-    height: 180px;
-  }
-  .swiper-slide {
-    max-width: 190px !important;
+    width: 170px;
+    height: 120px;
   }
 }
