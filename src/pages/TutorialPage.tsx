@@ -30,7 +30,7 @@ const TutorialPage = (): JSX.Element => {
         notLikeCardRef.current?.swipe('left')
     }
 
-    const onLater = (elem?: any) => {
+    const onLater = () => {
         // @ts-ignore
         laterCardRef.current?.swipe('down')
     }

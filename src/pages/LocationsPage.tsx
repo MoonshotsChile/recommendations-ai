@@ -29,23 +29,21 @@ const LocationsPage = (): JSX.Element => {
 
 
     useEffect(() => {
-        if (center.lng === 0 && center.lat === 0) {
-            const onSuccess = (geolocation: { coords: GeolocationCoordinates, timestamp: number }) => {
-                const location: Coord = {
-                    latitude: geolocation.coords.latitude,
-                    longitude: geolocation.coords.longitude
-                }
-                saveContext({location})
-                setCenter({
-                    lat: location?.latitude,
-                    lng: location?.longitude
-                });
+        const onSuccess = (geolocation: { coords: GeolocationCoordinates, timestamp: number }) => {
+            const location: Coord = {
+                latitude: geolocation.coords.latitude,
+                longitude: geolocation.coords.longitude
             }
-            const onError = (error: any) => {
-                console.error(error)
-            }
-            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+            saveContext({location})
+            setCenter({
+                lat: location?.latitude,
+                lng: location?.longitude
+            });
         }
+        const onError = (error: any) => {
+            console.error(error)
+        }
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }, [])
 
     useEffect(() => {
@@ -65,7 +63,7 @@ const LocationsPage = (): JSX.Element => {
     }, [])
 
     const onUnmount = React.useCallback(function callback(map) {
-        setMap(null)
+        console.log('unmount');
     }, [])
 
     const showBenefitCard = (benefit: Benefit) => {
@@ -76,23 +74,24 @@ const LocationsPage = (): JSX.Element => {
         <div className="container">
             <Navbar selected={NAVBAR_ACTIONS.locations}/>
             <section className="locations">
-                {isLoaded && <GoogleMap
-                  mapContainerStyle={containerStyle}
-                  center={center}
-                  zoom={15}
-                  onLoad={onLoad}
-                  onUnmount={onUnmount}
-                >
-                    {nearestPlaces.map((benefit: Benefit, i: number) => (
-                        <Marker
-                            key={`market${i}`}
-                            icon={mapMarkerGoogle}
-                            position={{lat: parseFloat(benefit.latitude), lng: parseFloat(benefit.longitude)}}
-                            onClick={(me) => showBenefitCard(benefit)}
-                        />
-                    ))}
-                  <Marker position={{lat: center?.lat, lng: center?.lng}}/>
-                </GoogleMap>}
+                {isLoaded && (
+                    <GoogleMap
+                        mapContainerStyle={containerStyle}
+                        center={center}
+                        zoom={15}
+                        onLoad={onLoad}
+                        onUnmount={onUnmount}
+                    >
+                        {nearestPlaces.map((benefit: Benefit, i: number) => (
+                            <Marker
+                                key={`market${i}`}
+                                icon={mapMarkerGoogle}
+                                position={{lat: parseFloat(benefit.latitude), lng: parseFloat(benefit.longitude)}}
+                                onClick={(me) => showBenefitCard(benefit)}
+                            />
+                        ))}
+                        <Marker position={{lat: center?.lat, lng: center?.lng}}/>
+                    </GoogleMap>)}
                 {benefit && (
                     <div className="modal-card">
                         <div className="card-content">
