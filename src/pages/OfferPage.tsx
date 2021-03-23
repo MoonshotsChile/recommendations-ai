@@ -9,7 +9,7 @@ import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
 import TinderButtonLater from "../components/buttons/TinderButtonLater";
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
 
-const OfferPage = (): JSX.Element => {
+const OfferPage = (props: any): JSX.Element => {
     const useCase = new BenefitsUseCase()
     const [benefits, setBenefits] = useState([] as Benefit[])
     const lastCardRef = useRef(null)
@@ -73,6 +73,7 @@ const OfferPage = (): JSX.Element => {
                     <div className='tinder-cards'>
                         {benefits.map((benefit: Benefit, i: number) => (
                             <TinderCard
+                                {...{className: 'tinder-cards__card'}}
                                 key={benefit.id}
                                 preventSwipe={['up']}
                                 ref={lastCardRef}

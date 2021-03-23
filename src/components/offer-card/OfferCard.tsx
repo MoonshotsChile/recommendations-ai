@@ -13,7 +13,7 @@ const OfferCard = (props: PropsOfferCard): JSX.Element => {
 
     return (
         <div
-            className='tinder-cards__card'
+            className='card'
             style={{zIndex}}
         >
             <div className="tinder-cards__card__content">
@@ -23,17 +23,18 @@ const OfferCard = (props: PropsOfferCard): JSX.Element => {
                         alt="Placeholder image"
                     />
                 </div>
-                <div className="tinder-cards__card__footer columns">
-                    <div className="column is-fullwidth category">
+                <div className="tinder-cards__card__footer">
+                    <div className="is-fullwidth category">
                         <p>
                             {benefit.category}
                         </p>
                     </div>
-                    <div className="column is-fullwidth title">
+                    <div className="is-fullwidth title">
                         <p>
                             {benefit.title}
                         </p>
                     </div>
+                    <div className="is-fullwidth has-text-weight-light" dangerouslySetInnerHTML={{__html: benefit.description}}/>
                 </div>
             </div>
         </div>
