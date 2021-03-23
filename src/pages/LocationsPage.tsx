@@ -1,13 +1,20 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 import { ContextApi, Coord, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
 import { mapMarkerGoogle } from "../assets";
+import TinderCard from "react-tinder-card";
+import OfferCard from "../components/offer-card/OfferCard";
+import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
+import TinderButtonLater from "../components/buttons/TinderButtonLater";
+import TinderButtonLike from "../components/buttons/TinderButtonLike";
 
 
 const LocationsPage = (): JSX.Element => {
+
+    const lastCardRef = useRef(null)
 
     const {isLoaded} = useJsApiLoader({
         id: 'google-map-script',
@@ -70,10 +77,39 @@ const LocationsPage = (): JSX.Element => {
         setBenefit(benefit)
     }
 
+    const onLike = () => {
+        // @ts-ignore
+        lastCardRef.current?.swipe('right')
+
+    }
+
+    const onNotLike = () => {
+        // @ts-ignore
+        lastCardRef.current?.swipe('left')
+    }
+
+    const onLater = () => {
+        // @ts-ignore
+        lastCardRef.current?.swipe('down')
+    }
+
     return (
         <div className="container">
             <Navbar selected={NAVBAR_ACTIONS.locations}/>
             <section className="locations">
+                {benefit && (
+                    <TinderCard
+                        ref={lastCardRef}
+                        {...{className: 'tinder-cards__card', style: {'zIndex': 1}}}
+                        key={benefit.id}
+                        preventSwipe={['up']}
+                        onCardLeftScreen={() => setBenefit(undefined)}
+                    >
+                        <OfferCard
+                            benefit={benefit}
+                        />
+                    </TinderCard>
+                )}
                 {isLoaded && (
                     <GoogleMap
                         mapContainerStyle={containerStyle}
@@ -93,22 +129,17 @@ const LocationsPage = (): JSX.Element => {
                         <Marker position={{lat: center?.lat, lng: center?.lng}}/>
                     </GoogleMap>)}
                 {benefit && (
-                    <div className="modal-card">
-                        <div className="card-content">
-                            <div className="media">
-                                <div className="media-left">
-                                    <figure className="image is-48x48">
-                                        <img
-                                            src={benefit.covers[0]}
-                                            alt="Placeholder image"
-                                        />
-                                    </figure>
-                                </div>
-                                <div className="media-content">
-                                    <p className="title is-6">{benefit.title}</p>
-                                    <p className="subtitle is-6">{benefit.category}</p>
-                                </div>
-                            </div>
+                    <div className='modal-card'>
+                        <div className="card-footer hero-foot is-borderless">
+                            <p className="card-footer-item cursor-pointer is-borderless">
+                                <TinderButtonNotLike onClick={onNotLike}/>
+                            </p>
+                            <p className="card-footer-item cursor-pointer is-borderless">
+                                <TinderButtonLater onClick={onLater}/>
+                            </p>
+                            <p className="card-footer-item cursor-pointer is-borderless">
+                                <TinderButtonLike onClick={onLike}/>
+                            </p>
                         </div>
                     </div>)}
             </section>

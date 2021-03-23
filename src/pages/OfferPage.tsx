@@ -54,8 +54,7 @@ const OfferPage = (props: any): JSX.Element => {
         lastCardRef.current?.swipe('left')
     }
 
-    const onLater = (elem?: any) => {
-        console.log(lastCardRef)
+    const onLater = () => {
         // @ts-ignore
         lastCardRef.current?.swipe('down')
     }
