@@ -1,11 +1,8 @@
 import React, { useCallback, useContext, useEffect, useState } from "react";
 import LikeCard from "../components/my-likes/Card";
-import { BenefitsUseCase } from "../domain/BenefitsUseCase";
-import {
-  Benefit,
-  benefitMock,
-  benefitsDecorator,
-} from "../domain/entity/Benefit";
+
+import { UserdataUseCase } from "../domain/UserdataUseCase";
+import { Userdata } from "../domain/entity/Userdata";
 import { clockLike, likeSelected } from "../assets";
 import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
@@ -17,10 +14,13 @@ import "swiper/components/navigation/navigation.scss";
 SwiperCore.use([Navigation]); //descomentar para habilitar
 import "../components/my-likes/Card.scss";
 const MyLikesPage: React.FC = () => {
-  const useCase = new BenefitsUseCase();
-  const [likes, setLikes] = useState([benefitMock]);
-  const [laters, setLaters] = useState([benefitMock]);
+  const useCase = new UserdataUseCase();
+  const { rut } = useContext(ContextApi);
+
+  const [likes, setLikes] = useState([]);
+  const [laters, setLaters] = useState([]);
   //const [breakpoints, setBreakpoints] = useState({});
+
   const breakpoints = {
     // when window width is >= 640px
     640: {
@@ -37,17 +37,11 @@ const MyLikesPage: React.FC = () => {
   };
   useEffect(() => {
     useCase
-      .randomStack(25)
+      .find(rut || "")
       .then((response: Response) => response.json())
-      .then((data: Benefit[]) => {
-        setLikes(benefitsDecorator(data));
-      });
-
-    useCase
-      .randomStack(15)
-      .then((response: Response) => response.json())
-      .then((data: Benefit[]) => {
-        setLaters(benefitsDecorator(data));
+      .then((data: any) => {
+        setLikes(data.likes);
+        setLaters(data.later);
       });
   }, []);
 
@@ -72,7 +66,7 @@ const MyLikesPage: React.FC = () => {
             navigation
             breakpoints={breakpoints}
           >
-            {likes.map((like: Benefit, i: number) => {
+            {likes.map((like: any, i: number) => {
               return (
                 <div
                   id="LikesCard"
@@ -106,7 +100,7 @@ const MyLikesPage: React.FC = () => {
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            {laters.map((later: Benefit, i: number) => {
+            {laters.map((later: any, i: number) => {
               return (
                 <div className="column" key={`laters-${i}`}>
                   <SwiperSlide>

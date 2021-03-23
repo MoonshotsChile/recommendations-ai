@@ -16219,40 +16219,42 @@
   "userdata": [
     {
       "id": "1-9",
-      "likes": {
-        "id": 49477,
-        "uuid": "ddba7374-0b7a-4d62-8660-ddc11dbba517",
-        "created_at": "2019-07-17T10:57:12-04:00",
-        "updated_at": "2020-01-15T15:04:58-03:00",
-        "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/servicios-pyme/promotions/virtual-business",
-        "title": "Virtual Business",
-        "slug": "virtual-business",
-        "description": "      <h3>20% dcto</h3><p>En Virtual Business te ayudamos a constituir tu empresa y a realizar todos los trámites para que tengas tu negocio facturando en una semana. Nuestros planes de oficina virtual te permiten cumplir con las exigencias del SII y la Municipalidad. Virtual Business, 12 años ayudando a más de 5000 emprendedores a hacer realidad el sueño de tener su empresa propia.\r\n</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Holanda 099 of 1101<br>Providencia</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>22 4102 800</li>\r\n      \r\n            <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Huérfanos 1160 of 1208.<br>Santiago Centro</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>22 4102 800</li>\r\n      \r\n      <li class=\"web\"><a href=\"https://www.virtualbusiness.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> https://www.virtualbusiness.cl/</a></li>\r\n<li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/07/1-Constituci%C3%B3n-de-Empresas.pdf\" target=\" Target=&amp;Quot;_blank&amp;Quot;\">Constitución de Empresa</a></button></li>  \r\n<li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/07/3-Oficina-Virtual-Personalizada.pdf\" target=\" Target=&amp;Quot;_blank&amp;Quot;\">Oficina Virtual Personalizada</a></button></li>\r\n<li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/07/2-Oficina-Bodega.pdf\" target=\" Target=&amp;Quot;_blank&amp;Quot;\">Oficina Virtual+Bodega</a></button></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/OficinaVirtualBusiness/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"fb\"><a href=\"https://www.instagram.com/vbusiness_cl/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'Virtualbusiness';\r\n    </script>",
-        "covers": [
-          "https://bci-cdn.azureedge.net/uploads/82b8526b-57b3-4024-a6be-2e70c8d73d9d/R320x240/Virtual-Business-360x500.jpg",
-          "https://bci-cdn.azureedge.net/uploads/65280e72-6a74-42ed-ac52-2a62609cec3f/R320x240/virtual-business-180x63.jpg"
-        ],
-        "tags": [
-          "casa-matriz",
-          "venta-online",
-          "virtualbusiness",
-          "negocios"
-        ],
-        "category": "shopping servicios pyme",
-        "site_id": 68,
-        "options": {
+      "likes": [
+        {
+          "id": 49477,
+          "uuid": "ddba7374-0b7a-4d62-8660-ddc11dbba517",
+          "created_at": "2019-07-17T10:57:12-04:00",
+          "updated_at": "2020-01-15T15:04:58-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/servicios-pyme/promotions/virtual-business",
+          "title": "Virtual Business",
+          "slug": "virtual-business",
+          "description": "      <h3>20% dcto</h3><p>En Virtual Business te ayudamos a constituir tu empresa y a realizar todos los trámites para que tengas tu negocio facturando en una semana. Nuestros planes de oficina virtual te permiten cumplir con las exigencias del SII y la Municipalidad. Virtual Business, 12 años ayudando a más de 5000 emprendedores a hacer realidad el sueño de tener su empresa propia.\r\n</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Holanda 099 of 1101<br>Providencia</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>22 4102 800</li>\r\n      \r\n            <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Huérfanos 1160 of 1208.<br>Santiago Centro</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>22 4102 800</li>\r\n      \r\n      <li class=\"web\"><a href=\"https://www.virtualbusiness.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> https://www.virtualbusiness.cl/</a></li>\r\n<li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/07/1-Constituci%C3%B3n-de-Empresas.pdf\" target=\" Target=&amp;Quot;_blank&amp;Quot;\">Constitución de Empresa</a></button></li>  \r\n<li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/07/3-Oficina-Virtual-Personalizada.pdf\" target=\" Target=&amp;Quot;_blank&amp;Quot;\">Oficina Virtual Personalizada</a></button></li>\r\n<li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/07/2-Oficina-Bodega.pdf\" target=\" Target=&amp;Quot;_blank&amp;Quot;\">Oficina Virtual+Bodega</a></button></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/OficinaVirtualBusiness/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"fb\"><a href=\"https://www.instagram.com/vbusiness_cl/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'Virtualbusiness';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/82b8526b-57b3-4024-a6be-2e70c8d73d9d/R320x240/Virtual-Business-360x500.jpg",
+            "https://bci-cdn.azureedge.net/uploads/65280e72-6a74-42ed-ac52-2a62609cec3f/R320x240/virtual-business-180x63.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "venta-online",
+            "virtualbusiness",
+            "negocios"
+          ],
+          "category": "shopping servicios pyme",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div></div><span style=\"background-color: initial;\">Descuento de un 20% por el valor neto de la compra realizada en los servicios de Constitución de empresa.</span><br><span style=\"background-color: initial;\">Plan anual de Oficina Virtual Personalizada&nbsp;</span><br><span style=\"background-color: initial;\">Plan anual de Oficina Virtual Personalizada más bodega.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable a otras promociones y/o descuentos.</span><br><div><div></div></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
           "conditions": "<div></div><span style=\"background-color: initial;\">Descuento de un 20% por el valor neto de la compra realizada en los servicios de Constitución de empresa.</span><br><span style=\"background-color: initial;\">Plan anual de Oficina Virtual Personalizada&nbsp;</span><br><span style=\"background-color: initial;\">Plan anual de Oficina Virtual Personalizada más bodega.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable a otras promociones y/o descuentos.</span><br><div><div></div></div>",
-          "comments_enabled": true
-        },
-        "video_url": "",
-        "conditions": "<div></div><span style=\"background-color: initial;\">Descuento de un 20% por el valor neto de la compra realizada en los servicios de Constitución de empresa.</span><br><span style=\"background-color: initial;\">Plan anual de Oficina Virtual Personalizada&nbsp;</span><br><span style=\"background-color: initial;\">Plan anual de Oficina Virtual Personalizada más bodega.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable a otras promociones y/o descuentos.</span><br><div><div></div></div>",
-        "start_date": "2019-07-17T10:00:00-04:00",
-        "end_date": "2019-07-17T10:00:00-04:00",
-        "discount": 20,
-        "location_street": "Holanda 099, providencia",
-        "latitude": null,
-        "longitude": null
-      },
+          "start_date": "2019-07-17T10:00:00-04:00",
+          "end_date": "2019-07-17T10:00:00-04:00",
+          "discount": 20,
+          "location_street": "Holanda 099, providencia",
+          "latitude": null,
+          "longitude": null
+        }
+      ],
       "later": [],
       "not-likes": []
     }
