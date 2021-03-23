@@ -27,6 +27,7 @@ const LocationsPage = (): JSX.Element => {
     const {location, saveContext} = useContext(ContextApi)
     const [center, setCenter] = useState({lat: location?.latitude, lng: location?.longitude})
     const [benefit, setBenefit] = useState<Benefit>()
+    const [zoom, setZoom] = useState(12)
     const [nearestPlaces, setNearestPlaces] = useState([])
 
     const containerStyle = {
@@ -46,6 +47,7 @@ const LocationsPage = (): JSX.Element => {
                 lat: location?.latitude,
                 lng: location?.longitude
             });
+            setZoom(11)
         }
         const onError = (error: any) => {
             console.error(error)
@@ -114,7 +116,7 @@ const LocationsPage = (): JSX.Element => {
                     <GoogleMap
                         mapContainerStyle={containerStyle}
                         center={center}
-                        zoom={15}
+                        zoom={zoom}
                         onLoad={onLoad}
                         onUnmount={onUnmount}
                     >
