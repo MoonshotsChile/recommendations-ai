@@ -34,7 +34,7 @@ const LoginPage: React.FC = () => {
     }
 
     const isValidForm = () => {
-        return validate(userdata.username) && userdata.password.length > 3
+        return validate(userdata.username)
     }
 
     const goToNext = () => {
@@ -108,7 +108,7 @@ const LoginPage: React.FC = () => {
                         <div className="column is-three-quarter">
                             <button id="btn-fetch-data"
                                     className="button is-primary is-fullwidth is-inline has-text-centered"
-                                    disabled={isLoading || isValidForm()} onClick={goToNext}>Login
+                                    disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
                             </button>
                         </div>
                         <div className="column is-three-quarter">
