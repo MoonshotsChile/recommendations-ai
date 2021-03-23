@@ -25,7 +25,8 @@ const LocationsPage = (): JSX.Element => {
 
     const [map, setMap] = useState(null)
     const {location, saveContext} = useContext(ContextApi)
-    const [center, setCenter] = useState({lat: location?.latitude, lng: location?.longitude})
+    // @ts-ignore
+    const [center, setCenter] = useState({lat: parseFloat(location?.latitude), lng: parseFloat(location?.longitude)})
     const [benefit, setBenefit] = useState<Benefit>()
     const [zoom, setZoom] = useState(12)
     const [nearestPlaces, setNearestPlaces] = useState([])
