@@ -5,7 +5,7 @@ import { Userdata } from "./entity/Userdata";
 export class UserdataUseCase {
 
     list(queryParams = ''): Promise<Response>  {
-        return fetch(`${API_URL}//${queryParams}`)
+        return fetch(`${API_URL}/userdata/${queryParams}`)
     }
 
     find(id: string): Promise<Response> {
