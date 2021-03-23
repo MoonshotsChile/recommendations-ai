@@ -47,7 +47,7 @@ const LocationsPage = (): JSX.Element => {
                 lat: location?.latitude,
                 lng: location?.longitude
             });
-            setZoom(11)
+            setTimeout(() => setZoom(11), 1000)
         }
         const onError = (error: any) => {
             console.error(error)
