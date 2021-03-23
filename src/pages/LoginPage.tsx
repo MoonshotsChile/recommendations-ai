@@ -62,11 +62,11 @@ const LoginPage: React.FC = () => {
                 if (response.ok) {
                     return response.json()
                 } else {
-                    return newUserdata
+                    saveUserData(newUserdata)
                 }
             })
             .then((userdata: Userdata) => {
-                saveUserData(userdata)
+                saveContext({userdata})
             })
             .catch(error => {
                 saveUserData(newUserdata)

@@ -8,10 +8,12 @@ import OfferCard from "../components/offer-card/OfferCard";
 import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
 import TinderButtonLater from "../components/buttons/TinderButtonLater";
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
+import { UserdataUseCase } from "../domain/UserdataUseCase";
 
-const OfferPage = (props: any): JSX.Element => {
-    const useCase = new BenefitsUseCase()
-    const { rut } = useContext(ContextApi)
+const OfferPage = (): JSX.Element => {
+    const benefitsUseCase = new BenefitsUseCase()
+    const userdataUseCase = new UserdataUseCase()
+    const { rut, saveContext, userdata } = useContext(ContextApi)
     const [benefits, setBenefits] = useState([] as Benefit[])
     const lastCardRef = useRef(null)
 
@@ -20,7 +22,7 @@ const OfferPage = (props: any): JSX.Element => {
     }, [])
 
     const getInitialBenefits = (): void => {
-        useCase.randomStack(2)
+        benefitsUseCase.randomStack(2)
             .then((response: Response) => response.json())
             .then((data: Benefit[]) => {
                 setBenefits(
@@ -30,7 +32,7 @@ const OfferPage = (props: any): JSX.Element => {
     }
 
     const getNextBenefits = (): void => {
-        useCase.random()
+        benefitsUseCase.random()
             .then((response: Response) => response.json())
             .then((data: Benefit[]) => {
                 setBenefits(prevBenefits => {
@@ -43,26 +45,73 @@ const OfferPage = (props: any): JSX.Element => {
             })
     }
 
+    const currentBenefit = () => {
+        return benefits[1]
+    }
+
 
     const onLike = () => {
         // @ts-ignore
         lastCardRef.current?.swipe('right')
-
+        saveLike()
     }
 
     const onNotLike = () => {
+        setBenefits(benefits)
         // @ts-ignore
         lastCardRef.current?.swipe('left')
+        saveNotLike()
     }
 
     const onLater = () => {
         // @ts-ignore
         lastCardRef.current?.swipe('down')
+        saveLater()
     }
 
-    const outOfFrame = (name: number) => {
-        console.log(name + ' left the screen!')
+    const outOfFrame = () => {
         getNextBenefits()
+    }
+
+    const saveLater = () => {
+        if (userdata) {
+            const later = [...userdata.later, ...[currentBenefit()]]
+            userdata.later = later
+            saveContext({userdata})
+            userdataUseCase.later(rut!, later)
+        }
+    }
+
+    const saveLike = () => {
+        if (userdata) {
+            const likes = [...userdata.likes, ...[currentBenefit()]]
+            userdata.likes = likes
+            saveContext({userdata})
+            userdataUseCase.like(rut!, likes)
+        }
+    }
+
+    const saveNotLike = () => {
+        if (userdata) {
+            const later = [...userdata.later, ...[currentBenefit()]]
+            userdata.later = later
+            saveContext({userdata})
+            userdataUseCase.notLike(rut!, later)
+        }
+    }
+
+    function onSwipe(direction: string) {
+        switch (direction) {
+            case 'right':
+                saveLike()
+                break
+            case 'left':
+                saveNotLike()
+                break
+            case 'down':
+                saveLater()
+                break
+        }
     }
 
     return (
@@ -77,7 +126,9 @@ const OfferPage = (props: any): JSX.Element => {
                                 key={benefit.id}
                                 preventSwipe={['up']}
                                 ref={lastCardRef}
-                                onCardLeftScreen={() => outOfFrame(benefit.id)}
+                                onSwipe={onSwipe}
+                                flickOnSwipe={true}
+                                onCardLeftScreen={outOfFrame}
                             >
                                 <OfferCard
                                     benefit={benefit}

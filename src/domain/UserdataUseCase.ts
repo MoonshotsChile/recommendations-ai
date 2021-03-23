@@ -33,10 +33,10 @@ export class UserdataUseCase {
     }
 
     likeOrNot(id: string, benefits: Benefit[], reaction: string): Promise<Response>  {
-        return fetch(`${API_URL}/userdata/${id}/${reaction}`, {
+        return fetch(`${API_URL}/userdata/${id}/`, {
             headers: {'Content-Type': 'application/json'},
-            method: 'PUT',
-            body: JSON.stringify(benefits)
+            method: 'PATCH',
+            body: JSON.stringify({[reaction]: benefits})
         })
     }
 
