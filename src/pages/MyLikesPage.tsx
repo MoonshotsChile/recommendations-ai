@@ -13,12 +13,13 @@ import "swiper/components/navigation/navigation.scss";
 
 SwiperCore.use([Navigation]); //descomentar para habilitar
 import "../components/my-likes/Card.scss";
+import { Benefit } from "../domain/entity/Benefit";
 const MyLikesPage: React.FC = () => {
   const useCase = new UserdataUseCase();
   const { rut } = useContext(ContextApi);
 
-  const [likes, setLikes] = useState([]);
-  const [laters, setLaters] = useState([]);
+  const [likes, setLikes] = useState([] as Benefit[]);
+  const [laters, setLaters] = useState([] as Benefit[]);
   //const [breakpoints, setBreakpoints] = useState({});
 
   const breakpoints = {
@@ -39,11 +40,22 @@ const MyLikesPage: React.FC = () => {
     useCase
       .find(rut || "")
       .then((response: Response) => response.json())
-      .then((data: any) => {
-        setLikes(data.likes);
-        setLaters(data.later);
+      .then((data: Userdata) => {
+        setLikes(cleanDuplicates(data.likes));
+        setLaters(cleanDuplicates(data.later));
       });
   }, []);
+
+  const cleanDuplicates = (benefits: Benefit[]) => {
+    const cleans = benefits.reduce((out: Benefit[] = [], benefit: Benefit) => {
+      if (out.length > 0) {
+        const exists = out.filter((b) => b.id === benefit.id);
+        if (exists.length > 0) return out;
+        else return [...out, { ...benefit }];
+      } else return [...out, { ...benefit }];
+    }, []);
+    return cleans;
+  };
 
   return (
     <div className="my-likes container">
