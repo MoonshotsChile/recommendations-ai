@@ -6,12 +6,11 @@ export const setLocalStorage = (key: string, value: any) => {
   }
 }
 
-export const getLocalStorage = (key: string, initialValue?: any) => {
+export const getLocalStorage = (key: string) => {
   try {
-    const value = window.localStorage.getItem(key);
-    return value ? value : initialValue;
+    return window.localStorage.getItem(key);
   } catch (e) {
     console.error(e)
-    return initialValue;
+    return '';
   }
 }

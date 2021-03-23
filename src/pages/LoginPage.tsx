@@ -3,11 +3,15 @@ import { useContext, useState } from 'react';
 import { format, validate } from "rut.js";
 import { useHistory } from "react-router-dom";
 import { ContextApi } from "../context-api/ContextApi";
-import { lockIcon, sbenefits, userIcon } from "../assets";
+import { lockIcon, sbenefits, user, userIcon } from "../assets";
 import { Input, InputAdornment } from '@material-ui/core';
 import { generateUniqueID } from "web-vitals/dist/modules/lib/generateUniqueID";
+import { getLocalStorage } from "../context-api/helpers/localstorage";
+import { UserdataUseCase } from "../domain/UserdataUseCase";
+import { Userdata } from "../domain/entity/Userdata";
 
 const LoginPage: React.FC = () => {
+    const userdataUseCase = new UserdataUseCase()
     const {saveContext} = useContext(ContextApi)
     let {isAuthenticated} = useContext(ContextApi)
 
@@ -40,12 +44,49 @@ const LoginPage: React.FC = () => {
     const goToNext = () => {
         isAuthenticated = true
         saveContext({isAuthenticated})
+        let { username } = userdata
+        // @ts-ignore
+        if (!username) username = getLocalStorage('username')
+        if (!username) username = generateUniqueID()
 
-        const username = (userdata.username) ? userdata.username : generateUniqueID()
+        const newUserdata: Userdata = {
+            id: username,
+            "not-likes": [],
+            likes: [],
+            later: []
+        }
+
         saveContext({rut: username})
+        userdataUseCase.find(username)
+            .then((response: Response) => {
+                if (response.ok) {
+                    return response.json()
+                } else {
+                    return newUserdata
+                }
+            })
+            .then((userdata: Userdata) => {
+                saveUserData(userdata)
+            })
+            .catch(error => {
+                saveUserData(newUserdata)
+                console.error(error)
+            })
+
 
         history.push('/onboarding')
     }
+
+    const saveUserData = (userdata: Userdata) => {
+        userdataUseCase.add(userdata)
+            .then(() => {
+                saveContext({userdata})
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }
+
 
     return (
         <div className="container">
