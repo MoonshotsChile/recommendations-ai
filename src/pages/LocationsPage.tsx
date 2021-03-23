@@ -44,11 +44,15 @@ const LocationsPage = (): JSX.Element => {
                 longitude: geolocation.coords.longitude
             }
             saveContext({location})
-            setCenter({
+            const center = {
                 lat: location?.latitude,
                 lng: location?.longitude
-            });
-            setTimeout(() => setZoom(11), 1000)
+            }
+            setCenter(center);
+            setTimeout(() => {
+                setZoom(11)
+                setCenter(center)
+            }, 1500)
         }
         const onError = (error: any) => {
             console.error(error)
