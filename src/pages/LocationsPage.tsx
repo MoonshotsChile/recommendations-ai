@@ -10,11 +10,13 @@ import OfferCard from "../components/offer-card/OfferCard";
 import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
 import TinderButtonLater from "../components/buttons/TinderButtonLater";
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
+import { UserdataUseCase } from "../domain/UserdataUseCase";
 
 
 const LocationsPage = (): JSX.Element => {
 
     const lastCardRef = useRef(null)
+    const userdataUseCase = new UserdataUseCase()
 
     const {isLoaded} = useJsApiLoader({
         id: 'google-map-script',
@@ -24,7 +26,7 @@ const LocationsPage = (): JSX.Element => {
     const useCase = new BenefitsUseCase()
 
     const [map, setMap] = useState(null)
-    const {location, saveContext} = useContext(ContextApi)
+    const {location, saveContext, rut, userdata} = useContext(ContextApi)
     // @ts-ignore
     const [center, setCenter] = useState({lat: parseFloat(location?.latitude), lng: parseFloat(location?.longitude)})
     const [benefit, setBenefit] = useState<Benefit>()
@@ -87,17 +89,61 @@ const LocationsPage = (): JSX.Element => {
     const onLike = () => {
         // @ts-ignore
         lastCardRef.current?.swipe('right')
+        saveLike()
 
     }
 
     const onNotLike = () => {
         // @ts-ignore
         lastCardRef.current?.swipe('left')
+        saveNotLike()
     }
 
     const onLater = () => {
         // @ts-ignore
         lastCardRef.current?.swipe('down')
+        saveLater()
+    }
+
+    const saveLater = () => {
+        if (userdata && benefit) {
+            const later = [...userdata.later, ...[benefit]]
+            userdata.later = later
+            saveContext({userdata})
+            userdataUseCase.later(rut!, later)
+        }
+    }
+
+    const saveLike = () => {
+        if (userdata && benefit) {
+            const likes = [...userdata.likes, ...[benefit]]
+            userdata.likes = likes
+            saveContext({userdata})
+            userdataUseCase.like(rut!, likes)
+        }
+    }
+
+    const saveNotLike = () => {
+        if (userdata && benefit) {
+            const later = [...userdata.later, ...[benefit]]
+            userdata.later = later
+            saveContext({userdata})
+            userdataUseCase.notLike(rut!, later)
+        }
+    }
+
+    function onSwipe(direction: string) {
+        switch (direction) {
+            case 'right':
+                saveLike()
+                break
+            case 'left':
+                saveNotLike()
+                break
+            case 'down':
+                saveLater()
+                break
+        }
     }
 
     return (
@@ -110,6 +156,7 @@ const LocationsPage = (): JSX.Element => {
                         {...{className: 'tinder-cards__card', style: {'zIndex': 1}}}
                         key={benefit.id}
                         preventSwipe={['up']}
+                        onSwipe={onSwipe}
                         onCardLeftScreen={() => setBenefit(undefined)}
                     >
                         <OfferCard
