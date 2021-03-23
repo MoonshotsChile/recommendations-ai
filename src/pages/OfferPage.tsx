@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import TinderCard from "react-tinder-card";
 import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
-import { NAVBAR_ACTIONS } from "../context-api/ContextApi";
+import { ContextApi, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
 import OfferCard from "../components/offer-card/OfferCard";
 import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
@@ -11,6 +11,7 @@ import TinderButtonLike from "../components/buttons/TinderButtonLike";
 
 const OfferPage = (props: any): JSX.Element => {
     const useCase = new BenefitsUseCase()
+    const { rut } = useContext(ContextApi)
     const [benefits, setBenefits] = useState([] as Benefit[])
     const lastCardRef = useRef(null)
 

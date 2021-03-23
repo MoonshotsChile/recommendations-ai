@@ -16216,6 +16216,82 @@
       "longitude": "-70.61018030000002"
     }
   ],
+  "userdata": [{
+    "id": "19",
+    "likes": [
+      {
+        "id": 58633,
+        "uuid": "4560070b-8963-4f07-979d-16e169930432",
+        "created_at": "2021-03-08T12:45:22-03:00",
+        "updated_at": "2021-03-08T12:58:08-03:00",
+        "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/promotions/dias-de-sabores",
+        "title": "D\u00edas de sabores",
+        "slug": "dias-de-sabores",
+        "description": " <h3>Promociones especiales.</h3><p>Descuentos exclusivos con tus tarjetas Scotia.&nbsp;</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p><img src=\"https://bci-cdn.azureedge.net/uploads/1f437b2f-4e9c-43f2-822e-b072cc851094/original/TDC_Beneficios_MarleyCoffee_tarjetas_jul2020.png\" style=\"\"></p><br><p></p><br><p></p><p></p><p></p><p></p><p></p><p></p><p></p><div>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'vamosbci';\r\n    </script>",
+        "covers": [
+          "https://bci-cdn.azureedge.net/uploads/544d0a1f-bf05-417e-89b4-38905d012fb8/R320x240/bci_sabores.jpg",
+          "https://bci-cdn.azureedge.net/uploads/ee841945-1f76-4634-bf97-de2333b3b7b5/R320x240/logo.jpg",
+          "https://bci-cdn.azureedge.net/uploads/6ebfdb05-c825-45ba-b89c-8592a9a3bf6b/R320x240/Destacados-sabores_dctos.jpg"
+        ],
+        "tags": [
+          "casa-matriz",
+          "venta-online",
+          "delivery",
+          "saboresbci",
+          "restauranes",
+          "destacado-home"
+        ],
+        "category": "sabores",
+        "site_id": 68,
+        "options": {
+          "conditions": "<div><b><br></b><b style=\"background-color: initial;\">Promoci\u00f3n descuento en restaurantes:</b><span style=\"background-color: initial;\">&nbsp;Los beneficios son exclusivos para personas naturales, que paguen en los comercios adheridos, utilizando sus Tarjetas Scotia seg\u00fan se indica en cada beneficio. Para todos los beneficios no son acumulables con otras promociones, convenios y/o descuentos. El detalle de las promociones y sus condiciones se indican a continuaci\u00f3n:</span><br><br><b style=\"background-color: initial;\">Para Telepizza:</b><span style=\"background-color: initial;\">&nbsp;promoci\u00f3n v\u00e1lida los d\u00edas lunes 1, 8, 15, 22 y 29 de marzo 2021 y consiste en 1 Pizza familiar cl\u00e1sica o hasta 2 ingredientes + 5 Nugget de pollo + 10 Minicalzzone de queso + Bebida de 1,5 litros por $13.990. Beneficio aplica solo para Delivery telef\u00f3nico llamando al 600 600 6000 o retiro en el local. V\u00e1lido para todas las Tiendas Telepizza, pagando con &nbsp;Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia.&nbsp;</span><br><a href=\"http://www.telepizza.cl\" style=\"background-color: initial;\">www.telepizza.cl</a><br><br><b style=\"background-color: initial;\">Para Pizza Hut:</b><span style=\"background-color: initial;\">&nbsp;promoci\u00f3n v\u00e1lida los d\u00edas martes 2, 9, 16, 23 y 30 de marzo 2021 y consiste en 40% de descuento en pizzas. Descuento aplica solo para Delivery Telef\u00f3nico, llamando al 600 424 6000 y desde celulares al *6000, o retiro en el local. Despacho m\u00ednimo por compras desde $9.500 despu\u00e9s de aplicado el descuento. Se excluyen Tiendas Los Dom\u00ednicos y Santa Isabel, &nbsp;pagando con Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia.</span><br><span style=\"background-color: initial;\"><a href=\"http://www.pizzahut.cl\">www.pizzahut.cl</a></span></div><div><br><b style=\"background-color: initial;\">Para La Mechada Nacional:&nbsp;</b><span style=\"background-color: initial;\">Promoci\u00f3n v\u00e1lida los d\u00edas mi\u00e9rcoles 3, 10, 17, 24 y 31 de marzo de 2021 y consiste en 20% de descuento en la categor\u00eda S\u00e1ndwiches con pan r\u00fastico variedades Italiano, Chacarero, Chilena, Luco, Doble Huevo y Gran Mechada. No incluye combos, ni categor\u00eda s\u00e1ndwiches edici\u00f3n limitada. No se incluye el costo del despacho y propina. El beneficio aplica solo para pedidos realizados en&nbsp;</span><a href=\"http://www.lamechadanacional.cl/\" style=\"background-color: initial;\">www.lamechadanacional.cl</a><span style=\"background-color: initial;\">. El descuento se realiza al momento de la compra al ingresar como c\u00f3digo los 6 primeros d\u00edgitos de la Tarjeta Scotia al momento de pagar con Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia.&nbsp;</span><br><br><b style=\"background-color: initial;\">Para China Wok:&nbsp;</b><span style=\"background-color: initial;\">Promoci\u00f3n v\u00e1lida los d\u00edas jueves 4, 11, 18 y 25 de marzo de 2021 y consiste en 1 Chapsui de ave con arroz Chaufa original + 1 Carne Mongoliana con Arroz Chaufa original + 4 wantanes + 4 arrollados + 2 bebida en lata por $12.990. No se incluye el costo del despacho y propina. El beneficio aplica solo para pedidos realizados en&nbsp;</span><a href=\"http://pide.chinawok.cl/\" style=\"background-color: initial;\">pide.chinawok.cl</a><span style=\"background-color: initial;\">. El descuento se realiza al momento de la compra al ingresar como c\u00f3digo los 6 primeros d\u00edgitos de la Tarjeta Scotia al momento de pagar con Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia.&nbsp;</span><br><br><b style=\"background-color: initial;\">Para Vamos Feria del S\u00e1nguche:&nbsp;</b><span style=\"background-color: initial;\">Promoci\u00f3n v\u00e1lida los d\u00edas viernes 5, 12, 19 y 26 de marzo 2021 y pagando con Tarjetas de Cr\u00e9dito Scotia. El beneficio consiste en 30% de descuento en comercios adheridos a 'Vamos con Scotia'. Descuento v\u00e1lido solo para compras directas en los comercios adheridos, no se consideran las compras a trav\u00e9s de otros canales, p\u00e1ginas web distintas a las de cada restaurante o aplicaciones de despacho. Descuentos no aplican sobre el costo de despacho. Descuentos no acumulables con otras promociones y/o descuentos. Para hacer efectivo el descuento, debes solicitarlo antes de realizar la compra directamente al comercio o en su p\u00e1gina web o v\u00eda telef\u00f3nica seg\u00fan sea el caso. El beneficio se aplica de manera presencial seg\u00fan la disponibilidad de cada comercio. Para La Yunta, Fkn Burgers, Juana La Loca, El Panz\u00f3n, La Barraca Sangucher\u00eda, Tres Toques, De Calle, Kopa Burgers, se aplicar\u00e1 el 30% de descuento al momento de pagar en el comercio.&nbsp;</span><br><a href=\"https://bit.ly/3rs2eJX\">https://bit.ly/3rs2eJX</a></div><div><br><span style=\"background-color: initial;\">Para todas las promociones antes indicadas, los precios, entrega, calidad de los servicios no bancarios ofrecidos, son de exclusiva responsabilidad del comercio que los ofrecen, sin responsabilidad alguna de Scotia ni en la ulterior atenci\u00f3n que se demande. Se excluyen de este beneficio las Tarjetas de Cr\u00e9dito Empresarios y Corporate y clientes de Tarjetas emitidas por filiales y sociedades de apoyo al giro de Scotia.</span></div>",
+          "comments_enabled": true
+        },
+        "video_url": "",
+        "conditions": "<div><b><br></b><b style=\"background-color: initial;\">Promoci\u00f3n descuento en restaurantes:</b><span style=\"background-color: initial;\">&nbsp;Los beneficios son exclusivos para personas naturales, que paguen en los comercios adheridos, utilizando sus Tarjetas Scotia seg\u00fan se indica en cada beneficio. Para todos los beneficios no son acumulables con otras promociones, convenios y/o descuentos. El detalle de las promociones y sus condiciones se indican a continuaci\u00f3n:</span><br><br><b style=\"background-color: initial;\">Para Telepizza:</b><span style=\"background-color: initial;\">&nbsp;promoci\u00f3n v\u00e1lida los d\u00edas lunes 1, 8, 15, 22 y 29 de marzo 2021 y consiste en 1 Pizza familiar cl\u00e1sica o hasta 2 ingredientes + 5 Nugget de pollo + 10 Minicalzzone de queso + Bebida de 1,5 litros por $13.990. Beneficio aplica solo para Delivery telef\u00f3nico llamando al 600 600 6000 o retiro en el local. V\u00e1lido para todas las Tiendas Telepizza, pagando con &nbsp;Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia.&nbsp;</span><br><a href=\"http://www.telepizza.cl\" style=\"background-color: initial;\">www.telepizza.cl</a><br><br><b style=\"background-color: initial;\">Para Pizza Hut:</b><span style=\"background-color: initial;\">&nbsp;promoci\u00f3n v\u00e1lida los d\u00edas martes 2, 9, 16, 23 y 30 de marzo 2021 y consiste en 40% de descuento en pizzas. Descuento aplica solo para Delivery Telef\u00f3nico, llamando al 600 424 6000 y desde celulares al *6000, o retiro en el local. Despacho m\u00ednimo por compras desde $9.500 despu\u00e9s de aplicado el descuento. Se excluyen Tiendas Los Dom\u00ednicos y Santa Isabel, &nbsp;pagando con Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia.</span><br><span style=\"background-color: initial;\"><a href=\"http://www.pizzahut.cl\">www.pizzahut.cl</a></span></div><div><br><b style=\"background-color: initial;\">Para La Mechada Nacional:&nbsp;</b><span style=\"background-color: initial;\">Promoci\u00f3n v\u00e1lida los d\u00edas mi\u00e9rcoles 3, 10, 17, 24 y 31 de marzo de 2021 y consiste en 20% de descuento en la categor\u00eda S\u00e1ndwiches con pan r\u00fastico variedades Italiano, Chacarero, Chilena, Luco, Doble Huevo y Gran Mechada. No incluye combos, ni categor\u00eda s\u00e1ndwiches edici\u00f3n limitada. No se incluye el costo del despacho y propina. El beneficio aplica solo para pedidos realizados en&nbsp;</span><a href=\"http://www.lamechadanacional.cl/\" style=\"background-color: initial;\">www.lamechadanacional.cl</a><span style=\"background-color: initial;\">. El descuento se realiza al momento de la compra al ingresar como c\u00f3digo los 6 primeros d\u00edgitos de la Tarjeta Scotia al momento de pagar con Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia.&nbsp;</span><br><br><b style=\"background-color: initial;\">Para China Wok:&nbsp;</b><span style=\"background-color: initial;\">Promoci\u00f3n v\u00e1lida los d\u00edas jueves 4, 11, 18 y 25 de marzo de 2021 y consiste en 1 Chapsui de ave con arroz Chaufa original + 1 Carne Mongoliana con Arroz Chaufa original + 4 wantanes + 4 arrollados + 2 bebida en lata por $12.990. No se incluye el costo del despacho y propina. El beneficio aplica solo para pedidos realizados en&nbsp;</span><a href=\"http://pide.chinawok.cl/\" style=\"background-color: initial;\">pide.chinawok.cl</a><span style=\"background-color: initial;\">. El descuento se realiza al momento de la compra al ingresar como c\u00f3digo los 6 primeros d\u00edgitos de la Tarjeta Scotia al momento de pagar con Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia.&nbsp;</span><br><br><b style=\"background-color: initial;\">Para Vamos Feria del S\u00e1nguche:&nbsp;</b><span style=\"background-color: initial;\">Promoci\u00f3n v\u00e1lida los d\u00edas viernes 5, 12, 19 y 26 de marzo 2021 y pagando con Tarjetas de Cr\u00e9dito Scotia. El beneficio consiste en 30% de descuento en comercios adheridos a 'Vamos con Scotia'. Descuento v\u00e1lido solo para compras directas en los comercios adheridos, no se consideran las compras a trav\u00e9s de otros canales, p\u00e1ginas web distintas a las de cada restaurante o aplicaciones de despacho. Descuentos no aplican sobre el costo de despacho. Descuentos no acumulables con otras promociones y/o descuentos. Para hacer efectivo el descuento, debes solicitarlo antes de realizar la compra directamente al comercio o en su p\u00e1gina web o v\u00eda telef\u00f3nica seg\u00fan sea el caso. El beneficio se aplica de manera presencial seg\u00fan la disponibilidad de cada comercio. Para La Yunta, Fkn Burgers, Juana La Loca, El Panz\u00f3n, La Barraca Sangucher\u00eda, Tres Toques, De Calle, Kopa Burgers, se aplicar\u00e1 el 30% de descuento al momento de pagar en el comercio.&nbsp;</span><br><a href=\"https://bit.ly/3rs2eJX\">https://bit.ly/3rs2eJX</a></div><div><br><span style=\"background-color: initial;\">Para todas las promociones antes indicadas, los precios, entrega, calidad de los servicios no bancarios ofrecidos, son de exclusiva responsabilidad del comercio que los ofrecen, sin responsabilidad alguna de Scotia ni en la ulterior atenci\u00f3n que se demande. Se excluyen de este beneficio las Tarjetas de Cr\u00e9dito Empresarios y Corporate y clientes de Tarjetas emitidas por filiales y sociedades de apoyo al giro de Scotia.</span></div>",
+        "start_date": "2021-03-08T12:00:00-03:00",
+        "end_date": "2021-03-08T12:00:00-03:00",
+        "discount": null,
+        "location_street": null,
+        "latitude": null,
+        "longitude": null
+      },
+      {
+        "id": 58627,
+        "uuid": "e54d484c-225f-4d92-9c09-a7da99aa832e",
+        "created_at": "2021-03-08T11:15:47-03:00",
+        "updated_at": "2021-03-08T15:59:44-03:00",
+        "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/estetica-y-salud/promotions/universo-garden-angels-online",
+        "title": "Universo Garden Angels - Online",
+        "slug": "universo-garden-angels-online",
+        "description": "     <h3>10% dcto</h3><p style=\"text-align: left;\">LA NUEVA COSM\u00c9TICA DEL BIENESTAR&nbsp;</p><p style=\"text-align: left;\">Desde hace 12 a\u00f1os Universo Garden Angels marca el camino de la nueva cosm\u00e9tica sensorial. \r\n     \u00abDevolver a uno mismo la armon\u00eda y el equilibrio desarrollando un amor positivo y natural\u00bb.</p>\r\n      <div>\r\n      <ul>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>+56 2 2323715</li>\r\n      <li class=\"web\"><a href=\"https://universogardenangels.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://universogardenangels.cl/</a></li>\r\n      <li class=\"web\"><a href=\"www.universogardenangels.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>consultoragardenangels@gmail.com</a></li>\r\n            <li class=\"fb\"><a href=\"www.facebook.com/gardenchile\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'universo-garden-angels';\r\n    </script>\r\n",
+        "covers": [
+          "https://bci-cdn.azureedge.net/uploads/fb50eb24-c952-42bf-9c57-0320f435f38c/R320x240/Universo_garden.jpg",
+          "https://bci-cdn.azureedge.net/uploads/e4115e7f-1530-4e8e-9545-617e3bc5dc3b/R320x240/Logos_producto.jpg"
+        ],
+        "tags": [
+          "venta-online",
+          "universo-garden-angels"
+        ],
+        "category": "salud-y-belleza/estetica-y-salud",
+        "site_id": 68,
+        "options": {
+          "conditions": "<br><br><span style=\"background-color: initial;\">Descuento de un 10% en el total de la tienda online.&nbsp;</span><br><br><span style=\"background-color: initial;\">Para acceder al descuento debes ingresar el c\u00f3digo: </span><b style=\"background-color: initial;\">CLIENTESScotia&nbsp;</b><br><span style=\"background-color: initial;\">No incluye valor del despacho.&nbsp;</span><br><span style=\"background-color: initial;\">Despacho a trav\u00e9s de Correos de Chile desde la sucursal.</span><br><span style=\"background-color: initial;\">V\u00e1lido pagando con Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia&nbsp;</span><br><b style=\"background-color: initial;\">*No acumulable a otras promociones y/o descuentos.</b>",
+          "comments_enabled": true
+        },
+        "video_url": "",
+        "conditions": "<br><br><span style=\"background-color: initial;\">Descuento de un 10% en el total de la tienda online.&nbsp;</span><br><br><span style=\"background-color: initial;\">Para acceder al descuento debes ingresar el c\u00f3digo: </span><b style=\"background-color: initial;\">CLIENTESScotia&nbsp;</b><br><span style=\"background-color: initial;\">No incluye valor del despacho.&nbsp;</span><br><span style=\"background-color: initial;\">Despacho a trav\u00e9s de Correos de Chile desde la sucursal.</span><br><span style=\"background-color: initial;\">V\u00e1lido pagando con Tarjetas de Cr\u00e9dito o D\u00e9bito Scotia&nbsp;</span><br><b style=\"background-color: initial;\">*No acumulable a otras promociones y/o descuentos.</b>",
+        "start_date": "2018-03-08T11:00:00-03:00",
+        "end_date": "2021-03-08T11:00:00-03:00",
+        "discount": 10,
+        "location_street": null,
+        "latitude": null,
+        "longitude": null
+      }
+    ],
+    "later": [],
+    "not-like": []
+  }],
   "meta": {
     "total_entries": 2455,
     "per_page": 500,

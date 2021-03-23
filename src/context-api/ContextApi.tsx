@@ -14,6 +14,7 @@ export interface ContextProps {
   isAuthenticated?: boolean;
   navbarSelected?: NAVBAR_ACTIONS;
   isFullScreen?: boolean;
+  rut?: string;
   location?: Coord
 }
 
@@ -30,6 +31,7 @@ const initialState: ContextPropsExtended = {
   isAuthenticated: false,
   location: {latitude: 0, longitude: 0},
   isFullScreen: false,
+  rut: "1-9",
   saveContext: () => {}
 };
 
@@ -59,6 +61,7 @@ const ContextApiProvider: FC = ({ children }) => {
         navbarSelected: context.navbarSelected,
         location: context.location,
         isFullScreen: context.isFullScreen,
+        rut: context.rut,
         saveContext,
       }}
     >

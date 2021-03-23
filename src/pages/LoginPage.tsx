@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import { ContextApi } from "../context-api/ContextApi";
 import { lockIcon, sbenefits, userIcon } from "../assets";
 import { Input, InputAdornment } from '@material-ui/core';
+import { generateUniqueID } from "web-vitals/dist/modules/lib/generateUniqueID";
 
 const LoginPage: React.FC = () => {
     const {saveContext} = useContext(ContextApi)
@@ -39,6 +40,10 @@ const LoginPage: React.FC = () => {
     const goToNext = () => {
         isAuthenticated = true
         saveContext({isAuthenticated})
+
+        const username = (userdata.username) ? userdata.username : generateUniqueID()
+        saveContext({rut: username})
+
         history.push('/onboarding')
     }
 
@@ -103,7 +108,7 @@ const LoginPage: React.FC = () => {
                         <div className="column is-three-quarter">
                             <button id="btn-fetch-data"
                                     className="button is-primary is-fullwidth is-inline has-text-centered"
-                                    disabled={isLoading} onClick={goToNext}>Login
+                                    disabled={isLoading || isValidForm()} onClick={goToNext}>Login
                             </button>
                         </div>
                         <div className="column is-three-quarter">
