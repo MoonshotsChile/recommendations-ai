@@ -11,6 +11,7 @@ import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
 import TinderButtonLater from "../components/buttons/TinderButtonLater";
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
 import { UserdataUseCase } from "../domain/UserdataUseCase";
+import { dataLayerPush } from "../config/analytics";
 
 
 const LocationsPage = (): JSX.Element => {
@@ -79,7 +80,7 @@ const LocationsPage = (): JSX.Element => {
     }, [])
 
     const onUnmount = React.useCallback(function callback(map) {
-        console.log('unmount');
+        console.log('unmount', map);
     }, [])
 
     const showBenefitCard = (benefit: Benefit) => {
@@ -88,51 +89,18 @@ const LocationsPage = (): JSX.Element => {
 
     const onLike = () => {
         // @ts-ignore
-        dataLayer.push({
-            event: 'later',
-            eventProps: {
-                category: 'locations',
-                action: 'swipe',
-                label: 'like',
-                value: benefit
-            }
-        })
-        // @ts-ignore
         lastCardRef.current?.swipe('right')
-        saveLike()
 
     }
 
     const onNotLike = () => {
         // @ts-ignore
-        dataLayer.push({
-            event: 'later',
-            eventProps: {
-                category: 'locations',
-                action: 'swipe',
-                label: 'not-like',
-                value: benefit
-            }
-        })
-        // @ts-ignore
         lastCardRef.current?.swipe('left')
-        saveNotLike()
     }
 
     const onLater = () => {
         // @ts-ignore
-        dataLayer.push({
-            event: 'later',
-            eventProps: {
-                category: 'locations',
-                action: 'swipe',
-                label: 'later',
-                value: benefit
-            }
-        })
-        // @ts-ignore
         lastCardRef.current?.swipe('down')
-        saveLater()
     }
 
     const saveLater = () => {
@@ -165,12 +133,40 @@ const LocationsPage = (): JSX.Element => {
     function onSwipe(direction: string) {
         switch (direction) {
             case 'right':
+                dataLayerPush({
+                    event: 'reaction',
+                    eventProps: {
+                        category: 'locations',
+                        action: 'swipe',
+                        label: 'like',
+                        value: benefit
+                    }
+                })
+                // @ts-ignore
                 saveLike()
                 break
             case 'left':
+                dataLayerPush({
+                    event: 'reaction',
+                    eventProps: {
+                        category: 'locations',
+                        action: 'swipe',
+                        label: 'not-like',
+                        value: benefit
+                    }
+                })
                 saveNotLike()
                 break
             case 'down':
+                dataLayerPush({
+                    event: 'reaction',
+                    eventProps: {
+                        category: 'locations',
+                        action: 'swipe',
+                        label: 'later',
+                        value: benefit
+                    }
+                })
                 saveLater()
                 break
         }

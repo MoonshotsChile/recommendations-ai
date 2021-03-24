@@ -9,6 +9,7 @@ import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
 import TinderButtonLater from "../components/buttons/TinderButtonLater";
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
 import { UserdataUseCase } from "../domain/UserdataUseCase";
+import { dataLayerPush } from "../config/analytics";
 
 const OfferPage = (): JSX.Element => {
     const benefitsUseCase = new BenefitsUseCase()
@@ -52,51 +53,17 @@ const OfferPage = (): JSX.Element => {
 
     const onLike = () => {
         // @ts-ignore
-        dataLayer.push({
-            event: 'reaction',
-            eventProps: {
-                category: 'offers',
-                action: 'swipe',
-                label: 'like',
-                value: benefits[1]
-            }
-        })
-        // @ts-ignore
         lastCardRef.current?.swipe('right')
-        saveLike()
     }
 
     const onNotLike = () => {
         // @ts-ignore
-        dataLayer.push({
-            event: 'reaction',
-            eventProps: {
-                category: 'offers',
-                action: 'swipe',
-                label: 'not-like',
-                value: benefits[1]
-            }
-        })
-        setBenefits(benefits)
-        // @ts-ignore
         lastCardRef.current?.swipe('left')
-        saveNotLike()
     }
 
     const onLater = () => {
         // @ts-ignore
-        dataLayer.push({
-            event: 'later',
-            eventProps: {
-                category: 'offers',
-                action: 'swipe',
-                label: 'not-like',
-                value: benefits[1]
-            }
-        })
-        // @ts-ignore
         lastCardRef.current?.swipe('down')
-        saveLater()
     }
 
     const outOfFrame = () => {
@@ -133,12 +100,39 @@ const OfferPage = (): JSX.Element => {
     function onSwipe(direction: string) {
         switch (direction) {
             case 'right':
+                dataLayerPush({
+                    event: 'reaction',
+                    eventProps: {
+                        category: 'offers',
+                        action: 'swipe',
+                        label: 'like',
+                        value: benefits[1]
+                    }
+                })
                 saveLike()
                 break
             case 'left':
+                dataLayerPush({
+                    event: 'reaction',
+                    eventProps: {
+                        category: 'offers',
+                        action: 'swipe',
+                        label: 'not-like',
+                        value: benefits[1]
+                    }
+                })
                 saveNotLike()
                 break
             case 'down':
+                dataLayerPush({
+                    event: 'reaction',
+                    eventProps: {
+                        category: 'offers',
+                        action: 'swipe',
+                        label: 'later',
+                        value: benefits[1]
+                    }
+                })
                 saveLater()
                 break
         }
