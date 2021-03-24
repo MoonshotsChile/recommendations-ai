@@ -1,6 +1,7 @@
 import { API_URL } from "../config/constants";
 import { Benefit } from "./entity/Benefit";
 import { Userdata } from "./entity/Userdata";
+import { getLocalStorage } from "../context-api/helpers/localstorage";
 
 export class UserdataUseCase {
 
@@ -53,5 +54,42 @@ export class UserdataUseCase {
             method: 'POST',
             body: JSON.stringify(userdata)
         })
+    }
+
+    saveLater = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void) => {
+        if (!userdata) {
+            // @ts-ignore
+            userdata = getLocalStorage('userdata')
+        }
+        if (userdata && benefit) {
+            const later = [...userdata.later, ...[benefit]]
+            userdata.later = later
+            saveContext({userdata})
+            this.later(userdata.id!, later)
+        }
+    }
+
+    saveLike = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void) => {
+        if (!userdata) { // @ts-ignore
+            userdata = getLocalStorage('userdata')
+        }
+        if (userdata && benefit) {
+            const likes = [...userdata.likes, ...[benefit]]
+            userdata.likes = likes
+            saveContext({userdata})
+            this.like(userdata.id!, likes)
+        }
+    }
+
+    saveNotLike = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void) => {
+        if (!userdata) { // @ts-ignore
+            userdata = getLocalStorage('userdata')
+        }
+        if (userdata && benefit) {
+            const later = [...userdata.later, ...[benefit]]
+            userdata.later = later
+            saveContext({userdata})
+            this.notLike(userdata.id!, later)
+        }
     }
 }

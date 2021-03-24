@@ -14,7 +14,7 @@ import { dataLayerPush } from "../config/analytics";
 const OfferPage = (): JSX.Element => {
     const benefitsUseCase = new BenefitsUseCase()
     const userdataUseCase = new UserdataUseCase()
-    const { rut, saveContext, userdata } = useContext(ContextApi)
+    const { saveContext, userdata } = useContext(ContextApi)
     const [benefits, setBenefits] = useState([] as Benefit[])
     const lastCardRef = useRef(null)
 
@@ -75,7 +75,7 @@ const OfferPage = (): JSX.Element => {
             const later = [...userdata.later, ...[currentBenefit()]]
             userdata.later = later
             saveContext({userdata})
-            userdataUseCase.later(rut!, later)
+            userdataUseCase.later(userdata.id!, later)
         }
     }
 
@@ -84,7 +84,7 @@ const OfferPage = (): JSX.Element => {
             const likes = [...userdata.likes, ...[currentBenefit()]]
             userdata.likes = likes
             saveContext({userdata})
-            userdataUseCase.like(rut!, likes)
+            userdataUseCase.like(userdata.id!, likes)
         }
     }
 
@@ -93,7 +93,7 @@ const OfferPage = (): JSX.Element => {
             const later = [...userdata.later, ...[currentBenefit()]]
             userdata.later = later
             saveContext({userdata})
-            userdataUseCase.notLike(rut!, later)
+            userdataUseCase.notLike(userdata.id!, later)
         }
     }
 

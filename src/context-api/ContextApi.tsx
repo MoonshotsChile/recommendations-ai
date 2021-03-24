@@ -1,6 +1,6 @@
 import React, { createContext, FC, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { setLocalStorage } from "./helpers/localstorage";
+import { getLocalStorage, setLocalStorage } from "./helpers/localstorage";
 import { Userdata } from "../domain/entity/Userdata";
 
 export enum NAVBAR_ACTIONS {
@@ -14,8 +14,6 @@ export enum NAVBAR_ACTIONS {
 export interface ContextProps {
   isAuthenticated?: boolean;
   navbarSelected?: NAVBAR_ACTIONS;
-  isFullScreen?: boolean;
-  rut?: string;
   userdata?: Userdata;
   location?: Coord
 }
@@ -32,8 +30,6 @@ export interface Coord {
 const initialState: ContextPropsExtended = {
   isAuthenticated: false,
   location: {latitude: 0, longitude: 0},
-  isFullScreen: false,
-  rut: "1-9",
   userdata: undefined,
   saveContext: () => {}
 };
@@ -60,12 +56,10 @@ const ContextApiProvider: FC = ({ children }) => {
   return (
     <ContextApi.Provider
       value={{
-        isAuthenticated: context.isAuthenticated,
+        isAuthenticated: context.isAuthenticated !== undefined ? context.isAuthenticated : getLocalStorage('isAuthenticated'),
         navbarSelected: context.navbarSelected,
-        location: context.location,
-        isFullScreen: context.isFullScreen,
-        rut: context.rut,
-        userdata: context.userdata,
+        location: context.location !== undefined ? context.location : getLocalStorage('location'),
+        userdata: context.userdata !== undefined ? context.userdata : getLocalStorage('userdata') ,
         saveContext
       }}
     >

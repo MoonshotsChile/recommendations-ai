@@ -16,7 +16,7 @@ import "../components/my-likes/Card.scss";
 import { Benefit } from "../domain/entity/Benefit";
 const MyLikesPage: React.FC = () => {
   const useCase = new UserdataUseCase();
-  const { rut } = useContext(ContextApi);
+  const { userdata } = useContext(ContextApi);
 
   const [likes, setLikes] = useState([] as Benefit[]);
   const [laters, setLaters] = useState([] as Benefit[]);
@@ -38,7 +38,7 @@ const MyLikesPage: React.FC = () => {
   };
   useEffect(() => {
     useCase
-      .find(rut || "")
+      .find(userdata?.id || "")
       .then((response: Response) => response.json())
       .then((data: Userdata) => {
         setLikes(cleanDuplicates(data.likes));

@@ -56,7 +56,6 @@ const LoginPage: React.FC = () => {
             later: []
         }
 
-        saveContext({rut: username})
         userdataUseCase.find(username)
             .then((response: Response) => {
                 if (response.ok) {

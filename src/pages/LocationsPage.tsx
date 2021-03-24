@@ -27,7 +27,7 @@ const LocationsPage = (): JSX.Element => {
     const useCase = new BenefitsUseCase()
 
     const [map, setMap] = useState(null)
-    const {location, saveContext, rut} = useContext(ContextApi)
+    const {location, saveContext } = useContext(ContextApi)
     const { userdata } = useContext(ContextApi)
     // @ts-ignore
     const [center, setCenter] = useState({lat: parseFloat(location?.latitude), lng: parseFloat(location?.longitude)})
@@ -108,7 +108,7 @@ const LocationsPage = (): JSX.Element => {
             const later = [...userdata.later, ...[benefit]]
             userdata.later = later
             saveContext({userdata})
-            userdataUseCase.later(rut!, later)
+            userdataUseCase.later(userdata.id!, later)
         }
     }
 
@@ -117,7 +117,7 @@ const LocationsPage = (): JSX.Element => {
             const likes = [...userdata.likes, ...[benefit]]
             userdata.likes = likes
             saveContext({userdata})
-            userdataUseCase.like(rut!, likes)
+            userdataUseCase.like(userdata.id!, likes)
         }
     }
 
@@ -126,7 +126,7 @@ const LocationsPage = (): JSX.Element => {
             const later = [...userdata.later, ...[benefit]]
             userdata.later = later
             saveContext({userdata})
-            userdataUseCase.notLike(rut!, later)
+            userdataUseCase.notLike(userdata.id!, later)
         }
     }
 
