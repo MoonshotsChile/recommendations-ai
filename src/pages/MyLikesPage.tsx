@@ -80,13 +80,9 @@ const MyLikesPage: React.FC = () => {
           >
             {likes.map((like: any, i: number) => {
               return (
-                <div
-                  id="LikesCard"
-                  className="column"
-                  key={`LikesCards-000${i.toString()}${Math.random().toString()}`}
-                >
-                  <SwiperSlide>
-                    <LikeCard benefit={like} />
+                <div className="column" key={`likes-${i}`}>
+                  <SwiperSlide key={`likes-swipper-${i}`}>
+                    <LikeCard benefit={like}/>
                   </SwiperSlide>
                 </div>
               );
