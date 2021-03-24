@@ -9,7 +9,7 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import { onboarding1, onboarding2, onboarding3, onboarding5 } from "../assets";
 import { useHistory } from "react-router-dom";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ContextApi } from "../context-api/ContextApi";
 
 SwiperCore.use([Navigation, Pagination]); //descomentar para habilitar

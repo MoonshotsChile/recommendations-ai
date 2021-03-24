@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { Disponible } from "../../domain/entity/Mision";
 import "./Mision.scss";
 import "swiper/swiper.scss";

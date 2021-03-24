@@ -41,3 +41,103 @@
     height: 120px;
   }
 }
+.modal-tinder {
+  .modal-card {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 960px;
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    background-color: #fff;
+  }
+  .card-content {
+    @media only screen and (min-width: 768px) {
+      zoom: 1.2;
+    }
+    background: white;
+  }
+  .tinder-cards__card {
+    z-index: 2;
+    height: 75vh;
+    position: fixed;
+    img {
+      position: absolute;
+    }
+  }
+
+  .tinder-cards {
+    &__card {
+      box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+      background: white center;
+
+      .title {
+        font-style: normal;
+        font-weight: bold;
+        padding-top: 0;
+        p {
+          color: #e96d41;
+          font-size: 1.8rem;
+
+          @media only screen and (max-width: 360px) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      .category {
+        padding-bottom: 0;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+
+      img {
+        width: initial;
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      &__content {
+        padding: 0;
+        margin: 0;
+      }
+
+      &__image {
+        height: 38vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 360px) {
+          padding-bottom: 2em;
+        }
+      }
+
+      &__footer {
+        height: 28vh;
+        .has-text-weight-light {
+          overflow: scroll;
+          max-height: 12vh;
+          @media only screen and (min-width: 361px) {
+            max-height: 14vh;
+          }
+
+          @media only screen and (min-width: 768px) and (min-width: 360px) {
+            max-height: 20vh;
+          }
+          button {
+            width: 100%;
+            display: inline;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: bold;
+            zoom: 0.9;
+          }
+        }
+      }
+    }
+  }
+}

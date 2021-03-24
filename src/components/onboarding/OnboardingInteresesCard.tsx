@@ -1,14 +1,12 @@
-import React, { FC } from "react";
+import React from "react";
 import { Benefit } from "../../domain/entity/Benefit";
 import "../mision/Mision.scss";
 import "swiper/swiper.scss";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useState } from "react";
 interface PropsCard {
   benefit: Benefit;
 }
 const OnboardingInteresesCard = (): JSX.Element => {
-  // const benefit = props.benefit;
-  const [reachEnd, setReachEnd] = useState(false);
   const selectedButtonState = (e: any) => {
     const exist = e.target.className.includes("is-primary");
     if (exist) {

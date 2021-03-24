@@ -7,7 +7,7 @@ export class BenefitsUseCase {
         return fetch(`${API_URL}/benefits/${queryParams}`)
     }
 
-    find(id: number): Promise<Response> {
+    find(id: string): Promise<Response> {
         return fetch(`${API_URL}/benefits/${id}`)
     }
 
