@@ -40,11 +40,6 @@ const LocationsPage = (): JSX.Element => {
         height: '90vh'
     };
 
-
-    useEffect(() => {
-        initLocation()
-    }, [])
-
     const initLocation = () => {
         const onSuccess = (geolocation: { coords: GeolocationCoordinates, timestamp: number }) => {
             const location: Coord = {
@@ -59,7 +54,7 @@ const LocationsPage = (): JSX.Element => {
             setCenter(center);
             setTimeout(() => {
                 setZoom(11)
-                initLocation()
+                setCenter(center)
             }, 3000)
         }
         const onError = (error: any) => {
@@ -82,6 +77,7 @@ const LocationsPage = (): JSX.Element => {
         const bounds = new window.google.maps.LatLngBounds();
         map.fitBounds(bounds);
         setMap(map)
+        initLocation()
     }, [])
 
     const onUnmount = React.useCallback(function callback(map) {
