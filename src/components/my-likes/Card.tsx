@@ -1,20 +1,24 @@
-import React, { FC } from "react";
+import React from "react";
 import { Benefit } from "../../domain/entity/Benefit";
 import "./Card.scss";
 import "swiper/swiper.scss";
 interface PropsCard {
   benefit: Benefit;
+  modalClick: any;
 }
 const LikeCard = (props: PropsCard): JSX.Element => {
   const benefit = props.benefit;
+  const modalClick = props.modalClick;
+
   return (
     <div className="my-likes card">
-      <div className="card-image">
+      <div className="card-image" onClick={modalClick}>
         <figure className="image">
           <img
             className=""
             src={benefit.covers[0] !== undefined ? benefit.covers[0] : ""}
             alt="Placeholder image"
+            id={benefit.id.toString()}
           />
         </figure>
       </div>

@@ -16253,10 +16253,432 @@
           "location_street": "Holanda 099, providencia",
           "latitude": null,
           "longitude": null
+        },
+        {
+          "id": 52995,
+          "uuid": "6e1a4cee-60bb-45ea-a3e4-c7e378ecc87d",
+          "created_at": "2020-01-24T09:25:32-03:00",
+          "updated_at": "2020-01-24T09:35:13-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/centros-educacionales/promotions/pedro-de-valdivia-renaca",
+          "title": "Pedro de Valdivia - Reñaca",
+          "slug": "pedro-de-valdivia-renaca",
+          "description": "<p style=\"display:none\">Colegio, preu, terceros medios, psu, preparacion prueba</p>\r\n<h3>15% dcto</h3><p>Preuniversitario</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Borgoño 13955, Reñaca<br>Viña del Mar</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>56 2 28713681</li>\r\n      <li class=\"web\"><a href=\"https://www.preuniversitariopedrodevaldivia.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.preuniversitariopedrodevaldivia.cl</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/preupdv\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                     <li><button><a href=\"https://www.preuniversitariopedrodevaldivia.cl/?utm_source=bci&amp;utm_campaign=admision2019&amp;utm_medium=bci_admision2019_generico&quot;\" target=\" target=&quot;_blank&quot;\">Admisión</a></button></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'preuniversitario-pedro-de-valdivia';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "valparaiso",
+            "renaca",
+            "preuniversitario-pedro-de-valdivia",
+            "reñaca",
+            "sucursal"
+          ],
+          "category": "shopping centros educacionales",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-01-24T09:00:00-03:00",
+          "end_date": "2020-01-24T09:00:00-03:00",
+          "discount": 15,
+          "location_street": "Av. Borgoño 13955, Viña del Mar, Valparaíso",
+          "latitude": "-32.97349",
+          "longitude": "-71.544622"
+        },
+        {
+          "id": 58278,
+          "uuid": "2b241996-c6be-4adf-8e66-2b99993f9ab1",
+          "created_at": "2021-01-27T12:20:49-03:00",
+          "updated_at": "2021-02-18T17:55:40-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/gimnasios/promotions/gimnasio-sportlife-5",
+          "title": "Gimnasio Sportlife",
+          "slug": "gimnasio-sportlife-5",
+          "description": "      <h3>50% dcto</h3><p>Gimnasio Club Elite</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av Cuatro Esquinas 1617, local 119, La Serena<br>Coquimbo</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>(51) 244 6514</li>\r\n      <li class=\"web\"><a href=\"http://www.sportlife.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> http://www.sportlife.cl</a></li>\r\n            <li class=\"fb\"><a href=\"www.facebook.com/gimnasios.sportlife\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/SportlifeChile/\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'gimnasio-sportlife-iv';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/29c3674e-b538-4978-b8fe-80073b6a4194/R320x240/imagen.jpg",
+            "https://bci-cdn.azureedge.net/uploads/d707a15d-a7e4-42a0-995e-196f84f8bba0/R320x240/logo-producto.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "gimnasio",
+            "gym",
+            "gimnasio-sportlife-iv"
+          ],
+          "category": "salud y belleza gimnasios",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><br></div><div><span style=\"background-color: initial;\">Descuento de un 50% en cuota de incorporación Club Elite + un mes en Sportlife de regalo para un amigo.&nbsp;</span><br><span style=\"background-color: initial;\">Solo se hará efectivo para clientes nuevos.&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones, ni para uso del mismo comprador.&nbsp;</span><br><span style=\"background-color: initial;\">Disponible en sedes adheridas.</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia&nbsp;</span><br><span style=\"background-color: initial;\"><b>No acumulable a otras promociones y/o descuentos.</b></span></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><br></div><div><span style=\"background-color: initial;\">Descuento de un 50% en cuota de incorporación Club Elite + un mes en Sportlife de regalo para un amigo.&nbsp;</span><br><span style=\"background-color: initial;\">Solo se hará efectivo para clientes nuevos.&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones, ni para uso del mismo comprador.&nbsp;</span><br><span style=\"background-color: initial;\">Disponible en sedes adheridas.</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia&nbsp;</span><br><span style=\"background-color: initial;\"><b>No acumulable a otras promociones y/o descuentos.</b></span></div>",
+          "start_date": "2021-01-27T12:00:00-03:00",
+          "end_date": "2021-01-27T12:00:00-03:00",
+          "discount": 50,
+          "location_street": "Av Cuatro Esquinas 1617, local 119, La Serena, Coquimbo",
+          "latitude": "-29.946309858883307",
+          "longitude": "-71.24079984910364"
+        },
+        {
+          "id": 57528,
+          "uuid": "adec960e-def4-4e20-b849-4e70976b7fd5",
+          "created_at": "2020-11-10T17:25:13-03:00",
+          "updated_at": "2020-11-10T17:26:24-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/liola-3",
+          "title": "Liolá - Providencia",
+          "slug": "liola-3",
+          "description": "<h3>20% dcto.</h3><p>Vestuario y calzado femenino</p>\r\n      <div>\r\n      <ul>\r\n       <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Providencia 2238. Local 13<br>Providencia</li>\r\n        <li class=\"telefono\"><i class=\"icon-phone\"></i>94 2804 438</li>\r\n      <li class=\"web\"><a href=\"https://www.liola.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.liola.cl/</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/LiolaChile/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n <li class=\"fb\"><a href=\"https://www.instagram.com/liolachile/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'liola';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "providencia",
+            "liola",
+            "ropa"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-11-10T17:00:00-03:00",
+          "end_date": "2020-11-10T17:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Providencia 2238. Local 13, Providencia",
+          "latitude": "33.421321",
+          "longitude": "-70.609082"
         }
       ],
-      "later": [],
-      "not-likes": []
+      "later": [
+        {
+          "id": 52523,
+          "uuid": "b1c1dd0d-68b9-44d9-b28f-0a5666ba7c69",
+          "created_at": "2020-01-08T16:12:33-03:00",
+          "updated_at": "2021-01-11T11:59:32-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/aeropuerto/promotions/rosselot-rent-a-car-hasta-un",
+          "title": "Rosselot Rent a Car - Hasta un",
+          "slug": "rosselot-rent-a-car-hasta-un",
+          "description": "<h3>Hasta un 30% dcto</h3><p>En Rosselot Rent a Car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Limache 3865<br>Viña del Mar</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>32 314 0350</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2021/01/Rosselot-Convenio-Scotia.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>\r\n",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/f4fd172a-9a15-4dee-8eb0-fe6fd2cb50c1/R320x240/Rosselot-logo-bci.jpg",
+            "https://bci-cdn.azureedge.net/uploads/bf2d9974-83ee-4bf0-9ce4-e1f7f99345fe/R320x240/Caluga-Rosselot-360x500-nueva-2.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "aeropuerto",
+            "rosselot",
+            "rent a car",
+            "venta-online"
+          ],
+          "category": "shopping aeropuerto",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-30 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-20 % sobre tarifa neta semana en todas las categorías de camionetas, jeep y Van. (Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Abril al 30 de Noviembre</span><span style=\"background-color: initial;\">.</span></div><div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-20 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-15 % sobre tarifa neta semana en todas las categorías de camionetas, Jeep y Van.&nbsp;</span><br><span style=\"background-color: initial;\">(Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Diciembre al 31 Marzo.&nbsp;</span><br><span style=\"background-color: initial;\">Los descuentos son aplicables sobre la tarifa de precio de lista.&nbsp;</span><br><span style=\"background-color: initial;\"><br></span></div><div><span style=\"background-color: initial;\">Válido pagando con tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-30 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-20 % sobre tarifa neta semana en todas las categorías de camionetas, jeep y Van. (Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Abril al 30 de Noviembre</span><span style=\"background-color: initial;\">.</span></div><div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-20 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-15 % sobre tarifa neta semana en todas las categorías de camionetas, Jeep y Van.&nbsp;</span><br><span style=\"background-color: initial;\">(Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Diciembre al 31 Marzo.&nbsp;</span><br><span style=\"background-color: initial;\">Los descuentos son aplicables sobre la tarifa de precio de lista.&nbsp;</span><br><span style=\"background-color: initial;\"><br></span></div><div><span style=\"background-color: initial;\">Válido pagando con tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></div>",
+          "start_date": "2020-01-08T16:00:00-03:00",
+          "end_date": "2020-01-08T16:00:00-03:00",
+          "discount": 30,
+          "location_street": "Limache 3865,  Viña del Mar",
+          "latitude": "-33.046717",
+          "longitude": "-71.511628"
+        },
+        {
+          "id": 52523,
+          "uuid": "b1c1dd0d-68b9-44d9-b28f-0a5666ba7c69",
+          "created_at": "2020-01-08T16:12:33-03:00",
+          "updated_at": "2021-01-11T11:59:32-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/aeropuerto/promotions/rosselot-rent-a-car-hasta-un",
+          "title": "Rosselot Rent a Car - Hasta un",
+          "slug": "rosselot-rent-a-car-hasta-un",
+          "description": "<h3>Hasta un 30% dcto</h3><p>En Rosselot Rent a Car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Limache 3865<br>Viña del Mar</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>32 314 0350</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2021/01/Rosselot-Convenio-Scotia.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>\r\n",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/f4fd172a-9a15-4dee-8eb0-fe6fd2cb50c1/R320x240/Rosselot-logo-bci.jpg",
+            "https://bci-cdn.azureedge.net/uploads/bf2d9974-83ee-4bf0-9ce4-e1f7f99345fe/R320x240/Caluga-Rosselot-360x500-nueva-2.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "aeropuerto",
+            "rosselot",
+            "rent a car",
+            "venta-online"
+          ],
+          "category": "shopping aeropuerto",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-30 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-20 % sobre tarifa neta semana en todas las categorías de camionetas, jeep y Van. (Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Abril al 30 de Noviembre</span><span style=\"background-color: initial;\">.</span></div><div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-20 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-15 % sobre tarifa neta semana en todas las categorías de camionetas, Jeep y Van.&nbsp;</span><br><span style=\"background-color: initial;\">(Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Diciembre al 31 Marzo.&nbsp;</span><br><span style=\"background-color: initial;\">Los descuentos son aplicables sobre la tarifa de precio de lista.&nbsp;</span><br><span style=\"background-color: initial;\"><br></span></div><div><span style=\"background-color: initial;\">Válido pagando con tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-30 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-20 % sobre tarifa neta semana en todas las categorías de camionetas, jeep y Van. (Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Abril al 30 de Noviembre</span><span style=\"background-color: initial;\">.</span></div><div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-20 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-15 % sobre tarifa neta semana en todas las categorías de camionetas, Jeep y Van.&nbsp;</span><br><span style=\"background-color: initial;\">(Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Diciembre al 31 Marzo.&nbsp;</span><br><span style=\"background-color: initial;\">Los descuentos son aplicables sobre la tarifa de precio de lista.&nbsp;</span><br><span style=\"background-color: initial;\"><br></span></div><div><span style=\"background-color: initial;\">Válido pagando con tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></div>",
+          "start_date": "2020-01-08T16:00:00-03:00",
+          "end_date": "2020-01-08T16:00:00-03:00",
+          "discount": 30,
+          "location_street": "Limache 3865,  Viña del Mar",
+          "latitude": "-33.046717",
+          "longitude": "-71.511628"
+        },
+        {
+          "id": 51972,
+          "uuid": "1c1c3c75-ae52-4bca-9ade-6bbce9bee12d",
+          "created_at": "2019-12-04T16:42:34-03:00",
+          "updated_at": "2019-12-12T13:32:31-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/rent-a-car/promotions/rosselot-curico",
+          "title": "Rosselot Rent a Car - Curicó",
+          "slug": "rosselot-curico",
+          "description": "   <h3>Hasta un 30% dcto</h3><p>En Rosselot rent a car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Manso de Velasco 1118<br>Curicó</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>75 2228 945</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/12/Rosselot-Convenio-Scotia-2019.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "curico",
+            "Curicó",
+            "rosselot",
+            "rent a car"
+          ],
+          "category": "shopping rent a car",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-12-04T16:00:00-03:00",
+          "end_date": "2019-12-04T16:00:00-03:00",
+          "discount": 30,
+          "location_street": "Avenida Manso de Velasco 1118, Curicó",
+          "latitude": "-34.977847",
+          "longitude": "-71.23534"
+        },
+        {
+          "id": 57903,
+          "uuid": "03a3258e-6d2d-475d-9866-fd25ad4ea9ab",
+          "created_at": "2020-12-14T17:41:22-03:00",
+          "updated_at": "2020-12-29T13:44:11-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/clinica-cela-san-bernardo",
+          "title": "Clínica Cela - San Bernardo",
+          "slug": "clinica-cela-san-bernardo",
+          "description": "<h3>Hasta un 40%</h3><p>Clínica Cela, cuenta con 14 años de experiencia en depilación láser con tecnología láser Alexandrita, tratamientos reductivos corporales, tratamientos faciales. Única clínica estética con certificación ISO 9001:2015 y cuenta con el 100% de profesionales de la salud. Estos beneficios son para ti.</p>\r\n      <div>\r\n      <ul>\r\n      <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Presidente Jorge Alessandri 20040 local B-1016<br>San Bernardo</li><br>Santiago\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>22 306 92 50</li>\r\n      <li class=\"web\"><a href=\"https://www.cela.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.cela.cl</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-estetica-cela';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "San Bernardo",
+            "clinica-estetica-cela"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-12-14T17:00:00-03:00",
+          "end_date": "2020-12-14T17:00:00-03:00",
+          "discount": 40,
+          "location_street": "Av. Presidente Jorge Alessandri 20040 local B-1016, San Bernardo",
+          "latitude": "-33.439623",
+          "longitude": "-70.535797"
+        }
+      ],
+      "not-likes": [
+        {
+          "id": 52523,
+          "uuid": "b1c1dd0d-68b9-44d9-b28f-0a5666ba7c69",
+          "created_at": "2020-01-08T16:12:33-03:00",
+          "updated_at": "2021-01-11T11:59:32-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/aeropuerto/promotions/rosselot-rent-a-car-hasta-un",
+          "title": "Rosselot Rent a Car - Hasta un",
+          "slug": "rosselot-rent-a-car-hasta-un",
+          "description": "<h3>Hasta un 30% dcto</h3><p>En Rosselot Rent a Car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Limache 3865<br>Viña del Mar</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>32 314 0350</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2021/01/Rosselot-Convenio-Scotia.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>\r\n",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/f4fd172a-9a15-4dee-8eb0-fe6fd2cb50c1/R320x240/Rosselot-logo-bci.jpg",
+            "https://bci-cdn.azureedge.net/uploads/bf2d9974-83ee-4bf0-9ce4-e1f7f99345fe/R320x240/Caluga-Rosselot-360x500-nueva-2.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "aeropuerto",
+            "rosselot",
+            "rent a car",
+            "venta-online"
+          ],
+          "category": "shopping aeropuerto",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-30 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-20 % sobre tarifa neta semana en todas las categorías de camionetas, jeep y Van. (Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Abril al 30 de Noviembre</span><span style=\"background-color: initial;\">.</span></div><div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-20 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-15 % sobre tarifa neta semana en todas las categorías de camionetas, Jeep y Van.&nbsp;</span><br><span style=\"background-color: initial;\">(Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Diciembre al 31 Marzo.&nbsp;</span><br><span style=\"background-color: initial;\">Los descuentos son aplicables sobre la tarifa de precio de lista.&nbsp;</span><br><span style=\"background-color: initial;\"><br></span></div><div><span style=\"background-color: initial;\">Válido pagando con tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-30 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-20 % sobre tarifa neta semana en todas las categorías de camionetas, jeep y Van. (Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Abril al 30 de Noviembre</span><span style=\"background-color: initial;\">.</span></div><div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-20 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-15 % sobre tarifa neta semana en todas las categorías de camionetas, Jeep y Van.&nbsp;</span><br><span style=\"background-color: initial;\">(Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Diciembre al 31 Marzo.&nbsp;</span><br><span style=\"background-color: initial;\">Los descuentos son aplicables sobre la tarifa de precio de lista.&nbsp;</span><br><span style=\"background-color: initial;\"><br></span></div><div><span style=\"background-color: initial;\">Válido pagando con tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></div>",
+          "start_date": "2020-01-08T16:00:00-03:00",
+          "end_date": "2020-01-08T16:00:00-03:00",
+          "discount": 30,
+          "location_street": "Limache 3865,  Viña del Mar",
+          "latitude": "-33.046717",
+          "longitude": "-71.511628"
+        },
+        {
+          "id": 52523,
+          "uuid": "b1c1dd0d-68b9-44d9-b28f-0a5666ba7c69",
+          "created_at": "2020-01-08T16:12:33-03:00",
+          "updated_at": "2021-01-11T11:59:32-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/aeropuerto/promotions/rosselot-rent-a-car-hasta-un",
+          "title": "Rosselot Rent a Car - Hasta un",
+          "slug": "rosselot-rent-a-car-hasta-un",
+          "description": "<h3>Hasta un 30% dcto</h3><p>En Rosselot Rent a Car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Limache 3865<br>Viña del Mar</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>32 314 0350</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2021/01/Rosselot-Convenio-Scotia.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>\r\n",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/f4fd172a-9a15-4dee-8eb0-fe6fd2cb50c1/R320x240/Rosselot-logo-bci.jpg",
+            "https://bci-cdn.azureedge.net/uploads/bf2d9974-83ee-4bf0-9ce4-e1f7f99345fe/R320x240/Caluga-Rosselot-360x500-nueva-2.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "aeropuerto",
+            "rosselot",
+            "rent a car",
+            "venta-online"
+          ],
+          "category": "shopping aeropuerto",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-30 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-20 % sobre tarifa neta semana en todas las categorías de camionetas, jeep y Van. (Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Abril al 30 de Noviembre</span><span style=\"background-color: initial;\">.</span></div><div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-20 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-15 % sobre tarifa neta semana en todas las categorías de camionetas, Jeep y Van.&nbsp;</span><br><span style=\"background-color: initial;\">(Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Diciembre al 31 Marzo.&nbsp;</span><br><span style=\"background-color: initial;\">Los descuentos son aplicables sobre la tarifa de precio de lista.&nbsp;</span><br><span style=\"background-color: initial;\"><br></span></div><div><span style=\"background-color: initial;\">Válido pagando con tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-30 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-20 % sobre tarifa neta semana en todas las categorías de camionetas, jeep y Van. (Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Abril al 30 de Noviembre</span><span style=\"background-color: initial;\">.</span></div><div><span style=\"background-color: initial;\">Descuento de un:</span><br><span style=\"background-color: initial;\">&nbsp;-20 % sobre tarifa neta día base en todas las categorías de automóviles.&nbsp;</span><br><span style=\"background-color: initial;\">-15 % sobre tarifa neta semana en todas las categorías de camionetas, Jeep y Van.&nbsp;</span><br><span style=\"background-color: initial;\">(Los descuentos son aplicables en la tarifa full del arriendo)&nbsp;</span><br><span style=\"background-color: initial;\">Estos descuentos son aplicables desde 1 de Diciembre al 31 Marzo.&nbsp;</span><br><span style=\"background-color: initial;\">Los descuentos son aplicables sobre la tarifa de precio de lista.&nbsp;</span><br><span style=\"background-color: initial;\"><br></span></div><div><span style=\"background-color: initial;\">Válido pagando con tarjetas de Crédito o Débito Scotia</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></div>",
+          "start_date": "2020-01-08T16:00:00-03:00",
+          "end_date": "2020-01-08T16:00:00-03:00",
+          "discount": 30,
+          "location_street": "Limache 3865,  Viña del Mar",
+          "latitude": "-33.046717",
+          "longitude": "-71.511628"
+        },
+        {
+          "id": 51972,
+          "uuid": "1c1c3c75-ae52-4bca-9ade-6bbce9bee12d",
+          "created_at": "2019-12-04T16:42:34-03:00",
+          "updated_at": "2019-12-12T13:32:31-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/rent-a-car/promotions/rosselot-curico",
+          "title": "Rosselot Rent a Car - Curicó",
+          "slug": "rosselot-curico",
+          "description": "   <h3>Hasta un 30% dcto</h3><p>En Rosselot rent a car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Manso de Velasco 1118<br>Curicó</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>75 2228 945</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/12/Rosselot-Convenio-Scotia-2019.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "curico",
+            "Curicó",
+            "rosselot",
+            "rent a car"
+          ],
+          "category": "shopping rent a car",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-12-04T16:00:00-03:00",
+          "end_date": "2019-12-04T16:00:00-03:00",
+          "discount": 30,
+          "location_street": "Avenida Manso de Velasco 1118, Curicó",
+          "latitude": "-34.977847",
+          "longitude": "-71.23534"
+        },
+        {
+          "id": 57903,
+          "uuid": "03a3258e-6d2d-475d-9866-fd25ad4ea9ab",
+          "created_at": "2020-12-14T17:41:22-03:00",
+          "updated_at": "2020-12-29T13:44:11-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/clinica-cela-san-bernardo",
+          "title": "Clínica Cela - San Bernardo",
+          "slug": "clinica-cela-san-bernardo",
+          "description": "<h3>Hasta un 40%</h3><p>Clínica Cela, cuenta con 14 años de experiencia en depilación láser con tecnología láser Alexandrita, tratamientos reductivos corporales, tratamientos faciales. Única clínica estética con certificación ISO 9001:2015 y cuenta con el 100% de profesionales de la salud. Estos beneficios son para ti.</p>\r\n      <div>\r\n      <ul>\r\n      <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Presidente Jorge Alessandri 20040 local B-1016<br>San Bernardo</li><br>Santiago\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>22 306 92 50</li>\r\n      <li class=\"web\"><a href=\"https://www.cela.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.cela.cl</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-estetica-cela';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "San Bernardo",
+            "clinica-estetica-cela"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-12-14T17:00:00-03:00",
+          "end_date": "2020-12-14T17:00:00-03:00",
+          "discount": 40,
+          "location_street": "Av. Presidente Jorge Alessandri 20040 local B-1016, San Bernardo",
+          "latitude": "-33.439623",
+          "longitude": "-70.535797"
+        },
+        {
+          "id": 57528,
+          "uuid": "adec960e-def4-4e20-b849-4e70976b7fd5",
+          "created_at": "2020-11-10T17:25:13-03:00",
+          "updated_at": "2020-11-10T17:26:24-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/liola-3",
+          "title": "Liolá - Providencia",
+          "slug": "liola-3",
+          "description": "<h3>20% dcto.</h3><p>Vestuario y calzado femenino</p>\r\n      <div>\r\n      <ul>\r\n       <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Providencia 2238. Local 13<br>Providencia</li>\r\n        <li class=\"telefono\"><i class=\"icon-phone\"></i>94 2804 438</li>\r\n      <li class=\"web\"><a href=\"https://www.liola.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.liola.cl/</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/LiolaChile/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n <li class=\"fb\"><a href=\"https://www.instagram.com/liolachile/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'liola';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "providencia",
+            "liola",
+            "ropa"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-11-10T17:00:00-03:00",
+          "end_date": "2020-11-10T17:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Providencia 2238. Local 13, Providencia",
+          "latitude": "33.421321",
+          "longitude": "-70.609082"
+        }
+      ]
     }
   ],
   "meta": {
