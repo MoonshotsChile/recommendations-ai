@@ -27,7 +27,8 @@ const LocationsPage = (): JSX.Element => {
     const useCase = new BenefitsUseCase()
 
     const [map, setMap] = useState(null)
-    const {location, saveContext, rut, userdata} = useContext(ContextApi)
+    const {location, saveContext, rut} = useContext(ContextApi)
+    const { userdata } = useContext(ContextApi)
     // @ts-ignore
     const [center, setCenter] = useState({lat: parseFloat(location?.latitude), lng: parseFloat(location?.longitude)})
     const [benefit, setBenefit] = useState<Benefit>()
@@ -41,6 +42,10 @@ const LocationsPage = (): JSX.Element => {
 
 
     useEffect(() => {
+        initLocation()
+    }, [])
+
+    const initLocation = () => {
         const onSuccess = (geolocation: { coords: GeolocationCoordinates, timestamp: number }) => {
             const location: Coord = {
                 latitude: geolocation.coords.latitude,
@@ -54,14 +59,14 @@ const LocationsPage = (): JSX.Element => {
             setCenter(center);
             setTimeout(() => {
                 setZoom(11)
-                setCenter(center)
-            }, 1500)
+                initLocation()
+            }, 3000)
         }
         const onError = (error: any) => {
             console.error(error)
         }
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
-    }, [])
+    }
 
     useEffect(() => {
         useCase.list('?latitude_ne=null')
@@ -90,7 +95,6 @@ const LocationsPage = (): JSX.Element => {
     const onLike = () => {
         // @ts-ignore
         lastCardRef.current?.swipe('right')
-
     }
 
     const onNotLike = () => {
