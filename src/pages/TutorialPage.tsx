@@ -10,8 +10,11 @@ import { bellRed, handHello, handSlideDown, handSlideLeft, handSlideRight, mapMa
 import { useHistory } from 'react-router-dom';
 import ListItem from "../components/cards/ListItem";
 import TinderCard from "react-tinder-card";
+import { authValidation } from "../components/hooks/authValidation";
 
 const TutorialPage = (): JSX.Element => {
+    authValidation()
+
     const [step, setStep] = useState(1)
     const likeCardRef = useRef(null)
     const notLikeCardRef = useRef(null)

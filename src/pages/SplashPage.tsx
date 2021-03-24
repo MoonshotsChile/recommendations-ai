@@ -1,8 +1,10 @@
 import React from "react";
 import { sbenefitsWhite, splash } from "../assets";
 import { useHistory } from "react-router-dom";
+import { authValidation } from "../components/hooks/authValidation";
 
 const SplashPage = (): JSX.Element => {
+    authValidation()
 
     const history = useHistory();
 

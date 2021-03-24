@@ -10,8 +10,11 @@ import TinderButtonLater from "../components/buttons/TinderButtonLater";
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
 import { UserdataUseCase } from "../domain/UserdataUseCase";
 import { dataLayerPush } from "../config/analytics";
+import { authValidation } from "../components/hooks/authValidation";
 
 const OfferPage = (): JSX.Element => {
+    authValidation()
+
     const benefitsUseCase = new BenefitsUseCase()
     const userdataUseCase = new UserdataUseCase()
     const { saveContext, userdata } = useContext(ContextApi)

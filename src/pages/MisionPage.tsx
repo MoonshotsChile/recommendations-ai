@@ -14,8 +14,11 @@ import {
   Disponible,
 } from "../domain/entity/Mision";
 import { useState, useEffect } from "react";
+import { authValidation } from "../components/hooks/authValidation";
 
 const MisionPage: React.FC = () => {
+  authValidation()
+
   const useCase = new MisionsUseCase();
   const [misions, setMisions] = useState(misionMock);
 

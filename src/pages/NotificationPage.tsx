@@ -9,8 +9,11 @@ import { bell, bellSelected } from "../assets";
 import { NotificationsUseCase } from "../domain/NotificationsUseCase";
 import { Notification, notificationMock } from "../domain/entity/Notification";
 import { useState, useEffect } from "react";
+import { authValidation } from "../components/hooks/authValidation";
 
 const NotificationPage: React.FC = () => {
+  authValidation()
+
   const useCase = new NotificationsUseCase();
   const [notifications, setNotifications] = useState([notificationMock]);
 

@@ -4,10 +4,10 @@ import { useHistory } from "react-router-dom";
 
 
 export const authValidation = () => {
-    const { isAuthenticated } = useContext(ContextApi)
+    const { isAuthenticated, userdata } = useContext(ContextApi)
     const history = useHistory();
 
     useEffect(() => {
-        if (!isAuthenticated) history.push('/login')
+        if (!isAuthenticated || !userdata?.id && userdata?.id === "undefined") history.push('/login')
     }, [ContextApi])
 }

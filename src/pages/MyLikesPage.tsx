@@ -19,8 +19,11 @@ import OfferCard from "../components/offer-card/OfferCard";
 import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
 
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
+import { authValidation } from "../components/hooks/authValidation";
 
 const MyLikesPage: React.FC = () => {
+  authValidation()
+
   const useCase = new UserdataUseCase();
   const lastCardRef = useRef(null);
   const userdataUseCase = new UserdataUseCase();

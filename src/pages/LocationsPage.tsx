@@ -12,9 +12,11 @@ import TinderButtonLater from "../components/buttons/TinderButtonLater";
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
 import { UserdataUseCase } from "../domain/UserdataUseCase";
 import { dataLayerPush } from "../config/analytics";
+import { authValidation } from "../components/hooks/authValidation";
 
 
 const LocationsPage = (): JSX.Element => {
+    authValidation()
 
     const lastCardRef = useRef(null)
     const userdataUseCase = new UserdataUseCase()
