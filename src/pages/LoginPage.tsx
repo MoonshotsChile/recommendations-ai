@@ -147,13 +147,13 @@ const LoginPage: React.FC = () => {
                     </section>
                     <section className="hero-foot has-text-centered">
                         <div className="column is-three-quarter">
-                            <button id="btn-fetch-data"
+                            <button id="btn-login"
                                     className="button is-primary is-fullwidth is-inline has-text-centered"
                                     disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
                             </button>
                         </div>
                         <div className="column is-three-quarter">
-                            <button id="btn-fetch-data" className="button is-fullwidth is-inline has-text-centered"
+                            <button id="btn-guest" className="button is-fullwidth is-inline has-text-centered"
                                     disabled={isLoading} onClick={goToNext}>Invitado
                             </button>
                         </div>

@@ -26,6 +26,7 @@ module.exports = {
         "no-debugger": "off"
     },
     "globals": {
-        "google": true
+        "google": true,
+        "dataLayer": true
     }
 };
