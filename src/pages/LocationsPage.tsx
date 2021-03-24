@@ -88,6 +88,16 @@ const LocationsPage = (): JSX.Element => {
 
     const onLike = () => {
         // @ts-ignore
+        dataLayer.push({
+            event: 'later',
+            eventProps: {
+                category: 'locations',
+                action: 'swipe',
+                label: 'like',
+                value: benefit
+            }
+        })
+        // @ts-ignore
         lastCardRef.current?.swipe('right')
         saveLike()
 
@@ -95,11 +105,31 @@ const LocationsPage = (): JSX.Element => {
 
     const onNotLike = () => {
         // @ts-ignore
+        dataLayer.push({
+            event: 'later',
+            eventProps: {
+                category: 'locations',
+                action: 'swipe',
+                label: 'not-like',
+                value: benefit
+            }
+        })
+        // @ts-ignore
         lastCardRef.current?.swipe('left')
         saveNotLike()
     }
 
     const onLater = () => {
+        // @ts-ignore
+        dataLayer.push({
+            event: 'later',
+            eventProps: {
+                category: 'locations',
+                action: 'swipe',
+                label: 'later',
+                value: benefit
+            }
+        })
         // @ts-ignore
         lastCardRef.current?.swipe('down')
         saveLater()

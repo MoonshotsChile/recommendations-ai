@@ -52,11 +52,31 @@ const OfferPage = (): JSX.Element => {
 
     const onLike = () => {
         // @ts-ignore
+        dataLayer.push({
+            event: 'reaction',
+            eventProps: {
+                category: 'offers',
+                action: 'swipe',
+                label: 'like',
+                value: benefits[1]
+            }
+        })
+        // @ts-ignore
         lastCardRef.current?.swipe('right')
         saveLike()
     }
 
     const onNotLike = () => {
+        // @ts-ignore
+        dataLayer.push({
+            event: 'reaction',
+            eventProps: {
+                category: 'offers',
+                action: 'swipe',
+                label: 'not-like',
+                value: benefits[1]
+            }
+        })
         setBenefits(benefits)
         // @ts-ignore
         lastCardRef.current?.swipe('left')
@@ -64,6 +84,16 @@ const OfferPage = (): JSX.Element => {
     }
 
     const onLater = () => {
+        // @ts-ignore
+        dataLayer.push({
+            event: 'later',
+            eventProps: {
+                category: 'offers',
+                action: 'swipe',
+                label: 'not-like',
+                value: benefits[1]
+            }
+        })
         // @ts-ignore
         lastCardRef.current?.swipe('down')
         saveLater()
