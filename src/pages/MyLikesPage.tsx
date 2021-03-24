@@ -25,7 +25,7 @@ const MyLikesPage: React.FC = () => {
   const lastCardRef = useRef(null);
   const userdataUseCase = new UserdataUseCase();
 
-  const { rut, userdata, saveContext } = useContext(ContextApi);
+  const { userdata, saveContext } = useContext(ContextApi);
   const [likes, setLikes] = useState([] as Benefit[]);
   const [laters, setLaters] = useState([] as Benefit[]);
 
@@ -51,7 +51,7 @@ const MyLikesPage: React.FC = () => {
   };
   useEffect(() => {
     useCase
-      .find(rut || "")
+      .find(userdata?.id || "")
       .then((response: Response) => response.json())
       .then((data: Userdata) => {
         setLikes(cleanDuplicates(benefitsDecorator(data.likes)));
@@ -140,7 +140,7 @@ const MyLikesPage: React.FC = () => {
       const later = [...userdata.later, ...[benefit]];
       userdata.later = later;
       saveContext({ userdata });
-      userdataUseCase.later(rut!, later);
+      userdataUseCase.later(userdata.id, later);
     }
   };
 
@@ -149,7 +149,7 @@ const MyLikesPage: React.FC = () => {
       const likes = [...userdata.likes, ...[benefit]];
       userdata.likes = likes;
       saveContext({ userdata });
-      userdataUseCase.like(rut!, likes);
+      userdataUseCase.like(userdata.id, likes);
     }
   };
 
@@ -158,7 +158,7 @@ const MyLikesPage: React.FC = () => {
       const later = [...userdata.later, ...[benefit]];
       userdata.later = later;
       saveContext({ userdata });
-      userdataUseCase.notLike(rut!, later);
+      userdataUseCase.notLike(userdata.id!, later);
     }
   };
 
