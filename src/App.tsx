@@ -12,9 +12,9 @@ import MisionPage from "./pages/MisionPage";
 import NotificationPage from "./pages/NotificationPage";
 import { ContextApiProvider } from "./context-api/ContextApi";
 import SplashPage from "./pages/SplashPage";
-import TagManager from 'react-gtm-module';
+import TagManager, { TagManagerArgs } from 'react-gtm-module';
 
-const tagManagerArgs = {
+const tagManagerArgs: TagManagerArgs = {
   gtmId: 'GTM-WFRKBX5'
 }
 
