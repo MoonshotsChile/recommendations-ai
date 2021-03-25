@@ -16,7 +16,6 @@ import { authValidation } from "../components/hooks/authValidation";
 SwiperCore.use([Navigation, Pagination]); //descomentar para habilitar
 
 const OnboardingPage: React.FC = () => {
-  authValidation()
 
   const history = useHistory();
   const { saveContext } = useContext(ContextApi);
