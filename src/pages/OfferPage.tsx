@@ -74,7 +74,7 @@ const OfferPage = (): JSX.Element => {
     }
 
     const saveLater = () => {
-        if (userdata) {
+        if (userdata && currentBenefit()) {
             const later = [...userdata.later, ...[currentBenefit()]]
             userdata.later = later
             saveContext({userdata})
@@ -83,7 +83,7 @@ const OfferPage = (): JSX.Element => {
     }
 
     const saveLike = () => {
-        if (userdata) {
+        if (userdata && currentBenefit()) {
             const likes = [...userdata.likes, ...[currentBenefit()]]
             userdata.likes = likes
             saveContext({userdata})
@@ -92,7 +92,7 @@ const OfferPage = (): JSX.Element => {
     }
 
     const saveNotLike = () => {
-        if (userdata) {
+        if (userdata && currentBenefit()) {
             const later = [...userdata.later, ...[currentBenefit()]]
             userdata.later = later
             saveContext({userdata})

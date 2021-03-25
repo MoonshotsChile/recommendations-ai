@@ -38,17 +38,17 @@ const ContextApi = createContext<ContextPropsExtended>(initialState);
 
 const ContextApiProvider: FC = ({ children }) => {
   const [context, setContext] = useState<ContextProps>(initialState);
-  const [saveInStorage, setSaveInStorage] = useState(0)
+  const [savedContext, setSavedContext] = useState(false)
 
   useEffect(() => {
-    if (saveInStorage) {
+    if (savedContext) {
       saveInLocalStorage(context)
     }
-  }, [saveInStorage])
+  }, [savedContext, context])
 
   const saveContext = (newState: ContextProps) => {
     setContext((prevState) => ({ ...prevState, ...newState }));
-    setSaveInStorage(saveInStorage + 1)
+    setSavedContext(true)
   };
 
   const saveInLocalStorage = (props: ContextProps) => {
