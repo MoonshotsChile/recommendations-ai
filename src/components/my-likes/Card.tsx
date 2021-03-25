@@ -16,7 +16,11 @@ const LikeCard = (props: PropsCard): JSX.Element => {
         <figure className="image">
           <img
             className=""
-            src={benefit.covers[0] !== undefined ? benefit.covers[0] : ""}
+            src={
+              benefit.covers !== undefined && benefit.covers.length > 0
+                ? benefit.covers[0]
+                : ""
+            }
             alt="Placeholder image"
             id={benefit.id.toString()}
           />

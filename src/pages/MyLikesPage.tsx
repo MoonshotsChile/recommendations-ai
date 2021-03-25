@@ -57,8 +57,10 @@ const MyLikesPage: React.FC = () => {
       .find(userdata?.id || "")
       .then((response: Response) => response.json())
       .then((data: Userdata) => {
-        setLikes(cleanDuplicates(benefitsDecorator(data.likes)));
-        setLaters(cleanDuplicates(benefitsDecorator(data.later)));
+        console.log("data", data);
+
+        data.likes && setLikes(cleanDuplicates(benefitsDecorator(data.likes)));
+        data.later && setLaters(cleanDuplicates(benefitsDecorator(data.later)));
       });
   }, []);
 
@@ -104,6 +106,7 @@ const MyLikesPage: React.FC = () => {
     // @ts-ignore
     lastCardRef.current?.swipe("right");
     saveLike();
+    hideTinder();
   };
 
   const onNotLike = () => {
@@ -120,22 +123,7 @@ const MyLikesPage: React.FC = () => {
     // @ts-ignore
     lastCardRef.current?.swipe("left");
     saveNotLike();
-  };
-
-  const onLater = () => {
-    // @ts-ignore
-    dataLayer.push({
-      event: "later",
-      eventProps: {
-        category: "locations",
-        action: "swipe",
-        label: "later",
-        value: benefit,
-      },
-    });
-    // @ts-ignore
-    lastCardRef.current?.swipe("down");
-    saveLater();
+    hideTinder();
   };
 
   const saveLater = () => {
@@ -177,12 +165,16 @@ const MyLikesPage: React.FC = () => {
         saveLater();
         break;
     }
+    hideTinder();
   }
   const exit = () => {
-    setTinderShow("is-hidden");
-    setTinderBottonShow("is-hidden");
+    hideTinder();
     setBenefit(undefined);
     setIdBenefit("");
+  };
+  const hideTinder = () => {
+    setTinderShow("is-hidden");
+    setTinderBottonShow("is-hidden");
   };
   return (
     <div className="container">
