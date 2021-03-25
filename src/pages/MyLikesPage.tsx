@@ -126,21 +126,18 @@ const MyLikesPage: React.FC = () => {
     hideTinder();
   };
 
-  const saveLater = () => {
-    if (userdata && benefit) {
-      const later = [...userdata.later, ...[benefit]];
-      userdata.later = later;
-      saveContext({ userdata });
-      userdataUseCase.later(userdata.id, later);
-    }
-  };
-
   const saveLike = () => {
     if (userdata && benefit) {
-      const likes = [...userdata.likes, ...[benefit]];
+      const likes =
+        userdata.likes.length > 0
+          ? [...userdata.likes, ...[benefit]]
+          : [benefit];
+      setLikes(cleanDuplicates(benefitsDecorator(likes)));
       userdata.likes = likes;
       saveContext({ userdata });
       userdataUseCase.like(userdata.id, likes);
+
+      removeLater();
     }
   };
 
@@ -150,6 +147,7 @@ const MyLikesPage: React.FC = () => {
       userdata.later = later;
       saveContext({ userdata });
       userdataUseCase.notLike(userdata.id!, later);
+      removeLater();
     }
   };
 
@@ -162,7 +160,6 @@ const MyLikesPage: React.FC = () => {
         saveNotLike();
         break;
       case "down":
-        saveLater();
         break;
     }
     hideTinder();
@@ -175,6 +172,16 @@ const MyLikesPage: React.FC = () => {
   const hideTinder = () => {
     setTinderShow("is-hidden");
     setTinderBottonShow("is-hidden");
+  };
+
+  const removeLater = () => {
+    if (userdata && benefit) {
+      const later = laters.filter((l) => l.id !== benefit.id);
+      userdata.later = later;
+      saveContext({ userdata });
+      userdataUseCase.later(userdata.id!, later);
+      setLaters(later);
+    }
   };
   return (
     <div className="container">
