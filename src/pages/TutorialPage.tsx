@@ -6,7 +6,16 @@ import TinderButtonLike from "../components/buttons/TinderButtonLike";
 import Navbar from "../components/navbar/Navbar";
 import { NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import TutorialCard from "../components/cards/TutorialCard";
-import { bellRed, handHello, handSlideDown, handSlideLeft, handSlideRight, mapMarkerGoogle, rocket } from "../assets";
+import {
+    bellRed,
+    handHello,
+    handSlideDown,
+    handSlideLeft,
+    handSlideRight,
+    mapMarkerGoogle,
+    mapMarkerGoogleBordered,
+    rocket
+} from "../assets";
 import { useHistory } from 'react-router-dom';
 import ListItem from "../components/cards/ListItem";
 import TinderCard from "react-tinder-card";

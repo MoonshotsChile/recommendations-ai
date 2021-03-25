@@ -4,7 +4,7 @@ import { ContextApi, Coord, NAVBAR_ACTIONS } from "../context-api/ContextApi";
 import Navbar from "../components/navbar/Navbar";
 import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
-import { mapMarkerGoogle } from "../assets";
+import { mapMarkerGoogleBordered } from "../assets";
 import TinderCard from "react-tinder-card";
 import OfferCard from "../components/offer-card/OfferCard";
 import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
@@ -203,7 +203,7 @@ const LocationsPage = (): JSX.Element => {
                         {nearestPlaces.map((benefit: Benefit, i: number) => (
                             <Marker
                                 key={`market${i}`}
-                                icon={mapMarkerGoogle}
+                                icon={mapMarkerGoogleBordered}
                                 position={{lat: parseFloat(benefit.latitude), lng: parseFloat(benefit.longitude)}}
                                 onClick={(me) => showBenefitCard(benefit)}
                             />
