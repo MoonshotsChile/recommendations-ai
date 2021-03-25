@@ -41,16 +41,26 @@
     height: 120px;
   }
 }
+
 .modal-tinder {
+  .modal-close,
+  .delete {
+    position: relative;
+    z-index: 3;
+  }
+  .modal-background {
+    background-color: rgba(10, 10, 10, 0.86);
+    z-index: 3;
+    position: fixed !important;
+  }
   .modal-card {
-    position: fixed;
     bottom: 0;
     margin: 0;
     width: 100%;
     max-width: 960px;
     box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    background-color: #fff;
+    position: fixed;
+    z-index: 3;
   }
   .card-content {
     @media only screen and (min-width: 768px) {
@@ -59,9 +69,9 @@
     background: white;
   }
   .tinder-cards__card {
-    z-index: 2;
     height: 75vh;
     position: fixed;
+    z-index: 4;
     img {
       position: absolute;
     }

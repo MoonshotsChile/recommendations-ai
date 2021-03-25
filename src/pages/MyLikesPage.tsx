@@ -22,7 +22,7 @@ import TinderButtonLike from "../components/buttons/TinderButtonLike";
 import { authValidation } from "../components/hooks/authValidation";
 
 const MyLikesPage: React.FC = () => {
-  authValidation()
+  authValidation();
 
   const useCase = new UserdataUseCase();
   const lastCardRef = useRef(null);
@@ -34,9 +34,9 @@ const MyLikesPage: React.FC = () => {
 
   const [idBenefit, setIdBenefit] = useState("");
   const [benefit, setBenefit] = useState<Benefit>();
-  const [tinderShow, setTinderShow] = useState("");
+  const [tinderShow, setTinderShow] = useState("is-hidden");
 
-  const [tinderBottonShow, setTinderBottonShow] = useState("");
+  const [tinderBottonShow, setTinderBottonShow] = useState("is-hidden");
 
   const breakpoints = {
     // when window width is >= 640px
@@ -186,23 +186,23 @@ const MyLikesPage: React.FC = () => {
   };
   return (
     <div className="container">
-      <div className={`modal-tinder ${tinderShow}`}>
+      <div className={`modal-tinder`}>
         {idBenefit !== "" && benefit !== undefined && (
           <div>
+            <div className={`modal-background`}></div>
+            <button
+              className="delete is-large"
+              aria-label="close"
+              onClick={exit}
+            />
             <TinderCard
               ref={lastCardRef}
-              {...{ className: "tinder-cards__card", style: { zIndex: 1 } }}
+              {...{ className: "tinder-cards__card" }}
               key={benefit.id}
               preventSwipe={["up"]}
               onSwipe={onSwipe}
               onCardLeftScreen={() => setBenefit(undefined)}
             >
-              <button
-                className="delete is-large"
-                aria-label="close"
-                onClick={exit}
-                style={{ zIndex: 4 }}
-              />
               <OfferCard benefit={benefit} />
             </TinderCard>
           </div>
