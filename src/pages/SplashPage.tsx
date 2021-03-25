@@ -4,8 +4,6 @@ import { useHistory } from "react-router-dom";
 import { authValidation } from "../components/hooks/authValidation";
 
 const SplashPage = (): JSX.Element => {
-    authValidation()
-
     const history = useHistory();
 
     return (
