@@ -76,6 +76,18 @@ const MyLikesPage: React.FC = () => {
   };
   const likesHandleClick = (e: any) => {
     const result = likes.filter((l) => l.id === parseInt(e.target.id));
+
+    // @ts-ignore
+    dataLayer.push({
+      event: "view",
+      eventProps: {
+        category: "My-Likes",
+        action: "swipe",
+        label: "view-benefit",
+        value: benefit,
+      },
+    });
+
     setIdBenefit(e.target.id);
     if (result.length > 0) {
       setBenefit(result[0]);
@@ -95,9 +107,9 @@ const MyLikesPage: React.FC = () => {
   const onLike = () => {
     // @ts-ignore
     dataLayer.push({
-      event: "later",
+      event: "in-later",
       eventProps: {
-        category: "locations",
+        category: "Later",
         action: "swipe",
         label: "like",
         value: benefit,
@@ -112,9 +124,9 @@ const MyLikesPage: React.FC = () => {
   const onNotLike = () => {
     // @ts-ignore
     dataLayer.push({
-      event: "later",
+      event: "in-later",
       eventProps: {
-        category: "locations",
+        category: "Later",
         action: "swipe",
         label: "not-like",
         value: benefit,
