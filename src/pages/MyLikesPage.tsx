@@ -107,9 +107,9 @@ const MyLikesPage: React.FC = () => {
   const onLike = () => {
     // @ts-ignore
     dataLayer.push({
-      event: "in-later",
+      event: "later",
       eventProps: {
-        category: "Later",
+        category: "my-likes",
         action: "swipe",
         label: "like",
         value: benefit,
@@ -124,9 +124,9 @@ const MyLikesPage: React.FC = () => {
   const onNotLike = () => {
     // @ts-ignore
     dataLayer.push({
-      event: "in-later",
+      event: "later",
       eventProps: {
-        category: "Later",
+        category: "my-likes",
         action: "swipe",
         label: "not-like",
         value: benefit,
