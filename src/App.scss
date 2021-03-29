@@ -2,37 +2,7 @@
 
 // Import a Google Font
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400;700;800&display=swap");
-
-
-
-
-
-// Set your brand colors
-$purple: #4759dd;
-$pink: #fa7c91;
-$beige-light: #e5e5e5; /// #d0d1cd;
-$beige-lighter: #e5e5e5; // #eff0eb;
-
-// Update Bulma's global variables
-$family-sans-serif: "Montserrat", sans-serif;
-$family-primary: "Montserrat", sans-serif;
-$family-code: "Hind", sans-serif;
-$family-secondary: "Hind", sans-serif;
-$family-monospace: "Hind", sans-serif;
-$grey-dark: #696969;
-$grey-light: $beige-light;
-$primary: $purple;
-$button-color: $purple;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
-// Update some of Bulma's component variables
-$body-background-color: white;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
-
+@import "variables";
 
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/components/_all.sass";
@@ -41,8 +11,6 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/grid/all.sass";
 @import "../node_modules/bulma/sass/helpers/_all.sass";
 @import "../node_modules/bulma/sass/layout/_all.sass";
-
-
 
 body {
   font-family: $family-secondary;
@@ -181,24 +149,3 @@ body {
     z-index: 1;
   }
 }
-
-.control {
-  input, textarea {
-    display: block;
-    padding: 0.125rem 0.125rem 0.0625rem;
-    font-size: 1rem;
-    border-width: 0;
-    border-color: transparent;
-    line-height: 1.9;
-    width: 100%;
-    color: black;
-    transition: all 0.38s ease;
-    box-shadow: none;
-  }
-  .MuiInput-root {
-    position: relative;
-    width: 100%;
-    padding: 1em;
-  }
-}
-

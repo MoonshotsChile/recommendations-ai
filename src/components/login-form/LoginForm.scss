@@ -1,0 +1,19 @@
+.control {
+  input, textarea {
+    display: block;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border-width: 0;
+    border-color: transparent;
+    line-height: 1.9;
+    width: 100%;
+    color: black;
+    transition: all 0.38s ease;
+    box-shadow: none;
+  }
+  .MuiInput-root {
+    position: relative;
+    width: 100%;
+    padding: 1em;
+  }
+}

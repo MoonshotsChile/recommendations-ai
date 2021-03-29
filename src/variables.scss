@@ -1,0 +1,26 @@
+
+// Set your brand colors
+$purple: #4759dd;
+$pink: #fa7c91;
+$beige-light: #e5e5e5; /// #d0d1cd;
+$beige-lighter: #e5e5e5; // #eff0eb;
+
+// Update Bulma's global variables
+$family-sans-serif: "Montserrat", sans-serif;
+$family-primary: "Montserrat", sans-serif;
+$family-code: "Hind", sans-serif;
+$family-secondary: "Hind", sans-serif;
+$family-monospace: "Hind", sans-serif;
+$grey-dark: #696969;
+$grey-light: $beige-light;
+$primary: $purple;
+$button-color: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;

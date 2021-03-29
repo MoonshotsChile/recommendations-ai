@@ -9,6 +9,7 @@ import { generateUniqueID } from "web-vitals/dist/modules/lib/generateUniqueID";
 import { getLocalStorage } from "../context-api/helpers/localstorage";
 import { UserdataUseCase } from "../domain/UserdataUseCase";
 import { Userdata } from "../domain/entity/Userdata";
+import LoginForm from "../components/login-form/LoginForm";
 
 const LoginPage: React.FC = () => {
     const userdataUseCase = new UserdataUseCase()
@@ -91,72 +92,7 @@ const LoginPage: React.FC = () => {
         <div className="container">
             <div className="section login hero is-fullheight">
                 <div className="hero is-borderless is-fullheight">
-                    <section className="card-header is-borderless">
-                        <div className="container has-text-centered">
-                            <p className="title">
-                                <img src={sbenefits} alt="SBenefits"/>
-                            </p>
-                            <h6 className="title">
-                                Bienvenido a SBenefits
-                            </h6>
-                            <p className="subtitle">
-                                Ingresa con los datos de tu cuenta Sbank
-                            </p>
-                        </div>
-                    </section>
-                    <section className="card-content is-borderless">
-                        <form autoComplete="off">
-                            <div style={{display: 'none'}}>
-                                <input type="text" id="PreventChromeAutocomplete"
-                                       name="PreventChromeAutocomplete" autoComplete="address-level4"/>
-                            </div>
-                            <div className="field">
-                                <div className="control">
-                                    <Input
-                                        id="username"
-                                        placeholder="Ingresa tu RUT"
-                                        value={userdata.username}
-                                        onChange={handleChangeRut}
-                                        autoComplete='off'
-                                        startAdornment={
-                                            <InputAdornment position="start">
-                                                <img src={userIcon}/>
-                                            </InputAdornment>
-                                        }
-                                    />
-                                </div>
-                            </div>
-                            <div className="field">
-                                <div className="control">
-                                    <Input
-                                        id="password"
-                                        type="password"
-                                        value={userdata.password}
-                                        placeholder="Ingresa tu clave de internet"
-                                        onChange={handleChange}
-                                        startAdornment={
-                                            <InputAdornment position="start">
-                                                <img src={lockIcon}/>
-                                            </InputAdornment>
-                                        }
-                                    />
-                                </div>
-                            </div>
-                        </form>
-                    </section>
-                    <section className="hero-foot has-text-centered">
-                        <div className="column is-three-quarter">
-                            <button id="btn-login"
-                                    className="button is-primary is-fullwidth is-inline has-text-centered"
-                                    disabled={isLoading || !isValidForm()} onClick={goToNext}>Login
-                            </button>
-                        </div>
-                        <div className="column is-three-quarter">
-                            <button id="btn-guest" className="button is-fullwidth is-inline has-text-centered"
-                                    disabled={isLoading} onClick={goToNext}>Invitado
-                            </button>
-                        </div>
-                    </section>
+                    <LoginForm user={userdata} goToNext={goToNext}/>
                 </div>
             </div>
         </div>
