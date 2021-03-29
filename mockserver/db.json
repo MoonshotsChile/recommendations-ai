@@ -31,7 +31,7 @@
       "content": "Paga con tus Tarjetas Scotiabank y obtén descuentos en tus compras con delivery en comercios seleccionados de la App EatTouch hasta el 31 de marzo."
     }
   ],
-  "misions": {
+  "missions": {
     "disponibles": [
       {
         "id": 1,
@@ -16680,11 +16680,5 @@
         }
       ]
     }
-  ],
-  "meta": {
-    "total_entries": 2455,
-    "per_page": 500,
-    "current_page": 1,
-    "total_pages": 5
-  }
+  ]
 }
