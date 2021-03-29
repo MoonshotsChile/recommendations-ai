@@ -1,29 +1,13 @@
 import React from "react";
-import { sbenefitsWhite, splash } from "../assets";
+import { sbenefitsWhite } from "../assets";
 import { useHistory } from "react-router-dom";
+import Splash from "../components/splash/Splash";
 
 const SplashPage = (): JSX.Element => {
     const history = useHistory();
 
     return (
-        <section className="hero splash is-fullheight is-fullwidth" onClick={() => history.push('/login')}>
-            <div className="hero-head">
-                <caption className="image" style={{backgroundImage: `url(${splash})`, position: "absolute"}}/>
-            </div>
-
-            <div className="hero-body">
-                <div className="container has-text-centered">
-                    <p className="title">
-                        <img src={sbenefitsWhite} alt="SBenefits"/>
-                    </p>
-                    <p className="subtitle">
-                        By SBank
-                    </p>
-                </div>
-            </div>
-
-            <div className="hero-foot"/>
-        </section>
+        <Splash onClick={() => history.push('/login')} img={sbenefitsWhite}/>
     )
 }
 
