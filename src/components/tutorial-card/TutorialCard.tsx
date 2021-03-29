@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import './TutorialCard.scss';
 
 interface CardAction {
@@ -12,11 +12,7 @@ interface TutorialCardProps {
     subtitle?: string,
     action?: CardAction,
     zIndex?: number,
-    children?:
-        | JSX.Element
-        | JSX.Element[]
-        | string
-        | string[];
+    children?: JSX.Element;
 }
 
 const TutorialCard = (props: TutorialCardProps): JSX.Element => {

@@ -1,0 +1,23 @@
+.tutorial {
+  .tinder-cards {
+    &__card {
+      height: 70vh;
+      background: rgba(0, 0, 0, 0.9);
+      box-shadow: 0px 2px 8px rgba(185, 185, 185, 0.5);
+      border-radius: 4px;
+      color: white;
+
+      .title {
+        color: #FFFFFF;
+      }
+    }
+  }
+  ul {
+    margin-left: 2em;
+    .icon-text {
+      top: -1em;
+      position: relative;
+      left: 0.5em;
+    }
+  }
+}

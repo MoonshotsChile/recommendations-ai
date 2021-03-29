@@ -5,7 +5,7 @@ import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
 import TinderButtonLike from "../components/buttons/TinderButtonLike";
 import Navbar from "../components/navbar/Navbar";
 import { NAVBAR_ACTIONS } from "../context-api/ContextApi";
-import TutorialCard from "../components/cards/TutorialCard";
+import TutorialCard from "../components/tutorial-card/TutorialCard";
 import {
     bellRed,
     handHello,
@@ -17,7 +17,7 @@ import {
     rocket
 } from "../assets";
 import { useHistory } from 'react-router-dom';
-import ListItem from "../components/cards/ListItem";
+import ListItem from "../components/tutorial-card/ListItem";
 import TinderCard from "react-tinder-card";
 import { authValidation } from "../components/hooks/authValidation";
 

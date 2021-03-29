@@ -1,0 +1,119 @@
+.tinder-cards {
+  &__card {
+    position: absolute;
+    padding: 20px;
+    border-radius: 4px;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    height: 70vh;
+    max-width: 460px;
+
+    @media only screen and (min-width: 768px) {
+      left: 25%;
+    }
+
+    .card {
+      box-shadow: none;
+    }
+
+    .title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.8rem;
+      line-height: 2rem;
+      text-align: center;
+      padding-top: 0;
+      p {
+        color: #e96d41;
+        font-size: 1.8rem;
+
+        @media only screen and (max-width: 360px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .category {
+      padding-bottom: 0;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+
+    .subtitle {
+      text-align: center;
+    }
+
+    .card-header {
+      height: 20vh;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    .card-content {
+      height: 37vh;
+    }
+
+    img {
+      width: initial;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    &__content {
+      padding: 0;
+      margin: 0;
+    }
+
+    .card-footer {
+      border: none;
+    }
+
+    &__image {
+      height: 38vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media only screen and (max-width: 360px) {
+        padding-bottom: 2em;
+      }
+    }
+
+    &__footer {
+      height: 28vh;
+    }
+
+    &__footer {
+      .has-text-weight-light {
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+        max-height: 12vh;
+        @media only screen and (min-width: 361px) {
+          max-height: 14vh;
+        }
+
+        @media only screen and (min-width: 768px) and (min-width: 360px) {
+          max-height: 18vh;
+        }
+
+        button {
+          width: 100%;
+          display: inline;
+          background: white;
+          border: none;
+          text-align: left;
+          font-weight: bold;
+          zoom: 0.9;
+        }
+      }
+    }
+  }
+}
