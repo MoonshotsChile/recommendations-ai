@@ -24,6 +24,17 @@ export interface Benefit {
     longitude: string
 }
 
+export interface ReactionData {
+    datetime: string,
+    latitude?: string,
+    longitude?: string
+}
+
+export interface BenefitReaction extends Benefit {
+    reaction?: ReactionData
+}
+
+
 export const benefitsDecorator = (benefits: Benefit[]): Benefit[] =>{
     return benefits.map(item => {
         if (!item.covers?.length) {

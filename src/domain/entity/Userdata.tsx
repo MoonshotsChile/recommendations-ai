@@ -1,7 +1,8 @@
-import { Benefit } from "./Benefit";
+import { BenefitReaction } from "./Benefit";
 export interface Userdata {
   id: string;
-  likes: Benefit[];
-  later: Benefit[];
-  "not-likes": Benefit[];
+  created_at?: string;
+  likes: BenefitReaction[];
+  later: BenefitReaction[];
+  "not-likes": BenefitReaction[];
 }

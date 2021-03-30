@@ -73,33 +73,6 @@ const OfferPage = (): JSX.Element => {
         getNextBenefits()
     }
 
-    const saveLater = () => {
-        if (userdata && currentBenefit()) {
-            const later = [...userdata.later, ...[currentBenefit()]]
-            userdata.later = later
-            saveContext({userdata})
-            userdataUseCase.later(userdata.id!, later)
-        }
-    }
-
-    const saveLike = () => {
-        if (userdata && currentBenefit()) {
-            const likes = [...userdata.likes, ...[currentBenefit()]]
-            userdata.likes = likes
-            saveContext({userdata})
-            userdataUseCase.like(userdata.id!, likes)
-        }
-    }
-
-    const saveNotLike = () => {
-        if (userdata && currentBenefit()) {
-            const later = [...userdata.later, ...[currentBenefit()]]
-            userdata.later = later
-            saveContext({userdata})
-            userdataUseCase.notLike(userdata.id!, later)
-        }
-    }
-
     function onSwipe(direction: string) {
         switch (direction) {
             case 'right':
@@ -109,10 +82,10 @@ const OfferPage = (): JSX.Element => {
                         category: 'offers',
                         action: 'swipe',
                         label: 'like',
-                        value: benefits[1]
+                        value: currentBenefit()
                     }
                 })
-                saveLike()
+                userdataUseCase.saveLike(userdata!, currentBenefit()!, saveContext)
                 break
             case 'left':
                 dataLayerPush({
@@ -121,10 +94,10 @@ const OfferPage = (): JSX.Element => {
                         category: 'offers',
                         action: 'swipe',
                         label: 'not-like',
-                        value: benefits[1]
+                        value: currentBenefit()
                     }
                 })
-                saveNotLike()
+                userdataUseCase.saveNotLike(userdata!, currentBenefit()!, saveContext)
                 break
             case 'down':
                 dataLayerPush({
@@ -133,10 +106,10 @@ const OfferPage = (): JSX.Element => {
                         category: 'offers',
                         action: 'swipe',
                         label: 'later',
-                        value: benefits[1]
+                        value: currentBenefit()
                     }
                 })
-                saveLater()
+                userdataUseCase.saveLater(userdata!, currentBenefit()!, saveContext)
                 break
         }
     }

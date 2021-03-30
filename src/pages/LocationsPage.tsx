@@ -105,33 +105,6 @@ const LocationsPage = (): JSX.Element => {
         lastCardRef.current?.swipe('down')
     }
 
-    const saveLater = () => {
-        if (userdata && benefit) {
-            const later = [...userdata.later, ...[benefit]]
-            userdata.later = later
-            saveContext({userdata})
-            userdataUseCase.later(userdata.id!, later)
-        }
-    }
-
-    const saveLike = () => {
-        if (userdata && benefit) {
-            const likes = [...userdata.likes, ...[benefit]]
-            userdata.likes = likes
-            saveContext({userdata})
-            userdataUseCase.like(userdata.id!, likes)
-        }
-    }
-
-    const saveNotLike = () => {
-        if (userdata && benefit) {
-            const later = [...userdata.later, ...[benefit]]
-            userdata.later = later
-            saveContext({userdata})
-            userdataUseCase.notLike(userdata.id!, later)
-        }
-    }
-
     function onSwipe(direction: string) {
         switch (direction) {
             case 'right':
@@ -144,8 +117,7 @@ const LocationsPage = (): JSX.Element => {
                         value: benefit
                     }
                 })
-                // @ts-ignore
-                saveLike()
+                userdataUseCase.saveLike(userdata!, benefit!, saveContext)
                 break
             case 'left':
                 dataLayerPush({
@@ -157,7 +129,7 @@ const LocationsPage = (): JSX.Element => {
                         value: benefit
                     }
                 })
-                saveNotLike()
+                userdataUseCase.saveNotLike(userdata!, benefit!, saveContext)
                 break
             case 'down':
                 dataLayerPush({
@@ -169,7 +141,7 @@ const LocationsPage = (): JSX.Element => {
                         value: benefit
                     }
                 })
-                saveLater()
+                userdataUseCase.saveLater(userdata!, benefit!, saveContext)
                 break
         }
     }
