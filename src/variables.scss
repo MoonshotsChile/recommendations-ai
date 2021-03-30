@@ -2,8 +2,6 @@
 // Set your brand colors
 $purple: #4759dd;
 $pink: #fa7c91;
-$beige-light: #e5e5e5; /// #d0d1cd;
-$beige-lighter: #e5e5e5; // #eff0eb;
 
 // Update Bulma's global variables
 $family-sans-serif: "Montserrat", sans-serif;
@@ -11,8 +9,9 @@ $family-primary: "Montserrat", sans-serif;
 $family-code: "Hind", sans-serif;
 $family-secondary: "Hind", sans-serif;
 $family-monospace: "Hind", sans-serif;
+$grey: #333333;
 $grey-dark: #696969;
-$grey-light: $beige-light;
+$grey-light: #e5e5e5;
 $primary: $purple;
 $button-color: $purple;
 $link: $pink;

@@ -96,7 +96,7 @@ body {
   text-align: center;
   border: 1px solid;
   .is-primary {
-    background-color: #4759dd;
+    background-color: $purple;
   }
 }
 
@@ -107,7 +107,7 @@ body {
     font-weight: normal;
     font-size: 1.5rem;
     text-align: center;
-    color: #333333
+    color: $grey
   }
 
   .subtitle {
@@ -148,4 +148,8 @@ body {
   .tinder-cards__card {
     z-index: 1;
   }
+}
+
+img {
+  user-select: none;
 }

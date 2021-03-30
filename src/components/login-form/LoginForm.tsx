@@ -38,19 +38,6 @@ export const LoginForm = ({user, goToNext}: LoginFormProps) => {
         return validate(userdata.username)
     }
 
-    const handleChangePassword = (e: { target: { id: string; value: string; } }) => {
-        const {id, value} = e.target
-        setUserdata(prevState => ({
-            ...prevState,
-            [id]: value
-        }))
-    }
-
-    const handleChangeUsername = (e: { target: { id: string; value: string; } }) => {
-        if (e.target.value.length >= 6) e.target.value = format(e.target.value)
-        return handleChangePassword(e)
-    }
-
     return (
         <>
             <section className="card-header is-borderless">

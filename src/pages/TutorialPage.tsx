@@ -13,7 +13,6 @@ import {
     handSlideLeft,
     handSlideRight,
     mapMarkerGoogle,
-    mapMarkerGoogleBordered,
     rocket
 } from "../assets";
 import { useHistory } from 'react-router-dom';
