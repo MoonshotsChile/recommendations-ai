@@ -143,7 +143,14 @@ const MyLikesPage: React.FC = () => {
     switch (direction) {
       case "right":
         userdataUseCase.saveLike(userdata!, benefit!, saveContext)
-        removeLater()
+          if (userdata && benefit) {
+            const likes =
+                userdata.likes.length > 0
+                    ? [...userdata.likes, ...[benefit]]
+                    : [benefit];
+            setLikes(cleanDuplicates(benefitsDecorator(likes)));
+            removeLater()
+          }
         break;
       case "left":
         userdataUseCase.saveNotLike(userdata!, benefit!, saveContext)
