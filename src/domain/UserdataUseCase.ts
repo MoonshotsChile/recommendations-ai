@@ -111,7 +111,7 @@ export class UserdataUseCase {
         return (
             {...benefit, ...{
                 reactionData: {
-                    datetime: new Date().toDateString()
+                    datetime: new Date().toJSON()
                 }
             }}
         )
