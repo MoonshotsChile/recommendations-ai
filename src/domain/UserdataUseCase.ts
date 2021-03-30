@@ -1,5 +1,5 @@
 import { API_URL } from "../config/constants";
-import { Benefit } from "./entity/Benefit";
+import { Benefit, BenefitReaction } from "./entity/Benefit";
 import { Userdata } from "./entity/Userdata";
 import { getLocalStorage } from "../context-api/helpers/localstorage";
 
@@ -14,7 +14,7 @@ export class UserdataUseCase {
         return fetch(`${API_URL}/userdata/${id}`)
     }
 
-    update(benefit: Benefit): Promise<Response>  {
+    update(benefit: BenefitReaction): Promise<Response>  {
         return fetch(`${API_URL}/userdata/`, {
             headers: {'Content-Type': 'application/json'},
             method: 'PATCH',
@@ -22,19 +22,19 @@ export class UserdataUseCase {
         })
     }
 
-    like(id: string, benefits: Benefit[]): Promise<Response>  {
+    like(id: string, benefits: BenefitReaction[]): Promise<Response>  {
         return this.likeOrNot(id, benefits, 'likes')
     }
 
-    notLike(id: string, benefits: Benefit[]): Promise<Response>  {
+    notLike(id: string, benefits: BenefitReaction[]): Promise<Response>  {
         return this.likeOrNot(id, benefits, 'not-likes')
     }
 
-    later(id: string, benefits: Benefit[]): Promise<Response>  {
+    later(id: string, benefits: BenefitReaction[]): Promise<Response>  {
         return this.likeOrNot(id, benefits, 'later')
     }
 
-    likeOrNot(id: string, benefits: Benefit[], reaction: string): Promise<Response>  {
+    likeOrNot(id: string, benefits: BenefitReaction[], reaction: string): Promise<Response>  {
         return fetch(`${API_URL}/userdata/${id}/`, {
             headers: {'Content-Type': 'application/json'},
             method: 'PATCH',
@@ -63,7 +63,8 @@ export class UserdataUseCase {
             userdata = getLocalStorage('userdata')
         }
         if (userdata && benefit) {
-            const later = [...userdata.later, ...[benefit]]
+            const benefitReaction = this.benefitToReaction(benefit)
+            const later = [...userdata.later, ...[benefitReaction]]
             userdata.later = later
             saveContext({userdata})
             this.later(userdata.id!, later)
@@ -75,8 +76,8 @@ export class UserdataUseCase {
             userdata = getLocalStorage('userdata')
         }
         if (userdata && benefit) {
-            const likes = [...userdata.likes, ...[benefit]]
-            userdata.likes = likes
+            const benefitReaction = this.benefitToReaction(benefit)
+            const likes = [...userdata.likes, ...[benefitReaction]]
             saveContext({userdata})
             this.like(userdata.id!, likes)
         }
@@ -87,10 +88,32 @@ export class UserdataUseCase {
             userdata = getLocalStorage('userdata')
         }
         if (userdata && benefit) {
-            const later = [...userdata.later, ...[benefit]]
+            const benefitReaction = this.benefitToReaction(benefit)
+            const later = [...userdata.later, ...[benefitReaction]]
             userdata.later = later
             saveContext({userdata})
             this.notLike(userdata.id!, later)
         }
+    }
+
+    cleanDuplicates = (benefits: Benefit[]) => {
+        const cleans = benefits.reduce((out: Benefit[] = [], benefit: Benefit) => {
+            if (out.length > 0) {
+                const exists = out.filter((b) => b.id === benefit.id);
+                if (exists.length > 0) return out;
+                else return [...out, { ...benefit }];
+            } else return [...out, { ...benefit }];
+        }, []);
+        return cleans;
+    };
+
+    private benefitToReaction = (benefit: Benefit): BenefitReaction => {
+        return (
+            {...benefit, ...{
+                reactionData: {
+                    datetime: new Date().toDateString()
+                }
+            }}
+        )
     }
 }

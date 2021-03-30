@@ -13,7 +13,7 @@ import "swiper/components/navigation/navigation.scss";
 
 SwiperCore.use([Navigation]);
 import "../components/my-likes/Card.scss";
-import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
+import { Benefit, BenefitReaction, benefitsDecorator } from "../domain/entity/Benefit";
 import TinderCard from "react-tinder-card";
 import OfferCard from "../components/offer-card/OfferCard";
 import TinderButtonNotLike from "../components/buttons/TinderButtonNotLike";
@@ -29,8 +29,8 @@ const MyLikesPage: React.FC = () => {
   const userdataUseCase = new UserdataUseCase();
 
   const { userdata, saveContext } = useContext(ContextApi);
-  const [likes, setLikes] = useState([] as Benefit[]);
-  const [laters, setLaters] = useState([] as Benefit[]);
+  const [likes, setLikes] = useState([] as BenefitReaction[]);
+  const [laters, setLaters] = useState([] as BenefitReaction[]);
 
   const [idBenefit, setIdBenefit] = useState("");
   const [benefit, setBenefit] = useState<Benefit>();
@@ -64,8 +64,8 @@ const MyLikesPage: React.FC = () => {
       });
   }, []);
 
-  const cleanDuplicates = (benefits: Benefit[]) => {
-    const cleans = benefits.reduce((out: Benefit[] = [], benefit: Benefit) => {
+  const cleanDuplicates = (benefits: BenefitReaction[]) => {
+    const cleans = benefits.reduce((out: BenefitReaction[] = [], benefit: BenefitReaction) => {
       if (out.length > 0) {
         const exists = out.filter((b) => b.id === benefit.id);
         if (exists.length > 0) return out;
@@ -117,7 +117,7 @@ const MyLikesPage: React.FC = () => {
     });
     // @ts-ignore
     lastCardRef.current?.swipe("right");
-    saveLike();
+    userdataUseCase.saveLike(userdata!, benefit!, saveContext)
     hideTinder();
   };
 
@@ -133,43 +133,21 @@ const MyLikesPage: React.FC = () => {
       },
     });
     // @ts-ignore
-    lastCardRef.current?.swipe("left");
-    saveNotLike();
+    lastCardRef.current?.swipe("left")
+    userdataUseCase.saveNotLike(userdata!, benefit!, saveContext)
     hideTinder();
   };
 
-  const saveLike = () => {
-    if (userdata && benefit) {
-      const likes =
-        userdata.likes.length > 0
-          ? [...userdata.likes, ...[benefit]]
-          : [benefit];
-      setLikes(cleanDuplicates(benefitsDecorator(likes)));
-      userdata.likes = likes;
-      saveContext({ userdata });
-      userdataUseCase.like(userdata.id, likes);
-
-      removeLater();
-    }
-  };
-
-  const saveNotLike = () => {
-    if (userdata && benefit) {
-      const later = [...userdata.later, ...[benefit]];
-      userdata.later = later;
-      saveContext({ userdata });
-      userdataUseCase.notLike(userdata.id!, later);
-      removeLater();
-    }
-  };
 
   function onSwipe(direction: string) {
     switch (direction) {
       case "right":
-        saveLike();
+        userdataUseCase.saveLike(userdata!, benefit!, saveContext)
+        removeLater()
         break;
       case "left":
-        saveNotLike();
+        userdataUseCase.saveNotLike(userdata!, benefit!, saveContext)
+        removeLater()
         break;
       case "down":
         break;
