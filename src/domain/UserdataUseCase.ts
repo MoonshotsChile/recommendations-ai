@@ -5,8 +5,9 @@ import { getLocalStorage } from "../context-api/helpers/localstorage";
 
 export class UserdataUseCase {
 
+
     list(queryParams = ''): Promise<Response>  {
-        return fetch(`${API_URL}/userdata/${queryParams}`)
+        return fetch(`${API_URL}/userdata`)
     }
 
     find(id: string): Promise<Response> {
