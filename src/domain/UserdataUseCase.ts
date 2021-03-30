@@ -110,7 +110,7 @@ export class UserdataUseCase {
     private benefitToReaction = (benefit: Benefit): BenefitReaction => {
         return (
             {...benefit, ...{
-                reactionData: {
+                reaction: {
                     datetime: new Date().toJSON()
                 }
             }}
