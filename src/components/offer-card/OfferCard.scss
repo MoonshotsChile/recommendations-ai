@@ -12,12 +12,17 @@
     height: 70vh;
     max-width: 460px;
 
-    @media (min-width:740px) {
+    @media only screen and  (min-width:770px) {
       left: 25%;
       right: 25%;
     }
 
-    @media (min-width: 300px) and (max-width:739px) {
+    @media only screen and (min-width: 740px) and (max-width:769px) {
+      left: 20%;
+      right: 20%;
+    }
+
+    @media only screen and (min-width: 376px) and (max-width:739px) {
       left: 10%;
       right: 10%;
     }
