@@ -26,8 +26,8 @@ export interface Benefit {
 
 export interface ReactionData {
     datetime: string,
-    latitude?: string,
-    longitude?: string
+    latitude?: number,
+    longitude?: number
 }
 
 export interface BenefitReaction extends Benefit {

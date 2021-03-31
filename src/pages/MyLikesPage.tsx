@@ -28,7 +28,7 @@ const MyLikesPage: React.FC = () => {
   const lastCardRef = useRef(null);
   const userdataUseCase = new UserdataUseCase();
 
-  const { userdata, saveContext } = useContext(ContextApi);
+  const { userdata, saveContext, location } = useContext(ContextApi);
   const [likes, setLikes] = useState([] as BenefitReaction[]);
   const [laters, setLaters] = useState([] as BenefitReaction[]);
 
@@ -117,8 +117,6 @@ const MyLikesPage: React.FC = () => {
     });
     // @ts-ignore
     lastCardRef.current?.swipe("right");
-    userdataUseCase.saveLike(userdata!, benefit!, saveContext)
-    hideTinder();
   };
 
   const onNotLike = () => {
@@ -134,15 +132,13 @@ const MyLikesPage: React.FC = () => {
     });
     // @ts-ignore
     lastCardRef.current?.swipe("left")
-    userdataUseCase.saveNotLike(userdata!, benefit!, saveContext)
-    hideTinder();
   };
 
 
   function onSwipe(direction: string) {
     switch (direction) {
       case "right":
-        userdataUseCase.saveLike(userdata!, benefit!, saveContext)
+        userdataUseCase.saveLike(userdata!, benefit!, saveContext, location)
           if (userdata && benefit) {
             const likes =
                 userdata.likes.length > 0
@@ -153,7 +149,7 @@ const MyLikesPage: React.FC = () => {
           }
         break;
       case "left":
-        userdataUseCase.saveNotLike(userdata!, benefit!, saveContext)
+        userdataUseCase.saveNotLike(userdata!, benefit!, saveContext, location)
         removeLater()
         break;
       case "down":

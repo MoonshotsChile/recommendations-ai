@@ -17,7 +17,7 @@ const OfferPage = (): JSX.Element => {
 
     const benefitsUseCase = new BenefitsUseCase()
     const userdataUseCase = new UserdataUseCase()
-    const { saveContext, userdata } = useContext(ContextApi)
+    const { saveContext, userdata, location } = useContext(ContextApi)
     const [benefits, setBenefits] = useState([] as Benefit[])
     const lastCardRef = useRef(null)
 
@@ -85,7 +85,7 @@ const OfferPage = (): JSX.Element => {
                         value: currentBenefit()
                     }
                 })
-                userdataUseCase.saveLike(userdata!, currentBenefit()!, saveContext)
+                userdataUseCase.saveLike(userdata!, currentBenefit()!, saveContext, location)
                 break
             case 'left':
                 dataLayerPush({
@@ -97,7 +97,7 @@ const OfferPage = (): JSX.Element => {
                         value: currentBenefit()
                     }
                 })
-                userdataUseCase.saveNotLike(userdata!, currentBenefit()!, saveContext)
+                userdataUseCase.saveNotLike(userdata!, currentBenefit()!, saveContext, location)
                 break
             case 'down':
                 dataLayerPush({
@@ -109,7 +109,7 @@ const OfferPage = (): JSX.Element => {
                         value: currentBenefit()
                     }
                 })
-                userdataUseCase.saveLater(userdata!, currentBenefit()!, saveContext)
+                userdataUseCase.saveLater(userdata!, currentBenefit()!, saveContext, location)
                 break
         }
     }

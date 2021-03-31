@@ -2,6 +2,7 @@ import { API_URL } from "../config/constants";
 import { Benefit, BenefitReaction } from "./entity/Benefit";
 import { Userdata } from "./entity/Userdata";
 import { getLocalStorage } from "../context-api/helpers/localstorage";
+import { Coord } from "../context-api/ContextApi";
 
 export class UserdataUseCase {
 
@@ -15,7 +16,7 @@ export class UserdataUseCase {
     }
 
     update(benefit: BenefitReaction): Promise<Response>  {
-        return fetch(`${API_URL}/userdata/`, {
+        return fetch(`${API_URL}/userdata`, {
             headers: {'Content-Type': 'application/json'},
             method: 'PATCH',
             body: JSON.stringify(benefit)
@@ -35,7 +36,7 @@ export class UserdataUseCase {
     }
 
     likeOrNot(id: string, benefits: BenefitReaction[], reaction: string): Promise<Response>  {
-        return fetch(`${API_URL}/userdata/${id}/`, {
+        return fetch(`${API_URL}/userdata/${id}`, {
             headers: {'Content-Type': 'application/json'},
             method: 'PATCH',
             body: JSON.stringify({[reaction]: benefits})
@@ -45,6 +46,7 @@ export class UserdataUseCase {
 
     delete(id: string): Promise<Response>  {
         return fetch(`${API_URL}/userdata/${id}`, {
+            headers: {'Content-Type': 'application/json'},
             method: 'DELETE'
         })
     }
@@ -57,13 +59,13 @@ export class UserdataUseCase {
         })
     }
 
-    saveLater = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void) => {
+    saveLater = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void, location?: Coord) => {
         if (!userdata) {
             // @ts-ignore
             userdata = getLocalStorage('userdata')
         }
         if (userdata && benefit) {
-            const benefitReaction = this.benefitToReaction(benefit)
+            const benefitReaction = this.benefitToReaction(benefit, location)
             const later = [...userdata.later, ...[benefitReaction]]
             userdata.later = later
             saveContext({userdata})
@@ -71,24 +73,24 @@ export class UserdataUseCase {
         }
     }
 
-    saveLike = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void) => {
+    saveLike = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void, location?: Coord) => {
         if (!userdata) { // @ts-ignore
             userdata = getLocalStorage('userdata')
         }
         if (userdata && benefit) {
-            const benefitReaction = this.benefitToReaction(benefit)
+            const benefitReaction = this.benefitToReaction(benefit, location)
             const likes = [...userdata.likes, ...[benefitReaction]]
             saveContext({userdata})
             this.like(userdata.id!, likes)
         }
     }
 
-    saveNotLike = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void) => {
+    saveNotLike = (userdata: Userdata, benefit: Benefit, saveContext: (param?: any)=>any|void, location?: Coord) => {
         if (!userdata) { // @ts-ignore
             userdata = getLocalStorage('userdata')
         }
         if (userdata && benefit) {
-            const benefitReaction = this.benefitToReaction(benefit)
+            const benefitReaction = this.benefitToReaction(benefit, location)
             const later = [...userdata.later, ...[benefitReaction]]
             userdata.later = later
             saveContext({userdata})
@@ -107,11 +109,13 @@ export class UserdataUseCase {
         return cleans;
     };
 
-    private benefitToReaction = (benefit: Benefit): BenefitReaction => {
+    private benefitToReaction = (benefit: Benefit, location?: Coord): BenefitReaction => {
         return (
             {...benefit, ...{
                 reaction: {
-                    datetime: new Date().toJSON()
+                    datetime: new Date().toJSON(),
+                    latitude: location?.latitude,
+                    longitude: location?.longitude
                 }
             }}
         )

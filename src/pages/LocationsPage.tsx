@@ -28,7 +28,6 @@ const LocationsPage = (): JSX.Element => {
 
     const useCase = new BenefitsUseCase()
 
-    const [map, setMap] = useState(null)
     const {location, saveContext } = useContext(ContextApi)
     const { userdata } = useContext(ContextApi)
     // @ts-ignore
@@ -78,7 +77,6 @@ const LocationsPage = (): JSX.Element => {
         // @ts-ignore
         const bounds = new window.google.maps.LatLngBounds();
         map.fitBounds(bounds);
-        setMap(map)
         initLocation()
     }, [])
 
@@ -117,7 +115,7 @@ const LocationsPage = (): JSX.Element => {
                         value: benefit
                     }
                 })
-                userdataUseCase.saveLike(userdata!, benefit!, saveContext)
+                userdataUseCase.saveLike(userdata!, benefit!, saveContext, location)
                 break
             case 'left':
                 dataLayerPush({
@@ -129,7 +127,7 @@ const LocationsPage = (): JSX.Element => {
                         value: benefit
                     }
                 })
-                userdataUseCase.saveNotLike(userdata!, benefit!, saveContext)
+                userdataUseCase.saveNotLike(userdata!, benefit!, saveContext, location)
                 break
             case 'down':
                 dataLayerPush({
@@ -141,7 +139,7 @@ const LocationsPage = (): JSX.Element => {
                         value: benefit
                     }
                 })
-                userdataUseCase.saveLater(userdata!, benefit!, saveContext)
+                userdataUseCase.saveLater(userdata!, benefit!, saveContext, location)
                 break
         }
     }
