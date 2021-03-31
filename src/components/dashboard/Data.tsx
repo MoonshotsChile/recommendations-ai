@@ -37,7 +37,7 @@ export const getCategoryBenefits = (objInteres: Benefit[]) => {
   }, []);
 };
 export const getInterest = (interest: string[]) => {
-  const group = interest.reduce((out: any, intere: any) => {
+  const group = interest.reduce((out: any, intere: any = []) => {
     const resultInterest = intere.reduce((outInterest: any, intere: string) => {
       return [...outInterest, intere];
     }, []);
