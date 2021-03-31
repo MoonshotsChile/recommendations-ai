@@ -16219,6 +16219,15 @@
   "userdata": [
     {
       "id": "1-9",
+      "interest": [
+        "Comída",
+        "Fitness",
+        "Educación",
+        "Salud y Bienestar",
+        "Asados",
+        "Viajes",
+        "Pleasure"
+      ],
       "likes": [
         {
           "id": 49477,
@@ -16677,6 +16686,2589 @@
           "location_street": "Av. Providencia 2238. Local 13, Providencia",
           "latitude": "33.421321",
           "longitude": "-70.609082"
+        }
+      ]
+    },
+    {
+      "id": "v1-1617067842722-3289445866932",
+      "interest": [
+        "Fitness",
+        "Educación",
+        "Asados",
+        "Viajes"
+      ],
+      "not-likes": [
+        {
+          "id": 49306,
+          "uuid": "40c4530e-6db7-4e8b-b40b-3d4c7aaaceb6",
+          "created_at": "2019-07-08T16:50:58-04:00",
+          "updated_at": "2019-07-08T17:02:07-04:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/restaurantes/promotions/krossbar-borde-rio",
+          "title": "Krossbar - Borde Rio",
+          "slug": "krossbar-borde-rio",
+          "description": "     <h3>20% dcto</h3><p>\"La calidad está por sobre la cantidad\".</p><div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av José María Escrivá de Balaguer 6400 local 2.b<br>Vitacura</li><br>Santiago\r\n         <li class=\"web\"><a href=\"https://www.kross.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.kross.cl/</a></li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>23 2881 123/96 5291 422</li>\r\n <li class=\"fb\"><a href=\"https://www.facebook.com/KrossBarChile/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                        <li class=\"it\"><a href=\"https://www.instagram.com/krossbarchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li></ul></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "krossbar",
+            "bar"
+          ],
+          "category": "sabores restaurantes",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-07-08T16:00:00-04:00",
+          "end_date": "2019-07-08T16:00:00-04:00",
+          "discount": 20,
+          "location_street": "Av José María Escrivá de Balaguer 6400 local 2.b, Vitacura",
+          "latitude": "-33.405732",
+          "longitude": "-70.598458"
+        },
+        {
+          "id": 49306,
+          "uuid": "40c4530e-6db7-4e8b-b40b-3d4c7aaaceb6",
+          "created_at": "2019-07-08T16:50:58-04:00",
+          "updated_at": "2019-07-08T17:02:07-04:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/restaurantes/promotions/krossbar-borde-rio",
+          "title": "Krossbar - Borde Rio",
+          "slug": "krossbar-borde-rio",
+          "description": "     <h3>20% dcto</h3><p>\"La calidad está por sobre la cantidad\".</p><div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av José María Escrivá de Balaguer 6400 local 2.b<br>Vitacura</li><br>Santiago\r\n         <li class=\"web\"><a href=\"https://www.kross.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.kross.cl/</a></li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>23 2881 123/96 5291 422</li>\r\n <li class=\"fb\"><a href=\"https://www.facebook.com/KrossBarChile/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                        <li class=\"it\"><a href=\"https://www.instagram.com/krossbarchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li></ul></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "krossbar",
+            "bar"
+          ],
+          "category": "sabores restaurantes",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-07-08T16:00:00-04:00",
+          "end_date": "2019-07-08T16:00:00-04:00",
+          "discount": 20,
+          "location_street": "Av José María Escrivá de Balaguer 6400 local 2.b, Vitacura",
+          "latitude": "-33.405732",
+          "longitude": "-70.598458"
+        },
+        {
+          "id": 50648,
+          "uuid": "02b28120-b7b7-4fc3-bc1b-e360bbec5f5f",
+          "created_at": "2019-09-24T17:34:50-03:00",
+          "updated_at": "2019-09-24T17:36:06-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/veterinarias/promotions/club-de-perros-y-gatos-3",
+          "title": "Club de Perros y Gatos - Santiago Centro",
+          "slug": "club-de-perros-y-gatos-3",
+          "description": "<h3>20% dcto</h3><p>Un lugar para Humanos y Peluditos Incondicionales. </p>\r\n      <div>\r\n      <ul>\r\n       <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Mac Iver 468<br>Santiago</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>229 299 779</li>\r\n      <li class=\"web\"><a href=\"https://www.clubdeperrosygatos.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.clubdeperrosygatos.cl</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/clubdeperrosygatos\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n <li class=\"fb\"><a href=\"https://www.instagram.com/clubdeperrosygatos.cl/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n  <li class=\"fb\"><a href=\"https://twitter.com/clubperrosygato\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clubdeperrosygatos';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "mascotas",
+            "clubdeperrosygatos"
+          ],
+          "category": "shopping veterinarias",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-09-24T17:00:00-03:00",
+          "end_date": "2019-09-24T17:00:00-03:00",
+          "discount": 21,
+          "location_street": "Mac Iver 468, Santiago",
+          "latitude": "-33.437342",
+          "longitude": "-70.647301"
+        },
+        {
+          "id": 48016,
+          "uuid": "740cf812-5544-490a-b4a7-1c8bf2449d1b",
+          "created_at": "2019-04-15T16:55:59-03:00",
+          "updated_at": "2019-04-29T19:07:45-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/barbizon-vitacura",
+          "title": "Barbizon - Pueblo Inglés",
+          "slug": "barbizon-vitacura",
+          "description": "   <h3>20% dcto</h3><p>Bbz tiene más de 30 años de experiencia en confección y venta de ropa de dormir femenina.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av.Vitacura Nº6255, local 98<br>Vitacura</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>22 2185692</li> \r\n                              <li class=\"web\"><a href=\"https://www.bbz.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.bbz.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/BBZCL/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'bbz';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "vesturario",
+            "pijamas",
+            "bbz"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-04-15T16:00:00-03:00",
+          "end_date": "2019-04-15T16:00:00-03:00",
+          "discount": null,
+          "location_street": "Av.Vitacura Nº 6255, local 98",
+          "latitude": "-33.390707",
+          "longitude": "-70.57119"
+        },
+        {
+          "id": 45773,
+          "uuid": "65efb32b-3f2e-4d02-b89b-c8034ac8a8b4",
+          "created_at": "2018-12-13T14:01:47-03:00",
+          "updated_at": "2020-11-12T16:35:55-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/pillin-plaza-antofagasta",
+          "title": "Pillin - Plaza Antofagasta",
+          "slug": "pillin-plaza-antofagasta",
+          "description": "   <h3>20% dcto</h3><p>Nos Encanta Ser Niños.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Balmaceda Nº 2355 Local 109<br>Antofagasta</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>+56226742399</li> \r\n                              <li class=\"web\"><a href=\"https://www.pillin.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.pillin.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/PillinChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         <li class=\"it\"><a href=\"https://www.instagram.com/pillinchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'pillin';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "antofagasta",
+            "surcusal",
+            "pillin",
+            "mall-plaza-antofagasta"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2018-12-13T13:00:00-03:00",
+          "end_date": "2018-12-13T13:00:00-03:00",
+          "discount": 20,
+          "location_street": "Avenida Balmaceda Nº 2355, Antofagasta",
+          "latitude": "-23.6453551",
+          "longitude": "-70.40265090000003"
+        },
+        {
+          "id": 45773,
+          "uuid": "65efb32b-3f2e-4d02-b89b-c8034ac8a8b4",
+          "created_at": "2018-12-13T14:01:47-03:00",
+          "updated_at": "2020-11-12T16:35:55-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/pillin-plaza-antofagasta",
+          "title": "Pillin - Plaza Antofagasta",
+          "slug": "pillin-plaza-antofagasta",
+          "description": "   <h3>20% dcto</h3><p>Nos Encanta Ser Niños.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Balmaceda Nº 2355 Local 109<br>Antofagasta</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>+56226742399</li> \r\n                              <li class=\"web\"><a href=\"https://www.pillin.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.pillin.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/PillinChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         <li class=\"it\"><a href=\"https://www.instagram.com/pillinchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'pillin';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "antofagasta",
+            "surcusal",
+            "pillin",
+            "mall-plaza-antofagasta"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2018-12-13T13:00:00-03:00",
+          "end_date": "2018-12-13T13:00:00-03:00",
+          "discount": 20,
+          "location_street": "Avenida Balmaceda Nº 2355, Antofagasta",
+          "latitude": "-23.6453551",
+          "longitude": "-70.40265090000003"
+        },
+        {
+          "id": 57438,
+          "uuid": "f65f27c0-f83c-4a76-be5f-a77532b8e722",
+          "created_at": "2020-11-04T18:51:10-03:00",
+          "updated_at": "2020-11-04T18:55:37-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/estetica-y-salud/promotions/widex-mall-arauco-maipu",
+          "title": "Widex - Mall Arauco Maipú",
+          "slug": "widex-mall-arauco-maipu",
+          "description": "<h3>20% dcto</h3><p>Audífonos de alta definición para niños y adultos con problemas de audición.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Américo Vespucio 339. Local 679. Mall Arauco Maipú. <br> Maipú\r\n</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>600 892 9000</li>\r\n      <li class=\"web\"><a href=\"https://www.widex.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>www.widex.cl</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/WidexCl/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'widex';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "widex",
+            "sucursales"
+          ],
+          "category": "salud y belleza estetica y salud",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-11-04T18:00:00-03:00",
+          "end_date": "2020-11-04T18:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Américo Vespucio 339. Local 679. Mall Arauco Maipú. ",
+          "latitude": "-33.46113",
+          "longitude": "-70.763867"
+        },
+        {
+          "id": 57213,
+          "uuid": "32608cf1-c6ad-4a91-aeba-3ebe810c98cf",
+          "created_at": "2020-10-23T16:32:55-03:00",
+          "updated_at": "2020-11-04T17:42:26-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/estetica-y-salud/promotions/estilo-vecci-colon-2",
+          "title": "Estilo  Vecci - Providencia",
+          "slug": "estilo-vecci-colon-2",
+          "description": "<h3>15% dcto</h3><p>Salón de belleza integral.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Luis Thayer Ojeda 166. Local 102<br>Providencia<br>Santiago</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>+56 9 4037 4817</li>\r\n      <li class=\"web\"><a href=\"http://www.estilovecci.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>http://www.estilovecci.cl/</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'estilo-vecci';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "providencia",
+            "santiago",
+            "estilo-vecci"
+          ],
+          "category": "salud y belleza estetica y salud",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-10-23T16:00:00-03:00",
+          "end_date": "2020-10-23T16:00:00-03:00",
+          "discount": 15,
+          "location_street": "Luis Thayer Ojeda 166. Local 102, Providencia ",
+          "latitude": "-33.417916",
+          "longitude": "-70.60442"
+        },
+        {
+          "id": 50548,
+          "uuid": "aadeea6b-e9e1-4650-b811-bb665ad219ec",
+          "created_at": "2019-09-12T17:30:20-03:00",
+          "updated_at": "2019-09-12T17:32:25-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/rent-a-car/promotions/euro-rent-a-car-puerto-montt",
+          "title": "Euro Rent a Car - Puerto Montt",
+          "slug": "euro-rent-a-car-puerto-montt",
+          "description": "      <h3>25% dcto</h3><p>Arriendo de autos</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Seminario 252, Hotel Manquehue<br>Puerto Montt</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>Central de reservas: +56 2 2478 9000\r\nAtención 24/7: +56 9 5015 4275</li>\r\n      <li class=\"web\"><a href=\"https://eurorentacar.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://eurorentacar.cl/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/eurorentacar.cl/?ref=br_rs\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'euro-rent-a-car';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "Puerto Montt",
+            "rent-a-car",
+            "euro-rent-a-car"
+          ],
+          "category": "shopping rent a car",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-09-12T17:00:00-03:00",
+          "end_date": "2019-09-12T17:00:00-03:00",
+          "discount": 25,
+          "location_street": "Seminario 252, Hotel Manquehue, Manuel Montt",
+          "latitude": "-41.467738",
+          "longitude": "-72.937915"
+        }
+      ],
+      "likes": [
+        {
+          "id": 50326,
+          "uuid": "69ed8e8c-d23e-4757-8b1e-4978b56ab0b9",
+          "created_at": "2019-08-29T17:03:30-03:00",
+          "updated_at": "2019-08-29T17:45:12-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-schilling-santiago-centro-12",
+          "title": "Ópticas Schilling  Santiago Centro 12",
+          "slug": "opticas-schilling-santiago-centro-12",
+          "description": "    <p style=\"display:none\">opticas, lentes de sol, lentes opticos, gafas, gotitas ojos, marcos, cristales</p>\r\n<h3>20% dcto</h3><p>Óptica</p>\r\n      <div>\r\n       <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Enrique Mac Iver 96. Santiago.<br>Santiago</li>\r\n                <li class=\"telefono\"><i class=\"icon-phone\"></i>664 1430</li>\r\n      <li class=\"web\"><a href=\"www.opticashilling.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www\r\n.opticashilling.cl</a></li>\r\n    </ul>\r\n      \r\n    <script>\r\n      var casa_matriz_tag = 'opticas-schilling';\r\n    </script></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "opticas-schilling"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-08-29T16:00:00-03:00",
+          "end_date": "2019-08-29T16:00:00-03:00",
+          "discount": 20,
+          "location_street": "Enrique Mac Iver 96. Santiago. ",
+          "latitude": "-33.441032",
+          "longitude": "-70.646209"
+        },
+        {
+          "id": 50326,
+          "uuid": "69ed8e8c-d23e-4757-8b1e-4978b56ab0b9",
+          "created_at": "2019-08-29T17:03:30-03:00",
+          "updated_at": "2019-08-29T17:45:12-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-schilling-santiago-centro-12",
+          "title": "Ópticas Schilling  Santiago Centro 12",
+          "slug": "opticas-schilling-santiago-centro-12",
+          "description": "    <p style=\"display:none\">opticas, lentes de sol, lentes opticos, gafas, gotitas ojos, marcos, cristales</p>\r\n<h3>20% dcto</h3><p>Óptica</p>\r\n      <div>\r\n       <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Enrique Mac Iver 96. Santiago.<br>Santiago</li>\r\n                <li class=\"telefono\"><i class=\"icon-phone\"></i>664 1430</li>\r\n      <li class=\"web\"><a href=\"www.opticashilling.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www\r\n.opticashilling.cl</a></li>\r\n    </ul>\r\n      \r\n    <script>\r\n      var casa_matriz_tag = 'opticas-schilling';\r\n    </script></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "opticas-schilling"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-08-29T16:00:00-03:00",
+          "end_date": "2019-08-29T16:00:00-03:00",
+          "discount": 20,
+          "location_street": "Enrique Mac Iver 96. Santiago. ",
+          "latitude": "-33.441032",
+          "longitude": "-70.646209"
+        },
+        {
+          "id": 35046,
+          "uuid": "250b3799-9941-4c32-85f0-720179833ee6",
+          "created_at": "2017-07-28T13:34:12-04:00",
+          "updated_at": "2020-10-21T16:49:12-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/farmacias-y-perfumeria/promotions/farmacias-knop-75",
+          "title": "Farmacias Knop - Talcahuano",
+          "slug": "farmacias-knop-75",
+          "description": "<h3>20% dcto</h3><p>Cadena de farmacias naturales</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i> Colón 200, Local 01<br>Talcahuano<br>Concepción</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>41-254 0858</li>\r\n      <li class=\"web\"><a href=\"http://www.farmaciasknop.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> http://www.farmaciasknop.cl/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/Farmaciasknop\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/farmaciasknop\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n<li><button><a href=\"https://www.farmaciasknop.com/sucursales-region-metropolitana/\">Región Metropolitana</a></button></li>\r\n      <li><button><a href=\"https://www.farmaciasknop.com/sucursales-v-region/\">Quinta Región</a></button></li>\r\n      <li><button><a href=\"https://www.farmaciasknop.com/zona-norte/\">Zona Norte</a>&nbsp;</button></li>\r\n        <li><button><a href=\"https://www.farmaciasknop.com/sucursales-zona-sur/\">Zona Sur</a>&nbsp;</button></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'farmacias-knop';\r\n    </script>\r\n",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/ba742d68-6c51-41e1-bfcb-ec7ff078e009/R320x240/caluga_imagen.jpg",
+            "https://bci-cdn.azureedge.net/uploads/aa544361-b71c-4297-bf6a-d2377af2df8f/R320x240/1_Logo_FK.png",
+            "https://bci-cdn.azureedge.net/uploads/27be227c-e8cf-4ae7-acf0-d2569750aff2/R320x240/banner_rotativo.jpg"
+          ],
+          "tags": [
+            "metropolitana",
+            "las-condes",
+            "farmacias-knop",
+            "farmacias",
+            "sucursal"
+          ],
+          "category": "salud y belleza farmacias y perfumeria",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div></div><div><span style=\"background-color: initial;\">Descuento de un 20% en productos de marcas propias Pharma Knop y Knop Laboratorios. Por compras superiores a $12.000.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">No es acumulable con otras promociones y/o descuentos.&nbsp;</span><br><b style=\"background-color: initial;\">Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b></div><div><b style=\"background-color: initial;\"></b></div><div><div><p><b>*Válido para todo los locales publicados en la página web&nbsp;<a href=\"https://www.google.com/url?q=http://www.vivirconbeneficios.cl&amp;sa=D&amp;source=hangouts&amp;ust=1535465821716000&amp;usg=AFQjCNEyy1_vuoEd2Byr0LjNQkrXkssL2Q\">www.vivirconbeneficios.cl</a></b></p></div>\r\n</div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div></div><div><span style=\"background-color: initial;\">Descuento de un 20% en productos de marcas propias Pharma Knop y Knop Laboratorios. Por compras superiores a $12.000.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">No es acumulable con otras promociones y/o descuentos.&nbsp;</span><br><b style=\"background-color: initial;\">Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b></div><div><b style=\"background-color: initial;\"></b></div><div><div><p><b>*Válido para todo los locales publicados en la página web&nbsp;<a href=\"https://www.google.com/url?q=http://www.vivirconbeneficios.cl&amp;sa=D&amp;source=hangouts&amp;ust=1535465821716000&amp;usg=AFQjCNEyy1_vuoEd2Byr0LjNQkrXkssL2Q\">www.vivirconbeneficios.cl</a></b></p></div>\r\n</div>",
+          "start_date": "2017-07-28T13:00:00-04:00",
+          "end_date": "2017-07-28T13:00:00-04:00",
+          "discount": 20,
+          "location_street": "Colón 200, local 01, Talcahuano",
+          "latitude": "-36.712723",
+          "longitude": "-73.114382"
+        },
+        {
+          "id": 51949,
+          "uuid": "73587148-0de7-4c59-831f-52170a5e6e6c",
+          "created_at": "2019-12-04T10:50:28-03:00",
+          "updated_at": "2020-03-27T15:55:40-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/rent-a-car/promotions/rosselot-vina-del-mar-ii",
+          "title": "Rosselot Rent a Car- Viña del Mar II",
+          "slug": "rosselot-vina-del-mar-ii",
+          "description": "   <h3>Hasta un 30% dcto</h3><p>En Rosselot rent a car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Libertad 999<br>Viña del Mar</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>32 238 2373</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/12/Rosselot-Convenio-Scotia-2019.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "Viña del Mar",
+            "rosselot"
+          ],
+          "category": "shopping rent a car",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-12-04T10:00:00-03:00",
+          "end_date": "2019-12-04T10:00:00-03:00",
+          "discount": 30,
+          "location_street": "Libertad 999, Viña del Mar",
+          "latitude": "-33.019156",
+          "longitude": "-71.549658"
+        },
+        {
+          "id": 50648,
+          "uuid": "02b28120-b7b7-4fc3-bc1b-e360bbec5f5f",
+          "created_at": "2019-09-24T17:34:50-03:00",
+          "updated_at": "2019-09-24T17:36:06-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/veterinarias/promotions/club-de-perros-y-gatos-3",
+          "title": "Club de Perros y Gatos - Santiago Centro",
+          "slug": "club-de-perros-y-gatos-3",
+          "description": "<h3>20% dcto</h3><p>Un lugar para Humanos y Peluditos Incondicionales. </p>\r\n      <div>\r\n      <ul>\r\n       <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Mac Iver 468<br>Santiago</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>229 299 779</li>\r\n      <li class=\"web\"><a href=\"https://www.clubdeperrosygatos.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.clubdeperrosygatos.cl</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/clubdeperrosygatos\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n <li class=\"fb\"><a href=\"https://www.instagram.com/clubdeperrosygatos.cl/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n  <li class=\"fb\"><a href=\"https://twitter.com/clubperrosygato\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clubdeperrosygatos';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "mascotas",
+            "clubdeperrosygatos"
+          ],
+          "category": "shopping veterinarias",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-09-24T17:00:00-03:00",
+          "end_date": "2019-09-24T17:00:00-03:00",
+          "discount": 21,
+          "location_street": "Mac Iver 468, Santiago",
+          "latitude": "-33.437342",
+          "longitude": "-70.647301"
+        },
+        {
+          "id": 48016,
+          "uuid": "740cf812-5544-490a-b4a7-1c8bf2449d1b",
+          "created_at": "2019-04-15T16:55:59-03:00",
+          "updated_at": "2019-04-29T19:07:45-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/barbizon-vitacura",
+          "title": "Barbizon - Pueblo Inglés",
+          "slug": "barbizon-vitacura",
+          "description": "   <h3>20% dcto</h3><p>Bbz tiene más de 30 años de experiencia en confección y venta de ropa de dormir femenina.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av.Vitacura Nº6255, local 98<br>Vitacura</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>22 2185692</li> \r\n                              <li class=\"web\"><a href=\"https://www.bbz.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.bbz.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/BBZCL/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'bbz';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "vesturario",
+            "pijamas",
+            "bbz"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-04-15T16:00:00-03:00",
+          "end_date": "2019-04-15T16:00:00-03:00",
+          "discount": null,
+          "location_street": "Av.Vitacura Nº 6255, local 98",
+          "latitude": "-33.390707",
+          "longitude": "-70.57119"
+        },
+        {
+          "id": 57438,
+          "uuid": "f65f27c0-f83c-4a76-be5f-a77532b8e722",
+          "created_at": "2020-11-04T18:51:10-03:00",
+          "updated_at": "2020-11-04T18:55:37-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/estetica-y-salud/promotions/widex-mall-arauco-maipu",
+          "title": "Widex - Mall Arauco Maipú",
+          "slug": "widex-mall-arauco-maipu",
+          "description": "<h3>20% dcto</h3><p>Audífonos de alta definición para niños y adultos con problemas de audición.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Américo Vespucio 339. Local 679. Mall Arauco Maipú. <br> Maipú\r\n</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>600 892 9000</li>\r\n      <li class=\"web\"><a href=\"https://www.widex.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>www.widex.cl</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/WidexCl/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'widex';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "widex",
+            "sucursales"
+          ],
+          "category": "salud y belleza estetica y salud",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-11-04T18:00:00-03:00",
+          "end_date": "2020-11-04T18:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Américo Vespucio 339. Local 679. Mall Arauco Maipú. ",
+          "latitude": "-33.46113",
+          "longitude": "-70.763867"
+        },
+        {
+          "id": 46065,
+          "uuid": "96768dce-e773-4a28-b5ec-f5581a2fbce2",
+          "created_at": "2019-01-04T09:48:11-03:00",
+          "updated_at": "2019-01-08T11:18:03-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/deportes/promotions/scott-mall-plaza-trebol",
+          "title": "Scott - Mall Plaza Trébol ",
+          "slug": "scott-mall-plaza-trebol",
+          "description": "   <h3>20% dcto</h3><p>Tiendas: Scott, Precor, Syncros, Mitas.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Jorge Alessandri 3177 locales H249 - H253<br>Talcahuano</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>41-2563888</li> \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'scott';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "talcahuano",
+            "scott"
+          ],
+          "category": "shopping deportes",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-01-04T09:00:00-03:00",
+          "end_date": "2019-01-04T09:00:00-03:00",
+          "discount": 20,
+          "location_street": "Avenida Jorge Alessandri 3177 locales H249 - H253, Talcahuano",
+          "latitude": "-36.7802354",
+          "longitude": "-73.05870809999999"
+        },
+        {
+          "id": 46065,
+          "uuid": "96768dce-e773-4a28-b5ec-f5581a2fbce2",
+          "created_at": "2019-01-04T09:48:11-03:00",
+          "updated_at": "2019-01-08T11:18:03-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/deportes/promotions/scott-mall-plaza-trebol",
+          "title": "Scott - Mall Plaza Trébol ",
+          "slug": "scott-mall-plaza-trebol",
+          "description": "   <h3>20% dcto</h3><p>Tiendas: Scott, Precor, Syncros, Mitas.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Jorge Alessandri 3177 locales H249 - H253<br>Talcahuano</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>41-2563888</li> \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'scott';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "talcahuano",
+            "scott"
+          ],
+          "category": "shopping deportes",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-01-04T09:00:00-03:00",
+          "end_date": "2019-01-04T09:00:00-03:00",
+          "discount": 20,
+          "location_street": "Avenida Jorge Alessandri 3177 locales H249 - H253, Talcahuano",
+          "latitude": "-36.7802354",
+          "longitude": "-73.05870809999999"
+        },
+        {
+          "id": 38581,
+          "uuid": "3f958c4a-314a-4582-9fb1-e2de613fdb49",
+          "created_at": "2018-02-21T16:12:07-03:00",
+          "updated_at": "2020-12-28T11:23:14-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/clinica-estetica-cela-2",
+          "title": "Clínica Cela - Hasta un",
+          "slug": "clinica-estetica-cela-2",
+          "description": "<h3>Hasta un 40%</h3><p>Clínica Cela cuenta con 16 años de experiencia en tratamientos de depilación láser definitiva y con profesionales 100% del área de la salud. Clínica Cela cuenta con certificación ISO 9001:2015 en Gestión de Calidad y con 16 clínicas a nivel nacional.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i> Arrayán 2750 oficina 503<br>Providencia</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>223 069 252</li>\r\n      <li class=\"web\"><a href=\"https://www.cela.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.cela.cl</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-estetica-cela';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/3c88f55f-50f5-4dda-a72a-5caaf44f99be/R320x240/Cela-Caluga-360x500.jpg",
+            "https://bci-cdn.azureedge.net/uploads/24f6ff13-fc00-4d56-a4f8-df09a9429004/R320x240/Cela-100x63-Logo.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "clinica-estetica-cela"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 40% en:</span><br><span style=\"background-color: initial;\">1. Tratamientos de depilación láser sobre 6 sesiones</span><br><span style=\"background-color: initial;\">2. Tratamientos faciales</span></div><div><span style=\"background-color: initial;\">Válido pagando con tus Tarjetas de Crédito o Débito Scotia&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o convenios</span><br><span style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</span></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 40% en:</span><br><span style=\"background-color: initial;\">1. Tratamientos de depilación láser sobre 6 sesiones</span><br><span style=\"background-color: initial;\">2. Tratamientos faciales</span></div><div><span style=\"background-color: initial;\">Válido pagando con tus Tarjetas de Crédito o Débito Scotia&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o convenios</span><br><span style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</span></div>",
+          "start_date": "2018-02-21T16:00:00-03:00",
+          "end_date": "2018-02-21T16:00:00-03:00",
+          "discount": 40,
+          "location_street": "Arrayán 2750 Of. 503, Providencia",
+          "latitude": "-33.4204737",
+          "longitude": "-70.59951519999998"
+        },
+        {
+          "id": 38581,
+          "uuid": "3f958c4a-314a-4582-9fb1-e2de613fdb49",
+          "created_at": "2018-02-21T16:12:07-03:00",
+          "updated_at": "2020-12-28T11:23:14-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/clinica-estetica-cela-2",
+          "title": "Clínica Cela - Hasta un",
+          "slug": "clinica-estetica-cela-2",
+          "description": "<h3>Hasta un 40%</h3><p>Clínica Cela cuenta con 16 años de experiencia en tratamientos de depilación láser definitiva y con profesionales 100% del área de la salud. Clínica Cela cuenta con certificación ISO 9001:2015 en Gestión de Calidad y con 16 clínicas a nivel nacional.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i> Arrayán 2750 oficina 503<br>Providencia</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>223 069 252</li>\r\n      <li class=\"web\"><a href=\"https://www.cela.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.cela.cl</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-estetica-cela';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/3c88f55f-50f5-4dda-a72a-5caaf44f99be/R320x240/Cela-Caluga-360x500.jpg",
+            "https://bci-cdn.azureedge.net/uploads/24f6ff13-fc00-4d56-a4f8-df09a9429004/R320x240/Cela-100x63-Logo.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "clinica-estetica-cela"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 40% en:</span><br><span style=\"background-color: initial;\">1. Tratamientos de depilación láser sobre 6 sesiones</span><br><span style=\"background-color: initial;\">2. Tratamientos faciales</span></div><div><span style=\"background-color: initial;\">Válido pagando con tus Tarjetas de Crédito o Débito Scotia&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o convenios</span><br><span style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</span></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 40% en:</span><br><span style=\"background-color: initial;\">1. Tratamientos de depilación láser sobre 6 sesiones</span><br><span style=\"background-color: initial;\">2. Tratamientos faciales</span></div><div><span style=\"background-color: initial;\">Válido pagando con tus Tarjetas de Crédito o Débito Scotia&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o convenios</span><br><span style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</span></div>",
+          "start_date": "2018-02-21T16:00:00-03:00",
+          "end_date": "2018-02-21T16:00:00-03:00",
+          "discount": 40,
+          "location_street": "Arrayán 2750 Of. 503, Providencia",
+          "latitude": "-33.4204737",
+          "longitude": "-70.59951519999998"
+        },
+        {
+          "id": 48155,
+          "uuid": "3f967342-ee23-415e-b773-a5c2fe440159",
+          "created_at": "2019-04-18T13:25:16-03:00",
+          "updated_at": "2019-11-18T13:27:49-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/comida-rapida/promotions/quizapu",
+          "title": "Sangucheria Quizapu.",
+          "slug": "quizapu",
+          "description": "     <h3>20% dcto</h3><p>Sanguchería Quizapu.</p><div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>av. Las Rastras #3080<br>Talca</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>569 32260092</li>\r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/quizapusangucheriatalca/?__tn__=%2Cd%2CP-R&amp;eid=ARCD4x1n7lbgg1LKKloNoB3Iw5oEugB1Hejd3YjNGg4z0gNK5kUS-kiIl-lprgQj19VAY-2J_BrG5_Yh\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                  <li class=\"fb\"><a href=\"https://www.instagram.com/quizapusangucheria/?hl=es-la\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'quizapu';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/8af3fbec-4ecb-4111-94ad-19dfd3c710e5/R320x240/Quizapu-caluga-360x500.jpg",
+            "https://bci-cdn.azureedge.net/uploads/1afd6dfb-5271-4ad7-878f-e95393fbee3e/R320x240/logo-quizapu.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "talca",
+            "quizapu",
+            "sandwich"
+          ],
+          "category": "sabores comida rapida",
+          "site_id": 68,
+          "options": {
+            "conditions": "<span style=\"background-color: initial;\">Descuento de un 20% de lunes a Jueves de 15:00 a 19:00.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.&nbsp;</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<span style=\"background-color: initial;\">Descuento de un 20% de lunes a Jueves de 15:00 a 19:00.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.&nbsp;</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b>",
+          "start_date": "2019-04-18T13:00:00-03:00",
+          "end_date": "2019-04-18T13:00:00-03:00",
+          "discount": 20,
+          "location_street": "av. Las Rastras  3080, Talca",
+          "latitude": "-35.429729",
+          "longitude": "-71.606346"
+        },
+        {
+          "id": 48155,
+          "uuid": "3f967342-ee23-415e-b773-a5c2fe440159",
+          "created_at": "2019-04-18T13:25:16-03:00",
+          "updated_at": "2019-11-18T13:27:49-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/comida-rapida/promotions/quizapu",
+          "title": "Sangucheria Quizapu.",
+          "slug": "quizapu",
+          "description": "     <h3>20% dcto</h3><p>Sanguchería Quizapu.</p><div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>av. Las Rastras #3080<br>Talca</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>569 32260092</li>\r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/quizapusangucheriatalca/?__tn__=%2Cd%2CP-R&amp;eid=ARCD4x1n7lbgg1LKKloNoB3Iw5oEugB1Hejd3YjNGg4z0gNK5kUS-kiIl-lprgQj19VAY-2J_BrG5_Yh\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                  <li class=\"fb\"><a href=\"https://www.instagram.com/quizapusangucheria/?hl=es-la\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'quizapu';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/8af3fbec-4ecb-4111-94ad-19dfd3c710e5/R320x240/Quizapu-caluga-360x500.jpg",
+            "https://bci-cdn.azureedge.net/uploads/1afd6dfb-5271-4ad7-878f-e95393fbee3e/R320x240/logo-quizapu.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "talca",
+            "quizapu",
+            "sandwich"
+          ],
+          "category": "sabores comida rapida",
+          "site_id": 68,
+          "options": {
+            "conditions": "<span style=\"background-color: initial;\">Descuento de un 20% de lunes a Jueves de 15:00 a 19:00.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.&nbsp;</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<span style=\"background-color: initial;\">Descuento de un 20% de lunes a Jueves de 15:00 a 19:00.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.&nbsp;</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b>",
+          "start_date": "2019-04-18T13:00:00-03:00",
+          "end_date": "2019-04-18T13:00:00-03:00",
+          "discount": 20,
+          "location_street": "av. Las Rastras  3080, Talca",
+          "latitude": "-35.429729",
+          "longitude": "-71.606346"
+        },
+        {
+          "id": 45773,
+          "uuid": "65efb32b-3f2e-4d02-b89b-c8034ac8a8b4",
+          "created_at": "2018-12-13T14:01:47-03:00",
+          "updated_at": "2020-11-12T16:35:55-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/pillin-plaza-antofagasta",
+          "title": "Pillin - Plaza Antofagasta",
+          "slug": "pillin-plaza-antofagasta",
+          "description": "   <h3>20% dcto</h3><p>Nos Encanta Ser Niños.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Balmaceda Nº 2355 Local 109<br>Antofagasta</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>+56226742399</li> \r\n                              <li class=\"web\"><a href=\"https://www.pillin.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.pillin.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/PillinChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         <li class=\"it\"><a href=\"https://www.instagram.com/pillinchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'pillin';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "antofagasta",
+            "surcusal",
+            "pillin",
+            "mall-plaza-antofagasta"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2018-12-13T13:00:00-03:00",
+          "end_date": "2018-12-13T13:00:00-03:00",
+          "discount": 20,
+          "location_street": "Avenida Balmaceda Nº 2355, Antofagasta",
+          "latitude": "-23.6453551",
+          "longitude": "-70.40265090000003"
+        },
+        {
+          "id": 58306,
+          "uuid": "a5cefb6f-02f7-4bfb-ae2c-79d1c35b5851",
+          "created_at": "2021-01-28T15:47:17-03:00",
+          "updated_at": "2021-01-28T15:48:11-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/clinicas-y-centros-medicos/promotions/clinicas-desmond-vina-del-mar",
+          "title": "Clínicas Desmond- Viña del Mar",
+          "slug": "clinicas-desmond-vina-del-mar",
+          "description": "      <h3>20% dcto</h3><p>Clínicas estéticas con la más alta tecnología médica, en tratamientos no invasivos.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>12 Norte 785, oficina 1004, piso 10, edificio Pamplona<br>Viña del Mar</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>9 7652 9367 / 9 5209 3557 / 9 6669 8603</li>\r\n      <li class=\"web\"><a href=\"http://www.clinicasdesmond.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.clinicasdesmond.cl</a></li>\r\n            <li class=\"fb\"><a href=\"www.facebook.com/clinicasdesmondCL\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/clinicasdesmond\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinicas-desmond';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "clinicas-desmond",
+            "Viña del Mar",
+            "sucrusal",
+            "clinicas"
+          ],
+          "category": "salud y belleza clinicas y centros medicos",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2021-01-28T15:00:00-03:00",
+          "end_date": "2021-01-28T15:00:00-03:00",
+          "discount": 20,
+          "location_street": "12 Norte 785, oficina 1004, piso 10, edificio Pamplona",
+          "latitude": "-33.011104138178574",
+          "longitude": "-71.5480024598598"
+        },
+        {
+          "id": 45632,
+          "uuid": "70ed8692-4255-4de0-ae34-609f08bd57d9",
+          "created_at": "2018-12-06T17:07:22-03:00",
+          "updated_at": "2019-02-07T11:13:12-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/automotriz/promotions/sgs-revisiones-tecnicas-2",
+          "title": "PRT PLANTA DE REVISIÓN TÉCNICA - Macul",
+          "slug": "sgs-revisiones-tecnicas-2",
+          "description": "  <h3>15% dcto</h3><p>Planta de Revisión Técnica.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Marathon 3401<br>Macul</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>+562 24115000</li>\r\n                    <li class=\"web\"><a href=\"https://www.revisionestecnicas.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.revisionestecnicas.cl/</a></li>\r\n         \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/PRTSGS/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'PRT';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "abuela-goye",
+            "sucursal",
+            "macul",
+            "PRT"
+          ],
+          "category": "shopping automotriz",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2018-12-06T17:00:00-03:00",
+          "end_date": "2018-12-06T17:00:00-03:00",
+          "discount": 15,
+          "location_street": "Av. Marathon 3401, Macul, Santiago",
+          "latitude": "-33.4864284",
+          "longitude": "-70.61229029999998"
+        },
+        {
+          "id": 50107,
+          "uuid": "efa750c1-901e-47c7-80b7-f68ef8a42b00",
+          "created_at": "2019-08-20T11:47:34-03:00",
+          "updated_at": "2019-08-20T11:48:47-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-place-vendome-mall-florida-center",
+          "title": "Ópticas Place Vendome Antofagasta",
+          "slug": "opticas-place-vendome-mall-florida-center",
+          "description": "      <h3>20% dcto</h3><p>Anteojos de sol, lentes ópticos y de contacto para hombre y mujer de diferentes marcas.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Manuel Antonio Matta 2502. Local 01<br>Antofagasta</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>227 517 232</li>\r\n      <li class=\"web\"><a href=\"www.placevendome.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.placevendome.cl/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/PlaceVendome\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/PlaceVendomeOPV\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'opticas-place-vendome';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "opticas-place-vendome",
+            "lentes",
+            "opticas",
+            "ópticas"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-08-20T11:00:00-03:00",
+          "end_date": "2019-08-20T11:00:00-03:00",
+          "discount": 20,
+          "location_street": "Manuel Antonio Matta 2502. Local 01. Antofagasta",
+          "latitude": "-23.6502278",
+          "longitude": "-70.3964723"
+        },
+        {
+          "id": 50107,
+          "uuid": "efa750c1-901e-47c7-80b7-f68ef8a42b00",
+          "created_at": "2019-08-20T11:47:34-03:00",
+          "updated_at": "2019-08-20T11:48:47-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-place-vendome-mall-florida-center",
+          "title": "Ópticas Place Vendome Antofagasta",
+          "slug": "opticas-place-vendome-mall-florida-center",
+          "description": "      <h3>20% dcto</h3><p>Anteojos de sol, lentes ópticos y de contacto para hombre y mujer de diferentes marcas.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Manuel Antonio Matta 2502. Local 01<br>Antofagasta</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>227 517 232</li>\r\n      <li class=\"web\"><a href=\"www.placevendome.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.placevendome.cl/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/PlaceVendome\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/PlaceVendomeOPV\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'opticas-place-vendome';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "opticas-place-vendome",
+            "lentes",
+            "opticas",
+            "ópticas"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-08-20T11:00:00-03:00",
+          "end_date": "2019-08-20T11:00:00-03:00",
+          "discount": 20,
+          "location_street": "Manuel Antonio Matta 2502. Local 01. Antofagasta",
+          "latitude": "-23.6502278",
+          "longitude": "-70.3964723"
+        },
+        {
+          "id": 57213,
+          "uuid": "32608cf1-c6ad-4a91-aeba-3ebe810c98cf",
+          "created_at": "2020-10-23T16:32:55-03:00",
+          "updated_at": "2020-11-04T17:42:26-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/estetica-y-salud/promotions/estilo-vecci-colon-2",
+          "title": "Estilo  Vecci - Providencia",
+          "slug": "estilo-vecci-colon-2",
+          "description": "<h3>15% dcto</h3><p>Salón de belleza integral.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Luis Thayer Ojeda 166. Local 102<br>Providencia<br>Santiago</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>+56 9 4037 4817</li>\r\n      <li class=\"web\"><a href=\"http://www.estilovecci.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>http://www.estilovecci.cl/</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'estilo-vecci';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "providencia",
+            "santiago",
+            "estilo-vecci"
+          ],
+          "category": "salud y belleza estetica y salud",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-10-23T16:00:00-03:00",
+          "end_date": "2020-10-23T16:00:00-03:00",
+          "discount": 15,
+          "location_street": "Luis Thayer Ojeda 166. Local 102, Providencia ",
+          "latitude": "-33.417916",
+          "longitude": "-70.60442"
+        },
+        {
+          "id": 51952,
+          "uuid": "6e71c7f0-325c-478f-8ea3-08a61529c33b",
+          "created_at": "2019-12-04T11:04:33-03:00",
+          "updated_at": "2019-12-12T13:31:00-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/rent-a-car/promotions/rosselot-quillota",
+          "title": "Rosselot Rent a Car - Quillota",
+          "slug": "rosselot-quillota",
+          "description": "   <h3>Hasta un 30% dcto</h3><p>En Rosselot rent a car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>21 de Mayo 281<br>Quillota</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>33 226 8517</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/12/Rosselot-Convenio-Scotia-2019.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "quillota",
+            "rosselot"
+          ],
+          "category": "shopping rent a car",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-12-04T10:00:00-03:00",
+          "end_date": "2019-12-04T10:00:00-03:00",
+          "discount": 30,
+          "location_street": "21 de Mayo 281, Quillota",
+          "latitude": "-32.890123",
+          "longitude": "-71.239971"
+        },
+        {
+          "id": 47299,
+          "uuid": "cef4f656-8978-4fbd-8f31-984343a8f350",
+          "created_at": "2019-03-18T18:16:12-03:00",
+          "updated_at": "2019-03-18T18:17:19-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/clinicas-y-centros-medicos/promotions/clinica-dental-everest-la-florida-2",
+          "title": "Clínica Dental Everest - La Florida",
+          "slug": "clinica-dental-everest-la-florida-2",
+          "description": "    <h3>60% dcto</h3><p>Clínicas odontológicas</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av Vicuna Mackenna Poniente 7215<br>La Florida</li>     <li class=\"telefono\"><i class=\"icon-phone\"></i> 2 2584 7120 110</li>\r\n      <li class=\"web\"><a href=\"http://www.clinicaeverest.cl/sitio/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> http://www.clinicaeverest.cl/sitio/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/ClinicasEverest\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/clinica_everest\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-dental-alpes-everest';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "clinica-dental-alpes-everest",
+            "dentista",
+            "la-florida"
+          ],
+          "category": "salud y belleza clinicas y centros medicos",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-03-18T17:00:00-03:00",
+          "end_date": "2019-03-18T17:00:00-03:00",
+          "discount": 60,
+          "location_street": "Av Vicuna Mackenna Poniente 7215, La Florida",
+          "latitude": "-33.5206291",
+          "longitude": "-70.6017868"
+        },
+        {
+          "id": 52262,
+          "uuid": "8ee204ab-0308-418f-8b15-769fa0543d6f",
+          "created_at": "2019-12-13T15:05:35-03:00",
+          "updated_at": "2019-12-13T15:05:56-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/rent-a-car/promotions/rosselot-rent-a-car-concepcion-ii",
+          "title": "Rosselot Rent a Car - Concepción II",
+          "slug": "rosselot-rent-a-car-concepcion-ii",
+          "description": "   <h3>Hasta un 30% dcto</h3><p>En Rosselot Rent a Car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Aeropuerto Carriel Sur<br>Concepción</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>412 732 010</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/12/Rosselot-Convenio-Scotia-2019.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "rosselot",
+            "renta",
+            "arrienda"
+          ],
+          "category": "shopping rent a car",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-12-13T14:00:00-03:00",
+          "end_date": "2019-12-13T14:00:00-03:00",
+          "discount": 30,
+          "location_street": "Aeropuerto Carriel Sur, Concepción",
+          "latitude": "-36.776828",
+          "longitude": "-73.059468"
+        }
+      ],
+      "later": [
+        {
+          "id": 49306,
+          "uuid": "40c4530e-6db7-4e8b-b40b-3d4c7aaaceb6",
+          "created_at": "2019-07-08T16:50:58-04:00",
+          "updated_at": "2019-07-08T17:02:07-04:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/restaurantes/promotions/krossbar-borde-rio",
+          "title": "Krossbar - Borde Rio",
+          "slug": "krossbar-borde-rio",
+          "description": "     <h3>20% dcto</h3><p>\"La calidad está por sobre la cantidad\".</p><div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av José María Escrivá de Balaguer 6400 local 2.b<br>Vitacura</li><br>Santiago\r\n         <li class=\"web\"><a href=\"https://www.kross.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.kross.cl/</a></li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>23 2881 123/96 5291 422</li>\r\n <li class=\"fb\"><a href=\"https://www.facebook.com/KrossBarChile/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                        <li class=\"it\"><a href=\"https://www.instagram.com/krossbarchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li></ul></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "krossbar",
+            "bar"
+          ],
+          "category": "sabores restaurantes",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-07-08T16:00:00-04:00",
+          "end_date": "2019-07-08T16:00:00-04:00",
+          "discount": 20,
+          "location_street": "Av José María Escrivá de Balaguer 6400 local 2.b, Vitacura",
+          "latitude": "-33.405732",
+          "longitude": "-70.598458"
+        },
+        {
+          "id": 49306,
+          "uuid": "40c4530e-6db7-4e8b-b40b-3d4c7aaaceb6",
+          "created_at": "2019-07-08T16:50:58-04:00",
+          "updated_at": "2019-07-08T17:02:07-04:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/restaurantes/promotions/krossbar-borde-rio",
+          "title": "Krossbar - Borde Rio",
+          "slug": "krossbar-borde-rio",
+          "description": "     <h3>20% dcto</h3><p>\"La calidad está por sobre la cantidad\".</p><div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av José María Escrivá de Balaguer 6400 local 2.b<br>Vitacura</li><br>Santiago\r\n         <li class=\"web\"><a href=\"https://www.kross.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.kross.cl/</a></li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>23 2881 123/96 5291 422</li>\r\n <li class=\"fb\"><a href=\"https://www.facebook.com/KrossBarChile/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                        <li class=\"it\"><a href=\"https://www.instagram.com/krossbarchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li></ul></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "krossbar",
+            "bar"
+          ],
+          "category": "sabores restaurantes",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-07-08T16:00:00-04:00",
+          "end_date": "2019-07-08T16:00:00-04:00",
+          "discount": 20,
+          "location_street": "Av José María Escrivá de Balaguer 6400 local 2.b, Vitacura",
+          "latitude": "-33.405732",
+          "longitude": "-70.598458"
+        },
+        {
+          "id": 50648,
+          "uuid": "02b28120-b7b7-4fc3-bc1b-e360bbec5f5f",
+          "created_at": "2019-09-24T17:34:50-03:00",
+          "updated_at": "2019-09-24T17:36:06-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/veterinarias/promotions/club-de-perros-y-gatos-3",
+          "title": "Club de Perros y Gatos - Santiago Centro",
+          "slug": "club-de-perros-y-gatos-3",
+          "description": "<h3>20% dcto</h3><p>Un lugar para Humanos y Peluditos Incondicionales. </p>\r\n      <div>\r\n      <ul>\r\n       <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Mac Iver 468<br>Santiago</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>229 299 779</li>\r\n      <li class=\"web\"><a href=\"https://www.clubdeperrosygatos.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.clubdeperrosygatos.cl</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/clubdeperrosygatos\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n <li class=\"fb\"><a href=\"https://www.instagram.com/clubdeperrosygatos.cl/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n  <li class=\"fb\"><a href=\"https://twitter.com/clubperrosygato\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clubdeperrosygatos';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "mascotas",
+            "clubdeperrosygatos"
+          ],
+          "category": "shopping veterinarias",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-09-24T17:00:00-03:00",
+          "end_date": "2019-09-24T17:00:00-03:00",
+          "discount": 21,
+          "location_street": "Mac Iver 468, Santiago",
+          "latitude": "-33.437342",
+          "longitude": "-70.647301"
+        },
+        {
+          "id": 48016,
+          "uuid": "740cf812-5544-490a-b4a7-1c8bf2449d1b",
+          "created_at": "2019-04-15T16:55:59-03:00",
+          "updated_at": "2019-04-29T19:07:45-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/barbizon-vitacura",
+          "title": "Barbizon - Pueblo Inglés",
+          "slug": "barbizon-vitacura",
+          "description": "   <h3>20% dcto</h3><p>Bbz tiene más de 30 años de experiencia en confección y venta de ropa de dormir femenina.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av.Vitacura Nº6255, local 98<br>Vitacura</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>22 2185692</li> \r\n                              <li class=\"web\"><a href=\"https://www.bbz.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.bbz.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/BBZCL/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'bbz';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "vesturario",
+            "pijamas",
+            "bbz"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-04-15T16:00:00-03:00",
+          "end_date": "2019-04-15T16:00:00-03:00",
+          "discount": null,
+          "location_street": "Av.Vitacura Nº 6255, local 98",
+          "latitude": "-33.390707",
+          "longitude": "-70.57119"
+        },
+        {
+          "id": 45773,
+          "uuid": "65efb32b-3f2e-4d02-b89b-c8034ac8a8b4",
+          "created_at": "2018-12-13T14:01:47-03:00",
+          "updated_at": "2020-11-12T16:35:55-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/pillin-plaza-antofagasta",
+          "title": "Pillin - Plaza Antofagasta",
+          "slug": "pillin-plaza-antofagasta",
+          "description": "   <h3>20% dcto</h3><p>Nos Encanta Ser Niños.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Balmaceda Nº 2355 Local 109<br>Antofagasta</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>+56226742399</li> \r\n                              <li class=\"web\"><a href=\"https://www.pillin.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.pillin.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/PillinChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         <li class=\"it\"><a href=\"https://www.instagram.com/pillinchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'pillin';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "antofagasta",
+            "surcusal",
+            "pillin",
+            "mall-plaza-antofagasta"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2018-12-13T13:00:00-03:00",
+          "end_date": "2018-12-13T13:00:00-03:00",
+          "discount": 20,
+          "location_street": "Avenida Balmaceda Nº 2355, Antofagasta",
+          "latitude": "-23.6453551",
+          "longitude": "-70.40265090000003"
+        },
+        {
+          "id": 45773,
+          "uuid": "65efb32b-3f2e-4d02-b89b-c8034ac8a8b4",
+          "created_at": "2018-12-13T14:01:47-03:00",
+          "updated_at": "2020-11-12T16:35:55-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/pillin-plaza-antofagasta",
+          "title": "Pillin - Plaza Antofagasta",
+          "slug": "pillin-plaza-antofagasta",
+          "description": "   <h3>20% dcto</h3><p>Nos Encanta Ser Niños.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida Balmaceda Nº 2355 Local 109<br>Antofagasta</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>+56226742399</li> \r\n                              <li class=\"web\"><a href=\"https://www.pillin.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.pillin.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/PillinChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         <li class=\"it\"><a href=\"https://www.instagram.com/pillinchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'pillin';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "antofagasta",
+            "surcusal",
+            "pillin",
+            "mall-plaza-antofagasta"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2018-12-13T13:00:00-03:00",
+          "end_date": "2018-12-13T13:00:00-03:00",
+          "discount": 20,
+          "location_street": "Avenida Balmaceda Nº 2355, Antofagasta",
+          "latitude": "-23.6453551",
+          "longitude": "-70.40265090000003"
+        },
+        {
+          "id": 57438,
+          "uuid": "f65f27c0-f83c-4a76-be5f-a77532b8e722",
+          "created_at": "2020-11-04T18:51:10-03:00",
+          "updated_at": "2020-11-04T18:55:37-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/estetica-y-salud/promotions/widex-mall-arauco-maipu",
+          "title": "Widex - Mall Arauco Maipú",
+          "slug": "widex-mall-arauco-maipu",
+          "description": "<h3>20% dcto</h3><p>Audífonos de alta definición para niños y adultos con problemas de audición.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Américo Vespucio 339. Local 679. Mall Arauco Maipú. <br> Maipú\r\n</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>600 892 9000</li>\r\n      <li class=\"web\"><a href=\"https://www.widex.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>www.widex.cl</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/WidexCl/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'widex';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "widex",
+            "sucursales"
+          ],
+          "category": "salud y belleza estetica y salud",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-11-04T18:00:00-03:00",
+          "end_date": "2020-11-04T18:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Américo Vespucio 339. Local 679. Mall Arauco Maipú. ",
+          "latitude": "-33.46113",
+          "longitude": "-70.763867"
+        },
+        {
+          "id": 57213,
+          "uuid": "32608cf1-c6ad-4a91-aeba-3ebe810c98cf",
+          "created_at": "2020-10-23T16:32:55-03:00",
+          "updated_at": "2020-11-04T17:42:26-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/estetica-y-salud/promotions/estilo-vecci-colon-2",
+          "title": "Estilo  Vecci - Providencia",
+          "slug": "estilo-vecci-colon-2",
+          "description": "<h3>15% dcto</h3><p>Salón de belleza integral.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Luis Thayer Ojeda 166. Local 102<br>Providencia<br>Santiago</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>+56 9 4037 4817</li>\r\n      <li class=\"web\"><a href=\"http://www.estilovecci.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>http://www.estilovecci.cl/</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'estilo-vecci';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "providencia",
+            "santiago",
+            "estilo-vecci"
+          ],
+          "category": "salud y belleza estetica y salud",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-10-23T16:00:00-03:00",
+          "end_date": "2020-10-23T16:00:00-03:00",
+          "discount": 15,
+          "location_street": "Luis Thayer Ojeda 166. Local 102, Providencia ",
+          "latitude": "-33.417916",
+          "longitude": "-70.60442"
+        },
+        {
+          "id": 50548,
+          "uuid": "aadeea6b-e9e1-4650-b811-bb665ad219ec",
+          "created_at": "2019-09-12T17:30:20-03:00",
+          "updated_at": "2019-09-12T17:32:25-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/rent-a-car/promotions/euro-rent-a-car-puerto-montt",
+          "title": "Euro Rent a Car - Puerto Montt",
+          "slug": "euro-rent-a-car-puerto-montt",
+          "description": "      <h3>25% dcto</h3><p>Arriendo de autos</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Seminario 252, Hotel Manquehue<br>Puerto Montt</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>Central de reservas: +56 2 2478 9000\r\nAtención 24/7: +56 9 5015 4275</li>\r\n      <li class=\"web\"><a href=\"https://eurorentacar.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://eurorentacar.cl/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/eurorentacar.cl/?ref=br_rs\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'euro-rent-a-car';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "Puerto Montt",
+            "rent-a-car",
+            "euro-rent-a-car"
+          ],
+          "category": "shopping rent a car",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-09-12T17:00:00-03:00",
+          "end_date": "2019-09-12T17:00:00-03:00",
+          "discount": 25,
+          "location_street": "Seminario 252, Hotel Manquehue, Manuel Montt",
+          "latitude": "-41.467738",
+          "longitude": "-72.937915"
+        },
+        {
+          "id": 51952,
+          "uuid": "6e71c7f0-325c-478f-8ea3-08a61529c33b",
+          "created_at": "2019-12-04T11:04:33-03:00",
+          "updated_at": "2019-12-12T13:31:00-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/rent-a-car/promotions/rosselot-quillota",
+          "title": "Rosselot Rent a Car - Quillota",
+          "slug": "rosselot-quillota",
+          "description": "   <h3>Hasta un 30% dcto</h3><p>En Rosselot rent a car nuestro principal objetivo es ofrecer a nuestros clientes un excelente y completo servicio en el arriendo de vehículos.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>21 de Mayo 281<br>Quillota</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>33 226 8517</li>\r\n         <li class=\"web\"><a href=\"https://www.rosselot.cl/rent-a-car/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.rosselot.cl/rent-a-car/</a></li>\r\n         <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/12/Rosselot-Convenio-Scotia-2019.pdf\">Convenio Scotia</a></button></li>  \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'rosselot';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "quillota",
+            "rosselot"
+          ],
+          "category": "shopping rent a car",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-12-04T10:00:00-03:00",
+          "end_date": "2019-12-04T10:00:00-03:00",
+          "discount": 30,
+          "location_street": "21 de Mayo 281, Quillota",
+          "latitude": "-32.890123",
+          "longitude": "-71.239971"
+        },
+        {
+          "id": 47299,
+          "uuid": "cef4f656-8978-4fbd-8f31-984343a8f350",
+          "created_at": "2019-03-18T18:16:12-03:00",
+          "updated_at": "2019-03-18T18:17:19-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/clinicas-y-centros-medicos/promotions/clinica-dental-everest-la-florida-2",
+          "title": "Clínica Dental Everest - La Florida",
+          "slug": "clinica-dental-everest-la-florida-2",
+          "description": "    <h3>60% dcto</h3><p>Clínicas odontológicas</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av Vicuna Mackenna Poniente 7215<br>La Florida</li>     <li class=\"telefono\"><i class=\"icon-phone\"></i> 2 2584 7120 110</li>\r\n      <li class=\"web\"><a href=\"http://www.clinicaeverest.cl/sitio/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> http://www.clinicaeverest.cl/sitio/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/ClinicasEverest\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/clinica_everest\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-dental-alpes-everest';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "clinica-dental-alpes-everest",
+            "dentista",
+            "la-florida"
+          ],
+          "category": "salud y belleza clinicas y centros medicos",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-03-18T17:00:00-03:00",
+          "end_date": "2019-03-18T17:00:00-03:00",
+          "discount": 60,
+          "location_street": "Av Vicuna Mackenna Poniente 7215, La Florida",
+          "latitude": "-33.5206291",
+          "longitude": "-70.6017868"
+        }
+      ]
+    },
+    {
+      "id": "v1-1617135170470-7509741931922",
+      "interest": [
+        "Comída",
+        "Salud y Bienestar",
+        "Asados"
+      ],
+      "not-likes": [
+        {
+          "id": 57905,
+          "uuid": "4775981f-f790-424b-bcd1-8db9391c96ee",
+          "created_at": "2020-12-14T17:59:39-03:00",
+          "updated_at": "2020-12-14T18:00:20-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/clinica-cela-nunoa",
+          "title": "Clínica Cela - Ñuñoa",
+          "slug": "clinica-cela-nunoa",
+          "description": "<h3>Hasta un 40%</h3><p>Clínica Cela, cuenta con 14 años de experiencia en depilación láser con tecnología láser Alexandrita, tratamientos reductivos corporales, tratamientos faciales. Única clínica estética con certificación ISO 9001:2015 y cuenta con el 100% de profesionales de la salud. Estos beneficios son para ti.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Irarrázaval 2401, oficina 610<br>Ñuñoa</li><br>Santiago\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>22 306 92 50</li>\r\n      <li class=\"web\"><a href=\"https://www.cela.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>www.cela.cl</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-estetica-cela';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "nunoa",
+            "sucursal",
+            "ñuñoa",
+            "clinica-estetica-cela",
+            "nuñoa"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-12-14T17:00:00-03:00",
+          "end_date": "2020-12-14T17:00:00-03:00",
+          "discount": 40,
+          "location_street": "Irarrázaval 2401, oficina 610 Ñuñoa, Santiago",
+          "latitude": "-33.454476",
+          "longitude": "-70.606343"
+        },
+        {
+          "id": 48077,
+          "uuid": "fc5e9bf5-5e60-4604-902a-95c4dffffcf3",
+          "created_at": "2019-04-17T13:00:53-03:00",
+          "updated_at": "2019-04-17T14:07:14-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/barbizon-las-condes",
+          "title": "Barbizon - Los Dominicos",
+          "slug": "barbizon-las-condes",
+          "description": "  <h3>20% dcto</h3><p>Bbz tiene más de 30 años de experiencia en confección y venta de ropa de dormir femenina.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Padre Hurtado Sur Nº875, Local C2068-2072<br>Las Condes</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>22 2399758</li> \r\n                              <li class=\"web\"><a href=\"https://www.bbz.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.bbz.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/BBZCL/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'bbz';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "pijamas",
+            "bbz",
+            "Los Dominicos"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-04-17T12:00:00-03:00",
+          "end_date": "2019-04-17T12:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Padre Hurtado Sur Nº875, Local C2068-2072, Los Dominicos",
+          "latitude": "-33.4152406",
+          "longitude": "-70.5406785"
+        }
+      ],
+      "likes": [
+        {
+          "id": 57316,
+          "uuid": "77976865-48e5-4b65-bbe1-f4bf0976c567",
+          "created_at": "2020-10-29T23:19:09-03:00",
+          "updated_at": "2020-11-16T12:16:05-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/restaurantes/promotions/factoria-restaurant",
+          "title": "Factoria Restaurant ",
+          "slug": "factoria-restaurant",
+          "description": "<h3>10% dcto.</h3><p>En toda la carta.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Bories 156<br>Puerto Natales</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>61 241 2016</li>\r\n      <li class=\"web\"><a href=\"http://www.factoriapatagonia.com/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>http://www.factoriapatagonia.com/</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/FactoriaPatagoniaChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'Factoria-Restaurant';</script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/8d098940-357b-41cf-8e65-1e7472db8ead/R320x240/Factoria_Restaurant_V2.png",
+            "https://bci-cdn.azureedge.net/uploads/c36f05e8-501d-4986-b240-3e2af0f3a5d7/R320x240/F-FactoriaB.png"
+          ],
+          "tags": [
+            "puerto-natales",
+            "restaurante",
+            "restaurant",
+            "casa-matriz"
+          ],
+          "category": "sabores restaurantes",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 10% en toda la carta.&nbsp;</span><br><span style=\"background-color: initial;\">Promoción válida en retiro en restaurant.</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span></div><div><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.</span><br><span style=\"background-color: initial;\"><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b></span></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 10% en toda la carta.&nbsp;</span><br><span style=\"background-color: initial;\">Promoción válida en retiro en restaurant.</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span></div><div><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.</span><br><span style=\"background-color: initial;\"><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b></span></div>",
+          "start_date": "2020-10-29T22:00:00-03:00",
+          "end_date": "2020-10-29T22:00:00-03:00",
+          "discount": 10,
+          "location_street": "Bories 156, Puerto Natales",
+          "latitude": "-51.726425",
+          "longitude": "-72.511385"
+        },
+        {
+          "id": 57316,
+          "uuid": "77976865-48e5-4b65-bbe1-f4bf0976c567",
+          "created_at": "2020-10-29T23:19:09-03:00",
+          "updated_at": "2020-11-16T12:16:05-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/restaurantes/promotions/factoria-restaurant",
+          "title": "Factoria Restaurant ",
+          "slug": "factoria-restaurant",
+          "description": "<h3>10% dcto.</h3><p>En toda la carta.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Bories 156<br>Puerto Natales</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>61 241 2016</li>\r\n      <li class=\"web\"><a href=\"http://www.factoriapatagonia.com/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>http://www.factoriapatagonia.com/</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/FactoriaPatagoniaChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'Factoria-Restaurant';</script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/8d098940-357b-41cf-8e65-1e7472db8ead/R320x240/Factoria_Restaurant_V2.png",
+            "https://bci-cdn.azureedge.net/uploads/c36f05e8-501d-4986-b240-3e2af0f3a5d7/R320x240/F-FactoriaB.png"
+          ],
+          "tags": [
+            "puerto-natales",
+            "restaurante",
+            "restaurant",
+            "casa-matriz"
+          ],
+          "category": "sabores restaurantes",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 10% en toda la carta.&nbsp;</span><br><span style=\"background-color: initial;\">Promoción válida en retiro en restaurant.</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span></div><div><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.</span><br><span style=\"background-color: initial;\"><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b></span></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 10% en toda la carta.&nbsp;</span><br><span style=\"background-color: initial;\">Promoción válida en retiro en restaurant.</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span></div><div><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.</span><br><span style=\"background-color: initial;\"><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b></span></div>",
+          "start_date": "2020-10-29T22:00:00-03:00",
+          "end_date": "2020-10-29T22:00:00-03:00",
+          "discount": 10,
+          "location_street": "Bories 156, Puerto Natales",
+          "latitude": "-51.726425",
+          "longitude": "-72.511385"
+        },
+        {
+          "id": 57777,
+          "uuid": "4c48bed1-c4e6-46a0-9d6f-b5c2cf5686a4",
+          "created_at": "2020-11-27T10:46:29-03:00",
+          "updated_at": "2020-11-30T17:27:20-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/restaurantes/promotions/restaurant-boki",
+          "title": "Restaurant Boki",
+          "slug": "restaurant-boki",
+          "description": "<h3>25% dcto.</h3><p>En Boki podrás disfrutar una amplia variedad de sabores, con platos propios de nuestro país y de diversas culturas, que te llevarán a experimentar un reencuentro y descubrimiento de tradiciones culinarias locales e internacionales.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Callao 3123<br>Las Condes</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>+56 2 2757 2000</li>\r\n      <li class=\"web\"><a href=\"https://time.cl/servicios/boki-restaurant/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://time.cl/servicios/boki-restaurant/</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/bokirestaurantbar\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n       <li class=\"fb\"><a href=\"https://www.instagram.com/boki_restaurant_bar/?hl=es-la\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'Boki';</script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/04a5620a-ee11-423c-8276-c559fcc0f488/R320x240/360x500_boki.jpg",
+            "https://bci-cdn.azureedge.net/uploads/7a1eeffd-d56e-45ca-9973-af39987e6593/R320x240/180x80.jpg"
+          ],
+          "tags": [
+            "sabores",
+            "comida",
+            "boki",
+            "restaurant-boki",
+            "casa-matriz"
+          ],
+          "category": "sabores restaurantes",
+          "site_id": 68,
+          "options": {
+            "conditions": "<span style=\"background-color: initial;\">Descuento de un 25% en toda la carta.</span><br><span style=\"background-color: initial;\">Válido pagando con tus Tarjetas de Crédito o Débito Scotia</span><div><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.</span><br><span style=\"background-color: initial;\"><b>*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></span></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<span style=\"background-color: initial;\">Descuento de un 25% en toda la carta.</span><br><span style=\"background-color: initial;\">Válido pagando con tus Tarjetas de Crédito o Débito Scotia</span><div><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.</span><br><span style=\"background-color: initial;\"><b>*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></span></div>",
+          "start_date": "2020-11-27T10:00:00-03:00",
+          "end_date": "2020-11-27T10:00:00-03:00",
+          "discount": 25,
+          "location_street": "Callao 3123, Las Condes",
+          "latitude": "-33.419172",
+          "longitude": "-70.596328"
+        },
+        {
+          "id": 50326,
+          "uuid": "69ed8e8c-d23e-4757-8b1e-4978b56ab0b9",
+          "created_at": "2019-08-29T17:03:30-03:00",
+          "updated_at": "2019-08-29T17:45:12-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-schilling-santiago-centro-12",
+          "title": "Ópticas Schilling  Santiago Centro 12",
+          "slug": "opticas-schilling-santiago-centro-12",
+          "description": "    <p style=\"display:none\">opticas, lentes de sol, lentes opticos, gafas, gotitas ojos, marcos, cristales</p>\r\n<h3>20% dcto</h3><p>Óptica</p>\r\n      <div>\r\n       <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Enrique Mac Iver 96. Santiago.<br>Santiago</li>\r\n                <li class=\"telefono\"><i class=\"icon-phone\"></i>664 1430</li>\r\n      <li class=\"web\"><a href=\"www.opticashilling.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www\r\n.opticashilling.cl</a></li>\r\n    </ul>\r\n      \r\n    <script>\r\n      var casa_matriz_tag = 'opticas-schilling';\r\n    </script></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "opticas-schilling"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-08-29T16:00:00-03:00",
+          "end_date": "2019-08-29T16:00:00-03:00",
+          "discount": 20,
+          "location_street": "Enrique Mac Iver 96. Santiago. ",
+          "latitude": "-33.441032",
+          "longitude": "-70.646209"
+        },
+        {
+          "id": 57108,
+          "uuid": "509114de-dfdf-4d86-b267-8f6a0c0a8716",
+          "created_at": "2020-10-16T17:06:21-03:00",
+          "updated_at": "2020-10-16T17:08:42-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/automotriz/promotions/fullbaterias-concepcion",
+          "title": "Fullbaterías - Concepción",
+          "slug": "fullbaterias-concepcion",
+          "description": "<h3>15% dcto</h3><p>Servicio de baterías a domicilio.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Los Carrera 415,      \r\n<br>Concepción</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>56 9 3264 2241</li>\r\n      <li class=\"web\"><a href=\"https://www.fullbaterias.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.fullbaterias.cl/</a></li>\r\n         <li class=\"fb\"><a href=\"https://es-la.facebook.com/full.baterias\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n     <li class=\"fb\"><a href=\"https://www.instagram.com/fullbaterias_chile/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n   </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'fullbaterias';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "bio-bio",
+            "concepcion",
+            "Concepción",
+            "concepciòn",
+            "fullbaterias",
+            "respuesto"
+          ],
+          "category": "shopping automotriz",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-10-16T16:00:00-03:00",
+          "end_date": "2020-10-16T16:00:00-03:00",
+          "discount": 15,
+          "location_street": "Av. Los Carrera 415, Concepción",
+          "latitude": "-36.824631",
+          "longitude": "-73.055526"
+        },
+        {
+          "id": 57777,
+          "uuid": "4c48bed1-c4e6-46a0-9d6f-b5c2cf5686a4",
+          "created_at": "2020-11-27T10:46:29-03:00",
+          "updated_at": "2020-11-30T17:27:20-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/sabores/restaurantes/promotions/restaurant-boki",
+          "title": "Restaurant Boki",
+          "slug": "restaurant-boki",
+          "description": "<h3>25% dcto.</h3><p>En Boki podrás disfrutar una amplia variedad de sabores, con platos propios de nuestro país y de diversas culturas, que te llevarán a experimentar un reencuentro y descubrimiento de tradiciones culinarias locales e internacionales.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Callao 3123<br>Las Condes</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>+56 2 2757 2000</li>\r\n      <li class=\"web\"><a href=\"https://time.cl/servicios/boki-restaurant/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://time.cl/servicios/boki-restaurant/</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/bokirestaurantbar\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n       <li class=\"fb\"><a href=\"https://www.instagram.com/boki_restaurant_bar/?hl=es-la\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'Boki';</script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/7a1eeffd-d56e-45ca-9973-af39987e6593/R320x240/180x80.jpg",
+            "https://bci-cdn.azureedge.net/uploads/04a5620a-ee11-423c-8276-c559fcc0f488/R320x240/360x500_boki.jpg"
+          ],
+          "tags": [
+            "sabores",
+            "comida",
+            "boki",
+            "restaurant-boki",
+            "casa-matriz"
+          ],
+          "category": "sabores restaurantes",
+          "site_id": 68,
+          "options": {
+            "conditions": "<span style=\"background-color: initial;\">Descuento de un 25% en toda la carta.</span><br><span style=\"background-color: initial;\">Válido pagando con tus Tarjetas de Crédito o Débito Scotia</span><div><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.</span><br><span style=\"background-color: initial;\"><b>*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></span></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<span style=\"background-color: initial;\">Descuento de un 25% en toda la carta.</span><br><span style=\"background-color: initial;\">Válido pagando con tus Tarjetas de Crédito o Débito Scotia</span><div><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.</span><br><span style=\"background-color: initial;\"><b>*Para hacer efectivo el descuento Scotia en forma presencial, debes solicitarlo antes de realizar la compra.</b></span></div>",
+          "start_date": "2020-11-27T10:00:00-03:00",
+          "end_date": "2020-11-27T10:00:00-03:00",
+          "discount": 25,
+          "location_street": "Callao 3123, Las Condes",
+          "latitude": "-33.419172",
+          "longitude": "-70.596328"
+        },
+        {
+          "id": 42225,
+          "uuid": "aa78ad32-88d1-4b53-94a7-81696d138b7b",
+          "created_at": "2018-05-11T12:01:17-03:00",
+          "updated_at": "2021-03-03T12:48:27-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/servicios-pyme/promotions/busca-libre",
+          "title": "Busca Libre ",
+          "slug": "busca-libre",
+          "description": "<h3>Hasta 30% dcto en despachos.</h3><p>En BuscaLibre.com ahorra tiempo y pide lo que quieras a través de Internet. Nosotros lo enviamos a tu casa u oficina ;)</p>\r\n      <div>\r\n      <ul>\r\n      <li class=\"web\"><a href=\"https://www.buscalibre.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.buscalibre.cl</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/buscalibre\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n            <li class=\"fb\"><a href=\"https://www.instagram.com/buscalibre/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'busca-libre';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/27d48ea7-b921-49bd-9659-4891ca18d718/R320x240/Busca-Libre-propuesta-360x500.png",
+            "https://bci-cdn.azureedge.net/uploads/75798058-a0b2-45c2-8f9b-34b67ff4b2d7/R320x240/Busca_Libre_logo-160x63-px.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "venta-online",
+            "busca-libre",
+            "logistica"
+          ],
+          "category": "shopping servicios pyme",
+          "site_id": 68,
+          "options": {
+            "conditions": "\r\n<p><span style=\"background-color: initial;\"><br></span></p><p><span style=\"background-color: initial;\">Descuento de un 30% en despacho a regiones, Despacho Gratis en Santiago.&nbsp;</span><br><span style=\"background-color: initial;\">La\r\nconfirmación de la cotización es vía email\r\ny el descuento se confirma por esa vía.&nbsp;</span><br><span style=\"background-color: initial;\">Consultas a&nbsp;<a href=\"mailto:empresas@buscalibre.com\">empresas@buscalibre.com</a>.&nbsp;</span></p><p>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra</b></p>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "\r\n<p><span style=\"background-color: initial;\"><br></span></p><p><span style=\"background-color: initial;\">Descuento de un 30% en despacho a regiones, Despacho Gratis en Santiago.&nbsp;</span><br><span style=\"background-color: initial;\">La\r\nconfirmación de la cotización es vía email\r\ny el descuento se confirma por esa vía.&nbsp;</span><br><span style=\"background-color: initial;\">Consultas a&nbsp;<a href=\"mailto:empresas@buscalibre.com\">empresas@buscalibre.com</a>.&nbsp;</span></p><p>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra</b></p>",
+          "start_date": "2018-05-11T11:00:00-03:00",
+          "end_date": "2018-05-11T11:00:00-03:00",
+          "discount": 30,
+          "location_street": null,
+          "latitude": null,
+          "longitude": null
+        },
+        {
+          "id": 50517,
+          "uuid": "90f424ce-b6ee-42fc-8328-a212d905c226",
+          "created_at": "2019-09-10T13:44:28-03:00",
+          "updated_at": "2019-09-10T13:49:09-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/clinicas-y-centros-medicos/promotions/clinica-brota",
+          "title": "Clínica Brota",
+          "slug": "clinica-brota",
+          "description": "     <h3>50% dcto</h3><p> Somos una destacada Institución de salud con especialidad en las áreas de Psiquiatría y Psicología, Nuestro equipo consta de psicólogos y psiquiatras especializados para poder brindarte una ayuda eficiente.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Antonio Bellet 77 , Oficina 205<br>Providencia</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>569 6191 7716 - 222 686 665</li>\r\n                    <li class=\"web\"><a href=\"https://psiquiatraenprovidencia.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://psiquiatraenprovidencia.cl/</a></li>\r\n                    <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2019/09/Cl%C3%ADnica-Brota.pdf\" target=\" target=&quot;_blank&quot;\">Servicios</a></button></li>\r\n         \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/clinica.brota\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         \r\n                  <li class=\"fb\"><a href=\"https://www.instagram.com/clinicabrota/?hl=es-la\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n                  \r\n                                    <li class=\"fb\"><a href=\"https://twitter.com/BrotaClinica\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-brota';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/e3f151a6-0f24-49f8-bc24-7f303d6cdc5b/R320x240/180x63-cli_nica-brota.jpg",
+            "https://bci-cdn.azureedge.net/uploads/ad3d7fe5-1c45-47ee-9036-f477095352aa/R320x240/360x500-clinica-brota.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "clinica-brota",
+            "psicologo"
+          ],
+          "category": "salud y belleza clinicas y centros medicos",
+          "site_id": 68,
+          "options": {
+            "conditions": "\r\n<p>Descuento hasta un\r\n50% en servicios Psiquiátricos, Psicológicos, terapias y Test detallados en\r\nlistado de servicios. No acumulable con otras promociones y/ descuentos.\r\nPromoción válida con Tarjetas de Crédito y Débito Scotia. <b>*Para hacer efectivo el\r\ndescuento Scotia, debes solicitarlo antes de realizar la compra.</b></p>\r\n\r\n",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "\r\n<p>Descuento hasta un\r\n50% en servicios Psiquiátricos, Psicológicos, terapias y Test detallados en\r\nlistado de servicios. No acumulable con otras promociones y/ descuentos.\r\nPromoción válida con Tarjetas de Crédito y Débito Scotia. <b>*Para hacer efectivo el\r\ndescuento Scotia, debes solicitarlo antes de realizar la compra.</b></p>\r\n\r\n",
+          "start_date": "2019-09-10T13:00:00-03:00",
+          "end_date": "2019-09-10T13:00:00-03:00",
+          "discount": 50,
+          "location_street": "Antonio Bellet 77 , Oficina 205, Providencia",
+          "latitude": "-33.426138",
+          "longitude": "-70.617205"
+        },
+        {
+          "id": 46415,
+          "uuid": "98fe7312-1024-48a5-afa7-33f969aeb355",
+          "created_at": "2019-01-30T15:48:52-03:00",
+          "updated_at": "2021-02-08T16:13:28-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/clinicas-y-centros-medicos/promotions/red-salud",
+          "title": "RedSalud ",
+          "slug": "red-salud",
+          "description": "      <h3>60% dcto</h3><p>Red Médica y Dental de Chile</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i> Av. Nueva Providencia N° 1920<br>Providencia</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>600 425 6000</li>\r\n      <li class=\"web\"><a href=\"https://www.redsalud.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.redsalud.cl/</a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'red-salud';\r\n    </script>\r\n",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/66d22925-5105-474f-a4c3-bc7677de4eaf/R320x240/caluga-360x500.jpg",
+            "https://bci-cdn.azureedge.net/uploads/7d6c26b5-19d3-4de4-bfe5-94f90bae23b3/R320x240/logo-200x200_1_.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "providencia",
+            "red-salud"
+          ],
+          "category": "salud y belleza clinicas y centros medicos",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><br></div>Descuento de 60% en prestaciones dentales, según Arancel 100 de RedSalud.&nbsp;<div>Descuento de 55% en Rx en Extraorales. Consulta de Diagnóstico sin costo, 2 Radiografías de Diagnóstico (BW) a $3.990 C/U. Los Beneficios descritos serán aplicables sólo si el beneficiario lo aplica a su cuenta en primer lugar y antes de otros descuentos o convenios celebrados por RedSalud con Isapres, Fonasa, Cajas de Compensación u otras instituciones. Aplicable a titular y cargas familiares.</div><div><div>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b><br></div></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><br></div>Descuento de 60% en prestaciones dentales, según Arancel 100 de RedSalud.&nbsp;<div>Descuento de 55% en Rx en Extraorales. Consulta de Diagnóstico sin costo, 2 Radiografías de Diagnóstico (BW) a $3.990 C/U. Los Beneficios descritos serán aplicables sólo si el beneficiario lo aplica a su cuenta en primer lugar y antes de otros descuentos o convenios celebrados por RedSalud con Isapres, Fonasa, Cajas de Compensación u otras instituciones. Aplicable a titular y cargas familiares.</div><div><div>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b><br></div></div>",
+          "start_date": "2019-01-30T15:00:00-03:00",
+          "end_date": "2019-01-30T15:00:00-03:00",
+          "discount": 60,
+          "location_street": "Av.  Nueva Providencia  N° 1920, Providencia",
+          "latitude": "-33.4250727",
+          "longitude": "-70.6131696"
+        },
+        {
+          "id": 57210,
+          "uuid": "3b87282b-1bf2-4a13-9a0d-4297aafdf765",
+          "created_at": "2020-10-23T15:53:53-03:00",
+          "updated_at": "2020-10-23T15:54:44-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-place-vendome-punta-arenas",
+          "title": "Ópticas Place Vendome Punta Arenas",
+          "slug": "opticas-place-vendome-punta-arenas",
+          "description": "<h3>20% dcto</h3><p>Anteojos de sol, lentes ópticos y de contacto para hombre y mujer de diferentes marcas.</p>\r\n      <div>\r\n      <ul>\r\n        <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Lautaro Navarro 1058<br>Punta Arenas</li>\r\n        <li class=\"telefono\"><i class=\"icon-phone\"></i>22 241 5800</li>\r\n      <li class=\"web\"><a href=\"www.placevendome.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.placevendome.cl/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/PlaceVendome\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/PlaceVendomeOPV\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul><i class=\"icon-map-marker\">\r\n      </i></div><i class=\"icon-map-marker\">\r\n    <script>\r\n      var casa_matriz_tag = 'opticas-place-vendome';\r\n    </script>\r\n</i>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "punta-arenas",
+            "opticas-place-vendome",
+            "lentes"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-10-23T15:00:00-03:00",
+          "end_date": "2020-10-23T15:00:00-03:00",
+          "discount": 20,
+          "location_street": "Lautaro Navarro 1058, Punta Arenas",
+          "latitude": "-53.151234",
+          "longitude": "-70.892672"
+        },
+        {
+          "id": 57210,
+          "uuid": "3b87282b-1bf2-4a13-9a0d-4297aafdf765",
+          "created_at": "2020-10-23T15:53:53-03:00",
+          "updated_at": "2020-10-23T15:54:44-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-place-vendome-punta-arenas",
+          "title": "Ópticas Place Vendome Punta Arenas",
+          "slug": "opticas-place-vendome-punta-arenas",
+          "description": "<h3>20% dcto</h3><p>Anteojos de sol, lentes ópticos y de contacto para hombre y mujer de diferentes marcas.</p>\r\n      <div>\r\n      <ul>\r\n        <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Lautaro Navarro 1058<br>Punta Arenas</li>\r\n        <li class=\"telefono\"><i class=\"icon-phone\"></i>22 241 5800</li>\r\n      <li class=\"web\"><a href=\"www.placevendome.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.placevendome.cl/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/PlaceVendome\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/PlaceVendomeOPV\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n    </ul><i class=\"icon-map-marker\">\r\n      </i></div><i class=\"icon-map-marker\">\r\n    <script>\r\n      var casa_matriz_tag = 'opticas-place-vendome';\r\n    </script>\r\n</i>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "punta-arenas",
+            "opticas-place-vendome",
+            "lentes"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-10-23T15:00:00-03:00",
+          "end_date": "2020-10-23T15:00:00-03:00",
+          "discount": 20,
+          "location_street": "Lautaro Navarro 1058, Punta Arenas",
+          "latitude": "-53.151234",
+          "longitude": "-70.892672"
+        },
+        {
+          "id": 51134,
+          "uuid": "4daa66f0-9e43-42fe-b029-76050a8b9350",
+          "created_at": "2019-10-22T10:51:49-03:00",
+          "updated_at": "2021-02-04T16:19:47-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/le-ciel-lo-barnechea",
+          "title": "Le Ciel La Dehesa - Espacio Urbano",
+          "slug": "le-ciel-lo-barnechea",
+          "description": "<h3>Descuento de hasta un 55%</h3><p>Medicina estética de avanzada: “Las más modernas tecnologías y una sólida formación profesional al servicio de la estética.”¡Pide tu evaluación GRATIS!</p>\r\n      <div>\r\n      <ul>\r\n       <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. El Rodeo 12.850, local 40. (Espacio Urbano La Dehesa)<br>La Dehesa</li>\r\n            <li class=\"telefono\"><i class=\"icon-phone\"></i>Teléfono 562 3210 6642\r\n            - Whatsapp 56932490146</li>\r\n      <li class=\"web\"><a href=\"https://www.leciel.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.leciel.cl/</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/ClinicaLeCiel\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n <li class=\"fb\"><a href=\"https://www.instagram.com/clinicaleciel/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'leciel';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "leciel",
+            "La Dehesa"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-10-22T10:00:00-03:00",
+          "end_date": "2019-10-22T10:00:00-03:00",
+          "discount": null,
+          "location_street": "Av. El Rodeo 12.850, local 40. (Espacio Urbano La Dehesa), La Dehesa",
+          "latitude": "-33.352417",
+          "longitude": "-70.501531"
+        },
+        {
+          "id": 53409,
+          "uuid": "2ce65ab5-3e7a-4dc3-b459-dc32a7e6038e",
+          "created_at": "2020-02-20T15:07:51-03:00",
+          "updated_at": "2020-02-20T16:07:27-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/automotriz/promotions/automotora-bilbao-matriz",
+          "title": "Automotora Bilbao",
+          "slug": "automotora-bilbao-matriz",
+          "description": " <h3>¡Descuento de un 20% en la mano de obra!</h3><p><br></p><p></p><p>\r\n Te queremos invitar a que tomes una pausa y si tu auto lo necesita, lo dejes en nuestras manos para la mantención de kilometraje que le\r\ncorresponde o bien otro servicio que necesite, entre ellos:&nbsp; Mejoras mecánicas,&nbsp;Revisión\r\nde Viaje, Instalación de accesorios, Preparación para la revisión técnica o\r\nsimplemente un chequeo preventivo. </p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i> Av. Francisco Bilbao 2307<br>Providencia</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i> 224134963</li>\r\n      <li class=\"web\"><a href=\"http://www.automotorabilbao.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.automotorabilbao.cl</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/automotorabilbao2?fref=ts\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'automotora-bilbao';</script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/938d9441-e7c7-431d-970d-b72507be6d84/R320x240/Automotora-2020-360x500.jpg",
+            "https://bci-cdn.azureedge.net/uploads/66807357-1b8e-48eb-9715-1071d3474194/R320x240/logo_sin_fondo.png"
+          ],
+          "tags": [
+            "casa-matriz",
+            "automotora-bilbao",
+            "repuestos",
+            "autos",
+            "autos usados",
+            "autos nuevos",
+            "comprar autos"
+          ],
+          "category": "shopping automotriz",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 20% en mano de obra en mejoras mecánicas, revisión de viaje, instalación de accesorios, preparación para la revisión técnica o chequeo preventivo. Si tu auto es de la marca&nbsp;</span><b style=\"background-color: initial;\">Mazda&nbsp;</b><span style=\"background-color: initial;\">o</span><b style=\"background-color: initial;\">&nbsp;Renault</b><span style=\"background-color: initial;\">&nbsp;tráelo a nuestra sucursal ubicada en</span><b style=\"background-color: initial;\">&nbsp;Avenida Irarrázaval 4790, Ñuñoa</b><span style=\"background-color: initial;\">. Si tu auto es de la marca</span><b style=\"background-color: initial;\">&nbsp;Suzuki, Haval, Great Wal</b><span style=\"background-color: initial;\">l,</span><b style=\"background-color: initial;\">&nbsp;Changan&nbsp;</b><span style=\"background-color: initial;\">o</span><b style=\"background-color: initial;\">&nbsp;JAC</b><span style=\"background-color: initial;\">&nbsp;tráelo a nuestra sucursal ubicada en&nbsp;</span><b style=\"background-color: initial;\">Avenida Francisco Bilbao 2307, Providencia.&nbsp;</b><span style=\"background-color: initial;\">Para agendar cita puedes realizarlo en&nbsp;</span><a href=\"http://www.abilbao.cl/reservatuhora/\" style=\"background-color: initial;\">www.abilbao.cl/reservatuhora/</a><span style=\"background-color: initial;\">&nbsp;o a través de <b>WhatsApp</b> haciendo clic en:&nbsp;</span><a href=\"http://app.abilbao.cl/agenda.php\" style=\"background-color: initial;\">http://app.abilbao.cl/agenda.php</a><span style=\"background-color: initial;\">&nbsp;o llamando al<b> 224134963</b>.</span><b style=\"background-color: initial;\">&nbsp;</b><br><b style=\"background-color: initial;\">*Descuento exclusivo en las sucursales de Irarrázabal 4790, Ñuñoa o Francisco Bilbao 2307, Providencia.</b></div><div><b style=\"background-color: initial;\"><br></b></div><div>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 20% en mano de obra en mejoras mecánicas, revisión de viaje, instalación de accesorios, preparación para la revisión técnica o chequeo preventivo. Si tu auto es de la marca&nbsp;</span><b style=\"background-color: initial;\">Mazda&nbsp;</b><span style=\"background-color: initial;\">o</span><b style=\"background-color: initial;\">&nbsp;Renault</b><span style=\"background-color: initial;\">&nbsp;tráelo a nuestra sucursal ubicada en</span><b style=\"background-color: initial;\">&nbsp;Avenida Irarrázaval 4790, Ñuñoa</b><span style=\"background-color: initial;\">. Si tu auto es de la marca</span><b style=\"background-color: initial;\">&nbsp;Suzuki, Haval, Great Wal</b><span style=\"background-color: initial;\">l,</span><b style=\"background-color: initial;\">&nbsp;Changan&nbsp;</b><span style=\"background-color: initial;\">o</span><b style=\"background-color: initial;\">&nbsp;JAC</b><span style=\"background-color: initial;\">&nbsp;tráelo a nuestra sucursal ubicada en&nbsp;</span><b style=\"background-color: initial;\">Avenida Francisco Bilbao 2307, Providencia.&nbsp;</b><span style=\"background-color: initial;\">Para agendar cita puedes realizarlo en&nbsp;</span><a href=\"http://www.abilbao.cl/reservatuhora/\" style=\"background-color: initial;\">www.abilbao.cl/reservatuhora/</a><span style=\"background-color: initial;\">&nbsp;o a través de <b>WhatsApp</b> haciendo clic en:&nbsp;</span><a href=\"http://app.abilbao.cl/agenda.php\" style=\"background-color: initial;\">http://app.abilbao.cl/agenda.php</a><span style=\"background-color: initial;\">&nbsp;o llamando al<b> 224134963</b>.</span><b style=\"background-color: initial;\">&nbsp;</b><br><b style=\"background-color: initial;\">*Descuento exclusivo en las sucursales de Irarrázabal 4790, Ñuñoa o Francisco Bilbao 2307, Providencia.</b></div><div><b style=\"background-color: initial;\"><br></b></div><div>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b></div>",
+          "start_date": "2020-02-20T15:00:00-03:00",
+          "end_date": "2020-02-20T15:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Francisco Bilbao 2307, Providencia",
+          "latitude": "-33.4372882",
+          "longitude": "-70.6016492"
+        },
+        {
+          "id": 45784,
+          "uuid": "af20b0d5-c0c9-4274-96e9-50fa02dd1e4e",
+          "created_at": "2018-12-13T17:12:09-03:00",
+          "updated_at": "2020-11-12T16:37:36-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/pillin-plaza-bio-bio",
+          "title": "Pillin - Plaza Bio Bio",
+          "slug": "pillin-plaza-bio-bio",
+          "description": "   <h3>20% dcto</h3><p>Nos Encanta Ser Niños.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Los Carrera Poniente N° 301 Local 1016<br>Concepción</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>+56226742399</li> \r\n                              <li class=\"web\"><a href=\"https://www.pillin.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.pillin.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/PillinChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         <li class=\"it\"><a href=\"https://www.instagram.com/pillinchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'pillin';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "concepcion",
+            "Concepción",
+            "pillin",
+            "mall-plaza-bio-bio"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2018-12-13T17:00:00-03:00",
+          "end_date": "2018-12-13T17:00:00-03:00",
+          "discount": 20,
+          "location_street": "Los Carrera Poniente N° 301, Concepción",
+          "latitude": null,
+          "longitude": null
+        },
+        {
+          "id": 45784,
+          "uuid": "af20b0d5-c0c9-4274-96e9-50fa02dd1e4e",
+          "created_at": "2018-12-13T17:12:09-03:00",
+          "updated_at": "2020-11-12T16:37:36-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/pillin-plaza-bio-bio",
+          "title": "Pillin - Plaza Bio Bio",
+          "slug": "pillin-plaza-bio-bio",
+          "description": "   <h3>20% dcto</h3><p>Nos Encanta Ser Niños.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Los Carrera Poniente N° 301 Local 1016<br>Concepción</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>+56226742399</li> \r\n                              <li class=\"web\"><a href=\"https://www.pillin.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.pillin.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/PillinChile/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         <li class=\"it\"><a href=\"https://www.instagram.com/pillinchile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'pillin';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "concepcion",
+            "Concepción",
+            "pillin",
+            "mall-plaza-bio-bio"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2018-12-13T17:00:00-03:00",
+          "end_date": "2018-12-13T17:00:00-03:00",
+          "discount": 20,
+          "location_street": "Los Carrera Poniente N° 301, Concepción",
+          "latitude": null,
+          "longitude": null
+        },
+        {
+          "id": 48958,
+          "uuid": "531766e2-5f83-49ad-b58c-2ac14d165fb3",
+          "created_at": "2019-06-20T11:44:46-04:00",
+          "updated_at": "2021-02-22T12:19:40-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/panoramas/entretencion-y-tiempo-libre/promotions/rally-kart-vina-del-mar",
+          "title": "Rally Kart - Viña del Mar",
+          "slug": "rally-kart-vina-del-mar",
+          "description": "<h3>50% dcto</h3><p>Dedicados a entregar un momento de diversión para toda la familias. Rally Kart es la opción mas segura y económica de vivir una experiencia inolvidable como piloto de carreras.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Valparaíso 1070, paseo viña centro 5to piso</li>Viña del Mar\r\n      <li class=\"web\"><a href=\"http://www.rallykarting.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> http://www.rallykarting.cl</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'rally';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "vina-del-mar",
+            "viña-del-mar",
+            "rally",
+            "sucursales"
+          ],
+          "category": "panoramas entretencion y tiempo libre",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-06-20T11:00:00-04:00",
+          "end_date": "2019-06-20T11:00:00-04:00",
+          "discount": 50,
+          "location_street": "Av. Valparaíso 1070, paseo viña centro 5to piso. Viña del Mar",
+          "latitude": "-33.026676",
+          "longitude": "-76.547226"
+        },
+        {
+          "id": 46031,
+          "uuid": "eb6565cc-6af7-4d32-91a0-f1745be6155e",
+          "created_at": "2019-01-02T18:01:04-03:00",
+          "updated_at": "2019-01-04T09:28:52-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/deportes/promotions/padre-hurtado-tienda-scott",
+          "title": "Scott - Padre Hurtado : Scott- Mitas - Syncros - Precor - Kilpi",
+          "slug": "padre-hurtado-tienda-scott",
+          "description": "   <h3>20% dcto</h3><p>Tiendas: Scott- Mitas - Syncros - Precor - Kilpi</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Padre Hurtado Norte ª1121<br>Vitacura</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>22-7259317</li> \r\n      </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'scott';</script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/3f5f5220-d25a-4d51-a15a-348ed5325126/R320x240/scott-630x500-bci.jpg",
+            "https://bci-cdn.azureedge.net/uploads/5e6be8c5-88da-4eee-9ea6-c5a80b1233f7/R320x240/160x63-logo-scott.jpg"
+          ],
+          "tags": [
+            "sucursal",
+            "Vitacura",
+            "scott"
+          ],
+          "category": "shopping deportes",
+          "site_id": 68,
+          "options": {
+            "conditions": "Descuento de un 20% en todas las tiendas.&nbsp;Válido pagando con las Tarjetas de Crédito o Débito Scotia. No acumulable con otras promociones y/o descuentos.&nbsp;<b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.&nbsp;<b><p><b>*Válido para todo los locales publicados en la página web&nbsp;<a href=\"https://www.google.com/url?q=http://www.vivirconbeneficios.cl&amp;sa=D&amp;source=hangouts&amp;ust=1535465821716000&amp;usg=AFQjCNEyy1_vuoEd2Byr0LjNQkrXkssL2Q\">www.vivirconbeneficios.cl</a></b></p></b></b>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "Descuento de un 20% en todas las tiendas.&nbsp;Válido pagando con las Tarjetas de Crédito o Débito Scotia. No acumulable con otras promociones y/o descuentos.&nbsp;<b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.&nbsp;<b><p><b>*Válido para todo los locales publicados en la página web&nbsp;<a href=\"https://www.google.com/url?q=http://www.vivirconbeneficios.cl&amp;sa=D&amp;source=hangouts&amp;ust=1535465821716000&amp;usg=AFQjCNEyy1_vuoEd2Byr0LjNQkrXkssL2Q\">www.vivirconbeneficios.cl</a></b></p></b></b>",
+          "start_date": "2019-01-02T17:00:00-03:00",
+          "end_date": "2019-01-02T17:00:00-03:00",
+          "discount": 20,
+          "location_street": "Padre Hurtado Norte ª1121, Vitacura",
+          "latitude": "-33.3856022",
+          "longitude": "-70.55030779999998"
+        },
+        {
+          "id": 50323,
+          "uuid": "d031e27a-f395-498e-a21b-fad3d0c99a90",
+          "created_at": "2019-08-29T16:47:12-03:00",
+          "updated_at": "2019-08-29T17:56:48-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-schilling-iquique",
+          "title": "Ópticas Schilling  Iquique",
+          "slug": "opticas-schilling-iquique",
+          "description": "    <p style=\"display:none\">opticas, lentes de sol, lentes opticos, gafas, gotitas ojos, marcos, cristales</p>\r\n<h3>20% dcto</h3><p>Óptica</p>\r\n      <div>\r\n       <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Iquique</li>\r\n                <li class=\"telefono\"><i class=\"icon-phone\"></i>57 256 1706</li>\r\n      <li class=\"web\"><a href=\"www.opticashilling.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www\r\n.opticashilling.cl</a></li>\r\n    </ul>\r\n      \r\n    <script>\r\n      var casa_matriz_tag = 'opticas-schilling';\r\n    </script></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "opticas-schilling"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-08-29T16:00:00-03:00",
+          "end_date": "2019-08-29T16:00:00-03:00",
+          "discount": 20,
+          "location_street": " Av. Heroes de la Concepción 2555 loc 278 A y B. Iquique",
+          "latitude": "-20.230635",
+          "longitude": "-70.140861"
+        },
+        {
+          "id": 50323,
+          "uuid": "d031e27a-f395-498e-a21b-fad3d0c99a90",
+          "created_at": "2019-08-29T16:47:12-03:00",
+          "updated_at": "2019-08-29T17:56:48-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/opticas/promotions/opticas-schilling-iquique",
+          "title": "Ópticas Schilling  Iquique",
+          "slug": "opticas-schilling-iquique",
+          "description": "    <p style=\"display:none\">opticas, lentes de sol, lentes opticos, gafas, gotitas ojos, marcos, cristales</p>\r\n<h3>20% dcto</h3><p>Óptica</p>\r\n      <div>\r\n       <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Iquique</li>\r\n                <li class=\"telefono\"><i class=\"icon-phone\"></i>57 256 1706</li>\r\n      <li class=\"web\"><a href=\"www.opticashilling.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www\r\n.opticashilling.cl</a></li>\r\n    </ul>\r\n      \r\n    <script>\r\n      var casa_matriz_tag = 'opticas-schilling';\r\n    </script></div>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "opticas-schilling"
+          ],
+          "category": "salud y belleza opticas",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-08-29T16:00:00-03:00",
+          "end_date": "2019-08-29T16:00:00-03:00",
+          "discount": 20,
+          "location_street": " Av. Heroes de la Concepción 2555 loc 278 A y B. Iquique",
+          "latitude": "-20.230635",
+          "longitude": "-70.140861"
+        },
+        {
+          "id": 57531,
+          "uuid": "2a774668-972b-4f0d-8de6-71a18e725446",
+          "created_at": "2020-11-10T17:45:29-03:00",
+          "updated_at": "2020-11-10T17:46:07-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/liola-4",
+          "title": "Liolá - Maipú",
+          "slug": "liola-4",
+          "description": "<h3>20% dcto.</h3><p>Vestuario y calzado femenino</p>\r\n      <div>\r\n      <ul>\r\n       <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Américo Vespucio 399 - Local. 530<br>Maipú</li>\r\n        <li class=\"telefono\"><i class=\"icon-phone\"></i>94 2804 439</li>\r\n      <li class=\"web\"><a href=\"https://www.liola.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.liola.cl/</a></li>\r\n       <li class=\"fb\"><a href=\"https://www.facebook.com/LiolaChile/\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n <li class=\"fb\"><a href=\"https://www.instagram.com/liolachile/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'liola';</script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "maipu",
+            "liola",
+            "Maipú",
+            "ropa",
+            "calzado"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-11-10T17:00:00-03:00",
+          "end_date": "2020-11-10T17:00:00-03:00",
+          "discount": 20,
+          "location_street": "Américo Vespucio 399 - Local. 530, Maipú",
+          "latitude": "-33.483019",
+          "longitude": "-70.749603"
+        },
+        {
+          "id": 45629,
+          "uuid": "9c3d93fa-2e80-4744-903c-b3ef913fc5a4",
+          "created_at": "2018-12-06T16:07:35-03:00",
+          "updated_at": "2019-11-18T13:31:49-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/clinica-estetika-las-condes",
+          "title": "Clínica Estétika - Las Condes",
+          "slug": "clinica-estetika-las-condes",
+          "description": "<h3>70%</h3>Tu belleza en manos médicas.<p></p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av Kennedy Lateral 5735\r\n</li><li class=\"telefono\"><i class=\"icon-phone\"></i>600 300 1800 - (32) 213 1300 - Whatsapp - +569 59162492</li>\r\n    \r\n            <li class=\"web\"><a href=\"https://www.estetikamedica.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.estetikamedica.cl</a></li>\r\n                         <li class=\"fb\"><a href=\"https://www.facebook.com/clinica.estetika.medica\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                         <li class=\"it\"><a href=\"www.instagram.com/clinica_estetika_medica/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n        </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-estetika';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/7f66acce-b871-4fd4-988a-f87439ba0a4e/R320x240/logo-160x63-clinica-estetika.jpg",
+            "https://bci-cdn.azureedge.net/uploads/f2fde04c-a46c-4dc2-83ba-8a7059531a57/R320x240/caluga-360x500-clinica-etetika_1_.jpg"
+          ],
+          "tags": [
+            "las condes",
+            "clinica-estetika",
+            "casa-matriz"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 70% depilación láser media pierna y/o Axila.&nbsp;&nbsp;</span><br><span style=\"background-color: initial;\">Descuento en un 60% en PRP Premiun 1 zona (cara y cuello).&nbsp;</span><br><span style=\"background-color: initial;\">Descuento de un 50% en evaluación médica con uno de nuestros doctores.&nbsp;</span><br><span style=\"background-color: initial;\">Descuento de un 40% en Criolipólisis 2 zonas.&nbsp;</span></div><div></div><div>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b><b>realizar la compra.</b></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 70% depilación láser media pierna y/o Axila.&nbsp;&nbsp;</span><br><span style=\"background-color: initial;\">Descuento en un 60% en PRP Premiun 1 zona (cara y cuello).&nbsp;</span><br><span style=\"background-color: initial;\">Descuento de un 50% en evaluación médica con uno de nuestros doctores.&nbsp;</span><br><span style=\"background-color: initial;\">Descuento de un 40% en Criolipólisis 2 zonas.&nbsp;</span></div><div></div><div>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b><b>realizar la compra.</b></div>",
+          "start_date": "2018-12-06T15:00:00-03:00",
+          "end_date": "2018-12-06T15:00:00-03:00",
+          "discount": 70,
+          "location_street": "Av Kennedy Lateral 5735, Las Condes",
+          "latitude": "-33.4001414",
+          "longitude": "-70.5746555"
+        },
+        {
+          "id": 45629,
+          "uuid": "9c3d93fa-2e80-4744-903c-b3ef913fc5a4",
+          "created_at": "2018-12-06T16:07:35-03:00",
+          "updated_at": "2019-11-18T13:31:49-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/clinica-estetika-las-condes",
+          "title": "Clínica Estétika - Las Condes",
+          "slug": "clinica-estetika-las-condes",
+          "description": "<h3>70%</h3>Tu belleza en manos médicas.<p></p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av Kennedy Lateral 5735\r\n</li><li class=\"telefono\"><i class=\"icon-phone\"></i>600 300 1800 - (32) 213 1300 - Whatsapp - +569 59162492</li>\r\n    \r\n            <li class=\"web\"><a href=\"https://www.estetikamedica.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.estetikamedica.cl</a></li>\r\n                         <li class=\"fb\"><a href=\"https://www.facebook.com/clinica.estetika.medica\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n                         <li class=\"it\"><a href=\"www.instagram.com/clinica_estetika_medica/\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n        </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-estetika';\r\n    </script>",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/7f66acce-b871-4fd4-988a-f87439ba0a4e/R320x240/logo-160x63-clinica-estetika.jpg",
+            "https://bci-cdn.azureedge.net/uploads/f2fde04c-a46c-4dc2-83ba-8a7059531a57/R320x240/caluga-360x500-clinica-etetika_1_.jpg"
+          ],
+          "tags": [
+            "las condes",
+            "clinica-estetika",
+            "casa-matriz"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 70% depilación láser media pierna y/o Axila.&nbsp;&nbsp;</span><br><span style=\"background-color: initial;\">Descuento en un 60% en PRP Premiun 1 zona (cara y cuello).&nbsp;</span><br><span style=\"background-color: initial;\">Descuento de un 50% en evaluación médica con uno de nuestros doctores.&nbsp;</span><br><span style=\"background-color: initial;\">Descuento de un 40% en Criolipólisis 2 zonas.&nbsp;</span></div><div></div><div>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b><b>realizar la compra.</b></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><span style=\"background-color: initial;\">Descuento de un 70% depilación láser media pierna y/o Axila.&nbsp;&nbsp;</span><br><span style=\"background-color: initial;\">Descuento en un 60% en PRP Premiun 1 zona (cara y cuello).&nbsp;</span><br><span style=\"background-color: initial;\">Descuento de un 50% en evaluación médica con uno de nuestros doctores.&nbsp;</span><br><span style=\"background-color: initial;\">Descuento de un 40% en Criolipólisis 2 zonas.&nbsp;</span></div><div></div><div>Válido pagando con Tarjetas de Crédito o Débito Scotia<br>No acumulable a otras promociones y/o descuentos.<br><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b><b>realizar la compra.</b></div>",
+          "start_date": "2018-12-06T15:00:00-03:00",
+          "end_date": "2018-12-06T15:00:00-03:00",
+          "discount": 70,
+          "location_street": "Av Kennedy Lateral 5735, Las Condes",
+          "latitude": "-33.4001414",
+          "longitude": "-70.5746555"
+        },
+        {
+          "id": 51020,
+          "uuid": "7b08e2aa-8da1-4656-8ca5-e5e28352c01a",
+          "created_at": "2019-10-09T12:49:53-03:00",
+          "updated_at": "2020-11-17T11:16:57-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/gimnasios/promotions/fast-fitness-providencia",
+          "title": "Fast Fitness - Providencia",
+          "slug": "fast-fitness-providencia",
+          "description": "<h3>20% dcto</h3><p>Empresa líder en el desarrollo de entrenamientos personales focalizados en la mejora de la salud y la rehabilitación de lesiones y el acondicionamiento deportivo en general utilizando electroestimulación muscular integral activa.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Padre Mariano 74<br>Providencia<br>Santiago</li>\r\n           <li class=\"telefono\"><i class=\"icon-phone\"></i>56 9 9358 3889</li>\r\n      <li class=\"web\"><a href=\"http://www.fastfitness.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> www.fastfitness.cl</a></li>\r\n <li class=\"fb\"><a href=\"https://www.facebook.com/fastchile\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'fast';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "providencia",
+            "fast"
+          ],
+          "category": "salud y belleza gimnasios",
+          "site_id": 68,
+          "options": {
+            "conditions": "Descuento de un 20% en en entrenamiento funcionales con electroestimulación integral activa. Válido pagando con Tarjetas de Crédito o Débito Scotia. No acumulable con otras promociones y/o descuentos. En el caso de locales de regiones, solo aplica al horario valle.<div><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b><br><b>*Válido para todo los locales publicados en la página web&nbsp;</b><b><a href=\"https://www.google.com/url?q=http://www.vivirconbeneficios.cl&amp;sa=D&amp;source=hangouts&amp;ust=1535465821716000&amp;usg=AFQjCNEyy1_vuoEd2Byr0LjNQkrXkssL2Q\">www.vivirconbeneficios.cl</a></b></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "Descuento de un 20% en en entrenamiento funcionales con electroestimulación integral activa. Válido pagando con Tarjetas de Crédito o Débito Scotia. No acumulable con otras promociones y/o descuentos. En el caso de locales de regiones, solo aplica al horario valle.<div><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b><br><b>*Válido para todo los locales publicados en la página web&nbsp;</b><b><a href=\"https://www.google.com/url?q=http://www.vivirconbeneficios.cl&amp;sa=D&amp;source=hangouts&amp;ust=1535465821716000&amp;usg=AFQjCNEyy1_vuoEd2Byr0LjNQkrXkssL2Q\">www.vivirconbeneficios.cl</a></b></div>",
+          "start_date": "2019-10-09T12:00:00-03:00",
+          "end_date": "2019-10-09T12:00:00-03:00",
+          "discount": 40,
+          "location_street": "Padre Mariano 74, Providencia",
+          "latitude": "-33.426045",
+          "longitude": "-70.616525"
+        },
+        {
+          "id": 48074,
+          "uuid": "1f854556-1f29-457f-850e-baaacada6bb2",
+          "created_at": "2019-04-17T12:35:42-03:00",
+          "updated_at": "2019-04-17T12:36:29-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/barbizon-temuco",
+          "title": "Barbizon - Temuco",
+          "slug": "barbizon-temuco",
+          "description": "<h3>20% dcto</h3><p>Bbz tiene más de 30 años de experiencia en confección y venta de ropa de dormir femenina.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Alemania Nº671, Local 1083<br>Temuco</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>45 2451387</li> \r\n                              <li class=\"web\"><a href=\"https://www.bbz.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.bbz.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/BBZCL/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'bbz';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "temuco",
+            "sucursal",
+            "pijamas",
+            "bzz"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-04-17T12:00:00-03:00",
+          "end_date": "2019-04-17T12:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Alemania Nº671, Local 1083, Temuco",
+          "latitude": "-38.730216",
+          "longitude": "-72.623549"
+        },
+        {
+          "id": 48073,
+          "uuid": "02cb6121-7cf0-4526-9ece-838e9664026e",
+          "created_at": "2019-04-17T12:28:24-03:00",
+          "updated_at": "2019-04-17T12:29:25-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/barbizon-vina-del-mar",
+          "title": "Barbizon - Viña del Mar",
+          "slug": "barbizon-vina-del-mar",
+          "description": "<h3>20% dcto</h3><p>Bbz tiene más de 30 años de experiencia en confección y venta de ropa de dormir femenina.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. San Martin Nº620<br>Viña del Mar</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>32 2975027</li> \r\n                              <li class=\"web\"><a href=\"https://www.bbz.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.bbz.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/BBZCL/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'bbz';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "vina-del-mar",
+            "viña-del-mar",
+            "pijamas",
+            "bbz"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-04-17T12:00:00-03:00",
+          "end_date": "2019-04-17T12:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. San Martin Nº620, Viña del Mar",
+          "latitude": "-33.009839",
+          "longitude": "-71.552114"
+        },
+        {
+          "id": 50405,
+          "uuid": "8ac6ffbc-3d12-46b4-8b68-b386d72c4787",
+          "created_at": "2019-09-04T14:07:56-03:00",
+          "updated_at": "2021-03-03T13:11:17-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/doite",
+          "title": "Doite - Promoción especial ",
+          "slug": "doite",
+          "description": "<h3>20% dcto</h3><p>Entregar a sus clientes una verdadera experiencia, basada en la responsabilidad social, un gran sentido ecológico y la cultura de un «Outdoor sin Huellas».</p>\r\n      <div>\r\n      <ul>\r\n     <li class=\"web\"><a href=\"https://www.doite.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.doite.cl/</a></li>\r\n     <li class=\"fb\"><a href=\"https://www.facebook.com/DoiteChile\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n     <li class=\"fb\"><a href=\"https://www.instagram.com/doitechile/?hl=es-la\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n     \r\n     <li><button><a href=\"https://www.beneplus.cl/wp-content/uploads/2021/03/Sucursales-abiertas-Doite-2021.pdf\" target=\" target=&quot;_blank&quot;\">Tiendas abiertas</a></button></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'doite';\r\n    </script><p></p>\r\n",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/2b3f8d4f-684d-496d-bf63-0935f53c0291/R320x240/Banner-heritege-650x300.jpg",
+            "https://bci-cdn.azureedge.net/uploads/f95db184-cc12-4cd6-8602-05a683f2c146/R320x240/Heritage-180x80.jpg",
+            "https://bci-cdn.azureedge.net/uploads/a97564d2-105b-4bfc-9f0c-9626c9273aa4/R320x240/Banner-Heritege-360x500.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "doite",
+            "destacado-home",
+            "vivirconbeneficios",
+            "destacado-personas"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "<div><br></div><div><span style=\"background-color: initial;\">Descuento de un 20% en todos los productos de las tiendas física .</span><br><span style=\"background-color: initial;\">Se excluyen tiendas outlet, tienda online y no aplica para compras con factura.</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">Vigencia del&nbsp;01&nbsp;al 31 de Marzo 2021.</span></div><div><span style=\"background-color: initial;\"><br></span></div><div><div><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.&nbsp;</b><br><b>*Válido para todo los locales publicados en la página web&nbsp;</b><b><a href=\"https://www.google.com/url?q=https://www.doite.cl/&amp;sa=D&amp;source=hangouts&amp;ust=1612973301037000&amp;usg=AFQjCNGpx-wH66ipeXwtvwEmfYBjJGKe-g\">https://www.doite.cl/</a></b><b>.</b></div></div>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<div><br></div><div><span style=\"background-color: initial;\">Descuento de un 20% en todos los productos de las tiendas física .</span><br><span style=\"background-color: initial;\">Se excluyen tiendas outlet, tienda online y no aplica para compras con factura.</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">Vigencia del&nbsp;01&nbsp;al 31 de Marzo 2021.</span></div><div><span style=\"background-color: initial;\"><br></span></div><div><div><b>*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.&nbsp;</b><br><b>*Válido para todo los locales publicados en la página web&nbsp;</b><b><a href=\"https://www.google.com/url?q=https://www.doite.cl/&amp;sa=D&amp;source=hangouts&amp;ust=1612973301037000&amp;usg=AFQjCNGpx-wH66ipeXwtvwEmfYBjJGKe-g\">https://www.doite.cl/</a></b><b>.</b></div></div>",
+          "start_date": "2019-09-04T12:00:00-03:00",
+          "end_date": "2019-09-04T12:00:00-03:00",
+          "discount": 20,
+          "location_street": null,
+          "latitude": null,
+          "longitude": null
+        }
+      ],
+      "later": [
+        {
+          "id": 57905,
+          "uuid": "4775981f-f790-424b-bcd1-8db9391c96ee",
+          "created_at": "2020-12-14T17:59:39-03:00",
+          "updated_at": "2020-12-14T18:00:20-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/centros-de-estetica-y-spa/promotions/clinica-cela-nunoa",
+          "title": "Clínica Cela - Ñuñoa",
+          "slug": "clinica-cela-nunoa",
+          "description": "<h3>Hasta un 40%</h3><p>Clínica Cela, cuenta con 14 años de experiencia en depilación láser con tecnología láser Alexandrita, tratamientos reductivos corporales, tratamientos faciales. Única clínica estética con certificación ISO 9001:2015 y cuenta con el 100% de profesionales de la salud. Estos beneficios son para ti.</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Irarrázaval 2401, oficina 610<br>Ñuñoa</li><br>Santiago\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>22 306 92 50</li>\r\n      <li class=\"web\"><a href=\"https://www.cela.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>www.cela.cl</a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'clinica-estetica-cela';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp"
+          ],
+          "tags": [
+            "nunoa",
+            "sucursal",
+            "ñuñoa",
+            "clinica-estetica-cela",
+            "nuñoa"
+          ],
+          "category": "salud y belleza centros de estetica y spa",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-12-14T17:00:00-03:00",
+          "end_date": "2020-12-14T17:00:00-03:00",
+          "discount": 40,
+          "location_street": "Irarrázaval 2401, oficina 610 Ñuñoa, Santiago",
+          "latitude": "-33.454476",
+          "longitude": "-70.606343"
+        },
+        {
+          "id": 48077,
+          "uuid": "fc5e9bf5-5e60-4604-902a-95c4dffffcf3",
+          "created_at": "2019-04-17T13:00:53-03:00",
+          "updated_at": "2019-04-17T14:07:14-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/vestuario-y-calzado/promotions/barbizon-las-condes",
+          "title": "Barbizon - Los Dominicos",
+          "slug": "barbizon-las-condes",
+          "description": "  <h3>20% dcto</h3><p>Bbz tiene más de 30 años de experiencia en confección y venta de ropa de dormir femenina.</p>\r\n      <div>\r\n      <ul>\r\n         <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Av. Padre Hurtado Sur Nº875, Local C2068-2072<br>Las Condes</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>22 2399758</li> \r\n                              <li class=\"web\"><a href=\"https://www.bbz.cl\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.bbz.cl</a></li> \r\n         <li class=\"fb\"><a href=\"https://www.facebook.com/BBZCL/\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n         </ul></div>\r\n    <script>\r\n      var casa_matriz_tag = 'bbz';\r\n    </script>",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "pijamas",
+            "bbz",
+            "Los Dominicos"
+          ],
+          "category": "shopping vestuario y calzado",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2019-04-17T12:00:00-03:00",
+          "end_date": "2019-04-17T12:00:00-03:00",
+          "discount": 20,
+          "location_street": "Av. Padre Hurtado Sur Nº875, Local C2068-2072, Los Dominicos",
+          "latitude": "-33.4152406",
+          "longitude": "-70.5406785"
+        },
+        {
+          "id": 57147,
+          "uuid": "b6b1192f-7c24-4482-9b6e-9f2bcef70488",
+          "created_at": "2020-10-20T14:34:40-03:00",
+          "updated_at": "2020-10-20T14:35:31-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/salud-y-belleza/farmacias-y-perfumeria/promotions/farmacias-knop-la-reina",
+          "title": "Farmacias Knop - La Reina",
+          "slug": "farmacias-knop-la-reina",
+          "description": "<h3>20% dcto</h3><p>Cadena de farmacias naturales</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Principe de Gales N° 8531, Local 04<br>La Reina<br>Santiago</li>\r\n      <li class=\"telefono\"><i class=\"icon-phone\"></i>2 2488 9530</li>\r\n      <li class=\"web\"><a href=\"http://www.farmaciasknop.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i> http://www.farmaciasknop.cl/</a></li>\r\n            <li class=\"fb\"><a href=\"https://www.facebook.com/Farmaciasknop\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n        <li class=\"tt\"><a href=\"https://twitter.com/farmaciasknop\" target=\"_blank\"><i class=\"icon-twitter\"></i></a></li>\r\n<li><button><a href=\"https://www.farmaciasknop.com/sucursales-region-metropolitana/\">Región Metropolitana</a></button></li>\r\n      <li><button><a href=\"https://www.farmaciasknop.com/sucursales-v-region/\">Quinta Región</a></button></li>\r\n      <li><button><a href=\"https://www.farmaciasknop.com/zona-norte/\">Zona Norte</a>&nbsp;</button></li>\r\n        <li><button><a href=\"https://www.farmaciasknop.com/sucursales-zona-sur/\">Zona Sur</a>&nbsp;</button></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'farmacias-knop';\r\n    </script>\r\n",
+          "covers": [
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav3_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav1_2020-01-15.webp",
+            "https://www.scotiaclub.cl/scclubfront/resource/sections/fav2_2020-01-15.webp"
+          ],
+          "tags": [
+            "sucursal",
+            "la-reina",
+            "farmacias-knop",
+            "farmacias"
+          ],
+          "category": "salud y belleza farmacias y perfumeria",
+          "site_id": 68,
+          "options": {
+            "conditions": "",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "",
+          "start_date": "2020-10-20T14:00:00-03:00",
+          "end_date": "2020-10-20T14:00:00-03:00",
+          "discount": 20,
+          "location_street": "Principe de Gales N° 8531, Local 04, La Reina",
+          "latitude": "-33.440702",
+          "longitude": "-70.540038"
+        },
+        {
+          "id": 46739,
+          "uuid": "3cdd7276-d348-485d-bd93-feb2362501de",
+          "created_at": "2019-02-19T18:32:03-03:00",
+          "updated_at": "2020-12-17T10:16:52-03:00",
+          "url": "https://www.vivirconbeneficios.cl/descuentos/shopping/jugueterias/promotions/ludicamente",
+          "title": "Lúdicamente",
+          "slug": "ludicamente",
+          "description": "<h3>15% dcto</h3><p>Juego sano, creativo y entretenido para todas las edades y acorde a las necesidades de nuestros tiempos. Por ello, Lúdicamente trae al confín del mundo la mejor selección de juguetes, libros infantiles y material didáctico, que por principio resguarden la sustentabilidad de nuestro planeta. ¡Lúdicamente, activa tu mente!</p>\r\n      <div>\r\n      <ul>\r\n          <li class=\"direccion\"><i class=\"icon-map-marker\"></i>Avenida España 01395. Local 2<br>Punta Arenas</li>\r\n         <li class=\"telefono\"><i class=\"icon-phone\"></i>61-2236584</li>\r\n         <li class=\"web\"><a href=\"https://www.ludicamente.cl/\" target=\"_blank\"><i class=\"icon-envelope-alt\"></i>https://www.ludicamente.cl/</a></li>\r\n <li class=\"fb\"><a href=\"http://www.facebook.com/tienda.ludicamente\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-facebook\"></i></a></li>\r\n \r\n  <li class=\"fb\"><a href=\"https://www.instagram.com/tiendaludicamente/?hl=es-la\" 233007460225257?fref=\"ts&quot;\" target=\"_blank\"><i class=\"icon-instagram\"></i></a></li>\r\n    </ul>\r\n      </div>\r\n    <script>\r\n      var casa_matriz_tag = 'ludicamente';\r\n    </script>\r\n",
+          "covers": [
+            "https://bci-cdn.azureedge.net/uploads/a035cf9c-5c3c-4cbe-b156-3a16a26c8ccf/R320x240/Scotia_ludicamente_caluga_360x500px.jpg",
+            "https://bci-cdn.azureedge.net/uploads/6d8a0853-bd1f-4c86-a9be-7124942cdfbd/R320x240/160x63-logo-ludicamente.jpg"
+          ],
+          "tags": [
+            "casa-matriz",
+            "ludicamente",
+            "jugueteria",
+            "juguetería"
+          ],
+          "category": "shopping jugueterias",
+          "site_id": 68,
+          "options": {
+            "conditions": "<span style=\"background-color: initial;\">Descuento de un 15% en todos los juguetes, material didáctico y libros infantiles.</span><span style=\"background-color: initial;\">&nbsp;</span><br><span style=\"background-color: initial;\">El descuento del 15% aplica sólo para los días martes y miércoles de la semana</span><span style=\"background-color: initial;\">.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.&nbsp;</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b>",
+            "comments_enabled": true
+          },
+          "video_url": "",
+          "conditions": "<span style=\"background-color: initial;\">Descuento de un 15% en todos los juguetes, material didáctico y libros infantiles.</span><span style=\"background-color: initial;\">&nbsp;</span><br><span style=\"background-color: initial;\">El descuento del 15% aplica sólo para los días martes y miércoles de la semana</span><span style=\"background-color: initial;\">.&nbsp;</span><br><span style=\"background-color: initial;\">Válido pagando con Tarjetas de Crédito o Débito Scotia.&nbsp;</span><br><span style=\"background-color: initial;\">No acumulable con otras promociones y/o descuentos.&nbsp;</span><br><b style=\"background-color: initial;\">*Para hacer efectivo el descuento Scotia, debes solicitarlo antes de realizar la compra.</b>",
+          "start_date": "2019-02-19T18:00:00-03:00",
+          "end_date": "2019-02-19T18:00:00-03:00",
+          "discount": 15,
+          "location_street": "Avenida España 01395, Punta Arenas",
+          "latitude": "-53.163435",
+          "longitude": "-70.917332"
         }
       ]
     }

@@ -1,6 +1,9 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
+import { BenefitsUseCase } from "../domain/BenefitsUseCase";
 import { UserdataUseCase } from "../domain/UserdataUseCase";
+import { MisionsUseCase } from "../domain/MisionsUseCase";
+
 import {
   ChartData,
   ChartOptions,
@@ -13,109 +16,122 @@ import {
 } from "../components/dashboard/charts";
 import { Userdata } from "../domain/entity/Userdata";
 import { Benefit, benefitsDecorator } from "../domain/entity/Benefit";
+import rgbaColorsJson from "../components/dashboard/json/rgbaColors.json";
+import "../components/dashboard/Dashboard.scss";
 import Navbar from "../components/dashboard/Navbar";
+import DashboardCards from "../components/dashboard/Cards";
+import {
+  groupData,
+  getCategoryBenefits,
+  cleanDuplicatesBenefits,
+  getInterest,
+} from "../components/dashboard/Data";
+import { Mision } from "../domain/entity/Mision";
+import { defaults } from "react-chartjs-2";
+
+defaults.global.tooltips.enabled = true;
+defaults.global.title.display = true;
+
 const DashboardPage: React.FC = () => {
-  const useCase = new UserdataUseCase();
+  const benefitsUseCase = new BenefitsUseCase();
+  const useCaseUser = new UserdataUseCase();
+  const useCaseMision = new MisionsUseCase();
+
   const [dataPie, setDataPie] = useState({} as ChartData);
   const [dataDoughnut, setDataDoughnut] = useState({} as ChartData);
   const [dataBarLikes, setDataBarLikes] = useState({} as ChartData);
   const [dataBarLater, setDataBarLater] = useState({} as ChartData);
   const [dataBarNoLikes, setDataBarNoLikes] = useState({} as ChartData);
-  const [options, setOptions] = useState({} as ChartOptions);
+  const [dataInterest, setDataInterest] = useState({} as ChartData);
+
   const [totalLikes, setTotalLikes] = useState(0);
-  const [totalCategoriesLikes, setTotalCategoriesLikes] = useState(0);
-  const [totalCategoriesNoLikes, setTotalCategoriesNoLikes] = useState(0);
-  const [totalCategoriesLater, setTotalCategoriesLater] = useState(0);
-  const backgroundColor = [
-    "rgba(255, 99, 132, 0.2)",
-    "rgba(54, 162, 235, 0.2)",
-    "rgba(255, 206, 86, 0.2)",
-    "rgba(75, 192, 192, 0.2)",
-    "rgba(153, 102, 255, 0.2)",
-    "rgba(255, 159, 64, 0.2)",
-  ];
-  const borderColor = [
-    "rgba(255, 99, 132, 1)",
-    "rgba(54, 162, 235, 1)",
-    "rgba(255, 206, 86, 1)",
-    "rgba(75, 192, 192, 1)",
-    "rgba(153, 102, 255, 1)",
-    "rgba(255, 159, 64, 1)",
-  ];
+  const [totalLater, setTotalLater] = useState(0);
+  const [totalNoLikes, setTotalNoLikes] = useState(0);
+  const [totalBeneficios, setTotalBeneficios] = useState(0);
+  const [totalCategories, setTotalCategories] = useState(0);
+  const [totalMisiones, setTotalMisiones] = useState(0);
+
+  const backgroundColor = rgbaColorsJson.backgroundColor;
+  const borderColor = rgbaColorsJson.borderColor;
   const borderWidth = 1;
 
   useEffect(() => {
-    useCase
+    useCaseUser
       .list()
       .then((response: Response) => response.json())
       .then((data: Userdata[]) => {
-        const { likesAll, latersAll, noLikesAll } = groupData(data);
+        console.log("Userdata", data);
+
+        const { likesAll, latersAll, noLikesAll, interestAll } = groupData(
+          data
+        );
         setTotalLikes(likesAll.length);
+        setTotalLater(latersAll.length);
+        setTotalNoLikes(noLikesAll.length);
+
         bindData(
           benefitsDecorator(likesAll),
           benefitsDecorator(latersAll),
-          benefitsDecorator(noLikesAll)
+          benefitsDecorator(noLikesAll),
+          interestAll
         );
       });
+    benefitsUseCase
+      .list()
+      .then((response: Response) => response.json())
+      .then((data: Benefit[]) => {
+        console.log("benefits", data);
+
+        const clean = cleanDuplicatesBenefits(data);
+        setTotalBeneficios(clean.length);
+        setTotalCategories(getCategoryBenefits(clean).length);
+      });
+
+    useCaseMision
+      .list()
+      .then((response: Response) => response.json())
+      .then((data: Mision) => {
+        console.log("mision", data);
+        setTotalMisiones(data.disponibles.length);
+      });
   }, []);
-  const cleanDuplicates = (benefits: Benefit[]) => {
-    const cleans = benefits.reduce((out: Benefit[] = [], benefit: Benefit) => {
-      if (out.length > 0) {
-        const exists = out.filter((b) => b.id === benefit.id);
-        if (exists.length > 0) return out;
-        else return [...out, { ...benefit }];
-      } else return [...out, { ...benefit }];
-    }, []);
-    return cleans;
-  };
-  const groupData = (userData: Userdata[]) => {
-    const likesAll = userData.reduce((out: Benefit[], user: Userdata) => {
-      return [...out, ...cleanDuplicates(user.likes)];
-    }, []);
-    const latersAll = userData.reduce((out: Benefit[], user: Userdata) => {
-      return [...out, ...cleanDuplicates(user.later)];
-    }, []);
-    const noLikesAll = userData.reduce((out: Benefit[], user: Userdata) => {
-      return [...out, ...cleanDuplicates(user["not-likes"])];
-    }, []);
-    return { likesAll, latersAll, noLikesAll };
-  };
-  const getCategoria = (objInteres: Benefit[]) => {
-    return objInteres.reduce((out: any, obj: Benefit) => {
-      const result = out.filter((o: any) => o.category === obj.category);
-      if (result.length === 0) {
-        const cantCategory = objInteres.filter(
-          (l: any) => l.category === obj.category
-        ).length;
-        return [
-          ...out,
-          {
-            category: obj.category,
-            cant: cantCategory > 0 ? cantCategory : 0,
-          },
-        ];
-      }
-      return out;
-    }, []);
-  };
+
   const bindData = (
     likes: Benefit[],
     laters: Benefit[],
-    notLikes: Benefit[]
+    notLikes: Benefit[],
+    interestAll: any
   ) => {
-    const categoriesLikes = getCategoria(likes);
-    const categoriesLaters = getCategoria(laters);
-    const categoriesNoLikes = getCategoria(notLikes);
+    console.log("likes", likes);
+    console.log("laters", laters);
+    console.log("notLikes", notLikes);
+    const categoriesLikes = getCategoryBenefits(likes);
+    const categoriesLaters = getCategoryBenefits(laters);
+    const categoriesNoLikes = getCategoryBenefits(notLikes);
 
-    setTotalCategoriesLikes(categoriesLikes.length);
-    setTotalCategoriesLater(categoriesLaters.length);
-    setTotalCategoriesNoLikes(categoriesNoLikes.length);
+    const interestGroup = getInterest(interestAll);
 
-    setDataPie({
-      labels: ["Likes", "Laters", "Not-Likes"],
+    const interest = {
+      labels: interestGroup.reduce((out: any, interest: any) => {
+        return [...out, interest.name];
+      }, []),
       datasets: [
         {
-          label: "# likes por categoria",
+          label: "#interes por categoria",
+          data: interestGroup.reduce((out: any, interest: any) => {
+            return [...out, interest.cant];
+          }, []),
+          backgroundColor,
+          borderColor,
+          borderWidth,
+        },
+      ],
+    };
+    const pie = {
+      labels: ["like", "later", "no-like"],
+      datasets: [
+        {
+          label: "#like por categoria",
           data: [likes.length, laters.length, notLikes.length],
           backgroundColor: [
             backgroundColor[0],
@@ -126,14 +142,14 @@ const DashboardPage: React.FC = () => {
           borderWidth,
         },
       ],
-    });
-    setDataBarLikes({
+    };
+    const likesBar = {
       labels: categoriesLikes.reduce((out: any, category: any) => {
         return [...out, category.category];
       }, []),
       datasets: [
         {
-          label: "# likes por categoria",
+          label: "# like por categoria",
           data: categoriesLikes.reduce((out: any, category: any) => {
             return [...out, category.cant];
           }, []),
@@ -142,14 +158,14 @@ const DashboardPage: React.FC = () => {
           borderWidth,
         },
       ],
-    });
-    setDataBarLater({
+    };
+    const latersBar = {
       labels: categoriesLaters.reduce((out: any, category: any) => {
         return [...out, category.category];
       }, []),
       datasets: [
         {
-          label: "# laters por categoria",
+          label: "# later por categoria",
           data: categoriesLaters.reduce((out: any, category: any) => {
             return [...out, category.cant];
           }, []),
@@ -158,17 +174,14 @@ const DashboardPage: React.FC = () => {
           borderWidth,
         },
       ],
-    });
-
-    console.log("categoriesNoLikes", categoriesLaters);
-
-    setDataBarNoLikes({
+    };
+    const noLikesBar = {
       labels: categoriesNoLikes.reduce((out: any, category: any) => {
         return [...out, category.category];
       }, []),
       datasets: [
         {
-          label: "# no-likes por categoria",
+          label: "# no-like por categoria",
           data: categoriesNoLikes.reduce((out: any, category: any) => {
             return [...out, category.cant];
           }, []),
@@ -177,9 +190,9 @@ const DashboardPage: React.FC = () => {
           borderWidth,
         },
       ],
-    });
-    setDataDoughnut({
-      labels: ["Likes", "Laters", "Not-Likes"],
+    };
+    const dough = {
+      labels: ["likes", "laters", "no-likes"],
       datasets: [
         {
           label: "interes",
@@ -189,121 +202,182 @@ const DashboardPage: React.FC = () => {
           borderWidth,
         },
       ],
-    });
-    setOptions({
-      scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-            },
-          },
-        ],
-      },
-      plugins: {
-        legend: {
-          display: true,
-          labels: {
-            color: "rgb(255, 99, 132)",
-          },
-        },
-      },
-    });
+    };
+    console.log("likesBar", likesBar);
+
+    setDataPie(pie);
+    setDataBarLikes(likesBar);
+    setDataBarLater(latersBar);
+    setDataBarNoLikes(noLikesBar);
+    setDataDoughnut(dough);
+    setDataInterest(interest);
   };
+
   return (
-    <div>
+    <div className="dashboard">
       <Navbar />
       <div className="section">
-        <div className="columns  is-variable is-desktop">
-          <div className="column">
-            <div className="card has-background-primary has-text-white">
-              <div className="card-header">
-                <div className="card-header-title has-text-white">
-                  # Beneficios
-                </div>
-              </div>
-              <div className="card-content">
-                <p className="is-size-3">{0} - disponibles</p>
-              </div>
-            </div>
+        <DashboardCards
+          data={{
+            totalCategories,
+            totalBeneficios,
+            totalLikes,
+            totalLater,
+            totalNoLikes,
+            totalMisiones,
+          }}
+        />
+        <div className="columns">
+          <div className="column is-3">
+            <Doughnut
+              data={dataDoughnut}
+              options={{
+                legend: { display: true, position: "top" },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "bottom",
+                  text: "interes en beneficio",
+                },
+              }}
+            />
           </div>
-          <div className="column">
-            <div className="card has-background-warning has-text-black">
-              <div className="card-header">
-                <div className="card-header-title has-text-white">
-                  # Categorias likes
-                </div>
-              </div>
-              <div className="card-content">
-                <p className="is-size-3">
-                  {totalCategoriesLikes} - disponibles
-                </p>
-              </div>
-            </div>
+          <div className="column is-3">
+            <HorizontalsBar
+              data={dataDoughnut}
+              options={{
+                scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "bottom",
+                  text: "interes en beneficio",
+                },
+              }}
+            />
           </div>
-          <div className="column">
-            <div className="card has-background-info has-text-white">
-              <div className="card-header">
-                <div className="card-header-title has-text-white">
-                  % Interes
-                </div>
-              </div>
-              <div className="card-content">
-                <p className="is-size-3">78 %</p>
-              </div>
-            </div>
+          <div className="column is-3">
+            <Doughnut
+              data={dataInterest}
+              options={{
+                legend: { display: true, position: "top" },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "bottom",
+                  text: "Onboarding Intereses",
+                },
+              }}
+            />
           </div>
-          <div className="column">
-            <div className="card has-background-danger has-text-white">
-              <div className="card-header">
-                <div className="card-header-title has-text-white">
-                  # Total likes
-                </div>
-              </div>
-              <div className="card-content">
-                <p className="is-size-3">{totalLikes}</p>
-              </div>
-            </div>
+          <div className="column is-3">
+            <HorizontalsBar
+              data={dataInterest}
+              options={{
+                scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "bottom",
+                  text: "Onboarding Intereses",
+                },
+              }}
+            />
           </div>
         </div>
-
-        <div className="columns  is-variable is-desktop">
-          <div className="column is-3">
-            <Doughnut data={dataDoughnut} />
-          </div>
-          <div className="column is-3">
-            <Doughnut data={dataDoughnut} />
-          </div>
-          <div className="column is-3">
-            <Doughnut data={dataDoughnut} />
-          </div>
-          <div className="column is-3">
-            <Doughnut data={dataDoughnut} />
-          </div>
-        </div>
-
-        <div className="columns is-variable is-desktop">
+        <div className="columns">
           <div className="column is-6">
-            <VerticalBar data={dataBarLikes} options={options} />
+            <VerticalBar
+              data={dataBarLikes}
+              options={{
+                scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "top",
+                  text: "#like por categoría",
+                },
+              }}
+            />
           </div>
           <div className="column">
-            <Doughnut data={dataBarLikes} />
+            <Doughnut
+              data={dataBarLikes}
+              options={{
+                legend: { display: true, position: "bottom" },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "top",
+                  text: "#like por categoría ",
+                },
+              }}
+            />
           </div>
         </div>
-        <div className="columns is-variable is-desktop">
+        <div className="columns">
           <div className="column is-6">
-            <HorizontalsBar data={dataBarLater} options={options} />
+            <Pie
+              data={dataBarLater}
+              options={{
+                legend: { display: true, position: "bottom" },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "top",
+                  text: "#later por categoría",
+                },
+              }}
+            />
           </div>
           <div className="column">
-            <Pie data={dataBarLater} />
+            <HorizontalsBar
+              data={dataBarLater}
+              options={{
+                scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "top",
+                  text: "#later por categoría",
+                },
+              }}
+            />
           </div>
         </div>
-        <div className="columns is-variable is-desktop">
+        <div className="columns  is-desktop">
           <div className="column is-6">
-            <VerticalBar data={dataBarNoLikes} options={options} />
+            <VerticalBar
+              data={dataBarNoLikes}
+              options={{
+                scales: { yAxes: [{ ticks: { beginAtZero: true } }] },
+                legend: { display: false },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "top",
+                  text: "#no-like por categoría",
+                },
+              }}
+            />
           </div>
           <div className="column">
-            <Doughnut data={dataBarNoLikes} />
+            <Doughnut
+              data={dataBarNoLikes}
+              options={{
+                legend: { display: true, position: "bottom" },
+                title: {
+                  align: "center",
+                  display: true,
+                  position: "top",
+                  text: "#no-like por categoría",
+                },
+              }}
+            />
           </div>
         </div>
       </div>

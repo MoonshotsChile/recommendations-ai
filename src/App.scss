@@ -68,8 +68,8 @@ body {
   }
 }
 
-
-.offers, .locations {
+.offers,
+.locations {
   .tinder-cards {
     &__card {
       box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
@@ -107,7 +107,7 @@ body {
     font-weight: normal;
     font-size: 1.5rem;
     text-align: center;
-    color: $grey
+    color: $grey;
   }
 
   .subtitle {
@@ -117,7 +117,7 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: center;
-    color: #6F6F6F;
+    color: #6f6f6f;
   }
 
   .is-borderless {

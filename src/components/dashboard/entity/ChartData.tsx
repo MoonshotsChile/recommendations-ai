@@ -9,6 +9,7 @@ export interface ChartData {
   }[];
 }
 export interface ChartOptions {
-  scales: { yAxes: { ticks: { beginAtZero: boolean } }[] };
-  plugins: any;
+  scales?: { yAxes: { ticks: { beginAtZero: boolean } }[] };
+  title: any;
+  legend: any;
 }

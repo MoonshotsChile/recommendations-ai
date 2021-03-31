@@ -4,5 +4,6 @@ export interface Userdata {
   created_at?: string;
   likes: BenefitReaction[];
   later: BenefitReaction[];
+  interest?: string[];
   "not-likes": BenefitReaction[];
 }
