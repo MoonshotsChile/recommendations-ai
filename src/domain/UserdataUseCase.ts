@@ -16,7 +16,7 @@ export class UserdataUseCase {
     }
 
     update(benefit: BenefitReaction): Promise<Response>  {
-        return fetch(`${API_URL}/userdata`, {
+        return fetch(`${API_URL}/userdata/`, {
             headers: {'Content-Type': 'application/json'},
             method: 'PATCH',
             body: JSON.stringify(benefit)
@@ -36,7 +36,7 @@ export class UserdataUseCase {
     }
 
     likeOrNot(id: string, benefits: BenefitReaction[], reaction: string): Promise<Response>  {
-        return fetch(`${API_URL}/userdata/${id}`, {
+        return fetch(`${API_URL}/userdata/${id}/`, {
             headers: {'Content-Type': 'application/json'},
             method: 'PATCH',
             body: JSON.stringify({[reaction]: benefits})
