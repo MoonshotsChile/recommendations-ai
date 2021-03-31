@@ -8,11 +8,11 @@ export class UserdataUseCase {
 
 
     list(queryParams = ''): Promise<Response>  {
-        return fetch(`${API_URL}/userdata`)
+        return fetch(`${API_URL}/userdata/`)
     }
 
     find(id: string): Promise<Response> {
-        return fetch(`${API_URL}/userdata/${id}`)
+        return fetch(`${API_URL}/userdata/${id}/`)
     }
 
     update(benefit: BenefitReaction): Promise<Response>  {

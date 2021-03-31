@@ -24,7 +24,6 @@ import { authValidation } from "../components/hooks/authValidation";
 const MyLikesPage: React.FC = () => {
   authValidation();
 
-  const useCase = new UserdataUseCase();
   const lastCardRef = useRef(null);
   const userdataUseCase = new UserdataUseCase();
 
@@ -53,7 +52,7 @@ const MyLikesPage: React.FC = () => {
     },
   };
   useEffect(() => {
-    useCase
+    userdataUseCase
       .find(userdata?.id || "")
       .then((response: Response) => response.json())
       .then((data: Userdata) => {
