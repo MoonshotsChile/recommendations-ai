@@ -44,3 +44,6 @@ export { default as handSlideRight } from './icons/white/hand-slide-right.svg';
 export { default as handSlideDown } from './icons/white/hand-slide-down.svg';
 export { default as rocket } from './icons/color/rocket.svg';
 export { default as bellRed } from './icons/color/bell-red.svg';
+export { default as home } from './icons/color/home.svg';
+export { default as deleteSelected } from './icons/color/delete.svg';
+export { default as later } from './icons/color/later.svg';
